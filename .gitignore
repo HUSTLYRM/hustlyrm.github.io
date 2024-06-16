@@ -1,0 +1,20 @@
+# visual studio and vscode
+.vs/
+.vscode/
+CMakeSettings.json
+
+# clion
+.idea/
+
+# resharper
+Folder.DotSettings.user
+
+# build result
+[Oo]ut/
+[Bb]uild/
+
+# ROS 
+ROSPackages
+
+# Doxygen
+Doxyfile

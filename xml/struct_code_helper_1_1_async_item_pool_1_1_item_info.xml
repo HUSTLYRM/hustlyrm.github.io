@@ -1,0 +1,59 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.11.0" xml:lang="zh">
+  <compounddef id="struct_code_helper_1_1_async_item_pool_1_1_item_info" kind="struct" language="C++" prot="private" final="yes">
+    <compoundname>CodeHelper::AsyncItemPool::ItemInfo</compoundname>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_code_helper_1_1_async_item_pool_1_1_item_info_1a307dd8c465dc06b8f7afdd44f73b8c4a" prot="public" static="no" mutable="no">
+        <type>std::atomic&lt; ViewStatus &gt;</type>
+        <definition>std::atomic&lt;ViewStatus&gt; CodeHelper::AsyncItemPool&lt; TItem &gt;::ItemInfo::Status</definition>
+        <argsstring></argsstring>
+        <name>Status</name>
+        <qualifiedname>CodeHelper::AsyncItemPool::ItemInfo::Status</qualifiedname>
+        <initializer>{ViewStatus::Empty}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Sango/source/LangYa/Sources/CodeHelper/Headers/LangYa/CodeHelper/AsyncItemPool.hpp" line="30" column="13" bodyfile="C:/Users/Sango/source/LangYa/Sources/CodeHelper/Headers/LangYa/CodeHelper/AsyncItemPool.hpp" bodystart="30" bodyend="30"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_code_helper_1_1_async_item_pool_1_1_item_info_1af677e7b291dfeb7138e934c9cae62cfa" prot="public" static="no" mutable="no">
+        <type>TItem</type>
+        <definition>TItem CodeHelper::AsyncItemPool&lt; TItem &gt;::ItemInfo::Item</definition>
+        <argsstring></argsstring>
+        <name>Item</name>
+        <qualifiedname>CodeHelper::AsyncItemPool::ItemInfo::Item</qualifiedname>
+        <initializer>{}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Sango/source/LangYa/Sources/CodeHelper/Headers/LangYa/CodeHelper/AsyncItemPool.hpp" line="31" column="7" bodyfile="C:/Users/Sango/source/LangYa/Sources/CodeHelper/Headers/LangYa/CodeHelper/AsyncItemPool.hpp" bodystart="31" bodyend="31"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>物品信息，包含物品和状态 </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>CodeHelper::AsyncItemPool&lt; TItem &gt;::ItemInfo</label>
+        <childnode refid="2" relation="usage">
+          <edgelabel>Status</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>std::atomic&lt; ViewStatus &gt;</label>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/Sango/source/LangYa/Sources/CodeHelper/Headers/LangYa/CodeHelper/AsyncItemPool.hpp" line="28" column="1" bodyfile="C:/Users/Sango/source/LangYa/Sources/CodeHelper/Headers/LangYa/CodeHelper/AsyncItemPool.hpp" bodystart="29" bodyend="32"/>
+    <listofallmembers>
+      <member refid="struct_code_helper_1_1_async_item_pool_1_1_item_info_1af677e7b291dfeb7138e934c9cae62cfa" prot="public" virt="non-virtual"><scope>CodeHelper::AsyncItemPool::ItemInfo</scope><name>Item</name></member>
+      <member refid="struct_code_helper_1_1_async_item_pool_1_1_item_info_1a307dd8c465dc06b8f7afdd44f73b8c4a" prot="public" virt="non-virtual"><scope>CodeHelper::AsyncItemPool::ItemInfo</scope><name>Status</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

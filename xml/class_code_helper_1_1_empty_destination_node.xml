@@ -1,0 +1,79 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.11.0" xml:lang="zh">
+  <compounddef id="class_code_helper_1_1_empty_destination_node" kind="class" language="C++" prot="public" final="yes">
+    <compoundname>CodeHelper::EmptyDestinationNode</compoundname>
+    <basecompoundref refid="class_code_helper_1_1_destination_node" prot="public" virt="non-virtual">CodeHelper::DestinationNode&lt; TItem &gt;</basecompoundref>
+    <includes refid="_logic_nodes_8hpp" local="no">LogicNodes.hpp</includes>
+    <templateparamlist>
+      <param>
+        <type>typename TItem</type>
+      </param>
+    </templateparamlist>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_code_helper_1_1_empty_destination_node_1a03334cbc8a031cefb56e33d4326af575" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>void CodeHelper::EmptyDestinationNode&lt; TItem &gt;::SetItem</definition>
+        <argsstring>(const TItem &amp;item) override</argsstring>
+        <name>SetItem</name>
+        <qualifiedname>CodeHelper::EmptyDestinationNode::SetItem</qualifiedname>
+        <reimplements refid="class_code_helper_1_1_destination_node_1abf9841fc7adff56fea44b3d0c98f7bff">SetItem</reimplements>
+        <param>
+          <type>const TItem &amp;</type>
+          <declname>item</declname>
+        </param>
+        <briefdescription>
+<para>设置物品，目的地将会接收物品并开始处理 </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>item</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>使用常量引用传递的物品 </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Sango/source/LangYa/Sources/CodeHelper/Headers/LangYa/CodeHelper/LogicNodes.hpp" line="111" column="6" bodyfile="C:/Users/Sango/source/LangYa/Sources/CodeHelper/Headers/LangYa/CodeHelper/LogicNodes.hpp" bodystart="111" bodyend="111"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>空目的地节点，不对接收的物品做任何操作 </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>CodeHelper::DestinationNode&lt; TItem &gt;</label>
+        <link refid="class_code_helper_1_1_destination_node"/>
+      </node>
+      <node id="1">
+        <label>CodeHelper::EmptyDestinationNode&lt; TItem &gt;</label>
+        <link refid="class_code_helper_1_1_empty_destination_node"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>CodeHelper::DestinationNode&lt; TItem &gt;</label>
+        <link refid="class_code_helper_1_1_destination_node"/>
+      </node>
+      <node id="1">
+        <label>CodeHelper::EmptyDestinationNode&lt; TItem &gt;</label>
+        <link refid="class_code_helper_1_1_empty_destination_node"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/Sango/source/LangYa/Sources/CodeHelper/Headers/LangYa/CodeHelper/LogicNodes.hpp" line="108" column="1" bodyfile="C:/Users/Sango/source/LangYa/Sources/CodeHelper/Headers/LangYa/CodeHelper/LogicNodes.hpp" bodystart="109" bodyend="114"/>
+    <listofallmembers>
+      <member refid="class_code_helper_1_1_destination_node_1af0a498469e34d11b72dd26e25357086b" prot="public" virt="non-virtual"><scope>CodeHelper::EmptyDestinationNode</scope><name>ItemType</name></member>
+      <member refid="class_code_helper_1_1_empty_destination_node_1a03334cbc8a031cefb56e33d4326af575" prot="public" virt="virtual"><scope>CodeHelper::EmptyDestinationNode</scope><name>SetItem</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

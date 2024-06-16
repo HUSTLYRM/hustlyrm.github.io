@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.11.0" xml:lang="zh">
+  <compounddef id="concept_code_helper_1_1_is_formattable_source" kind="concept">
+    <compoundname>CodeHelper::IsFormattableSource</compoundname>
+    <templateparamlist>
+      <param>
+        <type>typename TSource</type>
+      </param>
+    </templateparamlist>
+    <initializer>template&lt;typename TSource&gt;
+concept <ref refid="concept_code_helper_1_1_is_formattable_source" kindref="compound">CodeHelper::IsFormattableSource</ref> =  IsSourceNode&lt;TSource&gt; &amp;&amp; IsFormattable&lt;TSource&gt;    </initializer>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/Sango/source/LangYa/Sources/CodeHelper/Headers/LangYa/CodeHelper/TransmissionFlowPlanner.hpp" line="16" column="1"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,211 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.11.0" xml:lang="zh">
+  <compounddef id="_logic_nodes_8hpp" kind="file" language="C++">
+    <compoundname>LogicNodes.hpp</compoundname>
+    <includes local="no">concepts</includes>
+    <includes local="no">memory</includes>
+    <includedby refid="_code_helper_8hpp" local="yes">C:/Users/Sango/source/LangYa/Sources/CodeHelper/Headers/LangYa/CodeHelper.hpp</includedby>
+    <includedby refid="_async_item_pool_8hpp" local="yes">C:/Users/Sango/source/LangYa/Sources/CodeHelper/Headers/LangYa/CodeHelper/AsyncItemPool.hpp</includedby>
+    <includedby refid="_devices_8hpp" local="yes">C:/Users/Sango/source/LangYa/Sources/CodeHelper/Headers/LangYa/CodeHelper/Devices.hpp</includedby>
+    <includedby refid="_sine_wave_8hpp" local="yes">C:/Users/Sango/source/LangYa/Sources/CodeHelper/Headers/LangYa/CodeHelper/SineWave.hpp</includedby>
+    <includedby refid="_transmission_flow_planner_8hpp" local="yes">C:/Users/Sango/source/LangYa/Sources/CodeHelper/Headers/LangYa/CodeHelper/TransmissionFlowPlanner.hpp</includedby>
+    <incdepgraph>
+      <node id="1">
+        <label>C:/Users/Sango/source/LangYa/Sources/CodeHelper/Headers/LangYa/CodeHelper/LogicNodes.hpp</label>
+        <link refid="_logic_nodes_8hpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>concepts</label>
+      </node>
+      <node id="3">
+        <label>memory</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="2">
+        <label>C:/Users/Sango/source/LangYa/Sources/CodeHelper/Headers/LangYa/CodeHelper.hpp</label>
+        <link refid="_code_helper_8hpp_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>C:/Users/Sango/source/LangYa/Sources/CodeHelper/Headers/LangYa/CodeHelper/AsyncItemPool.hpp</label>
+        <link refid="_async_item_pool_8hpp_source"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>C:/Users/Sango/source/LangYa/Sources/CodeHelper/Headers/LangYa/CodeHelper/Devices.hpp</label>
+        <link refid="_devices_8hpp_source"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>C:/Users/Sango/source/LangYa/Sources/CodeHelper/Headers/LangYa/CodeHelper/LogicNodes.hpp</label>
+        <link refid="_logic_nodes_8hpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>C:/Users/Sango/source/LangYa/Sources/CodeHelper/Headers/LangYa/CodeHelper/SineWave.hpp</label>
+        <link refid="_sine_wave_8hpp_source"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>C:/Users/Sango/source/LangYa/Sources/CodeHelper/Headers/LangYa/CodeHelper/TransmissionFlowPlanner.hpp</label>
+        <link refid="_transmission_flow_planner_8hpp_source"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>C:/Users/Sango/source/LangYa/Sources/CodeHelper/Sources/CodeHelper.cpp</label>
+        <link refid="_code_helper_8cpp_source"/>
+      </node>
+      <node id="8">
+        <label>C:/Users/Sango/source/LangYa/Sources/CodeHelper/Sources/SineWave.cpp</label>
+        <link refid="_sine_wave_8cpp_source"/>
+      </node>
+      <node id="4">
+        <label>C:/Users/Sango/source/LangYa/Sources/CodeHelper/Testers/AutoAimManager.cpp</label>
+        <link refid="_auto_aim_manager_8cpp_source"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="class_code_helper_1_1_source_node" prot="public">CodeHelper::SourceNode</innerclass>
+    <innerclass refid="class_code_helper_1_1_default_source_node" prot="public">CodeHelper::DefaultSourceNode</innerclass>
+    <innerclass refid="class_code_helper_1_1_empty_source_node" prot="public">CodeHelper::EmptySourceNode</innerclass>
+    <innerclass refid="class_code_helper_1_1_processor_node" prot="public">CodeHelper::ProcessorNode</innerclass>
+    <innerclass refid="class_code_helper_1_1_destination_node" prot="public">CodeHelper::DestinationNode</innerclass>
+    <innerclass refid="class_code_helper_1_1_empty_destination_node" prot="public">CodeHelper::EmptyDestinationNode</innerclass>
+    <innernamespace refid="namespace_code_helper">CodeHelper</innernamespace>
+    <sectiondef kind="define">
+      <memberdef kind="define" id="_logic_nodes_8hpp_1a44cab97701d254bcbb376b9e2a33662a" prot="public" static="no">
+        <name>SC_DefineMakeShared</name>
+        <param><defname>SELF</defname></param>
+        <initializer>		static std::shared_ptr&lt;SELF&gt; MakeShared() noexcept		\
+		{														\
+			return std::make_shared&lt;SELF&gt;();					\
+		}														\</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Sango/source/LangYa/Sources/CodeHelper/Headers/LangYa/CodeHelper/LogicNodes.hpp" line="6" column="9" bodyfile="C:/Users/Sango/source/LangYa/Sources/CodeHelper/Headers/LangYa/CodeHelper/LogicNodes.hpp" bodystart="6" bodyend="11"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#pragma<sp/>once</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;concepts&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;memory&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>SC_DefineMakeShared(SELF)<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="7"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>static<sp/>std::shared_ptr&lt;SELF&gt;<sp/>MakeShared()<sp/>noexcept<sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="8"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="9"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>return<sp/>std::make_shared&lt;SELF&gt;();<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="10"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="11"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">LangYa<sp/>::<sp/>inline<sp/>CodeHelper</highlight></codeline>
+<codeline lineno="14"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>TItem&gt;</highlight></codeline>
+<codeline lineno="20" refid="class_code_helper_1_1_source_node" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_code_helper_1_1_source_node" kindref="compound">SourceNode</ref></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="24" refid="class_code_helper_1_1_source_node_1a05fcd780a3ebbf0cd020496228ceb3f3" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">using<sp/></highlight><highlight class="normal"><ref refid="class_code_helper_1_1_source_node_1a05fcd780a3ebbf0cd020496228ceb3f3" kindref="member">ItemType</ref><sp/>=<sp/>TItem;</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight></codeline>
+<codeline lineno="27" refid="class_code_helper_1_1_source_node_1ab7bf471b91c01f8b00606d695d9e6746" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>[[nodiscard]]<sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="class_code_helper_1_1_source_node_1ab7bf471b91c01f8b00606d695d9e6746" kindref="member">GetItem</ref>(TItem&amp;<sp/>item)<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>TNode,<sp/></highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>TItem<sp/>=<sp/></highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>TNode::ItemType&gt;</highlight></codeline>
+<codeline lineno="32" refid="concept_code_helper_1_1_is_source_node" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">concept<sp/></highlight><highlight class="normal"><ref refid="concept_code_helper_1_1_is_source_node" kindref="compound">IsSourceNode</ref><sp/>=<sp/></highlight><highlight class="keyword">requires</highlight><highlight class="normal">(TNode&amp;<sp/>node,<sp/>TItem&amp;<sp/>item)</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{<sp/>node.GetItem(item)<sp/>}<sp/>-&gt;<sp/>std::same_as&lt;bool&gt;;</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;std::default_initializable<sp/>TItem&gt;</highlight></codeline>
+<codeline lineno="40" refid="class_code_helper_1_1_default_source_node" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_code_helper_1_1_default_source_node" kindref="compound">DefaultSourceNode</ref><sp/>final<sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="class_code_helper_1_1_source_node" kindref="compound">SourceNode</ref>&lt;TItem&gt;</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>TItem<sp/>Item{};</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight></codeline>
+<codeline lineno="45" refid="class_code_helper_1_1_default_source_node_1a708572e837b5c9861a0900f642e44419" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>[[nodiscard]]<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="class_code_helper_1_1_default_source_node_1a708572e837b5c9861a0900f642e44419" kindref="member">GetItem</ref>(TItem&amp;<sp/>item)<sp/></highlight><highlight class="keyword">noexcept</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>item<sp/>=<sp/>Item;</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>SC_DefineMakeShared(<ref refid="class_code_helper_1_1_default_source_node" kindref="compound">DefaultSourceNode</ref>)</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"></highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>TItem&gt;</highlight></codeline>
+<codeline lineno="56" refid="class_code_helper_1_1_empty_source_node" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_code_helper_1_1_empty_source_node" kindref="compound">EmptySourceNode</ref><sp/>final<sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="class_code_helper_1_1_source_node" kindref="compound">SourceNode</ref>&lt;TItem&gt;</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="59" refid="class_code_helper_1_1_empty_source_node_1a012dfdf70f4604aacf258dcc783fdc93" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>[[nodiscard]]<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="class_code_helper_1_1_empty_source_node_1a012dfdf70f4604aacf258dcc783fdc93" kindref="member">GetItem</ref>(TItem&amp;<sp/>item)</highlight><highlight class="keyword"><sp/>override</highlight></codeline>
+<codeline lineno="60"><highlight class="keyword"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"></highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>SC_DefineMakeShared(<ref refid="class_code_helper_1_1_empty_source_node" kindref="compound">EmptySourceNode</ref>)</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"></highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>TArgumentItem,<sp/>std::default_initializable<sp/>TResultItem&gt;</highlight></codeline>
+<codeline lineno="69" refid="class_code_helper_1_1_processor_node" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_code_helper_1_1_processor_node" kindref="compound">ProcessorNode</ref></highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">using<sp/></highlight><highlight class="normal">ArgumentItemType<sp/>=<sp/>TArgumentItem;</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">using<sp/></highlight><highlight class="normal">ResultItemType<sp/>=<sp/>TResultItem;</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>Process(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>TArgumentItem&amp;<sp/>argument,<sp/>TResultItem&amp;<sp/>result)<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"></highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>TItem&gt;</highlight></codeline>
+<codeline lineno="81" refid="class_code_helper_1_1_destination_node" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_code_helper_1_1_destination_node" kindref="compound">DestinationNode</ref></highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="85" refid="class_code_helper_1_1_destination_node_1af0a498469e34d11b72dd26e25357086b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">using<sp/></highlight><highlight class="normal"><ref refid="class_code_helper_1_1_destination_node_1af0a498469e34d11b72dd26e25357086b" kindref="member">ItemType</ref><sp/>=<sp/>TItem;</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"></highlight></codeline>
+<codeline lineno="89" refid="class_code_helper_1_1_destination_node_1abf9841fc7adff56fea44b3d0c98f7bff" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_code_helper_1_1_destination_node_1abf9841fc7adff56fea44b3d0c98f7bff" kindref="member">SetItem</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>TItem&amp;<sp/>item)<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"></highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>TNode,<sp/></highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>TItem<sp/>=<sp/></highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>TNode::ItemType&gt;</highlight></codeline>
+<codeline lineno="101" refid="concept_code_helper_1_1_is_destination_node" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">concept<sp/></highlight><highlight class="normal"><ref refid="concept_code_helper_1_1_is_destination_node" kindref="compound">IsDestinationNode</ref><sp/>=<sp/></highlight><highlight class="keyword">requires</highlight><highlight class="normal">(TNode<sp/>destination,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>TItem&amp;<sp/>item)</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>destination.SetItem(item);</highlight></codeline>
+<codeline lineno="104"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="105"><highlight class="normal"></highlight></codeline>
+<codeline lineno="107"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>TItem&gt;</highlight></codeline>
+<codeline lineno="108" refid="class_code_helper_1_1_empty_destination_node" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_code_helper_1_1_empty_destination_node" kindref="compound">EmptyDestinationNode</ref><sp/>final<sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="class_code_helper_1_1_destination_node" kindref="compound">DestinationNode</ref>&lt;TItem&gt;</highlight></codeline>
+<codeline lineno="109"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="110"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="111" refid="class_code_helper_1_1_empty_destination_node_1a03334cbc8a031cefb56e33d4326af575" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_code_helper_1_1_empty_destination_node_1a03334cbc8a031cefb56e33d4326af575" kindref="member">SetItem</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>TItem&amp;<sp/>item)</highlight><highlight class="keyword"><sp/>override<sp/></highlight><highlight class="normal">{<sp/>(void)item;<sp/>}</highlight></codeline>
+<codeline lineno="112"><highlight class="normal"></highlight></codeline>
+<codeline lineno="113"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>SC_DefineMakeShared(<ref refid="class_code_helper_1_1_empty_destination_node" kindref="compound">EmptyDestinationNode</ref>)</highlight></codeline>
+<codeline lineno="114"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="115"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="C:/Users/Sango/source/LangYa/Sources/CodeHelper/Headers/LangYa/CodeHelper/LogicNodes.hpp"/>
+  </compounddef>
+</doxygen>

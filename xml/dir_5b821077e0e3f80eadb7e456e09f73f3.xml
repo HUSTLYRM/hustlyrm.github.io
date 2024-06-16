@@ -1,0 +1,20 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.11.0" xml:lang="zh">
+  <compounddef id="dir_5b821077e0e3f80eadb7e456e09f73f3" kind="dir">
+    <compoundname>C:/Users/Sango/source/LangYa/Sources/CodeHelper/Sources</compoundname>
+    <innerfile refid="_code_helper_8cpp">CodeHelper.cpp</innerfile>
+    <innerfile refid="_counter_8cpp">Counter.cpp</innerfile>
+    <innerfile refid="_c_r_c_8cpp">CRC.cpp</innerfile>
+    <innerfile refid="_formattable_8cpp">Formattable.cpp</innerfile>
+    <innerfile refid="_parse_from_stream_8cpp">ParseFromStream.cpp</innerfile>
+    <innerfile refid="_ping_pong_exchanger_8cpp">PingPongExchanger.cpp</innerfile>
+    <innerfile refid="_runtimes_8cpp">Runtimes.cpp</innerfile>
+    <innerfile refid="_sine_wave_8cpp">SineWave.cpp</innerfile>
+    <innerfile refid="_span_utils_8cpp">SpanUtils.cpp</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/Sango/source/LangYa/Sources/CodeHelper/Sources/"/>
+  </compounddef>
+</doxygen>

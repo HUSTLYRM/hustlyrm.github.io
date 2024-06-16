@@ -1,0 +1,27 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.11.0" xml:lang="zh">
+  <compounddef id="concept_code_helper_1_1_is_source_node" kind="concept">
+    <compoundname>CodeHelper::IsSourceNode</compoundname>
+    <includes refid="_logic_nodes_8hpp" local="no">LogicNodes.hpp</includes>
+    <templateparamlist>
+      <param>
+        <type>typename TNode</type>
+      </param>
+      <param>
+        <type>typename TItem</type>
+        <defval>typename TNode::ItemType</defval>
+      </param>
+    </templateparamlist>
+    <initializer>template&lt;typename TNode, typename TItem typename TNode::ItemType&gt;
+concept <ref refid="concept_code_helper_1_1_is_source_node" kindref="compound">CodeHelper::IsSourceNode</ref> =  requires(TNode&amp; node, TItem&amp; item)
+	{
+		{ node.GetItem(item) } -&gt; std::same_as&lt;bool&gt;;
+	}    </initializer>
+    <briefdescription>
+<para>约束节点，表明节点为物品源节点 </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/Sango/source/LangYa/Sources/CodeHelper/Headers/LangYa/CodeHelper/LogicNodes.hpp" line="32" column="1"/>
+  </compounddef>
+</doxygen>

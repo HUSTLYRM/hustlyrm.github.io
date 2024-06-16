@@ -1,0 +1,279 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.11.0" xml:lang="zh">
+  <compounddef id="struct_code_helper_1_1_typed_message" kind="struct" language="C++" prot="public" final="yes">
+    <compoundname>CodeHelper::TypedMessage</compoundname>
+    <includes refid="_typed_message_8hpp" local="no">TypedMessage.hpp</includes>
+    <templateparamlist>
+      <param>
+        <type>std::size_t</type>
+        <declname>TDataSize</declname>
+        <defname>TDataSize</defname>
+      </param>
+    </templateparamlist>
+    <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="struct_code_helper_1_1_typed_message_1a5f7b257149cc6e4f98a2deb229ef1fb5" prot="public" static="yes" constexpr="yes" mutable="no">
+        <type>std::size_t</type>
+        <definition>std::size_t CodeHelper::TypedMessage&lt; TDataSize &gt;::DataSize</definition>
+        <argsstring></argsstring>
+        <name>DataSize</name>
+        <qualifiedname>CodeHelper::TypedMessage::DataSize</qualifiedname>
+        <initializer>= TDataSize</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Sango/source/LangYa/Sources/CodeHelper/Headers/LangYa/CodeHelper/TypedMessage.hpp" line="20" column="30" bodyfile="C:/Users/Sango/source/LangYa/Sources/CodeHelper/Headers/LangYa/CodeHelper/TypedMessage.hpp" bodystart="20" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_code_helper_1_1_typed_message_1ad7bb02c710b6fc023c816cf29997188b" prot="public" static="yes" constexpr="yes" mutable="no">
+        <type>std::size_t</type>
+        <definition>std::size_t CodeHelper::TypedMessage&lt; TDataSize &gt;::FullSize</definition>
+        <argsstring></argsstring>
+        <name>FullSize</name>
+        <qualifiedname>CodeHelper::TypedMessage::FullSize</qualifiedname>
+        <initializer>= TDataSize + sizeof(std::uint8_t) * 3</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Sango/source/LangYa/Sources/CodeHelper/Headers/LangYa/CodeHelper/TypedMessage.hpp" line="21" column="30" bodyfile="C:/Users/Sango/source/LangYa/Sources/CodeHelper/Headers/LangYa/CodeHelper/TypedMessage.hpp" bodystart="21" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_code_helper_1_1_typed_message_1a1d6e86f37ecd3eb79d0094d1f13534ba" prot="public" static="no" mutable="no">
+        <type>std::uint8_t</type>
+        <definition>std::uint8_t CodeHelper::TypedMessage&lt; TDataSize &gt;::Head</definition>
+        <argsstring></argsstring>
+        <name>Head</name>
+        <qualifiedname>CodeHelper::TypedMessage::Head</qualifiedname>
+        <initializer>{&apos;!&apos;}</initializer>
+        <briefdescription>
+<para>头字节，用于标识数据包的开始 </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Sango/source/LangYa/Sources/CodeHelper/Headers/LangYa/CodeHelper/TypedMessage.hpp" line="24" column="14" bodyfile="C:/Users/Sango/source/LangYa/Sources/CodeHelper/Headers/LangYa/CodeHelper/TypedMessage.hpp" bodystart="24" bodyend="24"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_code_helper_1_1_typed_message_1a3d753e1215ef1814f5038edb5571a180" prot="public" static="no" mutable="no">
+        <type>std::uint8_t</type>
+        <definition>std::uint8_t CodeHelper::TypedMessage&lt; TDataSize &gt;::Type</definition>
+        <argsstring></argsstring>
+        <name>Type</name>
+        <qualifiedname>CodeHelper::TypedMessage::Type</qualifiedname>
+        <initializer>{0}</initializer>
+        <briefdescription>
+<para>标识消息种类 </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Sango/source/LangYa/Sources/CodeHelper/Headers/LangYa/CodeHelper/TypedMessage.hpp" line="27" column="14" bodyfile="C:/Users/Sango/source/LangYa/Sources/CodeHelper/Headers/LangYa/CodeHelper/TypedMessage.hpp" bodystart="27" bodyend="27"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_code_helper_1_1_typed_message_1a915a55349eb848391e6aa09dbb58d20e" prot="public" static="no" mutable="no">
+        <type>std::array&lt; std::uint8_t, TDataSize &gt;</type>
+        <definition>std::array&lt;std::uint8_t, TDataSize&gt; CodeHelper::TypedMessage&lt; TDataSize &gt;::Data</definition>
+        <argsstring></argsstring>
+        <name>Data</name>
+        <qualifiedname>CodeHelper::TypedMessage::Data</qualifiedname>
+        <initializer>{}</initializer>
+        <briefdescription>
+<para>数据段，用于存放消息数据 </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Sango/source/LangYa/Sources/CodeHelper/Headers/LangYa/CodeHelper/TypedMessage.hpp" line="30" column="12" bodyfile="C:/Users/Sango/source/LangYa/Sources/CodeHelper/Headers/LangYa/CodeHelper/TypedMessage.hpp" bodystart="30" bodyend="30"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_code_helper_1_1_typed_message_1ac6c42da56045678056181189ae15a729" prot="public" static="no" mutable="no">
+        <type>std::uint8_t</type>
+        <definition>std::uint8_t CodeHelper::TypedMessage&lt; TDataSize &gt;::Tail</definition>
+        <argsstring></argsstring>
+        <name>Tail</name>
+        <qualifiedname>CodeHelper::TypedMessage::Tail</qualifiedname>
+        <initializer>{0}</initializer>
+        <briefdescription>
+<para>尾字节，用于验证数据包 </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Sango/source/LangYa/Sources/CodeHelper/Headers/LangYa/CodeHelper/TypedMessage.hpp" line="33" column="14" bodyfile="C:/Users/Sango/source/LangYa/Sources/CodeHelper/Headers/LangYa/CodeHelper/TypedMessage.hpp" bodystart="33" bodyend="33"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="struct_code_helper_1_1_typed_message_1a1077dd45597e7b5fe301d5a1af01536c" prot="public" static="no" nodiscard="yes" const="no" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type>std::span&lt; std::uint8_t &gt;</type>
+        <definition>std::span&lt; std::uint8_t &gt; CodeHelper::TypedMessage&lt; TDataSize &gt;::ToSpan</definition>
+        <argsstring>() noexcept</argsstring>
+        <name>ToSpan</name>
+        <qualifiedname>CodeHelper::TypedMessage::ToSpan</qualifiedname>
+        <briefdescription>
+<para>构造 std::span，用于将数据从其他位置读取到此空间 </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Sango/source/LangYa/Sources/CodeHelper/Headers/LangYa/CodeHelper/TypedMessage.hpp" line="36" column="12" bodyfile="C:/Users/Sango/source/LangYa/Sources/CodeHelper/Headers/LangYa/CodeHelper/TypedMessage.hpp" bodystart="36" bodyend="39"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_code_helper_1_1_typed_message_1a77c725c787209a2692d68dd55d9fa615" prot="public" static="no" nodiscard="yes" const="yes" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type>std::span&lt; const std::uint8_t &gt;</type>
+        <definition>std::span&lt; const std::uint8_t &gt; CodeHelper::TypedMessage&lt; TDataSize &gt;::ToSpan</definition>
+        <argsstring>() const noexcept</argsstring>
+        <name>ToSpan</name>
+        <qualifiedname>CodeHelper::TypedMessage::ToSpan</qualifiedname>
+        <briefdescription>
+<para>构造 std::span，用于将数据从此空间写入其他位置 </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Sango/source/LangYa/Sources/CodeHelper/Headers/LangYa/CodeHelper/TypedMessage.hpp" line="42" column="12" bodyfile="C:/Users/Sango/source/LangYa/Sources/CodeHelper/Headers/LangYa/CodeHelper/TypedMessage.hpp" bodystart="42" bodyend="45"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_code_helper_1_1_typed_message_1ada8172b097fc30aa4b2df9ac6dfc5a49" prot="public" static="no" const="yes" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void CodeHelper::TypedMessage&lt; TDataSize &gt;::CopyDataTo</definition>
+        <argsstring>(T *object) const noexcept</argsstring>
+        <name>CopyDataTo</name>
+        <qualifiedname>CodeHelper::TypedMessage::CopyDataTo</qualifiedname>
+        <param>
+          <type>T *</type>
+          <declname>object</declname>
+        </param>
+        <briefdescription>
+<para>将数据从 Data 复制到目标内存 </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>object</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>指向目标的内存，必须是 TDataSize 大小 </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Sango/source/LangYa/Sources/CodeHelper/Headers/LangYa/CodeHelper/TypedMessage.hpp" line="50" column="6" bodyfile="C:/Users/Sango/source/LangYa/Sources/CodeHelper/Headers/LangYa/CodeHelper/TypedMessage.hpp" bodystart="50" bodyend="55"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_code_helper_1_1_typed_message_1a691ae5159dfdd88624874b96d34b9ef6" prot="public" static="no" nodiscard="yes" const="no" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>T &amp;</type>
+        <definition>T &amp; CodeHelper::TypedMessage&lt; TDataSize &gt;::GetDataAs</definition>
+        <argsstring>() noexcept</argsstring>
+        <name>GetDataAs</name>
+        <qualifiedname>CodeHelper::TypedMessage::GetDataAs</qualifiedname>
+        <briefdescription>
+<para>将内部数据视作目标类型的引用 </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="templateparam"><parameteritem>
+<parameternamelist>
+<parametername>T</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>目标类型，其大小必须和 DataSize 相同 </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Sango/source/LangYa/Sources/CodeHelper/Headers/LangYa/CodeHelper/TypedMessage.hpp" line="60" column="4" bodyfile="C:/Users/Sango/source/LangYa/Sources/CodeHelper/Headers/LangYa/CodeHelper/TypedMessage.hpp" bodystart="60" bodyend="65"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_code_helper_1_1_typed_message_1a10fb37b3ee513b25c52952bff441a91d" prot="public" static="no" nodiscard="yes" const="yes" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>const T &amp;</type>
+        <definition>const T &amp; CodeHelper::TypedMessage&lt; TDataSize &gt;::GetDataAs</definition>
+        <argsstring>() const noexcept</argsstring>
+        <name>GetDataAs</name>
+        <qualifiedname>CodeHelper::TypedMessage::GetDataAs</qualifiedname>
+        <briefdescription>
+<para>将内部数据视作目标类型的常量引用 </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="templateparam"><parameteritem>
+<parameternamelist>
+<parametername>T</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>目标类型，其大小必须和 DataSize 相同 </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Sango/source/LangYa/Sources/CodeHelper/Headers/LangYa/CodeHelper/TypedMessage.hpp" line="70" column="10" bodyfile="C:/Users/Sango/source/LangYa/Sources/CodeHelper/Headers/LangYa/CodeHelper/TypedMessage.hpp" bodystart="70" bodyend="75"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>一种用来通信的结构，包含头(Head)、数据类型(Type)、数据区(Data)、尾(Tail) 提供了一些有关 Data 的转换函数，和转换对象为 std::span 的工具函数 </para>
+    </briefdescription>
+    <detaileddescription>
+<para><parameterlist kind="templateparam"><parameteritem>
+<parameternamelist>
+<parametername>TDataSize</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>数据区长度 </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>CodeHelper::TypedMessage&lt; TDataSize &gt;</label>
+        <link refid="struct_code_helper_1_1_typed_message"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>Data</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>std::array&lt; std::uint8_t, TDataSize &gt;</label>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/Sango/source/LangYa/Sources/CodeHelper/Headers/LangYa/CodeHelper/TypedMessage.hpp" line="18" column="1" bodyfile="C:/Users/Sango/source/LangYa/Sources/CodeHelper/Headers/LangYa/CodeHelper/TypedMessage.hpp" bodystart="19" bodyend="76"/>
+    <listofallmembers>
+      <member refid="struct_code_helper_1_1_typed_message_1ada8172b097fc30aa4b2df9ac6dfc5a49" prot="public" virt="non-virtual"><scope>CodeHelper::TypedMessage</scope><name>CopyDataTo</name></member>
+      <member refid="struct_code_helper_1_1_typed_message_1a915a55349eb848391e6aa09dbb58d20e" prot="public" virt="non-virtual"><scope>CodeHelper::TypedMessage</scope><name>Data</name></member>
+      <member refid="struct_code_helper_1_1_typed_message_1a5f7b257149cc6e4f98a2deb229ef1fb5" prot="public" virt="non-virtual"><scope>CodeHelper::TypedMessage</scope><name>DataSize</name></member>
+      <member refid="struct_code_helper_1_1_typed_message_1ad7bb02c710b6fc023c816cf29997188b" prot="public" virt="non-virtual"><scope>CodeHelper::TypedMessage</scope><name>FullSize</name></member>
+      <member refid="struct_code_helper_1_1_typed_message_1a691ae5159dfdd88624874b96d34b9ef6" prot="public" virt="non-virtual"><scope>CodeHelper::TypedMessage</scope><name>GetDataAs</name></member>
+      <member refid="struct_code_helper_1_1_typed_message_1a10fb37b3ee513b25c52952bff441a91d" prot="public" virt="non-virtual"><scope>CodeHelper::TypedMessage</scope><name>GetDataAs</name></member>
+      <member refid="struct_code_helper_1_1_typed_message_1a1d6e86f37ecd3eb79d0094d1f13534ba" prot="public" virt="non-virtual"><scope>CodeHelper::TypedMessage</scope><name>Head</name></member>
+      <member refid="struct_code_helper_1_1_typed_message_1ac6c42da56045678056181189ae15a729" prot="public" virt="non-virtual"><scope>CodeHelper::TypedMessage</scope><name>Tail</name></member>
+      <member refid="struct_code_helper_1_1_typed_message_1a1077dd45597e7b5fe301d5a1af01536c" prot="public" virt="non-virtual"><scope>CodeHelper::TypedMessage</scope><name>ToSpan</name></member>
+      <member refid="struct_code_helper_1_1_typed_message_1a77c725c787209a2692d68dd55d9fa615" prot="public" virt="non-virtual"><scope>CodeHelper::TypedMessage</scope><name>ToSpan</name></member>
+      <member refid="struct_code_helper_1_1_typed_message_1a3d753e1215ef1814f5038edb5571a180" prot="public" virt="non-virtual"><scope>CodeHelper::TypedMessage</scope><name>Type</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

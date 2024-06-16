@@ -1,0 +1,271 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.11.0" xml:lang="zh">
+  <compounddef id="class_code_helper_1_1_transmission_flow_planner" kind="class" language="C++" prot="public" final="yes">
+    <compoundname>CodeHelper::TransmissionFlowPlanner</compoundname>
+    <basecompoundref refid="class_code_helper_1_1_named_module" prot="public" virt="non-virtual">CodeHelper::NamedModule</basecompoundref>
+    <templateparamlist>
+      <param>
+        <type>std::default_initializable</type>
+        <declname>TItem</declname>
+        <defname>TItem</defname>
+      </param>
+      <param>
+        <type>IsFormattableSource</type>
+        <declname>TSource</declname>
+        <defname>TSource</defname>
+      </param>
+      <param>
+        <type>IsFlowDestination</type>
+        <declname>TDestination</declname>
+        <defname>TDestination</defname>
+      </param>
+    </templateparamlist>
+    <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="class_code_helper_1_1_transmission_flow_planner_1a58fd8c1fe4e54405209601fc0d542d80" prot="public" static="yes" constexpr="yes" mutable="no">
+        <type>char</type>
+        <definition>char CodeHelper::TransmissionFlowPlanner&lt; TItem, TSource, TDestination &gt;::Name[]</definition>
+        <argsstring>[]</argsstring>
+        <name>Name</name>
+        <qualifiedname>CodeHelper::TransmissionFlowPlanner::Name</qualifiedname>
+        <initializer>= &quot;SyncSourceDestinationFlowPlanner&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Sango/source/LangYa/Sources/CodeHelper/Headers/LangYa/CodeHelper/TransmissionFlowPlanner.hpp" line="62" column="23" bodyfile="C:/Users/Sango/source/LangYa/Sources/CodeHelper/Headers/LangYa/CodeHelper/TransmissionFlowPlanner.hpp" bodystart="62" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="class_code_helper_1_1_transmission_flow_planner_1a19c88382ff933209b2eccd2cc2fb2086" prot="public" static="no" mutable="no">
+        <type><ref refid="class_code_helper_1_1_dependency" kindref="compound">Dependency</ref>&lt; TSource &gt;</type>
+        <definition>Dependency&lt;TSource&gt; CodeHelper::TransmissionFlowPlanner&lt; TItem, TSource, TDestination &gt;::Source</definition>
+        <argsstring></argsstring>
+        <name>Source</name>
+        <qualifiedname>CodeHelper::TransmissionFlowPlanner::Source</qualifiedname>
+        <initializer>{}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Sango/source/LangYa/Sources/CodeHelper/Headers/LangYa/CodeHelper/TransmissionFlowPlanner.hpp" line="64" column="12" bodyfile="C:/Users/Sango/source/LangYa/Sources/CodeHelper/Headers/LangYa/CodeHelper/TransmissionFlowPlanner.hpp" bodystart="64" bodyend="64"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_code_helper_1_1_transmission_flow_planner_1a5f3a0fdaac22db3bf0f14becace50757" prot="public" static="no" mutable="no">
+        <type><ref refid="class_code_helper_1_1_dependency" kindref="compound">Dependency</ref>&lt; TDestination &gt;</type>
+        <definition>Dependency&lt;TDestination&gt; CodeHelper::TransmissionFlowPlanner&lt; TItem, TSource, TDestination &gt;::Destination</definition>
+        <argsstring></argsstring>
+        <name>Destination</name>
+        <qualifiedname>CodeHelper::TransmissionFlowPlanner::Destination</qualifiedname>
+        <initializer>{}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Sango/source/LangYa/Sources/CodeHelper/Headers/LangYa/CodeHelper/TransmissionFlowPlanner.hpp" line="65" column="12" bodyfile="C:/Users/Sango/source/LangYa/Sources/CodeHelper/Headers/LangYa/CodeHelper/TransmissionFlowPlanner.hpp" bodystart="65" bodyend="65"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_code_helper_1_1_transmission_flow_planner_1a3decfe69af06242c503143a4936a8a9b" prot="public" static="no" mutable="no">
+        <type>std::chrono::milliseconds</type>
+        <definition>std::chrono::milliseconds CodeHelper::TransmissionFlowPlanner&lt; TItem, TSource, TDestination &gt;::MinInterval</definition>
+        <argsstring></argsstring>
+        <name>MinInterval</name>
+        <qualifiedname>CodeHelper::TransmissionFlowPlanner::MinInterval</qualifiedname>
+        <initializer>{1000}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Sango/source/LangYa/Sources/CodeHelper/Headers/LangYa/CodeHelper/TransmissionFlowPlanner.hpp" line="66" column="27" bodyfile="C:/Users/Sango/source/LangYa/Sources/CodeHelper/Headers/LangYa/CodeHelper/TransmissionFlowPlanner.hpp" bodystart="66" bodyend="66"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_code_helper_1_1_transmission_flow_planner_1a44773133a167b04f418e32b4aa64f7ed" prot="public" static="no" mutable="no">
+        <type>std::uint32_t</type>
+        <definition>std::uint32_t CodeHelper::TransmissionFlowPlanner&lt; TItem, TSource, TDestination &gt;::MaxContinuousError</definition>
+        <argsstring></argsstring>
+        <name>MaxContinuousError</name>
+        <qualifiedname>CodeHelper::TransmissionFlowPlanner::MaxContinuousError</qualifiedname>
+        <initializer>{5}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Sango/source/LangYa/Sources/CodeHelper/Headers/LangYa/CodeHelper/TransmissionFlowPlanner.hpp" line="67" column="15" bodyfile="C:/Users/Sango/source/LangYa/Sources/CodeHelper/Headers/LangYa/CodeHelper/TransmissionFlowPlanner.hpp" bodystart="67" bodyend="67"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_code_helper_1_1_transmission_flow_planner_1a0ebe623a9d6edb749a5498b06d693cf8" prot="public" static="no" mutable="no">
+        <type>std::atomic_bool</type>
+        <definition>std::atomic_bool CodeHelper::TransmissionFlowPlanner&lt; TItem, TSource, TDestination &gt;::Done</definition>
+        <argsstring></argsstring>
+        <name>Done</name>
+        <qualifiedname>CodeHelper::TransmissionFlowPlanner::Done</qualifiedname>
+        <initializer>{false}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Sango/source/LangYa/Sources/CodeHelper/Headers/LangYa/CodeHelper/TransmissionFlowPlanner.hpp" line="68" column="18" bodyfile="C:/Users/Sango/source/LangYa/Sources/CodeHelper/Headers/LangYa/CodeHelper/TransmissionFlowPlanner.hpp" bodystart="68" bodyend="68"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_code_helper_1_1_transmission_flow_planner_1aa7b8d4674e1b52953ffe1f670214ba46" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void CodeHelper::TransmissionFlowPlanner&lt; TItem, TSource, TDestination &gt;::Loop</definition>
+        <argsstring>(const std::string &amp;name, tf::Subflow &amp;subflow)</argsstring>
+        <name>Loop</name>
+        <qualifiedname>CodeHelper::TransmissionFlowPlanner::Loop</qualifiedname>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type>tf::Subflow &amp;</type>
+          <declname>subflow</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Sango/source/LangYa/Sources/CodeHelper/Headers/LangYa/CodeHelper/TransmissionFlowPlanner.hpp" line="36" column="6" bodyfile="C:/Users/Sango/source/LangYa/Sources/CodeHelper/Headers/LangYa/CodeHelper/TransmissionFlowPlanner.hpp" bodystart="36" bodyend="59"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_code_helper_1_1_transmission_flow_planner_1acbb82637eb8ffad5b004a05deb6a2dc0" prot="public" static="no" nodiscard="yes" const="yes" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool CodeHelper::TransmissionFlowPlanner&lt; TItem, TSource, TDestination &gt;::Check</definition>
+        <argsstring>() const noexcept</argsstring>
+        <name>Check</name>
+        <qualifiedname>CodeHelper::TransmissionFlowPlanner::Check</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Sango/source/LangYa/Sources/CodeHelper/Headers/LangYa/CodeHelper/TransmissionFlowPlanner.hpp" line="70" column="7" bodyfile="C:/Users/Sango/source/LangYa/Sources/CodeHelper/Headers/LangYa/CodeHelper/TransmissionFlowPlanner.hpp" bodystart="70" bodyend="79"/>
+      </memberdef>
+      <memberdef kind="function" id="class_code_helper_1_1_transmission_flow_planner_1a480d2fd1cd706c869cd654843d8f2c86" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void CodeHelper::TransmissionFlowPlanner&lt; TItem, TSource, TDestination &gt;::Plan</definition>
+        <argsstring>(tf::FlowBuilder &amp;taskflow)</argsstring>
+        <name>Plan</name>
+        <qualifiedname>CodeHelper::TransmissionFlowPlanner::Plan</qualifiedname>
+        <param>
+          <type>tf::FlowBuilder &amp;</type>
+          <declname>taskflow</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Sango/source/LangYa/Sources/CodeHelper/Headers/LangYa/CodeHelper/TransmissionFlowPlanner.hpp" line="81" column="6" bodyfile="C:/Users/Sango/source/LangYa/Sources/CodeHelper/Headers/LangYa/CodeHelper/TransmissionFlowPlanner.hpp" bodystart="81" bodyend="91"/>
+      </memberdef>
+      <memberdef kind="function" id="class_code_helper_1_1_transmission_flow_planner_1a39bf84c555f074b7200f6b5eed2ac149" prot="public" static="no" const="yes" explicit="no" inline="yes" noexcept="yes" virt="virtual">
+        <type>std::ostream &amp;</type>
+        <definition>std::ostream &amp; CodeHelper::TransmissionFlowPlanner&lt; TItem, TSource, TDestination &gt;::GetName</definition>
+        <argsstring>(std::ostream &amp;stream) const noexcept override</argsstring>
+        <name>GetName</name>
+        <qualifiedname>CodeHelper::TransmissionFlowPlanner::GetName</qualifiedname>
+        <reimplements refid="class_code_helper_1_1_named_module_1ab60b2cdd3be3084401921033490370e7">GetName</reimplements>
+        <param>
+          <type>std::ostream &amp;</type>
+          <declname>stream</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Sango/source/LangYa/Sources/CodeHelper/Headers/LangYa/CodeHelper/TransmissionFlowPlanner.hpp" line="93" column="14" bodyfile="C:/Users/Sango/source/LangYa/Sources/CodeHelper/Headers/LangYa/CodeHelper/TransmissionFlowPlanner.hpp" bodystart="93" bodyend="96"/>
+      </memberdef>
+      <memberdef kind="function" id="class_code_helper_1_1_transmission_flow_planner_1a87ae8ec3530bd37c772d8d660c96490f" prot="public" static="no" const="yes" explicit="no" inline="yes" noexcept="yes" virt="virtual">
+        <type>std::ostream &amp;</type>
+        <definition>std::ostream &amp; CodeHelper::TransmissionFlowPlanner&lt; TItem, TSource, TDestination &gt;::GetBrief</definition>
+        <argsstring>(std::ostream &amp;stream) const noexcept override</argsstring>
+        <name>GetBrief</name>
+        <qualifiedname>CodeHelper::TransmissionFlowPlanner::GetBrief</qualifiedname>
+        <reimplements refid="class_code_helper_1_1_named_module_1aff783631eb68fffe53e2e3bdb66c4f00">GetBrief</reimplements>
+        <param>
+          <type>std::ostream &amp;</type>
+          <declname>stream</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Sango/source/LangYa/Sources/CodeHelper/Headers/LangYa/CodeHelper/TransmissionFlowPlanner.hpp" line="98" column="14" bodyfile="C:/Users/Sango/source/LangYa/Sources/CodeHelper/Headers/LangYa/CodeHelper/TransmissionFlowPlanner.hpp" bodystart="98" bodyend="101"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>CodeHelper::NamedModule</label>
+        <link refid="class_code_helper_1_1_named_module"/>
+      </node>
+      <node id="1">
+        <label>CodeHelper::TransmissionFlowPlanner&lt; TItem, TSource, TDestination &gt;</label>
+        <link refid="class_code_helper_1_1_transmission_flow_planner"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="4">
+        <label>CodeHelper::Dependency&lt; TDestination &gt;</label>
+        <link refid="class_code_helper_1_1_dependency"/>
+      </node>
+      <node id="3">
+        <label>CodeHelper::Dependency&lt; TSource &gt;</label>
+        <link refid="class_code_helper_1_1_dependency"/>
+      </node>
+      <node id="2">
+        <label>CodeHelper::NamedModule</label>
+        <link refid="class_code_helper_1_1_named_module"/>
+      </node>
+      <node id="1">
+        <label>CodeHelper::TransmissionFlowPlanner&lt; TItem, TSource, TDestination &gt;</label>
+        <link refid="class_code_helper_1_1_transmission_flow_planner"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>Source</edgelabel>
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>Destination</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/Sango/source/LangYa/Sources/CodeHelper/Headers/LangYa/CodeHelper/TransmissionFlowPlanner.hpp" line="34" column="1" bodyfile="C:/Users/Sango/source/LangYa/Sources/CodeHelper/Headers/LangYa/CodeHelper/TransmissionFlowPlanner.hpp" bodystart="35" bodyend="102"/>
+    <listofallmembers>
+      <member refid="class_code_helper_1_1_transmission_flow_planner_1acbb82637eb8ffad5b004a05deb6a2dc0" prot="public" virt="non-virtual"><scope>CodeHelper::TransmissionFlowPlanner</scope><name>Check</name></member>
+      <member refid="class_code_helper_1_1_transmission_flow_planner_1a5f3a0fdaac22db3bf0f14becace50757" prot="public" virt="non-virtual"><scope>CodeHelper::TransmissionFlowPlanner</scope><name>Destination</name></member>
+      <member refid="class_code_helper_1_1_transmission_flow_planner_1a0ebe623a9d6edb749a5498b06d693cf8" prot="public" virt="non-virtual"><scope>CodeHelper::TransmissionFlowPlanner</scope><name>Done</name></member>
+      <member refid="class_code_helper_1_1_named_module_1a2a13a677c984ab006949b6911e7c361a" prot="public" virt="non-virtual"><scope>CodeHelper::TransmissionFlowPlanner</scope><name>Format</name></member>
+      <member refid="class_code_helper_1_1_transmission_flow_planner_1a87ae8ec3530bd37c772d8d660c96490f" prot="public" virt="virtual"><scope>CodeHelper::TransmissionFlowPlanner</scope><name>GetBrief</name></member>
+      <member refid="class_code_helper_1_1_transmission_flow_planner_1a39bf84c555f074b7200f6b5eed2ac149" prot="public" virt="virtual"><scope>CodeHelper::TransmissionFlowPlanner</scope><name>GetName</name></member>
+      <member refid="class_code_helper_1_1_transmission_flow_planner_1aa7b8d4674e1b52953ffe1f670214ba46" prot="private" virt="non-virtual"><scope>CodeHelper::TransmissionFlowPlanner</scope><name>Loop</name></member>
+      <member refid="class_code_helper_1_1_transmission_flow_planner_1a44773133a167b04f418e32b4aa64f7ed" prot="public" virt="non-virtual"><scope>CodeHelper::TransmissionFlowPlanner</scope><name>MaxContinuousError</name></member>
+      <member refid="class_code_helper_1_1_transmission_flow_planner_1a3decfe69af06242c503143a4936a8a9b" prot="public" virt="non-virtual"><scope>CodeHelper::TransmissionFlowPlanner</scope><name>MinInterval</name></member>
+      <member refid="class_code_helper_1_1_transmission_flow_planner_1a58fd8c1fe4e54405209601fc0d542d80" prot="public" virt="non-virtual"><scope>CodeHelper::TransmissionFlowPlanner</scope><name>Name</name></member>
+      <member refid="class_code_helper_1_1_transmission_flow_planner_1a480d2fd1cd706c869cd654843d8f2c86" prot="public" virt="non-virtual"><scope>CodeHelper::TransmissionFlowPlanner</scope><name>Plan</name></member>
+      <member refid="class_code_helper_1_1_transmission_flow_planner_1a19c88382ff933209b2eccd2cc2fb2086" prot="public" virt="non-virtual"><scope>CodeHelper::TransmissionFlowPlanner</scope><name>Source</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

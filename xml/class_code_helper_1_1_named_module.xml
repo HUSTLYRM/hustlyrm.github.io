@@ -1,0 +1,90 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.11.0" xml:lang="zh">
+  <compounddef id="class_code_helper_1_1_named_module" kind="class" language="C++" prot="public" abstract="yes">
+    <compoundname>CodeHelper::NamedModule</compoundname>
+    <derivedcompoundref refid="class_code_helper_1_1_transmission_flow_planner" prot="public" virt="non-virtual">CodeHelper::TransmissionFlowPlanner&lt; TItem, TSource, TDestination &gt;</derivedcompoundref>
+    <includes refid="_formattable_8hpp" local="no">Formattable.hpp</includes>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_code_helper_1_1_named_module_1ab60b2cdd3be3084401921033490370e7" prot="public" static="no" const="yes" explicit="no" inline="no" noexcept="yes" virt="pure-virtual">
+        <type>std::ostream &amp;</type>
+        <definition>virtual std::ostream &amp; CodeHelper::NamedModule::GetName</definition>
+        <argsstring>(std::ostream &amp;stream) const noexcept=0</argsstring>
+        <name>GetName</name>
+        <qualifiedname>CodeHelper::NamedModule::GetName</qualifiedname>
+        <reimplementedby refid="class_code_helper_1_1_transmission_flow_planner_1a39bf84c555f074b7200f6b5eed2ac149">GetName</reimplementedby>
+        <param>
+          <type>std::ostream &amp;</type>
+          <declname>stream</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Sango/source/LangYa/Sources/CodeHelper/Headers/LangYa/CodeHelper/Formattable.hpp" line="54" column="22"/>
+      </memberdef>
+      <memberdef kind="function" id="class_code_helper_1_1_named_module_1aff783631eb68fffe53e2e3bdb66c4f00" prot="public" static="no" const="yes" explicit="no" inline="no" noexcept="yes" virt="pure-virtual">
+        <type>std::ostream &amp;</type>
+        <definition>virtual std::ostream &amp; CodeHelper::NamedModule::GetBrief</definition>
+        <argsstring>(std::ostream &amp;stream) const noexcept=0</argsstring>
+        <name>GetBrief</name>
+        <qualifiedname>CodeHelper::NamedModule::GetBrief</qualifiedname>
+        <reimplementedby refid="class_code_helper_1_1_transmission_flow_planner_1a87ae8ec3530bd37c772d8d660c96490f">GetBrief</reimplementedby>
+        <param>
+          <type>std::ostream &amp;</type>
+          <declname>stream</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Sango/source/LangYa/Sources/CodeHelper/Headers/LangYa/CodeHelper/Formattable.hpp" line="55" column="22"/>
+      </memberdef>
+      <memberdef kind="function" id="class_code_helper_1_1_named_module_1a2a13a677c984ab006949b6911e7c361a" prot="public" static="no" const="yes" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
+        <type>std::ostream &amp;</type>
+        <definition>std::ostream &amp; CodeHelper::NamedModule::Format</definition>
+        <argsstring>(std::ostream &amp;stream) const noexcept</argsstring>
+        <name>Format</name>
+        <qualifiedname>CodeHelper::NamedModule::Format</qualifiedname>
+        <param>
+          <type>std::ostream &amp;</type>
+          <declname>stream</declname>
+        </param>
+        <briefdescription>
+<para>格式化输出为 Name(Brief) </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Sango/source/LangYa/Sources/CodeHelper/Headers/LangYa/CodeHelper/Formattable.hpp" line="58" column="14" bodyfile="C:/Users/Sango/source/LangYa/Sources/CodeHelper/Sources/Formattable.cpp" bodystart="5" bodyend="9"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>代表一种模块，提供 Name 和 Brief 输出到流中， 在日志中会以 Name(Brief)&gt; message 的格式输出消息。 此接口不负责原类型的生命周期。 </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>CodeHelper::NamedModule</label>
+        <link refid="class_code_helper_1_1_named_module"/>
+      </node>
+      <node id="2">
+        <label>CodeHelper::TransmissionFlowPlanner&lt; TItem, TSource, TDestination &gt;</label>
+        <link refid="class_code_helper_1_1_transmission_flow_planner"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <location file="C:/Users/Sango/source/LangYa/Sources/CodeHelper/Headers/LangYa/CodeHelper/Formattable.hpp" line="51" column="1" bodyfile="C:/Users/Sango/source/LangYa/Sources/CodeHelper/Headers/LangYa/CodeHelper/Formattable.hpp" bodystart="52" bodyend="59"/>
+    <listofallmembers>
+      <member refid="class_code_helper_1_1_named_module_1a2a13a677c984ab006949b6911e7c361a" prot="public" virt="non-virtual"><scope>CodeHelper::NamedModule</scope><name>Format</name></member>
+      <member refid="class_code_helper_1_1_named_module_1aff783631eb68fffe53e2e3bdb66c4f00" prot="public" virt="pure-virtual"><scope>CodeHelper::NamedModule</scope><name>GetBrief</name></member>
+      <member refid="class_code_helper_1_1_named_module_1ab60b2cdd3be3084401921033490370e7" prot="public" virt="pure-virtual"><scope>CodeHelper::NamedModule</scope><name>GetName</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

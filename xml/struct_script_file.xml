@@ -1,0 +1,64 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.11.0" xml:lang="zh">
+  <compounddef id="struct_script_file" kind="struct" language="C++" prot="public">
+    <compoundname>ScriptFile</compoundname>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_script_file_1ad66bdee564ae07bf3a9742b420da2184" prot="public" static="no" mutable="no">
+        <type>std::filesystem::path</type>
+        <definition>std::filesystem::path ScriptFile::Path</definition>
+        <argsstring></argsstring>
+        <name>Path</name>
+        <qualifiedname>ScriptFile::Path</qualifiedname>
+        <initializer>{}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Sango/source/LangYa/Sources/CodeHelper/Testers/AutoRunManager.cpp" line="8" column="27" bodyfile="C:/Users/Sango/source/LangYa/Sources/CodeHelper/Testers/AutoRunManager.cpp" bodystart="8" bodyend="8"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_script_file_1ac5ce944a5ecbc7ad42c7524fa7dbfe2f" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool ScriptFile::IsEnabled</definition>
+        <argsstring></argsstring>
+        <name>IsEnabled</name>
+        <qualifiedname>ScriptFile::IsEnabled</qualifiedname>
+        <initializer>{}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Sango/source/LangYa/Sources/CodeHelper/Testers/AutoRunManager.cpp" line="9" column="10" bodyfile="C:/Users/Sango/source/LangYa/Sources/CodeHelper/Testers/AutoRunManager.cpp" bodystart="9" bodyend="9"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="struct_script_file_1a6b1a73e78c706ff91f675c19e37b7c60" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool ScriptFile::TryFlip</definition>
+        <argsstring>()</argsstring>
+        <name>TryFlip</name>
+        <qualifiedname>ScriptFile::TryFlip</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Sango/source/LangYa/Sources/CodeHelper/Testers/AutoRunManager.cpp" line="11" column="10" bodyfile="C:/Users/Sango/source/LangYa/Sources/CodeHelper/Testers/AutoRunManager.cpp" bodystart="11" bodyend="25"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/Sango/source/LangYa/Sources/CodeHelper/Testers/AutoRunManager.cpp" line="6" column="1" bodyfile="C:/Users/Sango/source/LangYa/Sources/CodeHelper/Testers/AutoRunManager.cpp" bodystart="7" bodyend="26"/>
+    <listofallmembers>
+      <member refid="struct_script_file_1ac5ce944a5ecbc7ad42c7524fa7dbfe2f" prot="public" virt="non-virtual"><scope>ScriptFile</scope><name>IsEnabled</name></member>
+      <member refid="struct_script_file_1ad66bdee564ae07bf3a9742b420da2184" prot="public" virt="non-virtual"><scope>ScriptFile</scope><name>Path</name></member>
+      <member refid="struct_script_file_1a6b1a73e78c706ff91f675c19e37b7c60" prot="public" virt="non-virtual"><scope>ScriptFile</scope><name>TryFlip</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,98 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.11.0" xml:lang="zh">
+  <compounddef id="_ping_pong_exchanger_8hpp" kind="file" language="C++">
+    <compoundname>PingPongExchanger.hpp</compoundname>
+    <includes local="no">cstdint</includes>
+    <includes local="no">span</includes>
+    <includedby refid="_code_helper_8hpp" local="yes">C:/Users/Sango/source/LangYa/Sources/CodeHelper/Headers/LangYa/CodeHelper.hpp</includedby>
+    <includedby refid="_buffers_8hpp" local="yes">C:/Users/Sango/source/LangYa/Sources/CodeHelper/Headers/LangYa/CodeHelper/Buffers.hpp</includedby>
+    <includedby refid="_ping_pong_exchanger_8cpp" local="no">C:/Users/Sango/source/LangYa/Sources/CodeHelper/Sources/PingPongExchanger.cpp</includedby>
+    <incdepgraph>
+      <node id="1">
+        <label>C:/Users/Sango/source/LangYa/Sources/CodeHelper/Headers/LangYa/CodeHelper/PingPongExchanger.hpp</label>
+        <link refid="_ping_pong_exchanger_8hpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>cstdint</label>
+      </node>
+      <node id="3">
+        <label>span</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="2">
+        <label>C:/Users/Sango/source/LangYa/Sources/CodeHelper/Headers/LangYa/CodeHelper.hpp</label>
+        <link refid="_code_helper_8hpp_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>C:/Users/Sango/source/LangYa/Sources/CodeHelper/Headers/LangYa/CodeHelper/Buffers.hpp</label>
+        <link refid="_buffers_8hpp_source"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>C:/Users/Sango/source/LangYa/Sources/CodeHelper/Headers/LangYa/CodeHelper/PingPongExchanger.hpp</label>
+        <link refid="_ping_pong_exchanger_8hpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>C:/Users/Sango/source/LangYa/Sources/CodeHelper/Sources/CodeHelper.cpp</label>
+        <link refid="_code_helper_8cpp_source"/>
+      </node>
+      <node id="6">
+        <label>C:/Users/Sango/source/LangYa/Sources/CodeHelper/Sources/PingPongExchanger.cpp</label>
+        <link refid="_ping_pong_exchanger_8cpp_source"/>
+      </node>
+      <node id="4">
+        <label>C:/Users/Sango/source/LangYa/Sources/CodeHelper/Testers/AutoAimManager.cpp</label>
+        <link refid="_auto_aim_manager_8cpp_source"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="class_code_helper_1_1_ping_pong_exchanger" prot="public">CodeHelper::PingPongExchanger</innerclass>
+    <innernamespace refid="namespace_code_helper">CodeHelper</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#pragma<sp/>once</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;cstdint&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;span&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">LangYa::<sp/>inline<sp/>CodeHelper</highlight></codeline>
+<codeline lineno="7"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="13" refid="class_code_helper_1_1_ping_pong_exchanger" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_code_helper_1_1_ping_pong_exchanger" kindref="compound">PingPongExchanger</ref><sp/>final</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::uint8_t<sp/>HeadByte{};</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::span&lt;std::uint8_t&gt;<sp/>Ping{};</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::span&lt;std::uint8_t&gt;<sp/>Pong{};</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::span&lt;std::uint8_t&gt;<sp/>FullSpan{};</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>[[nodiscard]]<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>Verify(std::span&lt;const<sp/>std::uint8_t&gt;<sp/>messageSpan,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>crcVerify<sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">noexcept</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_code_helper_1_1_ping_pong_exchanger" kindref="compound">PingPongExchanger</ref>(std::uint8_t<sp/>headByte,<sp/>std::span&lt;std::uint8_t&gt;<sp/>fullSpan);</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>[[nodiscard]]<sp/>std::span&lt;std::uint8_t&gt;<sp/>GetReaderSpan()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">noexcept</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>[[nodiscard]]<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>Examine(std::span&lt;std::uint8_t&gt;<sp/>destination,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>crcVerify<sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">)<sp/></highlight><highlight class="keyword">noexcept</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="39"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="C:/Users/Sango/source/LangYa/Sources/CodeHelper/Headers/LangYa/CodeHelper/PingPongExchanger.hpp"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,354 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.11.0" xml:lang="zh">
+  <compounddef id="_r_e_a_d_m_e_8md" kind="file" language="Markdown">
+    <compoundname>README.md</compoundname>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline><highlight class="normal">#<sp/>LangYa::CodeHelper<sp/>工具库</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">`CodeHelper`<sp/>库给出了一些工具类，用于辅助编程。</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">模块及模块之间的依赖关系如下：</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">[`CodeHelper.hpp`](./Headers/LangYa/CodeHelper.hpp)</highlight></codeline>
+<codeline><highlight class="normal">[`CodeHelper.cpp`](./Sources/CodeHelper.cpp)</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">```mermaid</highlight></codeline>
+<codeline><highlight class="normal">flowchart<sp/>TB</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>subgraph<sp/>所有模块</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>subgraph<sp/>无依赖项的模块</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>Counter</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>CRC</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>Formattable</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>LogicNodes</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>ParseFromStream</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>Runtime</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>SpanUtils</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>TypedMessage</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>end</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>subgraph<sp/>有依赖项的模块</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>AsyncItemPool</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>Buffers</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>Dependency</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>Devices</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>SineWave</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>PingPongExchanger</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>TransmissionFlowPlanner</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>AsyncItemPool<sp/>--&gt;<sp/>LogicNodes</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>Buffers<sp/>--&gt;<sp/>PingPongExchanger</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>Dependency<sp/>--&gt;<sp/>Formattable</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>Devices<sp/>--&gt;<sp/>Formattable<sp/>&amp;<sp/>LogicNodes</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>SineWave<sp/>--&gt;<sp/>LogicNodes</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>PingPongExchanger<sp/>--&gt;<sp/>CRC</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>TransmissionFlowPlanner<sp/>--&gt;<sp/>Counter<sp/>&amp;<sp/>Dependency<sp/>&amp;<sp/>Formattable<sp/>&amp;<sp/>LogicNodes</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>end</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>end</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>subgraph<sp/>源码</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>CodeHelper.hpp<sp/>--&gt;<sp/>CodeHelper.cpp</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>end</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>源码<sp/>--&gt;<sp/>所有模块</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">```</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">##<sp/>LogicNodes</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">###<sp/>LogicNodes<sp/>代码关系</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">[`LogicNodes.hpp`](./Headers/LangYa/CodeHelper/LogicNodes.hpp)</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">```mermaid</highlight></codeline>
+<codeline><highlight class="normal">flowchart<sp/>TB</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>subgraph<sp/>源码</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>LogicNodes.hpp</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>end</highlight></codeline>
+<codeline><highlight class="normal">```</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">###<sp/>LogicNodes<sp/>应用举例</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">三种节点用来表示物品的传递逻辑。</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">表述两种同步的逻辑，由源直接提供给物品，或经过处理后到达目的地：</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">```mermaid</highlight></codeline>
+<codeline><highlight class="normal">flowchart<sp/>TB</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>subgraph<sp/>SourceNode</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>Item1Source</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>end</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>subgraph<sp/>ProcessorNode</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>Item1To2Processor</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>end</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>subgraph<sp/>DestinationNode</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>Item1Destination</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>Item2Destination</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>end</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>Item1Source<sp/>--&gt;|Item1|<sp/>Item1Destination</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>Item1Source<sp/>--&gt;|Item1|<sp/>Item1To2Processor<sp/>--&gt;|Item2|<sp/>Item2Destination</highlight></codeline>
+<codeline><highlight class="normal">```</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">表述异步的逻辑：</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">```mermaid</highlight></codeline>
+<codeline><highlight class="normal">flowchart<sp/>LR</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>subgraph<sp/>SourceNode</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>ItemSource</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>end</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>subgraph<sp/>AsyncNode<sp/></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>AsyncDestination</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>AsyncSource</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>end</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>subgraph<sp/>DestinationNode</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>ItemSource</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>ItemDestination</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>end</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>ItemSource<sp/>--&gt;|Item|<sp/>AsyncDestination</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>AsyncSource<sp/>--&gt;|Item|<sp/>ItemDestination</highlight></codeline>
+<codeline><highlight class="normal">```</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">##<sp/>Runtime</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">###<sp/>Runtime<sp/>代码关系</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">[`Runtime.hpp`](./Headers/LangYa/CodeHelper/Runtimes.hpp)</highlight></codeline>
+<codeline><highlight class="normal">[`Runtime.cpp`](./Sources/Runtimes.cpp)</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">```mermaid</highlight></codeline>
+<codeline><highlight class="normal">flowchart<sp/>TB</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>subgraph<sp/>源码</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>Runtime.hpp<sp/>--&gt;<sp/>Runtime.cpp</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>end</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>subgraph<sp/>依赖库</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>spdlog::spdlog</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>Boost::system</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>end</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>源码<sp/>--&gt;<sp/>依赖库</highlight></codeline>
+<codeline><highlight class="normal">```</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">有关程序运行时的工具库，包括日志文件的创建和配置文件的读写。<sp/><sp/></highlight></codeline>
+<codeline><highlight class="normal">编译时只需要头文件`Runtimes.hpp`和源文件`Runtimes.cpp`。<sp/><sp/></highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">###<sp/>初始化程序的日志，让日志同时输出到控制台和文件</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">示例代码：</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">```cpp</highlight></codeline>
+<codeline><highlight class="normal">#include<sp/>&lt;LangYa/CodeHelper/Runtime.hpp&gt;</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">using<sp/>namespace<sp/>LangYa;</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">int<sp/>main()<sp/></highlight></codeline>
+<codeline><highlight class="normal">{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>const<sp/>std::string<sp/>app_name{&quot;app_name&quot;};</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>if<sp/>(!InitializeGlobalLogger(app_name))<sp/>return<sp/>-1;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>//<sp/>...<sp/>some<sp/>tasks</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>spdlog::info(&quot;{}&gt;<sp/>executing<sp/>task1&quot;,<sp/>app_name);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>//<sp/>...<sp/>other<sp/>tasks</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>return<sp/>0;</highlight></codeline>
+<codeline><highlight class="normal">}</highlight></codeline>
+<codeline><highlight class="normal">```</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">`LangYa::CodeHelper::InitializeGlobalLogger`<sp/>封装了<sp/>`spdlog`<sp/>的初始化过程，使得日志同时输出到控制台和文件。<sp/><sp/></highlight></codeline>
+<codeline><highlight class="normal">在输出到文件时，使用的类型为滚动日志，在达到一定的文件大小时，新行会放入新文件中。<sp/><sp/></highlight></codeline>
+<codeline><highlight class="normal">日志文件默认放在程序调用者位置的<sp/>logs<sp/>文件夹下，如下是一个可能的情况：</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">-<sp/>logs</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>-<sp/>app_name_日期_时间-</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>-<sp/>app_name_日期_时间-1</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>-<sp/>app_name_日期_时间-2</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>-<sp/>...</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">###<sp/>读取配置文件，配置变量，保存变量到配置文件</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">示例代码：</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">```cpp</highlight></codeline>
+<codeline><highlight class="normal">#include<sp/>&lt;LangYa/CodeHelper/Runtimes.hpp&gt;</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">using<sp/>namespace<sp/>LangYa;</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">int<sp/>main()</highlight></codeline>
+<codeline><highlight class="normal">{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>//<sp/>初始化全局的日志</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>if<sp/>(!InitializeGlobalLogger(&quot;cfg&quot;))<sp/>return<sp/>-1;</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>//<sp/>创建变量表</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>boost::property_tree::ptree<sp/>cfg{};</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>//<sp/>读取配置文件</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>if<sp/>(!DefaultLoad(cfg,<sp/>&quot;configurations.json&quot;))<sp/>return<sp/>-1;</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>//<sp/>配置变量，如果不存在则使用默认值</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>bool<sp/>value{};</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>DefaultConfigure(cfg,<sp/>&quot;b.e&quot;,<sp/>value,<sp/>false);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>spdlog::info(&quot;b.e&gt;<sp/>{}&quot;,<sp/>value);</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>//<sp/>写入变量</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>cfg.put(&quot;a&quot;,<sp/>123);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>cfg.put(&quot;b.a&quot;,<sp/>1231);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>cfg.put(&quot;b.b&quot;,<sp/>1.231f);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>cfg.put(&quot;b.c&quot;,<sp/>false);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>cfg.put(&quot;b.d&quot;,<sp/>&quot;a1234&quot;);</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>//<sp/>保存变量到配置文件</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>if<sp/>(!DefaultSave(cfg,<sp/>&quot;configurations.json&quot;))<sp/>return<sp/>-1;</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>return<sp/>0;</highlight></codeline>
+<codeline><highlight class="normal">}</highlight></codeline>
+<codeline><highlight class="normal">```</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">-<sp/>`boost::property_tree::ptree`<sp/>是保存变量的表</highlight></codeline>
+<codeline><highlight class="normal">-<sp/>`LangYa::CodeHelper::DefaultLoad`<sp/>用于读取配置文件</highlight></codeline>
+<codeline><highlight class="normal">-<sp/>`LangYa::CodeHelper::DefaultConfigure`<sp/>用于配置变量</highlight></codeline>
+<codeline><highlight class="normal">-<sp/>`LangYa::CodeHelper::DefaultSave`<sp/>用于保存变量到配置文件。</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">支持的配置格式：</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">-<sp/>json</highlight></codeline>
+<codeline><highlight class="normal">-<sp/>ini</highlight></codeline>
+<codeline><highlight class="normal">-<sp/>xml</highlight></codeline>
+<codeline><highlight class="normal">-<sp/>info</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">##<sp/>PingPongExchanger</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">```mermaid</highlight></codeline>
+<codeline><highlight class="normal">flowchart<sp/>TB</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>subgraph<sp/>PingPongExchanger源码</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>PingPongExchanger.hpp[PingPongExchanger.hpp]</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>PingPongExchanger.cpp[PingPongExchanger.cpp]</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>PingPongExchanger.hpp<sp/>--&gt;<sp/>PingPongExchanger.cpp</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>end</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>subgraph<sp/>CRC源码</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>CRC.hpp[CRC.hpp]</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>CRC.cpp[CRC.cpp]</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>CRC.hpp<sp/>--&gt;<sp/>CRC.cpp</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>end</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>PingPongExchanger源码<sp/>--&gt;<sp/>CRC源码</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">```</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">##<sp/>[Buffers.hpp](./Headers/LangYa/CodeHelper/Buffers.hpp)</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">用于读写的缓冲区，原为<sp/>MemoryIO<sp/>下的<sp/>BufferToRead<sp/>和<sp/>BufferToWrite。<sp/><sp/></highlight></codeline>
+<codeline><highlight class="normal">现在将这两种缓冲区合并在一个头文件中。</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">###<sp/>BufferToRead</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">用于读取的缓冲区，提供了一个数据缓冲区和一个结果缓冲区。大小为三个数据包的大小。</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">数据缓冲区中构造<sp/>PingPongExchanger<sp/>用于数据检验。当数据包不符合要求时会触发<sp/>PingPong<sp/>交换。</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">结果缓冲区用于存放读取的结果。</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">###<sp/>BufferToWrite</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">用于写入的缓冲区，提供了一个数据缓冲区，大小为一个数据包的大小。</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">内部提供了转换为<sp/>`std::span`<sp/>的工具函数。</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">##<sp/>Counter</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">###<sp/>Counter<sp/>代码关系</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">[`Counter.hpp`](./Headers/LangYa/CodeHelper/Counter.hpp)</highlight></codeline>
+<codeline><highlight class="normal">[`Counter.cpp`](./Sources/Counter.cpp)</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">```mermaid</highlight></codeline>
+<codeline><highlight class="normal">flowchart<sp/>TB</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>subgraph<sp/>源码</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>Counter.hpp<sp/>--&gt;<sp/>Counter.cpp</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>end</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>subgraph<sp/>依赖库</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>spdlog::spdlog</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>end</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>源码<sp/>--&gt;<sp/>依赖库</highlight></codeline>
+<codeline><highlight class="normal">```</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">##<sp/>TransmissionFlowPlanner</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">###<sp/>TransmissionFlowPlanner<sp/>代码关系</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">[`TransmissionFlowPlanner.hpp`](./Headers/LangYa/CodeHelper/TransmissionFlowPlanner.hpp)</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">```mermaid</highlight></codeline>
+<codeline><highlight class="normal">flowchart<sp/>TB</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>subgraph<sp/>源码</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>TransmissionFlowPlanner.hpp</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>end</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>subgraph<sp/>依赖模块</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>Counter<sp/></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>Dependency<sp/></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>Formattable<sp/></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>LogicNodes</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>end</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>subgraph<sp/>依赖库</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>Taskflow::Taskflow</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>spdlog::spdlog</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>end</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>源码<sp/>--&gt;<sp/>依赖库<sp/>&amp;<sp/>依赖模块</highlight></codeline>
+<codeline><highlight class="normal">```</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">###<sp/>TransmissionFlowPlanner<sp/>应用举例</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">此类使用<sp/>`taskflow`<sp/>规划任务如下任务流程：</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">```mermaid</highlight></codeline>
+<codeline><highlight class="normal">stateDiagram-v2</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>CheckInterrupt<sp/>:<sp/>&quot;检查是否中断循环&quot;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>GetItem<sp/>:<sp/>&quot;从源中获取物品&quot;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>CountError<sp/>:<sp/>&quot;检测错误计数是否达到阈值&quot;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>SetItem<sp/>:<sp/>&quot;将物品放到目的地&quot;</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>state<sp/>interrupt<sp/>&lt;&lt;choice&gt;&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>state<sp/>error_get<sp/>&lt;&lt;choice&gt;&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>state<sp/>error_max<sp/>&lt;&lt;choice&gt;&gt;</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>[*]<sp/>--&gt;<sp/>CheckInterrupt</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>CheckInterrupt<sp/>--&gt;<sp/>interrupt</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>interrupt<sp/>--&gt;<sp/>[*]<sp/>:<sp/>&quot;有中断&quot;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>interrupt<sp/>--&gt;<sp/>传递物品<sp/>:<sp/>&quot;无中断&quot;</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>state<sp/>传递物品<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>[*]<sp/>--&gt;<sp/>GetItem</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>GetItem<sp/>--&gt;<sp/>error_get</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>error_get<sp/>--&gt;<sp/>CountError<sp/>:<sp/>&quot;有错误&quot;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>error_get<sp/>--&gt;<sp/>SetItem<sp/>:<sp/>&quot;无错误&quot;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>SetItem<sp/>--&gt;<sp/>[*]</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>CountError<sp/>--&gt;<sp/>[*]</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>传递物品<sp/>--&gt;<sp/>error_max</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>error_max<sp/>--&gt;<sp/>[*]<sp/>:<sp/>&quot;错误到达阈值&quot;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>error_max<sp/>--&gt;<sp/>CheckInterrupt<sp/>:<sp/>&quot;无错误&quot;</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">```</highlight></codeline>
+    </programlisting>
+    <location file="C:/Users/Sango/source/LangYa/Sources/CodeHelper/README.md"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,590 @@
+
+<!DOCTYPE html>
+
+
+<html lang="zh-CN" data-content_root="./" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>欢迎阅读 LangYa::CodeHelper 模块的文档! &#8212; CodeHelper 1.0.2.0 文档</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="_static/styles/theme.css?digest=3ee479438cf8b5e0d341" rel="stylesheet" />
+<link href="_static/styles/bootstrap.css?digest=3ee479438cf8b5e0d341" rel="stylesheet" />
+<link href="_static/styles/pydata-sphinx-theme.css?digest=3ee479438cf8b5e0d341" rel="stylesheet" />
+
+  
+  <link href="_static/vendor/fontawesome/6.5.2/css/all.min.css?digest=3ee479438cf8b5e0d341" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.2/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=a746c00c" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="_static/scripts/bootstrap.js?digest=3ee479438cf8b5e0d341" />
+<link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=3ee479438cf8b5e0d341" />
+  <script src="_static/vendor/fontawesome/6.5.2/js/all.min.js?digest=3ee479438cf8b5e0d341"></script>
+
+    <script src="_static/documentation_options.js?v=9c6fba8d"></script>
+    <script src="_static/doctools.js?v=9a2dae69"></script>
+    <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="_static/translations.js?v=beaddf03"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'index';</script>
+    <link rel="index" title="索引" href="genindex.html" />
+    <link rel="search" title="搜索" href="search.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="zh-CN"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
+
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-primary-sidebar-checkbox"/>
+  <label class="overlay overlay-primary" for="pst-primary-sidebar-checkbox"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-secondary-sidebar-checkbox"/>
+  <label class="overlay overlay-secondary" for="pst-secondary-sidebar-checkbox"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search the docs ..."
+         aria-label="Search the docs ..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+<div class="bd-header__inner bd-page-width">
+  <button class="sidebar-toggle primary-toggle" aria-label="Site navigation">
+    <span class="fa-solid fa-bars"></span>
+  </button>
+  
+  
+  <div class="col-lg-3 navbar-header-items__start">
+    
+      <div class="navbar-item">
+
+  
+
+<a class="navbar-brand logo" href="#">
+  
+  
+  
+  
+  
+  
+    <p class="title logo__title">CodeHelper 1.0.2.0 文档</p>
+  
+</a></div>
+    
+  </div>
+  
+  <div class="col-lg-9 navbar-header-items">
+    
+    <div class="me-auto navbar-header-items__center">
+      
+        <div class="navbar-item">
+<nav class="navbar-nav">
+  <ul class="bd-navbar-elements navbar-nav">
+    
+  </ul>
+</nav></div>
+      
+    </div>
+    
+    
+    <div class="navbar-header-items__end">
+      
+        <div class="navbar-item navbar-persistent--container">
+          
+
+ <script>
+ document.write(`
+   <button class="btn navbar-btn search-button-field search-button__button" title="搜索" aria-label="搜索" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+    <span class="search-button__default-text">搜索</span>
+    <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+   </button>
+ `);
+ </script>
+        </div>
+      
+      
+        <div class="navbar-item">
+
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="theme-switch nav-link" data-mode="light"><i class="fa-solid fa-sun fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="dark"><i class="fa-solid fa-moon fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="auto"><i class="fa-solid fa-circle-half-stroke fa-lg"></i></span>
+  </button>
+`);
+</script></div>
+      
+    </div>
+    
+  </div>
+  
+  
+    <div class="navbar-persistent--mobile">
+
+ <script>
+ document.write(`
+   <button class="btn navbar-btn search-button-field search-button__button" title="搜索" aria-label="搜索" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+    <span class="search-button__default-text">搜索</span>
+    <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+   </button>
+ `);
+ </script>
+    </div>
+  
+
+  
+    <button class="sidebar-toggle secondary-toggle" aria-label="On this page">
+      <span class="fa-solid fa-outdent"></span>
+    </button>
+  
+</div>
+
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+        
+      
+      <div class="bd-sidebar-primary bd-sidebar hide-on-wide">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+      <div class="sidebar-header-items__center">
+        
+          
+          
+            <div class="navbar-item">
+<nav class="navbar-nav">
+  <ul class="bd-navbar-elements navbar-nav">
+    
+  </ul>
+</nav></div>
+          
+        
+      </div>
+    
+    
+    
+      <div class="sidebar-header-items__end">
+        
+          <div class="navbar-item">
+
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="theme-switch nav-link" data-mode="light"><i class="fa-solid fa-sun fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="dark"><i class="fa-solid fa-moon fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="auto"><i class="fa-solid fa-circle-half-stroke fa-lg"></i></span>
+  </button>
+`);
+</script></div>
+        
+      </div>
+    
+  </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main" role="main">
+        
+        
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article d-print-none"></div>
+              
+              
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section id="langya-codehelper">
+<h1>欢迎阅读 LangYa::CodeHelper 模块的文档!<a class="headerlink" href="#langya-codehelper" title="Link to this heading">#</a></h1>
+<div class="toctree-wrapper compound">
+</div>
+</section>
+<section id="id1">
+<h1>目录<a class="headerlink" href="#id1" title="Link to this heading">#</a></h1>
+<ul class="simple">
+<li><p><a class="reference internal" href="genindex.html"><span class="std std-ref">索引</span></a></p></li>
+<li><p><a class="reference internal" href="py-modindex.html"><span class="std std-ref">模块索引</span></a></p></li>
+<li><p><a class="reference internal" href="search.html"><span class="std std-ref">搜索页面</span></a></p></li>
+</ul>
+</section>
+<section id="id2">
+<h1>文档<a class="headerlink" href="#id2" title="Link to this heading">#</a></h1>
+<dl class="cpp class">
+<dt class="sig sig-object cpp" id="_CPPv4I_NSt21default_initializableEEN10CodeHelper13AsyncItemPoolE">
+<span id="_CPPv3I_NSt21default_initializableEEN10CodeHelper13AsyncItemPoolE"></span><span id="_CPPv2I_NSt21default_initializableEEN10CodeHelper13AsyncItemPoolE"></span><span class="k"><span class="pre">template</span></span><span class="p"><span class="pre">&lt;</span></span><span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">default_initializable</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">TItem</span></span></span><span class="p"><span class="pre">&gt;</span></span><br /><span class="target" id="class_code_helper_1_1_async_item_pool"></span><span class="k"><span class="pre">class</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">AsyncItemPool</span></span></span><span class="w"> </span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="k"><span class="pre">public</span></span><span class="w"> </span><span class="n"><span class="pre">CodeHelper</span></span><span class="p"><span class="pre">::</span></span><a class="reference internal" href="#_CPPv4I0EN10CodeHelper15DestinationNodeE" title="CodeHelper::DestinationNode"><span class="n"><span class="pre">DestinationNode</span></span></a><span class="p"><span class="pre">&lt;</span></span><a class="reference internal" href="#_CPPv4I_NSt21default_initializableEEN10CodeHelper13AsyncItemPoolE" title="CodeHelper::AsyncItemPool::TItem"><span class="n"><span class="pre">TItem</span></span></a><span class="p"><span class="pre">&gt;</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="k"><span class="pre">public</span></span><span class="w"> </span><span class="n"><span class="pre">CodeHelper</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">SourceNode</span></span><span class="p"><span class="pre">&lt;</span></span><a class="reference internal" href="#_CPPv4I_NSt21default_initializableEEN10CodeHelper13AsyncItemPoolE" title="CodeHelper::AsyncItemPool::TItem"><span class="n"><span class="pre">TItem</span></span></a><span class="p"><span class="pre">&gt;</span></span><a class="headerlink" href="#_CPPv4I_NSt21default_initializableEEN10CodeHelper13AsyncItemPoolE" title="Link to this definition">#</a><br /></dt>
+<dd><p>用于异步存储和取值的数据池，理论能够保证不重复读取到最新数据； 这里有两个概念，reader 和 writer，分别是操作此数据池的角色，一般分布在两个不同的线程中。 reader 读取器，调用此类型对象的 <code class="docutils literal notranslate"><a class="reference internal" href="#class_code_helper_1_1_async_item_pool_1afef8dc052243877e27aef3d21adf7eae"><span class="std std-ref"><span class="pre">AsyncItemPool::GetItem</span></span></a></code> 函数获取数据，此调用可能失败； writer 写入器，调用此类型对象的 <code class="docutils literal notranslate"><a class="reference internal" href="#class_code_helper_1_1_async_item_pool_1a6b122241ec365eb268f2f07d56ebfab0"><span class="std std-ref"><span class="pre">AsyncItemPool::SetItem</span></span></a></code> 函数写入数据，此调用一定成功； 当且仅当 writer 写入速度大于 reader 读取速度时，GetItem 操作每次都能成功。 </p>
+<dl class="field-list simple">
+<dt class="field-odd">模板参数<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>TItem</strong> – 数据池中存储的物品的类型 </p>
+</dd>
+</dl>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-public-functions">Public Functions</p>
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N10CodeHelper13AsyncItemPool7SetItemERK5TItem">
+<span id="_CPPv3N10CodeHelper13AsyncItemPool7SetItemERK5TItem"></span><span id="_CPPv2N10CodeHelper13AsyncItemPool7SetItemERK5TItem"></span><span id="CodeHelper::AsyncItemPool::SetItem__TItemCR"></span><span class="target" id="class_code_helper_1_1_async_item_pool_1a6b122241ec365eb268f2f07d56ebfab0"></span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><span class="k"><span class="pre">virtual</span></span><span class="w"> </span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">SetItem</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><a class="reference internal" href="#_CPPv4I_NSt21default_initializableEEN10CodeHelper13AsyncItemPoolE" title="CodeHelper::AsyncItemPool::TItem"><span class="n"><span class="pre">TItem</span></span></a><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">item</span></span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">noexcept</span></span><span class="w"> </span><span class="k"><span class="pre">override</span></span><a class="headerlink" href="#_CPPv4N10CodeHelper13AsyncItemPool7SetItemERK5TItem" title="Link to this definition">#</a><br /></dt>
+<dd><p>向数据池中写入数据，正常情况下不阻塞当前线程，必定成功 </p>
+<div class="admonition warning">
+<p class="admonition-title">警告</p>
+<p>当有两个或以上的 writer 时，大概率会阻塞当前线程 </p>
+</div>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N10CodeHelper13AsyncItemPool7GetItemER5TItem">
+<span id="_CPPv3N10CodeHelper13AsyncItemPool7GetItemER5TItem"></span><span id="_CPPv2N10CodeHelper13AsyncItemPool7GetItemER5TItem"></span><span id="CodeHelper::AsyncItemPool::GetItem__TItemR"></span><span class="target" id="class_code_helper_1_1_async_item_pool_1afef8dc052243877e27aef3d21adf7eae"></span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><span class="k"><span class="pre">virtual</span></span><span class="w"> </span><span class="kt"><span class="pre">bool</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">GetItem</span></span></span><span class="sig-paren">(</span><a class="reference internal" href="#_CPPv4I_NSt21default_initializableEEN10CodeHelper13AsyncItemPoolE" title="CodeHelper::AsyncItemPool::TItem"><span class="n"><span class="pre">TItem</span></span></a><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">item</span></span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">noexcept</span></span><span class="w"> </span><span class="k"><span class="pre">override</span></span><a class="headerlink" href="#_CPPv4N10CodeHelper13AsyncItemPool7GetItemER5TItem" title="Link to this definition">#</a><br /></dt>
+<dd><p>从数据池中获取数据，几乎不阻塞当前线程，可能会失败 </p>
+<dl class="field-list simple">
+<dt class="field-odd">返回<span class="colon">:</span></dt>
+<dd class="field-odd"><p>当获取数据失败时，返回 <code class="docutils literal notranslate"><span class="pre">false</span></code></p>
+</dd>
+</dl>
+</dd></dl>
+
+</div>
+</dd></dl>
+
+<dl class="cpp class">
+<dt class="sig sig-object cpp" id="_CPPv4I_NSt21default_initializableEEN10CodeHelper12BufferToReadE">
+<span id="_CPPv3I_NSt21default_initializableEEN10CodeHelper12BufferToReadE"></span><span id="_CPPv2I_NSt21default_initializableEEN10CodeHelper12BufferToReadE"></span><span class="k"><span class="pre">template</span></span><span class="p"><span class="pre">&lt;</span></span><span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">default_initializable</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">TMessage</span></span></span><span class="p"><span class="pre">&gt;</span></span><br /><span class="target" id="class_code_helper_1_1_buffer_to_read"></span><span class="k"><span class="pre">class</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">BufferToRead</span></span></span><a class="headerlink" href="#_CPPv4I_NSt21default_initializableEEN10CodeHelper12BufferToReadE" title="Link to this definition">#</a><br /></dt>
+<dd><p>打包常用的读取器使用的缓冲区结构 <code class="docutils literal notranslate"><span class="pre">GetReaderSpan</span></code> 提供 <code class="docutils literal notranslate"><span class="pre">std::span</span></code> 用于 <code class="docutils literal notranslate"><span class="pre">TMessage</span></code> 消息在 reader 的 ReadBytes 函数的字节读取 <code class="docutils literal notranslate"><span class="pre">GetExchanger</span></code> 提供 <code class="docutils literal notranslate"><span class="pre">PingPongExchanger</span></code> 用于检查读取到的消息的开头，保证必须是目标字节 <code class="docutils literal notranslate"><span class="pre">GetMessageSpan</span></code> 提供 <code class="docutils literal notranslate"><span class="pre">std::span</span></code> 是消息缓冲区存放物品的临时地点，用于检查后保存消息 <code class="docutils literal notranslate"><span class="pre">GetMessage</span></code> 提供 <code class="docutils literal notranslate"><span class="pre">TMessage&amp;</span></code> 用于检查完毕后从 MessageSpan 拿取消息 </p>
+</dd></dl>
+
+<dl class="cpp class">
+<dt class="sig sig-object cpp" id="_CPPv4I_NSt21default_initializableEEN10CodeHelper13BufferToWriteE">
+<span id="_CPPv3I_NSt21default_initializableEEN10CodeHelper13BufferToWriteE"></span><span id="_CPPv2I_NSt21default_initializableEEN10CodeHelper13BufferToWriteE"></span><span class="k"><span class="pre">template</span></span><span class="p"><span class="pre">&lt;</span></span><span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">default_initializable</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">TMessage</span></span></span><span class="p"><span class="pre">&gt;</span></span><br /><span class="target" id="class_code_helper_1_1_buffer_to_write"></span><span class="k"><span class="pre">class</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">BufferToWrite</span></span></span><a class="headerlink" href="#_CPPv4I_NSt21default_initializableEEN10CodeHelper13BufferToWriteE" title="Link to this definition">#</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp class">
+<dt class="sig sig-object cpp" id="_CPPv4N10CodeHelper7CounterE">
+<span id="_CPPv3N10CodeHelper7CounterE"></span><span id="_CPPv2N10CodeHelper7CounterE"></span><span id="CodeHelper::Counter"></span><span class="target" id="class_code_helper_1_1_counter"></span><span class="k"><span class="pre">class</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">Counter</span></span></span><a class="headerlink" href="#_CPPv4N10CodeHelper7CounterE" title="Link to this definition">#</a><br /></dt>
+<dd><p>计数器，指定最大值，计数到最大值后返回 <code class="docutils literal notranslate"><span class="pre">true</span></code> 否则每次计数时返回 <code class="docutils literal notranslate"><span class="pre">false</span></code></p>
+<div class="admonition note">
+<p class="admonition-title">备注</p>
+<p>不再考虑有关线程安全的问题，也不推荐在多线程环境下使用 因为大多数使用场景不会计数的值太大，所以更换内部数据类型为 std::uint32_t </p>
+</div>
+<div class="admonition warning">
+<p class="admonition-title">警告</p>
+<p>在多线程环境下使用计数需自行加锁，且需要注意可能的数据溢出问题 </p>
+</div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-public-functions">Public Functions</p>
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N10CodeHelper7Counter7CounterEv">
+<span id="_CPPv3N10CodeHelper7Counter7CounterEv"></span><span id="_CPPv2N10CodeHelper7Counter7CounterEv"></span><span id="CodeHelper::Counter::Counter"></span><span class="target" id="class_code_helper_1_1_counter_1a2c58ad26c25bbed4a569bf9f9ecc834d"></span><span class="sig-name descname"><span class="n"><span class="pre">Counter</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">noexcept</span></span><a class="headerlink" href="#_CPPv4N10CodeHelper7Counter7CounterEv" title="Link to this definition">#</a><br /></dt>
+<dd><p>构造计数器，设置最大值为 <code class="docutils literal notranslate"><span class="pre">Counter::DefaultMaxCount</span></code></p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4NK10CodeHelper7Counter7ReachedEv">
+<span id="_CPPv3NK10CodeHelper7Counter7ReachedEv"></span><span id="_CPPv2NK10CodeHelper7Counter7ReachedEv"></span><span id="CodeHelper::Counter::ReachedC"></span><span class="target" id="class_code_helper_1_1_counter_1a268146394dc0363ff33d5ec9192e2873"></span><span class="kt"><span class="pre">bool</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">Reached</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="k"><span class="pre">noexcept</span></span><a class="headerlink" href="#_CPPv4NK10CodeHelper7Counter7ReachedEv" title="Link to this definition">#</a><br /></dt>
+<dd><p>检查是否到达了最大值 ( <code class="docutils literal notranslate"><span class="pre">Counter::Current</span></code> &gt;= <code class="docutils literal notranslate"><span class="pre">Counter::MaxCount</span></code> ) </p>
+</dd></dl>
+
+</div>
+</dd></dl>
+
+<dl class="cpp class">
+<dt class="sig sig-object cpp" id="_CPPv4I_NSt21default_initializableEEN10CodeHelper17DefaultSourceNodeE">
+<span id="_CPPv3I_NSt21default_initializableEEN10CodeHelper17DefaultSourceNodeE"></span><span id="_CPPv2I_NSt21default_initializableEEN10CodeHelper17DefaultSourceNodeE"></span><span class="k"><span class="pre">template</span></span><span class="p"><span class="pre">&lt;</span></span><span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">default_initializable</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">TItem</span></span></span><span class="p"><span class="pre">&gt;</span></span><br /><span class="target" id="class_code_helper_1_1_default_source_node"></span><span class="k"><span class="pre">class</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">DefaultSourceNode</span></span></span><span class="w"> </span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="k"><span class="pre">public</span></span><span class="w"> </span><span class="n"><span class="pre">CodeHelper</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">SourceNode</span></span><span class="p"><span class="pre">&lt;</span></span><a class="reference internal" href="#_CPPv4I_NSt21default_initializableEEN10CodeHelper17DefaultSourceNodeE" title="CodeHelper::DefaultSourceNode::TItem"><span class="n"><span class="pre">TItem</span></span></a><span class="p"><span class="pre">&gt;</span></span><a class="headerlink" href="#_CPPv4I_NSt21default_initializableEEN10CodeHelper17DefaultSourceNodeE" title="Link to this definition">#</a><br /></dt>
+<dd><p>默认物品源节点，只提供设置的物品 </p>
+<dl class="field-list simple">
+<dt class="field-odd">模板参数<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>TItem</strong> – </p>
+</dd>
+</dl>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-public-functions">Public Functions</p>
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N10CodeHelper17DefaultSourceNode7GetItemER5TItem">
+<span id="_CPPv3N10CodeHelper17DefaultSourceNode7GetItemER5TItem"></span><span id="_CPPv2N10CodeHelper17DefaultSourceNode7GetItemER5TItem"></span><span id="CodeHelper::DefaultSourceNode::GetItem__TItemR"></span><span class="target" id="class_code_helper_1_1_default_source_node_1a708572e837b5c9861a0900f642e44419"></span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><span class="k"><span class="pre">virtual</span></span><span class="w"> </span><span class="kt"><span class="pre">bool</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">GetItem</span></span></span><span class="sig-paren">(</span><a class="reference internal" href="#_CPPv4I_NSt21default_initializableEEN10CodeHelper17DefaultSourceNodeE" title="CodeHelper::DefaultSourceNode::TItem"><span class="n"><span class="pre">TItem</span></span></a><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">item</span></span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">noexcept</span></span><span class="w"> </span><span class="k"><span class="pre">override</span></span><a class="headerlink" href="#_CPPv4N10CodeHelper17DefaultSourceNode7GetItemER5TItem" title="Link to this definition">#</a><br /></dt>
+<dd><p>获取物品，通过参数返回物品，通过函数结果返回是否获取成功 </p>
+</dd></dl>
+
+</div>
+</dd></dl>
+
+<dl class="cpp class">
+<dt class="sig sig-object cpp" id="_CPPv4I0EN10CodeHelper15DestinationNodeE">
+<span id="_CPPv3I0EN10CodeHelper15DestinationNodeE"></span><span id="_CPPv2I0EN10CodeHelper15DestinationNodeE"></span><span class="k"><span class="pre">template</span></span><span class="p"><span class="pre">&lt;</span></span><span class="k"><span class="pre">typename</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">TItem</span></span></span><span class="p"><span class="pre">&gt;</span></span><br /><span class="target" id="class_code_helper_1_1_destination_node"></span><span class="k"><span class="pre">class</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">DestinationNode</span></span></span><a class="headerlink" href="#_CPPv4I0EN10CodeHelper15DestinationNodeE" title="Link to this definition">#</a><br /></dt>
+<dd><p>目的地节点，表明此对象能够接收物品 </p>
+<div class="admonition note">
+<p class="admonition-title">备注</p>
+<p>接口的指针变量不拥有对象的所有权，故不负责销毁对象 </p>
+</div>
+<dl class="field-list simple">
+<dt class="field-odd">模板参数<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>TItem</strong> – 节点接收物品的类型，需要能够使用常量引用传递 </p>
+</dd>
+</dl>
+<p>Subclassed by <a class="reference internal" href="#class_code_helper_1_1_async_item_pool"><span class="std std-ref">CodeHelper::AsyncItemPool&lt; TItem &gt;</span></a>, <a class="reference internal" href="#class_code_helper_1_1_empty_destination_node"><span class="std std-ref">CodeHelper::EmptyDestinationNode&lt; TItem &gt;</span></a></p>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-public-types">Public Types</p>
+<dl class="cpp type">
+<dt class="sig sig-object cpp" id="_CPPv4N10CodeHelper15DestinationNode8ItemTypeE">
+<span id="_CPPv3N10CodeHelper15DestinationNode8ItemTypeE"></span><span id="_CPPv2N10CodeHelper15DestinationNode8ItemTypeE"></span><span class="target" id="class_code_helper_1_1_destination_node_1af0a498469e34d11b72dd26e25357086b"></span><span class="k"><span class="pre">using</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">ItemType</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><a class="reference internal" href="#_CPPv4I0EN10CodeHelper15DestinationNodeE" title="CodeHelper::DestinationNode::TItem"><span class="n"><span class="pre">TItem</span></span></a><a class="headerlink" href="#_CPPv4N10CodeHelper15DestinationNode8ItemTypeE" title="Link to this definition">#</a><br /></dt>
+<dd><p>物品类型，用于在模板外部萃取物品类型 </p>
+</dd></dl>
+
+</div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-public-functions">Public Functions</p>
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N10CodeHelper15DestinationNode7SetItemERK5TItem">
+<span id="_CPPv3N10CodeHelper15DestinationNode7SetItemERK5TItem"></span><span id="_CPPv2N10CodeHelper15DestinationNode7SetItemERK5TItem"></span><span id="CodeHelper::DestinationNode::SetItem__TItemCR"></span><span class="target" id="class_code_helper_1_1_destination_node_1abf9841fc7adff56fea44b3d0c98f7bff"></span><span class="k"><span class="pre">virtual</span></span><span class="w"> </span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">SetItem</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><a class="reference internal" href="#_CPPv4I0EN10CodeHelper15DestinationNodeE" title="CodeHelper::DestinationNode::TItem"><span class="n"><span class="pre">TItem</span></span></a><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">item</span></span><span class="sig-paren">)</span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">0</span></span><a class="headerlink" href="#_CPPv4N10CodeHelper15DestinationNode7SetItemERK5TItem" title="Link to this definition">#</a><br /></dt>
+<dd><p>设置物品，目的地将会接收物品并开始处理 </p>
+<dl class="field-list simple">
+<dt class="field-odd">参数<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>item</strong> – 使用常量引用传递的物品 </p>
+</dd>
+</dl>
+</dd></dl>
+
+</div>
+</dd></dl>
+
+<dl class="cpp class">
+<dt class="sig sig-object cpp" id="_CPPv4I0EN10CodeHelper20EmptyDestinationNodeE">
+<span id="_CPPv3I0EN10CodeHelper20EmptyDestinationNodeE"></span><span id="_CPPv2I0EN10CodeHelper20EmptyDestinationNodeE"></span><span class="k"><span class="pre">template</span></span><span class="p"><span class="pre">&lt;</span></span><span class="k"><span class="pre">typename</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">TItem</span></span></span><span class="p"><span class="pre">&gt;</span></span><br /><span class="target" id="class_code_helper_1_1_empty_destination_node"></span><span class="k"><span class="pre">class</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">EmptyDestinationNode</span></span></span><span class="w"> </span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="k"><span class="pre">public</span></span><span class="w"> </span><span class="n"><span class="pre">CodeHelper</span></span><span class="p"><span class="pre">::</span></span><a class="reference internal" href="#_CPPv4I0EN10CodeHelper15DestinationNodeE" title="CodeHelper::DestinationNode"><span class="n"><span class="pre">DestinationNode</span></span></a><span class="p"><span class="pre">&lt;</span></span><a class="reference internal" href="#_CPPv4I0EN10CodeHelper20EmptyDestinationNodeE" title="CodeHelper::EmptyDestinationNode::TItem"><span class="n"><span class="pre">TItem</span></span></a><span class="p"><span class="pre">&gt;</span></span><a class="headerlink" href="#_CPPv4I0EN10CodeHelper20EmptyDestinationNodeE" title="Link to this definition">#</a><br /></dt>
+<dd><p>空目的地节点，不对接收的物品做任何操作 </p>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-public-functions">Public Functions</p>
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N10CodeHelper20EmptyDestinationNode7SetItemERK5TItem">
+<span id="_CPPv3N10CodeHelper20EmptyDestinationNode7SetItemERK5TItem"></span><span id="_CPPv2N10CodeHelper20EmptyDestinationNode7SetItemERK5TItem"></span><span id="CodeHelper::EmptyDestinationNode::SetItem__TItemCR"></span><span class="target" id="class_code_helper_1_1_empty_destination_node_1a03334cbc8a031cefb56e33d4326af575"></span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><span class="k"><span class="pre">virtual</span></span><span class="w"> </span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">SetItem</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><a class="reference internal" href="#_CPPv4I0EN10CodeHelper20EmptyDestinationNodeE" title="CodeHelper::EmptyDestinationNode::TItem"><span class="n"><span class="pre">TItem</span></span></a><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">item</span></span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">override</span></span><a class="headerlink" href="#_CPPv4N10CodeHelper20EmptyDestinationNode7SetItemERK5TItem" title="Link to this definition">#</a><br /></dt>
+<dd><p>设置物品，目的地将会接收物品并开始处理 </p>
+<dl class="field-list simple">
+<dt class="field-odd">参数<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>item</strong> – 使用常量引用传递的物品 </p>
+</dd>
+</dl>
+</dd></dl>
+
+</div>
+</dd></dl>
+
+<dl class="cpp class">
+<dt class="sig sig-object cpp" id="_CPPv4I0EN10CodeHelper15EmptySourceNodeE">
+<span id="_CPPv3I0EN10CodeHelper15EmptySourceNodeE"></span><span id="_CPPv2I0EN10CodeHelper15EmptySourceNodeE"></span><span class="k"><span class="pre">template</span></span><span class="p"><span class="pre">&lt;</span></span><span class="k"><span class="pre">typename</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">TItem</span></span></span><span class="p"><span class="pre">&gt;</span></span><br /><span class="target" id="class_code_helper_1_1_empty_source_node"></span><span class="k"><span class="pre">class</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">EmptySourceNode</span></span></span><span class="w"> </span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="k"><span class="pre">public</span></span><span class="w"> </span><span class="n"><span class="pre">CodeHelper</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">SourceNode</span></span><span class="p"><span class="pre">&lt;</span></span><a class="reference internal" href="#_CPPv4I0EN10CodeHelper15EmptySourceNodeE" title="CodeHelper::EmptySourceNode::TItem"><span class="n"><span class="pre">TItem</span></span></a><span class="p"><span class="pre">&gt;</span></span><a class="headerlink" href="#_CPPv4I0EN10CodeHelper15EmptySourceNodeE" title="Link to this definition">#</a><br /></dt>
+<dd><p>空的物品源节点，不提供物品，只用于测试 </p>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-public-functions">Public Functions</p>
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N10CodeHelper15EmptySourceNode7GetItemER5TItem">
+<span id="_CPPv3N10CodeHelper15EmptySourceNode7GetItemER5TItem"></span><span id="_CPPv2N10CodeHelper15EmptySourceNode7GetItemER5TItem"></span><span id="CodeHelper::EmptySourceNode::GetItem__TItemR"></span><span class="target" id="class_code_helper_1_1_empty_source_node_1a012dfdf70f4604aacf258dcc783fdc93"></span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><span class="k"><span class="pre">virtual</span></span><span class="w"> </span><span class="kt"><span class="pre">bool</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">GetItem</span></span></span><span class="sig-paren">(</span><a class="reference internal" href="#_CPPv4I0EN10CodeHelper15EmptySourceNodeE" title="CodeHelper::EmptySourceNode::TItem"><span class="n"><span class="pre">TItem</span></span></a><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">item</span></span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">override</span></span><a class="headerlink" href="#_CPPv4N10CodeHelper15EmptySourceNode7GetItemER5TItem" title="Link to this definition">#</a><br /></dt>
+<dd><p>获取物品，通过参数返回物品，通过函数结果返回是否获取成功 </p>
+</dd></dl>
+
+</div>
+</dd></dl>
+
+<dl class="cpp class">
+<dt class="sig sig-object cpp" id="_CPPv4I0EN10CodeHelper19FlowDestinationNodeE">
+<span id="_CPPv3I0EN10CodeHelper19FlowDestinationNodeE"></span><span id="_CPPv2I0EN10CodeHelper19FlowDestinationNodeE"></span><span class="k"><span class="pre">template</span></span><span class="p"><span class="pre">&lt;</span></span><span class="k"><span class="pre">typename</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">TItem</span></span></span><span class="p"><span class="pre">&gt;</span></span><br /><span class="target" id="class_code_helper_1_1_flow_destination_node"></span><span class="k"><span class="pre">class</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">FlowDestinationNode</span></span></span><a class="headerlink" href="#_CPPv4I0EN10CodeHelper19FlowDestinationNodeE" title="Link to this definition">#</a><br /></dt>
+<dd></dd></dl>
+
+</section>
+
+
+                </article>
+              
+              
+              
+              
+              
+                <footer class="prev-next-footer d-print-none">
+                  
+<div class="prev-next-area">
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+<div
+    id="pst-page-navigation-heading-2"
+    class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> On this page
+  </div>
+  <nav class="bd-toc-nav page-toc" aria-labelledby="pst-page-navigation-heading-2">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">欢迎阅读 LangYa::CodeHelper 模块的文档!</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">目录</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">文档</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#_CPPv4I_NSt21default_initializableEEN10CodeHelper13AsyncItemPoolE"><code class="docutils literal notranslate"><span class="pre">AsyncItemPool</span></code></a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#_CPPv4N10CodeHelper13AsyncItemPool7SetItemERK5TItem"><code class="docutils literal notranslate"><span class="pre">AsyncItemPool::SetItem()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#_CPPv4N10CodeHelper13AsyncItemPool7GetItemER5TItem"><code class="docutils literal notranslate"><span class="pre">AsyncItemPool::GetItem()</span></code></a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#_CPPv4I_NSt21default_initializableEEN10CodeHelper12BufferToReadE"><code class="docutils literal notranslate"><span class="pre">BufferToRead</span></code></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#_CPPv4I_NSt21default_initializableEEN10CodeHelper13BufferToWriteE"><code class="docutils literal notranslate"><span class="pre">BufferToWrite</span></code></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#_CPPv4N10CodeHelper7CounterE"><code class="docutils literal notranslate"><span class="pre">Counter</span></code></a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#_CPPv4N10CodeHelper7Counter7CounterEv"><code class="docutils literal notranslate"><span class="pre">Counter::Counter()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#_CPPv4NK10CodeHelper7Counter7ReachedEv"><code class="docutils literal notranslate"><span class="pre">Counter::Reached()</span></code></a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#_CPPv4I_NSt21default_initializableEEN10CodeHelper17DefaultSourceNodeE"><code class="docutils literal notranslate"><span class="pre">DefaultSourceNode</span></code></a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#_CPPv4N10CodeHelper17DefaultSourceNode7GetItemER5TItem"><code class="docutils literal notranslate"><span class="pre">DefaultSourceNode::GetItem()</span></code></a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#_CPPv4I0EN10CodeHelper15DestinationNodeE"><code class="docutils literal notranslate"><span class="pre">DestinationNode</span></code></a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#_CPPv4N10CodeHelper15DestinationNode8ItemTypeE"><code class="docutils literal notranslate"><span class="pre">DestinationNode::ItemType</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#_CPPv4N10CodeHelper15DestinationNode7SetItemERK5TItem"><code class="docutils literal notranslate"><span class="pre">DestinationNode::SetItem()</span></code></a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#_CPPv4I0EN10CodeHelper20EmptyDestinationNodeE"><code class="docutils literal notranslate"><span class="pre">EmptyDestinationNode</span></code></a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#_CPPv4N10CodeHelper20EmptyDestinationNode7SetItemERK5TItem"><code class="docutils literal notranslate"><span class="pre">EmptyDestinationNode::SetItem()</span></code></a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#_CPPv4I0EN10CodeHelper15EmptySourceNodeE"><code class="docutils literal notranslate"><span class="pre">EmptySourceNode</span></code></a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#_CPPv4N10CodeHelper15EmptySourceNode7GetItemER5TItem"><code class="docutils literal notranslate"><span class="pre">EmptySourceNode::GetItem()</span></code></a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#_CPPv4I0EN10CodeHelper19FlowDestinationNodeE"><code class="docutils literal notranslate"><span class="pre">FlowDestinationNode</span></code></a></li>
+</ul>
+</li>
+</ul>
+
+  </nav></div>
+
+  <div class="sidebar-secondary-item">
+
+  <div class="tocsection sourcelink">
+    <a href="_sources/index.rst.txt">
+      <i class="fa-solid fa-file-lines"></i> 显示源代码
+    </a>
+  </div>
+</div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+          </footer>
+        
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="_static/scripts/bootstrap.js?digest=3ee479438cf8b5e0d341"></script>
+<script src="_static/scripts/pydata-sphinx-theme.js?digest=3ee479438cf8b5e0d341"></script>
+
+  <footer class="bd-footer">
+<div class="bd-footer__inner bd-page-width">
+  
+    <div class="footer-items__start">
+      
+        <div class="footer-item">
+
+  <p class="copyright">
+    
+      © Copyright 2024, .
+      <br/>
+    
+  </p>
+</div>
+      
+        <div class="footer-item">
+
+  <p class="sphinx-version">
+    由 <a href="https://www.sphinx-doc.org/">Sphinx</a> 7.3.7创建。
+    <br/>
+  </p>
+</div>
+      
+    </div>
+  
+  
+  
+    <div class="footer-items__end">
+      
+        <div class="footer-item">
+<p class="theme-version">
+  Built with the <a href="https://pydata-sphinx-theme.readthedocs.io/en/stable/index.html">PyData Sphinx Theme</a> 0.15.3.
+</p></div>
+      
+    </div>
+  
+</div>
+
+  </footer>
+  </body>
+</html>

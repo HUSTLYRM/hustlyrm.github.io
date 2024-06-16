@@ -1,0 +1,305 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygenindex xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="index.xsd" version="1.11.0" xml:lang="zh">
+  <compound refid="class_code_helper_1_1_async_item_pool" kind="class"><name>CodeHelper::AsyncItemPool</name>
+    <member refid="class_code_helper_1_1_async_item_pool_1a145245137ba21a33997a2d0e8b1e74b2" kind="enum"><name>ViewStatus</name></member>
+    <member refid="class_code_helper_1_1_async_item_pool_1a145245137ba21a33997a2d0e8b1e74b2ace2c8aed9c2fa0cfbed56cbda4d8bf07" kind="enumvalue"><name>Empty</name></member>
+    <member refid="class_code_helper_1_1_async_item_pool_1a145245137ba21a33997a2d0e8b1e74b2abbd47109890259c0127154db1af26c75" kind="enumvalue"><name>Full</name></member>
+    <member refid="class_code_helper_1_1_async_item_pool_1a145245137ba21a33997a2d0e8b1e74b2ad8a942ef2b04672adfafef0ad817a407" kind="enumvalue"><name>Busy</name></member>
+    <member refid="class_code_helper_1_1_async_item_pool_1a669328b090240383ca369b00132b22c9" kind="variable"><name>WriterIndex</name></member>
+    <member refid="class_code_helper_1_1_async_item_pool_1a6dcac4ae45077472763cff08d961812c" kind="variable"><name>ItemInfoList</name></member>
+    <member refid="class_code_helper_1_1_async_item_pool_1a6b122241ec365eb268f2f07d56ebfab0" kind="function"><name>SetItem</name></member>
+    <member refid="class_code_helper_1_1_async_item_pool_1afef8dc052243877e27aef3d21adf7eae" kind="function"><name>GetItem</name></member>
+  </compound>
+  <compound refid="class_code_helper_1_1_buffer_to_read" kind="class"><name>CodeHelper::BufferToRead</name>
+    <member refid="class_code_helper_1_1_buffer_to_read_1a324d38cdb001a9ca404706d215426f24" kind="typedef"><name>MessageType</name></member>
+    <member refid="class_code_helper_1_1_buffer_to_read_1a0f411507f4aba0bf89d63d5bfc2a4d54" kind="variable"><name>Buffer</name></member>
+    <member refid="class_code_helper_1_1_buffer_to_read_1a7465b3eef477b7a65f983d2d3ebe8f19" kind="function"><name>GetPingPongSpan</name></member>
+    <member refid="class_code_helper_1_1_buffer_to_read_1a37f4eb11a6347bbb3dad37087f2793b6" kind="function"><name>GetMessage</name></member>
+    <member refid="class_code_helper_1_1_buffer_to_read_1a7a72bf72a779fff37683c502b9a9b03f" kind="function"><name>GetMessageSpan</name></member>
+    <member refid="class_code_helper_1_1_buffer_to_read_1ac39c1ffb8a22e2e77a265fc1850edc2a" kind="function"><name>GetReaderSpan</name></member>
+    <member refid="class_code_helper_1_1_buffer_to_read_1a5814fbdb2d055f418cfe6407e9b112d9" kind="function"><name>GetExchanger</name></member>
+  </compound>
+  <compound refid="class_code_helper_1_1_buffer_to_write" kind="class"><name>CodeHelper::BufferToWrite</name>
+    <member refid="class_code_helper_1_1_buffer_to_write_1a263646a03f7bf4a4f335536f4c6e3ebb" kind="typedef"><name>MessageType</name></member>
+    <member refid="class_code_helper_1_1_buffer_to_write_1a9e2f61dc5305d210500e580e4e8222b8" kind="variable"><name>Buffer</name></member>
+    <member refid="class_code_helper_1_1_buffer_to_write_1a0f98ab37e4528bc82101d4def2a8306a" kind="function"><name>GetMessage</name></member>
+    <member refid="class_code_helper_1_1_buffer_to_write_1a92b09ed1669ebcd4ebf19096fa202135" kind="function"><name>GetWriterSpan</name></member>
+  </compound>
+  <compound refid="class_code_helper_1_1_counter" kind="class"><name>CodeHelper::Counter</name>
+    <member refid="class_code_helper_1_1_counter_1a14f22ee20ab0f114ae8fb4172107c9f3" kind="variable"><name>DefaultMaxCount</name></member>
+    <member refid="class_code_helper_1_1_counter_1a0ff44a90a2ee671be3163fb693f9cc79" kind="variable"><name>Current</name></member>
+    <member refid="class_code_helper_1_1_counter_1aae73b5a09d72e21a6924113c2f1f983f" kind="variable"><name>MaxCount</name></member>
+    <member refid="class_code_helper_1_1_counter_1a2c58ad26c25bbed4a569bf9f9ecc834d" kind="function"><name>Counter</name></member>
+    <member refid="class_code_helper_1_1_counter_1ae839c77b69da208a78383d608f2ad848" kind="function"><name>Counter</name></member>
+    <member refid="class_code_helper_1_1_counter_1a726b2e833832b2bec0d9cf3593e088ba" kind="function"><name>GetCurrent</name></member>
+    <member refid="class_code_helper_1_1_counter_1a268146394dc0363ff33d5ec9192e2873" kind="function"><name>Reached</name></member>
+    <member refid="class_code_helper_1_1_counter_1a144a0f6ecf9d0df377a6a01bf48e3318" kind="function"><name>Count</name></member>
+    <member refid="class_code_helper_1_1_counter_1a43b49ed8a90a8dbf3f01978e97b0aef4" kind="function"><name>Reset</name></member>
+  </compound>
+  <compound refid="class_code_helper_1_1_default_source_node" kind="class"><name>CodeHelper::DefaultSourceNode</name>
+    <member refid="class_code_helper_1_1_default_source_node_1a6a258487d175216287b79b7f6d15e677" kind="variable"><name>Item</name></member>
+    <member refid="class_code_helper_1_1_default_source_node_1a708572e837b5c9861a0900f642e44419" kind="function"><name>GetItem</name></member>
+  </compound>
+  <compound refid="class_code_helper_1_1_dependency" kind="class"><name>CodeHelper::Dependency</name>
+    <member refid="class_code_helper_1_1_dependency_1a15c20a21988b030b7e2da4ccd6c0b243" kind="typedef"><name>ObjectType</name></member>
+    <member refid="class_code_helper_1_1_dependency_1a854d83b6b57d03a3dd976dafb3fefa23" kind="variable"><name>ObjectPointer</name></member>
+    <member refid="class_code_helper_1_1_dependency_1a086c2060c665213031e53a2ea46fbd0e" kind="function"><name>operator=</name></member>
+    <member refid="class_code_helper_1_1_dependency_1a19aa4b65634aa6930c39e3615d6986a7" kind="function"><name>Empty</name></member>
+    <member refid="class_code_helper_1_1_dependency_1afd49d9dbcbe148fb8cabe4e6e7b25a61" kind="function"><name>GetObject</name></member>
+    <member refid="class_code_helper_1_1_dependency_1aec56522c5687aa9ca30d2968dd09781c" kind="function"><name>LogGetObject</name></member>
+  </compound>
+  <compound refid="class_code_helper_1_1_destination_node" kind="class"><name>CodeHelper::DestinationNode</name>
+    <member refid="class_code_helper_1_1_destination_node_1af0a498469e34d11b72dd26e25357086b" kind="typedef"><name>ItemType</name></member>
+    <member refid="class_code_helper_1_1_destination_node_1abf9841fc7adff56fea44b3d0c98f7bff" kind="function"><name>SetItem</name></member>
+  </compound>
+  <compound refid="class_code_helper_1_1_empty_destination_node" kind="class"><name>CodeHelper::EmptyDestinationNode</name>
+    <member refid="class_code_helper_1_1_empty_destination_node_1a03334cbc8a031cefb56e33d4326af575" kind="function"><name>SetItem</name></member>
+  </compound>
+  <compound refid="class_code_helper_1_1_empty_source_node" kind="class"><name>CodeHelper::EmptySourceNode</name>
+    <member refid="class_code_helper_1_1_empty_source_node_1a012dfdf70f4604aacf258dcc783fdc93" kind="function"><name>GetItem</name></member>
+  </compound>
+  <compound refid="class_code_helper_1_1_flow_destination_node" kind="class"><name>CodeHelper::FlowDestinationNode</name>
+    <member refid="class_code_helper_1_1_flow_destination_node_1afd87fb2f7b2660a61e293270e92aebff" kind="typedef"><name>ItemType</name></member>
+    <member refid="class_code_helper_1_1_flow_destination_node_1a971e4d9144e65f3bc7f1b0a2ab8422cd" kind="function"><name>PlanItem</name></member>
+  </compound>
+  <compound refid="struct_code_helper_1_1_async_item_pool_1_1_item_info" kind="struct"><name>CodeHelper::AsyncItemPool::ItemInfo</name>
+    <member refid="struct_code_helper_1_1_async_item_pool_1_1_item_info_1a307dd8c465dc06b8f7afdd44f73b8c4a" kind="variable"><name>Status</name></member>
+    <member refid="struct_code_helper_1_1_async_item_pool_1_1_item_info_1af677e7b291dfeb7138e934c9cae62cfa" kind="variable"><name>Item</name></member>
+  </compound>
+  <compound refid="class_code_helper_1_1_named_module" kind="class"><name>CodeHelper::NamedModule</name>
+    <member refid="class_code_helper_1_1_named_module_1ab60b2cdd3be3084401921033490370e7" kind="function"><name>GetName</name></member>
+    <member refid="class_code_helper_1_1_named_module_1aff783631eb68fffe53e2e3bdb66c4f00" kind="function"><name>GetBrief</name></member>
+    <member refid="class_code_helper_1_1_named_module_1a2a13a677c984ab006949b6911e7c361a" kind="function"><name>Format</name></member>
+  </compound>
+  <compound refid="struct_code_helper_1_1_parse_from_stream" kind="struct"><name>CodeHelper::ParseFromStream</name>
+    <member refid="struct_code_helper_1_1_parse_from_stream_1a4af965ca5c25c04a504d3e7584b18ee9" kind="function"><name>Parse</name></member>
+    <member refid="struct_code_helper_1_1_parse_from_stream_1a810a6a9ef2c3a9031882b76d6d4780be" kind="function"><name>Parse</name></member>
+    <member refid="struct_code_helper_1_1_parse_from_stream_1a7238fa07761c2852df09dc0f70244e2d" kind="friend"><name>operator&gt;&gt;</name></member>
+  </compound>
+  <compound refid="class_code_helper_1_1_ping_pong_exchanger" kind="class"><name>CodeHelper::PingPongExchanger</name>
+    <member refid="class_code_helper_1_1_ping_pong_exchanger_1a253f56b2cc45058b621784ca3e56b390" kind="variable"><name>HeadByte</name></member>
+    <member refid="class_code_helper_1_1_ping_pong_exchanger_1af419102c3d5047e2e46fe182725402e4" kind="variable"><name>Ping</name></member>
+    <member refid="class_code_helper_1_1_ping_pong_exchanger_1a6fbd4f960c0338cdcc3b9ae90dfc92cf" kind="variable"><name>Pong</name></member>
+    <member refid="class_code_helper_1_1_ping_pong_exchanger_1a432206b1232a833d8a81c3feb664af7e" kind="variable"><name>FullSpan</name></member>
+    <member refid="class_code_helper_1_1_ping_pong_exchanger_1ad2096fbdc3ca09c3bca18c4d7db39b58" kind="function"><name>Verify</name></member>
+    <member refid="class_code_helper_1_1_ping_pong_exchanger_1a00d424a656e19191329a92267ee70fdf" kind="function"><name>PingPongExchanger</name></member>
+    <member refid="class_code_helper_1_1_ping_pong_exchanger_1a61bcd25d824db91d2caf70b1a673d2b2" kind="function"><name>GetReaderSpan</name></member>
+    <member refid="class_code_helper_1_1_ping_pong_exchanger_1a690ecd23f53ad6ed049020462463038f" kind="function"><name>Examine</name></member>
+  </compound>
+  <compound refid="class_code_helper_1_1_processor_node" kind="class"><name>CodeHelper::ProcessorNode</name>
+    <member refid="class_code_helper_1_1_processor_node_1abfa58ffbb5753659bbdbbe15d99f2d32" kind="typedef"><name>ArgumentItemType</name></member>
+    <member refid="class_code_helper_1_1_processor_node_1a4d5fd1d2231b90bf66b62576cb7501b0" kind="typedef"><name>ResultItemType</name></member>
+    <member refid="class_code_helper_1_1_processor_node_1a14f2e7009980c116d35e3afab49ef78b" kind="function"><name>Process</name></member>
+  </compound>
+  <compound refid="class_code_helper_1_1_reader" kind="class"><name>CodeHelper::Reader</name>
+    <member refid="class_code_helper_1_1_reader_1abb133eceebf11a80263b841513999707" kind="function"><name>ReadBytes</name></member>
+  </compound>
+  <compound refid="struct_script_file" kind="struct"><name>ScriptFile</name>
+    <member refid="struct_script_file_1ad66bdee564ae07bf3a9742b420da2184" kind="variable"><name>Path</name></member>
+    <member refid="struct_script_file_1ac5ce944a5ecbc7ad42c7524fa7dbfe2f" kind="variable"><name>IsEnabled</name></member>
+    <member refid="struct_script_file_1a6b1a73e78c706ff91f675c19e37b7c60" kind="function"><name>TryFlip</name></member>
+  </compound>
+  <compound refid="struct_code_helper_1_1_sine_wave" kind="struct"><name>CodeHelper::SineWave</name>
+    <member refid="struct_code_helper_1_1_sine_wave_1ac1d97d5b1cf2f07f7124bb650eddc7a9" kind="variable"><name>Amplitude</name></member>
+    <member refid="struct_code_helper_1_1_sine_wave_1a3800752000221de548f2ad32e41728b0" kind="variable"><name>Phase</name></member>
+    <member refid="struct_code_helper_1_1_sine_wave_1a769cf74f56b29f944dd02285d892c406" kind="variable"><name>RoundTime</name></member>
+    <member refid="struct_code_helper_1_1_sine_wave_1aabdf769385584e65f083f176a6ee5120" kind="variable"><name>StartTime</name></member>
+    <member refid="struct_code_helper_1_1_sine_wave_1aad9210ba2f29b894cdd8af559c0b8916" kind="function"><name>SineWave</name></member>
+    <member refid="struct_code_helper_1_1_sine_wave_1a7136d0efc143a275f43bc69a136a463a" kind="function"><name>SineWave</name></member>
+    <member refid="struct_code_helper_1_1_sine_wave_1a4564c7cf464f8e90463317a43c869e82" kind="function"><name>SineWave</name></member>
+    <member refid="struct_code_helper_1_1_sine_wave_1a665e8fc9cf6130d2ff7bdc707a0ab06c" kind="function"><name>Produce</name></member>
+    <member refid="struct_code_helper_1_1_sine_wave_1a7071591efecae471d5981a0de2a77433" kind="function"><name>Produce</name></member>
+    <member refid="struct_code_helper_1_1_sine_wave_1a79e8b2cb589d98968e4e67c77a704240" kind="function"><name>GetItem</name></member>
+    <member refid="struct_code_helper_1_1_sine_wave_1a13a83b1b63d6c1b472fba4bb63dc2af9" kind="function"><name>Process</name></member>
+  </compound>
+  <compound refid="class_code_helper_1_1_source_node" kind="class"><name>CodeHelper::SourceNode</name>
+    <member refid="class_code_helper_1_1_source_node_1a05fcd780a3ebbf0cd020496228ceb3f3" kind="typedef"><name>ItemType</name></member>
+    <member refid="class_code_helper_1_1_source_node_1ab7bf471b91c01f8b00606d695d9e6746" kind="function"><name>GetItem</name></member>
+  </compound>
+  <compound refid="struct_target_file" kind="struct"><name>TargetFile</name>
+    <member refid="struct_target_file_1a0256bfa22b8865a6c9a4e05de865e647" kind="variable"><name>Path</name></member>
+    <member refid="struct_target_file_1ab042f0f40cae08a61030b7085e62b9ec" kind="variable"><name>Tags</name></member>
+    <member refid="struct_target_file_1a0156fcc89bd4979a67f6e31f0a97914f" kind="function"><name>Format</name></member>
+    <member refid="struct_target_file_1a7dbbd99e1db3d74f3c78e68bc2773c81" kind="function"><name>CopyTo</name></member>
+  </compound>
+  <compound refid="class_code_helper_1_1_transmission_flow_planner" kind="class"><name>CodeHelper::TransmissionFlowPlanner</name>
+    <member refid="class_code_helper_1_1_transmission_flow_planner_1a58fd8c1fe4e54405209601fc0d542d80" kind="variable"><name>Name</name></member>
+    <member refid="class_code_helper_1_1_transmission_flow_planner_1a19c88382ff933209b2eccd2cc2fb2086" kind="variable"><name>Source</name></member>
+    <member refid="class_code_helper_1_1_transmission_flow_planner_1a5f3a0fdaac22db3bf0f14becace50757" kind="variable"><name>Destination</name></member>
+    <member refid="class_code_helper_1_1_transmission_flow_planner_1a3decfe69af06242c503143a4936a8a9b" kind="variable"><name>MinInterval</name></member>
+    <member refid="class_code_helper_1_1_transmission_flow_planner_1a44773133a167b04f418e32b4aa64f7ed" kind="variable"><name>MaxContinuousError</name></member>
+    <member refid="class_code_helper_1_1_transmission_flow_planner_1a0ebe623a9d6edb749a5498b06d693cf8" kind="variable"><name>Done</name></member>
+    <member refid="class_code_helper_1_1_transmission_flow_planner_1aa7b8d4674e1b52953ffe1f670214ba46" kind="function"><name>Loop</name></member>
+    <member refid="class_code_helper_1_1_transmission_flow_planner_1acbb82637eb8ffad5b004a05deb6a2dc0" kind="function"><name>Check</name></member>
+    <member refid="class_code_helper_1_1_transmission_flow_planner_1a480d2fd1cd706c869cd654843d8f2c86" kind="function"><name>Plan</name></member>
+    <member refid="class_code_helper_1_1_transmission_flow_planner_1a39bf84c555f074b7200f6b5eed2ac149" kind="function"><name>GetName</name></member>
+    <member refid="class_code_helper_1_1_transmission_flow_planner_1a87ae8ec3530bd37c772d8d660c96490f" kind="function"><name>GetBrief</name></member>
+  </compound>
+  <compound refid="struct_code_helper_1_1_typed_message" kind="struct"><name>CodeHelper::TypedMessage</name>
+    <member refid="struct_code_helper_1_1_typed_message_1a5f7b257149cc6e4f98a2deb229ef1fb5" kind="variable"><name>DataSize</name></member>
+    <member refid="struct_code_helper_1_1_typed_message_1ad7bb02c710b6fc023c816cf29997188b" kind="variable"><name>FullSize</name></member>
+    <member refid="struct_code_helper_1_1_typed_message_1a1d6e86f37ecd3eb79d0094d1f13534ba" kind="variable"><name>Head</name></member>
+    <member refid="struct_code_helper_1_1_typed_message_1a3d753e1215ef1814f5038edb5571a180" kind="variable"><name>Type</name></member>
+    <member refid="struct_code_helper_1_1_typed_message_1a915a55349eb848391e6aa09dbb58d20e" kind="variable"><name>Data</name></member>
+    <member refid="struct_code_helper_1_1_typed_message_1ac6c42da56045678056181189ae15a729" kind="variable"><name>Tail</name></member>
+    <member refid="struct_code_helper_1_1_typed_message_1a1077dd45597e7b5fe301d5a1af01536c" kind="function"><name>ToSpan</name></member>
+    <member refid="struct_code_helper_1_1_typed_message_1a77c725c787209a2692d68dd55d9fa615" kind="function"><name>ToSpan</name></member>
+    <member refid="struct_code_helper_1_1_typed_message_1ada8172b097fc30aa4b2df9ac6dfc5a49" kind="function"><name>CopyDataTo</name></member>
+    <member refid="struct_code_helper_1_1_typed_message_1a691ae5159dfdd88624874b96d34b9ef6" kind="function"><name>GetDataAs</name></member>
+    <member refid="struct_code_helper_1_1_typed_message_1a10fb37b3ee513b25c52952bff441a91d" kind="function"><name>GetDataAs</name></member>
+  </compound>
+  <compound refid="class_code_helper_1_1_writer" kind="class"><name>CodeHelper::Writer</name>
+    <member refid="class_code_helper_1_1_writer_1a6821574dd9d250fc116fd53aaf9abdd7" kind="function"><name>WriteBytes</name></member>
+  </compound>
+  <compound refid="concept_code_helper_1_1_is_destination_node" kind="concept"><name>CodeHelper::IsDestinationNode</name>
+  </compound>
+  <compound refid="concept_code_helper_1_1_is_flow_destination" kind="concept"><name>CodeHelper::IsFlowDestination</name>
+  </compound>
+  <compound refid="concept_code_helper_1_1_is_formattable" kind="concept"><name>CodeHelper::IsFormattable</name>
+  </compound>
+  <compound refid="concept_code_helper_1_1_is_formattable_acceptor" kind="concept"><name>CodeHelper::IsFormattableAcceptor</name>
+  </compound>
+  <compound refid="concept_code_helper_1_1_is_formattable_i_o_device" kind="concept"><name>CodeHelper::IsFormattableIODevice</name>
+  </compound>
+  <compound refid="concept_code_helper_1_1_is_formattable_reader" kind="concept"><name>CodeHelper::IsFormattableReader</name>
+  </compound>
+  <compound refid="concept_code_helper_1_1_is_formattable_source" kind="concept"><name>CodeHelper::IsFormattableSource</name>
+  </compound>
+  <compound refid="concept_code_helper_1_1_is_formattable_writer" kind="concept"><name>CodeHelper::IsFormattableWriter</name>
+  </compound>
+  <compound refid="concept_code_helper_1_1_is_reader" kind="concept"><name>CodeHelper::IsReader</name>
+  </compound>
+  <compound refid="concept_code_helper_1_1_is_source_node" kind="concept"><name>CodeHelper::IsSourceNode</name>
+  </compound>
+  <compound refid="concept_code_helper_1_1_is_writer" kind="concept"><name>CodeHelper::IsWriter</name>
+  </compound>
+  <compound refid="namespace_0d22" kind="namespace"><name>@22</name>
+  </compound>
+  <compound refid="namespaceboost" kind="namespace"><name>boost</name>
+  </compound>
+  <compound refid="namespaceboost_1_1filesystem" kind="namespace"><name>boost::filesystem</name>
+  </compound>
+  <compound refid="namespace_code_helper" kind="namespace"><name>CodeHelper</name>
+    <member refid="_c_r_c_8cpp_1a36b0ad74f963f85cf67893a9d0d6bc90" kind="variable"><name>CRC16Start</name></member>
+    <member refid="_c_r_c_8cpp_1af946fc0de21931c10912430f49c9426b" kind="variable"><name>CRC16Table</name></member>
+    <member refid="_c_r_c_8cpp_1aa9e78d1972ac13ae5355cbef1f291842" kind="variable"><name>CRC8Start</name></member>
+    <member refid="_c_r_c_8cpp_1a5bfc9bbcc3e265e666d25bceee9225e3" kind="variable"><name>CRC8Table</name></member>
+    <member refid="_counter_8hpp_1a9f00be395e4324c3f795e8b3abb8cb90" kind="function"><name>DefaultCheckErrorCounter</name></member>
+    <member refid="_c_r_c_8hpp_1af7a4e9ef5dde50a686017111906e403b" kind="function"><name>CRC8Encode</name></member>
+    <member refid="_c_r_c_8hpp_1a10554efda49a009602ba64b25401b70d" kind="function"><name>CRC16Encode</name></member>
+    <member refid="_c_r_c_8hpp_1a327c0e08ffa8f3dbb515d293531e31c8" kind="function"><name>CRC8Check</name></member>
+    <member refid="_c_r_c_8hpp_1ae92bfecc7f4e9e02e6db96a3b36b4d96" kind="function"><name>CRC8Check</name></member>
+    <member refid="_c_r_c_8hpp_1afcbd3b6d491aead92b3350433d6c1a14" kind="function"><name>CRC16Check</name></member>
+    <member refid="_c_r_c_8hpp_1a7212186342a4fca9d7fa43baab9cde72" kind="function"><name>CRC16Check</name></member>
+    <member refid="_dependency_8hpp_1a39babcdf50d2600dc31e8aa78a5cd5d7" kind="function"><name>DefaultToString</name></member>
+    <member refid="_dependency_8hpp_1a57fdc11c61c3daa9ab2abb01452f4193" kind="function"><name>DefaultCheck</name></member>
+    <member refid="_formattable_8hpp_1aba67df7bf4ee4e4bae672edee179021e" kind="function"><name>operator&lt;&lt;</name></member>
+    <member refid="_formattable_8hpp_1a1f1beee03d4aa7486fee465876ccf06a" kind="function"><name>operator&lt;&lt;</name></member>
+    <member refid="_formattable_8hpp_1a39419a8fb8b58df344dc93af5468074d" kind="function"><name>ToString</name></member>
+    <member refid="_runtimes_8hpp_1ac1fda0d1782d7d70113d95a89e34006f" kind="function"><name>InitializeDefaultLogger</name></member>
+    <member refid="_runtimes_8hpp_1a444e5f3553b354cf087e5cfa57cd7e47" kind="function"><name>InitializeGlobalLogger</name></member>
+    <member refid="_runtimes_8hpp_1aa5de6fd9826a795693d143d3fa0d2524" kind="function"><name>DefaultLoad</name></member>
+    <member refid="_runtimes_8hpp_1aa6249340790c4386d7a7e177ac1d1e8b" kind="function"><name>DefaultSave</name></member>
+    <member refid="_runtimes_8hpp_1a3fbf4992e438af28fdce5e74c3489e59" kind="function"><name>DefaultConfigure</name></member>
+    <member refid="_runtimes_8hpp_1a9de31240c6750be13be85539c18c9d77" kind="function"><name>DefaultConfigure</name></member>
+    <member refid="_runtimes_8hpp_1acd63eb9cb2e810e2a20f9a450105f9ea" kind="function"><name>LogUpdatedValue</name></member>
+    <member refid="_span_utils_8hpp_1a9a3b0cd3871d2a23b2b5101f2d2a2b23" kind="function"><name>FormatToHex</name></member>
+    <member refid="_span_utils_8hpp_1aecd325e571afc0a53b2ea9c9c2bf8170" kind="function"><name>FormatToHex</name></member>
+    <member refid="_span_utils_8hpp_1ab9647a82647a21ef2541634d4aadc93b" kind="function"><name>FormatCombine</name></member>
+    <member refid="_span_utils_8hpp_1abf9290864999db80f2245bed1980b199" kind="function"><name>FormatCombine</name></member>
+    <member refid="_span_utils_8hpp_1a17eb9bbfa82bbfe0e072f715737218c5" kind="function"><name>FormatSplit</name></member>
+    <member refid="_span_utils_8hpp_1aec935ceaf42c19ccc6e979504e9eda6e" kind="function"><name>ToSpan</name></member>
+    <member refid="_c_r_c_8cpp_1adf106f31d5cedc4cdfc4bdf67cfcb6af" kind="function"><name>CRC16Check</name></member>
+    <member refid="_c_r_c_8cpp_1a4121a04b8cb224adad377adab6939333" kind="function"><name>CRC16Check</name></member>
+    <member refid="_parse_from_stream_8cpp_1a056486bce496b18b1520e29a500b406c" kind="function"><name>operator&gt;&gt;</name></member>
+    <member refid="_runtimes_8cpp_1ab62146a215bcb62882097755eff9c726" kind="function"><name>DefaultLoad</name></member>
+    <member refid="_runtimes_8cpp_1aa972c0cf852981dca033a275a41d7481" kind="function"><name>DefaultSave</name></member>
+  </compound>
+  <compound refid="namespace_lang_ya" kind="namespace"><name>LangYa</name>
+  </compound>
+  <compound refid="namespacestd" kind="namespace"><name>std</name>
+  </compound>
+  <compound refid="_code_helper_8hpp" kind="file"><name>CodeHelper.hpp</name>
+  </compound>
+  <compound refid="_async_item_pool_8hpp" kind="file"><name>AsyncItemPool.hpp</name>
+  </compound>
+  <compound refid="_buffers_8hpp" kind="file"><name>Buffers.hpp</name>
+  </compound>
+  <compound refid="_counter_8hpp" kind="file"><name>Counter.hpp</name>
+  </compound>
+  <compound refid="_c_r_c_8hpp" kind="file"><name>CRC.hpp</name>
+  </compound>
+  <compound refid="_dependency_8hpp" kind="file"><name>Dependency.hpp</name>
+    <member refid="_dependency_8hpp_1a945f313ac54d5afdc142dd533402a607" kind="define"><name>RequestDefaultCheck</name></member>
+    <member refid="_dependency_8hpp_1a815b506ccc60a94a2b9201d98c9dbf1a" kind="define"><name>RequestLogGetObject</name></member>
+  </compound>
+  <compound refid="_devices_8hpp" kind="file"><name>Devices.hpp</name>
+  </compound>
+  <compound refid="_formattable_8hpp" kind="file"><name>Formattable.hpp</name>
+    <member refid="_formattable_8hpp_1a9ac30f10996eb2a1459ec949c3a40ff2" kind="define"><name>StreamFormatNameAndValue</name></member>
+  </compound>
+  <compound refid="_logic_nodes_8hpp" kind="file"><name>LogicNodes.hpp</name>
+    <member refid="_logic_nodes_8hpp_1a44cab97701d254bcbb376b9e2a33662a" kind="define"><name>SC_DefineMakeShared</name></member>
+  </compound>
+  <compound refid="_parse_from_stream_8hpp" kind="file"><name>ParseFromStream.hpp</name>
+  </compound>
+  <compound refid="_ping_pong_exchanger_8hpp" kind="file"><name>PingPongExchanger.hpp</name>
+  </compound>
+  <compound refid="_runtimes_8hpp" kind="file"><name>Runtimes.hpp</name>
+  </compound>
+  <compound refid="_sine_wave_8hpp" kind="file"><name>SineWave.hpp</name>
+  </compound>
+  <compound refid="_span_utils_8hpp" kind="file"><name>SpanUtils.hpp</name>
+  </compound>
+  <compound refid="_transmission_flow_planner_8hpp" kind="file"><name>TransmissionFlowPlanner.hpp</name>
+  </compound>
+  <compound refid="_typed_message_8hpp" kind="file"><name>TypedMessage.hpp</name>
+  </compound>
+  <compound refid="_r_e_a_d_m_e_8md" kind="file"><name>README.md</name>
+  </compound>
+  <compound refid="_code_helper_8cpp" kind="file"><name>CodeHelper.cpp</name>
+  </compound>
+  <compound refid="_counter_8cpp" kind="file"><name>Counter.cpp</name>
+  </compound>
+  <compound refid="_c_r_c_8cpp" kind="file"><name>CRC.cpp</name>
+  </compound>
+  <compound refid="_formattable_8cpp" kind="file"><name>Formattable.cpp</name>
+  </compound>
+  <compound refid="_parse_from_stream_8cpp" kind="file"><name>ParseFromStream.cpp</name>
+  </compound>
+  <compound refid="_ping_pong_exchanger_8cpp" kind="file"><name>PingPongExchanger.cpp</name>
+  </compound>
+  <compound refid="_runtimes_8cpp" kind="file"><name>Runtimes.cpp</name>
+    <member refid="_runtimes_8cpp_1a52f73d0f158686722ee6eda5d759b442" kind="define"><name>SC_READER_HELPER</name></member>
+    <member refid="_runtimes_8cpp_1ab31ceda0438cb00f90d5a7a45d0c209b" kind="define"><name>SC_WRITER_HELPER</name></member>
+  </compound>
+  <compound refid="_sine_wave_8cpp" kind="file"><name>SineWave.cpp</name>
+  </compound>
+  <compound refid="_span_utils_8cpp" kind="file"><name>SpanUtils.cpp</name>
+  </compound>
+  <compound refid="_auto_aim_manager_8cpp" kind="file"><name>AutoAimManager.cpp</name>
+    <member refid="_auto_aim_manager_8cpp_1a0853391857cacb18c41deb92ec2d48b2" kind="typedef"><name>TargetList</name></member>
+    <member refid="_auto_aim_manager_8cpp_1ad68a502da7537f8a21079e2251215632" kind="function"><name>ScanDirectory</name></member>
+    <member refid="_auto_aim_manager_8cpp_1ae66f6b31b5ad750f1fe042a706a4e3d4" kind="function"><name>main</name></member>
+  </compound>
+  <compound refid="_auto_run_manager_8cpp" kind="file"><name>AutoRunManager.cpp</name>
+    <member refid="_auto_run_manager_8cpp_1a66497acd293d3c4c74fecfcd1263ae7d" kind="typedef"><name>ScriptFileList</name></member>
+    <member refid="_auto_run_manager_8cpp_1ae66f6b31b5ad750f1fe042a706a4e3d4" kind="function"><name>main</name></member>
+  </compound>
+  <compound refid="md__c_1_2_users_2_sango_2source_2_lang_ya_2_sources_2_code_helper_2_r_e_a_d_m_e" kind="page"><name>md__c_1_2_users_2_sango_2source_2_lang_ya_2_sources_2_code_helper_2_r_e_a_d_m_e</name>
+  </compound>
+  <compound refid="dir_094ebcb4919f181b609c5151056598b6" kind="dir"><name>C:/Users/Sango/source/LangYa/Sources/CodeHelper</name>
+  </compound>
+  <compound refid="dir_65f11b92e7cae1f6e6f84addd783e967" kind="dir"><name>C:/Users/Sango/source/LangYa/Sources/CodeHelper/Headers/LangYa/CodeHelper</name>
+  </compound>
+  <compound refid="dir_32fe94b2673fe13e7b8f299e941ae2d0" kind="dir"><name>C:/Users/Sango/source/LangYa/Sources/CodeHelper/Headers</name>
+  </compound>
+  <compound refid="dir_4dc872ec0e5fb5d2bd89fbfe1f12708c" kind="dir"><name>C:/Users/Sango/source/LangYa/Sources/CodeHelper/Headers/LangYa</name>
+  </compound>
+  <compound refid="dir_937900b87e0c7a5fa01190c395fb83f7" kind="dir"><name>C:/Users/Sango/source/LangYa/Sources</name>
+  </compound>
+  <compound refid="dir_5b821077e0e3f80eadb7e456e09f73f3" kind="dir"><name>C:/Users/Sango/source/LangYa/Sources/CodeHelper/Sources</name>
+  </compound>
+  <compound refid="dir_d8d003ef444646c2328f720b9512af97" kind="dir"><name>C:/Users/Sango/source/LangYa/Sources/CodeHelper/Testers</name>
+  </compound>
+</doxygenindex>

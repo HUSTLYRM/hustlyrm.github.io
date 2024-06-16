@@ -1,0 +1,20 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.11.0" xml:lang="zh">
+  <compounddef id="concept_code_helper_1_1_is_formattable_i_o_device" kind="concept">
+    <compoundname>CodeHelper::IsFormattableIODevice</compoundname>
+    <templateparamlist>
+      <param>
+        <type>typename TDevice</type>
+      </param>
+    </templateparamlist>
+    <initializer>template&lt;typename TDevice&gt;
+concept <ref refid="concept_code_helper_1_1_is_formattable_i_o_device" kindref="compound">CodeHelper::IsFormattableIODevice</ref> =  IsFormattable&lt;TDevice&gt;
+		&amp;&amp; IsReader&lt;TDevice&gt;
+		&amp;&amp; IsWriter&lt;TDevice&gt;    </initializer>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/Sango/source/LangYa/Sources/CodeHelper/Headers/LangYa/CodeHelper/Devices.hpp" line="49" column="1"/>
+  </compounddef>
+</doxygen>

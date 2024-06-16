@@ -1,0 +1,69 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.11.0" xml:lang="zh">
+  <compounddef id="class_code_helper_1_1_empty_source_node" kind="class" language="C++" prot="public" final="yes">
+    <compoundname>CodeHelper::EmptySourceNode</compoundname>
+    <basecompoundref refid="class_code_helper_1_1_source_node" prot="public" virt="non-virtual">CodeHelper::SourceNode&lt; TItem &gt;</basecompoundref>
+    <includes refid="_logic_nodes_8hpp" local="no">LogicNodes.hpp</includes>
+    <templateparamlist>
+      <param>
+        <type>typename TItem</type>
+      </param>
+    </templateparamlist>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_code_helper_1_1_empty_source_node_1a012dfdf70f4604aacf258dcc783fdc93" prot="public" static="no" nodiscard="yes" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>bool</type>
+        <definition>bool CodeHelper::EmptySourceNode&lt; TItem &gt;::GetItem</definition>
+        <argsstring>(TItem &amp;item) override</argsstring>
+        <name>GetItem</name>
+        <qualifiedname>CodeHelper::EmptySourceNode::GetItem</qualifiedname>
+        <reimplements refid="class_code_helper_1_1_source_node_1ab7bf471b91c01f8b00606d695d9e6746">GetItem</reimplements>
+        <param>
+          <type>TItem &amp;</type>
+          <declname>item</declname>
+        </param>
+        <briefdescription>
+<para>获取物品，通过参数返回物品，通过函数结果返回是否获取成功 </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Sango/source/LangYa/Sources/CodeHelper/Headers/LangYa/CodeHelper/LogicNodes.hpp" line="59" column="7" bodyfile="C:/Users/Sango/source/LangYa/Sources/CodeHelper/Headers/LangYa/CodeHelper/LogicNodes.hpp" bodystart="59" bodyend="62"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>空的物品源节点，不提供物品，只用于测试 </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>CodeHelper::EmptySourceNode&lt; TItem &gt;</label>
+        <link refid="class_code_helper_1_1_empty_source_node"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>CodeHelper::SourceNode&lt; TItem &gt;</label>
+        <link refid="class_code_helper_1_1_source_node"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>CodeHelper::EmptySourceNode&lt; TItem &gt;</label>
+        <link refid="class_code_helper_1_1_empty_source_node"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>CodeHelper::SourceNode&lt; TItem &gt;</label>
+        <link refid="class_code_helper_1_1_source_node"/>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/Sango/source/LangYa/Sources/CodeHelper/Headers/LangYa/CodeHelper/LogicNodes.hpp" line="56" column="1" bodyfile="C:/Users/Sango/source/LangYa/Sources/CodeHelper/Headers/LangYa/CodeHelper/LogicNodes.hpp" bodystart="57" bodyend="65"/>
+    <listofallmembers>
+      <member refid="class_code_helper_1_1_empty_source_node_1a012dfdf70f4604aacf258dcc783fdc93" prot="public" virt="virtual"><scope>CodeHelper::EmptySourceNode</scope><name>GetItem</name></member>
+      <member refid="class_code_helper_1_1_source_node_1a05fcd780a3ebbf0cd020496228ceb3f3" prot="public" virt="non-virtual"><scope>CodeHelper::EmptySourceNode</scope><name>ItemType</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,104 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.11.0" xml:lang="zh">
+  <compounddef id="class_code_helper_1_1_destination_node" kind="class" language="C++" prot="public" abstract="yes">
+    <compoundname>CodeHelper::DestinationNode</compoundname>
+    <derivedcompoundref refid="class_code_helper_1_1_async_item_pool" prot="public" virt="non-virtual">CodeHelper::AsyncItemPool&lt; TItem &gt;</derivedcompoundref>
+    <derivedcompoundref refid="class_code_helper_1_1_empty_destination_node" prot="public" virt="non-virtual">CodeHelper::EmptyDestinationNode&lt; TItem &gt;</derivedcompoundref>
+    <includes refid="_logic_nodes_8hpp" local="no">LogicNodes.hpp</includes>
+    <templateparamlist>
+      <param>
+        <type>typename TItem</type>
+      </param>
+    </templateparamlist>
+    <sectiondef kind="public-type">
+      <memberdef kind="typedef" id="class_code_helper_1_1_destination_node_1af0a498469e34d11b72dd26e25357086b" prot="public" static="no">
+        <type>TItem</type>
+        <definition>using CodeHelper::DestinationNode&lt; TItem &gt;::ItemType =  TItem</definition>
+        <argsstring></argsstring>
+        <name>ItemType</name>
+        <qualifiedname>CodeHelper::DestinationNode::ItemType</qualifiedname>
+        <briefdescription>
+<para>物品类型，用于在模板外部萃取物品类型 </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Sango/source/LangYa/Sources/CodeHelper/Headers/LangYa/CodeHelper/LogicNodes.hpp" line="85" column="1" bodyfile="C:/Users/Sango/source/LangYa/Sources/CodeHelper/Headers/LangYa/CodeHelper/LogicNodes.hpp" bodystart="85" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_code_helper_1_1_destination_node_1abf9841fc7adff56fea44b3d0c98f7bff" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void CodeHelper::DestinationNode&lt; TItem &gt;::SetItem</definition>
+        <argsstring>(const TItem &amp;item)=0</argsstring>
+        <name>SetItem</name>
+        <qualifiedname>CodeHelper::DestinationNode::SetItem</qualifiedname>
+        <reimplementedby refid="class_code_helper_1_1_async_item_pool_1a6b122241ec365eb268f2f07d56ebfab0">SetItem</reimplementedby>
+        <reimplementedby refid="class_code_helper_1_1_empty_destination_node_1a03334cbc8a031cefb56e33d4326af575">SetItem</reimplementedby>
+        <param>
+          <type>const TItem &amp;</type>
+          <declname>item</declname>
+        </param>
+        <briefdescription>
+<para>设置物品，目的地将会接收物品并开始处理 </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>item</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>使用常量引用传递的物品 </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Sango/source/LangYa/Sources/CodeHelper/Headers/LangYa/CodeHelper/LogicNodes.hpp" line="89" column="14"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>目的地节点，表明此对象能够接收物品 </para>
+    </briefdescription>
+    <detaileddescription>
+<para><parameterlist kind="templateparam"><parameteritem>
+<parameternamelist>
+<parametername>TItem</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>节点接收物品的类型，需要能够使用常量引用传递 </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para>接口的指针变量不拥有对象的所有权，故不负责销毁对象 </para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>CodeHelper::AsyncItemPool&lt; TItem &gt;</label>
+        <link refid="class_code_helper_1_1_async_item_pool"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>CodeHelper::DestinationNode&lt; TItem &gt;</label>
+        <link refid="class_code_helper_1_1_destination_node"/>
+      </node>
+      <node id="3">
+        <label>CodeHelper::EmptyDestinationNode&lt; TItem &gt;</label>
+        <link refid="class_code_helper_1_1_empty_destination_node"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <location file="C:/Users/Sango/source/LangYa/Sources/CodeHelper/Headers/LangYa/CodeHelper/LogicNodes.hpp" line="81" column="1" bodyfile="C:/Users/Sango/source/LangYa/Sources/CodeHelper/Headers/LangYa/CodeHelper/LogicNodes.hpp" bodystart="82" bodyend="90"/>
+    <listofallmembers>
+      <member refid="class_code_helper_1_1_destination_node_1af0a498469e34d11b72dd26e25357086b" prot="public" virt="non-virtual"><scope>CodeHelper::DestinationNode</scope><name>ItemType</name></member>
+      <member refid="class_code_helper_1_1_destination_node_1abf9841fc7adff56fea44b3d0c98f7bff" prot="public" virt="pure-virtual"><scope>CodeHelper::DestinationNode</scope><name>SetItem</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

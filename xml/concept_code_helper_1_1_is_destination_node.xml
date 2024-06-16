@@ -1,0 +1,50 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.11.0" xml:lang="zh">
+  <compounddef id="concept_code_helper_1_1_is_destination_node" kind="concept">
+    <compoundname>CodeHelper::IsDestinationNode</compoundname>
+    <includes refid="_logic_nodes_8hpp" local="no">LogicNodes.hpp</includes>
+    <templateparamlist>
+      <param>
+        <type>typename TNode</type>
+      </param>
+      <param>
+        <type>typename TItem</type>
+        <defval>typename TNode::ItemType</defval>
+      </param>
+    </templateparamlist>
+    <initializer>template&lt;typename TNode, typename TItem typename TNode::ItemType&gt;
+concept <ref refid="concept_code_helper_1_1_is_destination_node" kindref="compound">CodeHelper::IsDestinationNode</ref> =  requires(TNode destination, const TItem&amp; item)
+	{
+		destination.SetItem(item);
+	}    </initializer>
+    <briefdescription>
+<para>是否为目的地节点的概念 目的地节点需要提供两个内容： </para>
+    </briefdescription>
+    <detaileddescription>
+<para><itemizedlist>
+<listitem><para>ItemType 物品类型，此类型要可以常量引用传递；</para>
+</listitem><listitem><para>SetItem 方法，用于设置物品。</para>
+</listitem></itemizedlist>
+</para>
+<para><parameterlist kind="templateparam"><parameteritem>
+<parameternamelist>
+<parametername>TNode</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>被检查的节点类型 </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>TItem</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>从节点中萃取的物品类型 </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+    </detaileddescription>
+    <location file="C:/Users/Sango/source/LangYa/Sources/CodeHelper/Headers/LangYa/CodeHelper/LogicNodes.hpp" line="101" column="1"/>
+  </compounddef>
+</doxygen>

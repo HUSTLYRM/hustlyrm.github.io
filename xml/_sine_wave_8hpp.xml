@@ -1,0 +1,106 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.11.0" xml:lang="zh">
+  <compounddef id="_sine_wave_8hpp" kind="file" language="C++">
+    <compoundname>SineWave.hpp</compoundname>
+    <includes local="no">chrono</includes>
+    <includes refid="_logic_nodes_8hpp" local="yes">LogicNodes.hpp</includes>
+    <includedby refid="_code_helper_8hpp" local="yes">C:/Users/Sango/source/LangYa/Sources/CodeHelper/Headers/LangYa/CodeHelper.hpp</includedby>
+    <includedby refid="_sine_wave_8cpp" local="no">C:/Users/Sango/source/LangYa/Sources/CodeHelper/Sources/SineWave.cpp</includedby>
+    <incdepgraph>
+      <node id="3">
+        <label>LogicNodes.hpp</label>
+        <link refid="_logic_nodes_8hpp_source"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>C:/Users/Sango/source/LangYa/Sources/CodeHelper/Headers/LangYa/CodeHelper/SineWave.hpp</label>
+        <link refid="_sine_wave_8hpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>chrono</label>
+      </node>
+      <node id="4">
+        <label>concepts</label>
+      </node>
+      <node id="5">
+        <label>memory</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="2">
+        <label>C:/Users/Sango/source/LangYa/Sources/CodeHelper/Headers/LangYa/CodeHelper.hpp</label>
+        <link refid="_code_helper_8hpp_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>C:/Users/Sango/source/LangYa/Sources/CodeHelper/Headers/LangYa/CodeHelper/SineWave.hpp</label>
+        <link refid="_sine_wave_8hpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>C:/Users/Sango/source/LangYa/Sources/CodeHelper/Sources/CodeHelper.cpp</label>
+        <link refid="_code_helper_8cpp_source"/>
+      </node>
+      <node id="5">
+        <label>C:/Users/Sango/source/LangYa/Sources/CodeHelper/Sources/SineWave.cpp</label>
+        <link refid="_sine_wave_8cpp_source"/>
+      </node>
+      <node id="4">
+        <label>C:/Users/Sango/source/LangYa/Sources/CodeHelper/Testers/AutoAimManager.cpp</label>
+        <link refid="_auto_aim_manager_8cpp_source"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="struct_code_helper_1_1_sine_wave" prot="public">CodeHelper::SineWave</innerclass>
+    <innernamespace refid="namespace_code_helper">CodeHelper</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#pragma<sp/>once</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;chrono&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;LogicNodes.hpp&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">LangYa::<sp/>inline<sp/>CodeHelper</highlight></codeline>
+<codeline lineno="8"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="10" refid="struct_code_helper_1_1_sine_wave" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct_code_helper_1_1_sine_wave" kindref="compound">SineWave</ref><sp/>final<sp/>:<sp/><ref refid="class_code_helper_1_1_source_node" kindref="compound">SourceNode</ref>&lt;float&gt;,<sp/><ref refid="class_code_helper_1_1_processor_node" kindref="compound">ProcessorNode</ref>&lt;std::chrono::steady_clock::time_point,<sp/>float&gt;</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>Amplitude{1.0f};</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>Phase{0.0f};</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::chrono::steady_clock::duration<sp/>RoundTime{std::chrono::seconds{1}};</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::chrono::steady_clock::time_point<sp/>StartTime{};</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="struct_code_helper_1_1_sine_wave" kindref="compound">SineWave</ref>();</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="struct_code_helper_1_1_sine_wave" kindref="compound">SineWave</ref>(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>amplitude,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>phase,<sp/>std::chrono::steady_clock::duration<sp/>roundTime,<sp/>std::chrono::steady_clock::time_point<sp/>startTime);</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="struct_code_helper_1_1_sine_wave" kindref="compound">SineWave</ref>(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>amplitude,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>phase,<sp/>std::chrono::steady_clock::duration<sp/>roundTime);</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>[[nodiscard]]<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>Produce(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::chrono::steady_clock::time_point&amp;<sp/>now)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>[[nodiscard]]<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>Produce()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>[[nodiscard]]<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>GetItem(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal">&amp;<sp/>item)<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>Process(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::chrono::time_point&lt;std::chrono::steady_clock&gt;&amp;<sp/>argument,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal">&amp;<sp/>result)<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="31"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="C:/Users/Sango/source/LangYa/Sources/CodeHelper/Headers/LangYa/CodeHelper/SineWave.hpp"/>
+  </compounddef>
+</doxygen>

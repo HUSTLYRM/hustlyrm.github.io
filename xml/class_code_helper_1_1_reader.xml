@@ -1,0 +1,40 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.11.0" xml:lang="zh">
+  <compounddef id="class_code_helper_1_1_reader" kind="class" language="C++" prot="public" abstract="yes">
+    <compoundname>CodeHelper::Reader</compoundname>
+    <includes refid="_devices_8hpp" local="no">Devices.hpp</includes>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_code_helper_1_1_reader_1abb133eceebf11a80263b841513999707" prot="public" static="no" nodiscard="yes" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>std::size_t</type>
+        <definition>virtual std::size_t CodeHelper::Reader::ReadBytes</definition>
+        <argsstring>(std::span&lt; std::uint8_t &gt; buffer)=0</argsstring>
+        <name>ReadBytes</name>
+        <qualifiedname>CodeHelper::Reader::ReadBytes</qualifiedname>
+        <param>
+          <type>std::span&lt; std::uint8_t &gt;</type>
+          <declname>buffer</declname>
+        </param>
+        <briefdescription>
+<para>读取字节，直到无剩余内容或者提供的缓冲区已满 </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>实际读取的字节数，如果小于缓冲区长度，则可以认为遇到了一些错误，如 EOF 或者读取器不再可用 </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Sango/source/LangYa/Sources/CodeHelper/Headers/LangYa/CodeHelper/Devices.hpp" line="18" column="22"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>字节读取器，此接口不承担原类型的销毁 </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/Sango/source/LangYa/Sources/CodeHelper/Headers/LangYa/CodeHelper/Devices.hpp" line="13" column="1" bodyfile="C:/Users/Sango/source/LangYa/Sources/CodeHelper/Headers/LangYa/CodeHelper/Devices.hpp" bodystart="14" bodyend="19"/>
+    <listofallmembers>
+      <member refid="class_code_helper_1_1_reader_1abb133eceebf11a80263b841513999707" prot="public" virt="pure-virtual"><scope>CodeHelper::Reader</scope><name>ReadBytes</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

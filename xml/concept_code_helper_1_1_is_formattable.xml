@@ -1,0 +1,23 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.11.0" xml:lang="zh">
+  <compounddef id="concept_code_helper_1_1_is_formattable" kind="concept">
+    <compoundname>CodeHelper::IsFormattable</compoundname>
+    <includes refid="_formattable_8hpp" local="no">Formattable.hpp</includes>
+    <templateparamlist>
+      <param>
+        <type>typename TObject</type>
+      </param>
+    </templateparamlist>
+    <initializer>template&lt;typename TObject&gt;
+concept <ref refid="concept_code_helper_1_1_is_formattable" kindref="compound">CodeHelper::IsFormattable</ref> =  requires(const TObject&amp; object, std::ostream&amp; stream)
+	{
+		{ object.Format(stream) } -&gt; std::convertible_to&lt;std::ostream&amp;&gt;;
+	}    </initializer>
+    <briefdescription>
+<para>表明此类型的对象提供了 Format 函数供格式化 </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/Sango/source/LangYa/Sources/CodeHelper/Headers/LangYa/CodeHelper/Formattable.hpp" line="13" column="1"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,276 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.11.0" xml:lang="zh">
+  <compounddef id="struct_code_helper_1_1_sine_wave" kind="struct" language="C++" prot="public" final="yes">
+    <compoundname>CodeHelper::SineWave</compoundname>
+    <basecompoundref refid="class_code_helper_1_1_source_node" prot="public" virt="non-virtual">CodeHelper::SourceNode&lt; float &gt;</basecompoundref>
+    <basecompoundref refid="class_code_helper_1_1_processor_node" prot="public" virt="non-virtual">CodeHelper::ProcessorNode&lt; std::chrono::steady_clock::time_point, float &gt;</basecompoundref>
+    <includes refid="_sine_wave_8hpp" local="no">SineWave.hpp</includes>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_code_helper_1_1_sine_wave_1ac1d97d5b1cf2f07f7124bb650eddc7a9" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float CodeHelper::SineWave::Amplitude</definition>
+        <argsstring></argsstring>
+        <name>Amplitude</name>
+        <qualifiedname>CodeHelper::SineWave::Amplitude</qualifiedname>
+        <initializer>{1.0f}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Sango/source/LangYa/Sources/CodeHelper/Headers/LangYa/CodeHelper/SineWave.hpp" line="12" column="7" bodyfile="C:/Users/Sango/source/LangYa/Sources/CodeHelper/Headers/LangYa/CodeHelper/SineWave.hpp" bodystart="12" bodyend="12"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_code_helper_1_1_sine_wave_1a3800752000221de548f2ad32e41728b0" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float CodeHelper::SineWave::Phase</definition>
+        <argsstring></argsstring>
+        <name>Phase</name>
+        <qualifiedname>CodeHelper::SineWave::Phase</qualifiedname>
+        <initializer>{0.0f}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Sango/source/LangYa/Sources/CodeHelper/Headers/LangYa/CodeHelper/SineWave.hpp" line="13" column="7" bodyfile="C:/Users/Sango/source/LangYa/Sources/CodeHelper/Headers/LangYa/CodeHelper/SineWave.hpp" bodystart="13" bodyend="13"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_code_helper_1_1_sine_wave_1a769cf74f56b29f944dd02285d892c406" prot="public" static="no" mutable="no">
+        <type>std::chrono::steady_clock::duration</type>
+        <definition>std::chrono::steady_clock::duration CodeHelper::SineWave::RoundTime</definition>
+        <argsstring></argsstring>
+        <name>RoundTime</name>
+        <qualifiedname>CodeHelper::SineWave::RoundTime</qualifiedname>
+        <initializer>{std::chrono::seconds{1}}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Sango/source/LangYa/Sources/CodeHelper/Headers/LangYa/CodeHelper/SineWave.hpp" line="14" column="37" bodyfile="C:/Users/Sango/source/LangYa/Sources/CodeHelper/Headers/LangYa/CodeHelper/SineWave.hpp" bodystart="14" bodyend="14"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_code_helper_1_1_sine_wave_1aabdf769385584e65f083f176a6ee5120" prot="public" static="no" mutable="no">
+        <type>std::chrono::steady_clock::time_point</type>
+        <definition>std::chrono::steady_clock::time_point CodeHelper::SineWave::StartTime</definition>
+        <argsstring></argsstring>
+        <name>StartTime</name>
+        <qualifiedname>CodeHelper::SineWave::StartTime</qualifiedname>
+        <initializer>{}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Sango/source/LangYa/Sources/CodeHelper/Headers/LangYa/CodeHelper/SineWave.hpp" line="15" column="39" bodyfile="C:/Users/Sango/source/LangYa/Sources/CodeHelper/Headers/LangYa/CodeHelper/SineWave.hpp" bodystart="15" bodyend="15"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="struct_code_helper_1_1_sine_wave_1aad9210ba2f29b894cdd8af559c0b8916" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>CodeHelper::SineWave::SineWave</definition>
+        <argsstring>()</argsstring>
+        <name>SineWave</name>
+        <qualifiedname>CodeHelper::SineWave::SineWave</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Sango/source/LangYa/Sources/CodeHelper/Headers/LangYa/CodeHelper/SineWave.hpp" line="17" column="1" bodyfile="C:/Users/Sango/source/LangYa/Sources/CodeHelper/Sources/SineWave.cpp" bodystart="7" bodyend="8"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_code_helper_1_1_sine_wave_1a7136d0efc143a275f43bc69a136a463a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>CodeHelper::SineWave::SineWave</definition>
+        <argsstring>(float amplitude, float phase, std::chrono::steady_clock::duration roundTime, std::chrono::steady_clock::time_point startTime)</argsstring>
+        <name>SineWave</name>
+        <qualifiedname>CodeHelper::SineWave::SineWave</qualifiedname>
+        <param>
+          <type>float</type>
+          <declname>amplitude</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>phase</declname>
+        </param>
+        <param>
+          <type>std::chrono::steady_clock::duration</type>
+          <declname>roundTime</declname>
+        </param>
+        <param>
+          <type>std::chrono::steady_clock::time_point</type>
+          <declname>startTime</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Sango/source/LangYa/Sources/CodeHelper/Headers/LangYa/CodeHelper/SineWave.hpp" line="19" column="1" bodyfile="C:/Users/Sango/source/LangYa/Sources/CodeHelper/Sources/SineWave.cpp" bodystart="10" bodyend="13"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_code_helper_1_1_sine_wave_1a4564c7cf464f8e90463317a43c869e82" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>CodeHelper::SineWave::SineWave</definition>
+        <argsstring>(float amplitude, float phase, std::chrono::steady_clock::duration roundTime)</argsstring>
+        <name>SineWave</name>
+        <qualifiedname>CodeHelper::SineWave::SineWave</qualifiedname>
+        <param>
+          <type>float</type>
+          <declname>amplitude</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>phase</declname>
+        </param>
+        <param>
+          <type>std::chrono::steady_clock::duration</type>
+          <declname>roundTime</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Sango/source/LangYa/Sources/CodeHelper/Headers/LangYa/CodeHelper/SineWave.hpp" line="21" column="1" bodyfile="C:/Users/Sango/source/LangYa/Sources/CodeHelper/Sources/SineWave.cpp" bodystart="15" bodyend="17"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_code_helper_1_1_sine_wave_1a665e8fc9cf6130d2ff7bdc707a0ab06c" prot="public" static="no" nodiscard="yes" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>float</type>
+        <definition>float CodeHelper::SineWave::Produce</definition>
+        <argsstring>(const std::chrono::steady_clock::time_point &amp;now) const</argsstring>
+        <name>Produce</name>
+        <qualifiedname>CodeHelper::SineWave::Produce</qualifiedname>
+        <param>
+          <type>const std::chrono::steady_clock::time_point &amp;</type>
+          <declname>now</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Sango/source/LangYa/Sources/CodeHelper/Headers/LangYa/CodeHelper/SineWave.hpp" line="23" column="8" bodyfile="C:/Users/Sango/source/LangYa/Sources/CodeHelper/Sources/SineWave.cpp" bodystart="19" bodyend="25"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_code_helper_1_1_sine_wave_1a7071591efecae471d5981a0de2a77433" prot="public" static="no" nodiscard="yes" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>float</type>
+        <definition>float CodeHelper::SineWave::Produce</definition>
+        <argsstring>() const</argsstring>
+        <name>Produce</name>
+        <qualifiedname>CodeHelper::SineWave::Produce</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Sango/source/LangYa/Sources/CodeHelper/Headers/LangYa/CodeHelper/SineWave.hpp" line="25" column="8" bodyfile="C:/Users/Sango/source/LangYa/Sources/CodeHelper/Sources/SineWave.cpp" bodystart="27" bodyend="30"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_code_helper_1_1_sine_wave_1a79e8b2cb589d98968e4e67c77a704240" prot="public" static="no" nodiscard="yes" const="no" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>bool CodeHelper::SineWave::GetItem</definition>
+        <argsstring>(float &amp;item) override</argsstring>
+        <name>GetItem</name>
+        <qualifiedname>CodeHelper::SineWave::GetItem</qualifiedname>
+        <reimplements refid="class_code_helper_1_1_source_node_1ab7bf471b91c01f8b00606d695d9e6746">GetItem</reimplements>
+        <param>
+          <type>float &amp;</type>
+          <declname>item</declname>
+        </param>
+        <briefdescription>
+<para>获取物品，通过参数返回物品，通过函数结果返回是否获取成功 </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Sango/source/LangYa/Sources/CodeHelper/Headers/LangYa/CodeHelper/SineWave.hpp" line="27" column="7" bodyfile="C:/Users/Sango/source/LangYa/Sources/CodeHelper/Sources/SineWave.cpp" bodystart="32" bodyend="36"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_code_helper_1_1_sine_wave_1a13a83b1b63d6c1b472fba4bb63dc2af9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool CodeHelper::SineWave::Process</definition>
+        <argsstring>(const std::chrono::time_point&lt; std::chrono::steady_clock &gt; &amp;argument, float &amp;result) override</argsstring>
+        <name>Process</name>
+        <qualifiedname>CodeHelper::SineWave::Process</qualifiedname>
+        <param>
+          <type>const std::chrono::time_point&lt; std::chrono::steady_clock &gt; &amp;</type>
+          <declname>argument</declname>
+        </param>
+        <param>
+          <type>float &amp;</type>
+          <declname>result</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Sango/source/LangYa/Sources/CodeHelper/Headers/LangYa/CodeHelper/SineWave.hpp" line="29" column="6" bodyfile="C:/Users/Sango/source/LangYa/Sources/CodeHelper/Sources/SineWave.cpp" bodystart="38" bodyend="42"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>产生正弦波 </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="3">
+        <label>CodeHelper::ProcessorNode&lt; std::chrono::steady_clock::time_point, float &gt;</label>
+        <link refid="class_code_helper_1_1_processor_node"/>
+      </node>
+      <node id="1">
+        <label>CodeHelper::SineWave</label>
+        <link refid="struct_code_helper_1_1_sine_wave"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>CodeHelper::SourceNode&lt; float &gt;</label>
+        <link refid="class_code_helper_1_1_source_node"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="3">
+        <label>CodeHelper::ProcessorNode&lt; std::chrono::steady_clock::time_point, float &gt;</label>
+        <link refid="class_code_helper_1_1_processor_node"/>
+      </node>
+      <node id="1">
+        <label>CodeHelper::SineWave</label>
+        <link refid="struct_code_helper_1_1_sine_wave"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>CodeHelper::SourceNode&lt; float &gt;</label>
+        <link refid="class_code_helper_1_1_source_node"/>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/Sango/source/LangYa/Sources/CodeHelper/Headers/LangYa/CodeHelper/SineWave.hpp" line="10" column="1" bodyfile="C:/Users/Sango/source/LangYa/Sources/CodeHelper/Headers/LangYa/CodeHelper/SineWave.hpp" bodystart="11" bodyend="30"/>
+    <listofallmembers>
+      <member refid="struct_code_helper_1_1_sine_wave_1ac1d97d5b1cf2f07f7124bb650eddc7a9" prot="public" virt="non-virtual"><scope>CodeHelper::SineWave</scope><name>Amplitude</name></member>
+      <member refid="class_code_helper_1_1_processor_node_1abfa58ffbb5753659bbdbbe15d99f2d32" prot="public" virt="non-virtual"><scope>CodeHelper::SineWave</scope><name>ArgumentItemType</name></member>
+      <member refid="struct_code_helper_1_1_sine_wave_1a79e8b2cb589d98968e4e67c77a704240" prot="public" virt="virtual"><scope>CodeHelper::SineWave</scope><name>GetItem</name></member>
+      <member refid="class_code_helper_1_1_source_node_1a05fcd780a3ebbf0cd020496228ceb3f3" prot="public" virt="non-virtual"><scope>CodeHelper::SineWave</scope><name>ItemType</name></member>
+      <member refid="struct_code_helper_1_1_sine_wave_1a3800752000221de548f2ad32e41728b0" prot="public" virt="non-virtual"><scope>CodeHelper::SineWave</scope><name>Phase</name></member>
+      <member refid="struct_code_helper_1_1_sine_wave_1a13a83b1b63d6c1b472fba4bb63dc2af9" prot="public" virt="non-virtual"><scope>CodeHelper::SineWave</scope><name>Process</name></member>
+      <member refid="class_code_helper_1_1_processor_node_1a14f2e7009980c116d35e3afab49ef78b" prot="public" virt="pure-virtual" ambiguityscope="CodeHelper::ProcessorNode&lt; std::chrono::steady_clock::time_point, float &gt;::"><scope>CodeHelper::SineWave</scope><name>Process</name></member>
+      <member refid="struct_code_helper_1_1_sine_wave_1a665e8fc9cf6130d2ff7bdc707a0ab06c" prot="public" virt="non-virtual"><scope>CodeHelper::SineWave</scope><name>Produce</name></member>
+      <member refid="struct_code_helper_1_1_sine_wave_1a7071591efecae471d5981a0de2a77433" prot="public" virt="non-virtual"><scope>CodeHelper::SineWave</scope><name>Produce</name></member>
+      <member refid="class_code_helper_1_1_processor_node_1a4d5fd1d2231b90bf66b62576cb7501b0" prot="public" virt="non-virtual"><scope>CodeHelper::SineWave</scope><name>ResultItemType</name></member>
+      <member refid="struct_code_helper_1_1_sine_wave_1a769cf74f56b29f944dd02285d892c406" prot="public" virt="non-virtual"><scope>CodeHelper::SineWave</scope><name>RoundTime</name></member>
+      <member refid="struct_code_helper_1_1_sine_wave_1aad9210ba2f29b894cdd8af559c0b8916" prot="public" virt="non-virtual"><scope>CodeHelper::SineWave</scope><name>SineWave</name></member>
+      <member refid="struct_code_helper_1_1_sine_wave_1a7136d0efc143a275f43bc69a136a463a" prot="public" virt="non-virtual"><scope>CodeHelper::SineWave</scope><name>SineWave</name></member>
+      <member refid="struct_code_helper_1_1_sine_wave_1a4564c7cf464f8e90463317a43c869e82" prot="public" virt="non-virtual"><scope>CodeHelper::SineWave</scope><name>SineWave</name></member>
+      <member refid="struct_code_helper_1_1_sine_wave_1aabdf769385584e65f083f176a6ee5120" prot="public" virt="non-virtual"><scope>CodeHelper::SineWave</scope><name>StartTime</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

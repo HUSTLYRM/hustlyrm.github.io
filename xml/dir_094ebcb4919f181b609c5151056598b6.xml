@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.11.0" xml:lang="zh">
+  <compounddef id="dir_094ebcb4919f181b609c5151056598b6" kind="dir">
+    <compoundname>C:/Users/Sango/source/LangYa/Sources/CodeHelper</compoundname>
+    <innerdir refid="dir_32fe94b2673fe13e7b8f299e941ae2d0">C:/Users/Sango/source/LangYa/Sources/CodeHelper/Headers</innerdir>
+    <innerdir refid="dir_5b821077e0e3f80eadb7e456e09f73f3">C:/Users/Sango/source/LangYa/Sources/CodeHelper/Sources</innerdir>
+    <innerdir refid="dir_d8d003ef444646c2328f720b9512af97">C:/Users/Sango/source/LangYa/Sources/CodeHelper/Testers</innerdir>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/Sango/source/LangYa/Sources/CodeHelper/"/>
+  </compounddef>
+</doxygen>

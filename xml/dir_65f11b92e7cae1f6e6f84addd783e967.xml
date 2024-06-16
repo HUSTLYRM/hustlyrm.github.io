@@ -1,0 +1,26 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.11.0" xml:lang="zh">
+  <compounddef id="dir_65f11b92e7cae1f6e6f84addd783e967" kind="dir">
+    <compoundname>C:/Users/Sango/source/LangYa/Sources/CodeHelper/Headers/LangYa/CodeHelper</compoundname>
+    <innerfile refid="_async_item_pool_8hpp">AsyncItemPool.hpp</innerfile>
+    <innerfile refid="_buffers_8hpp">Buffers.hpp</innerfile>
+    <innerfile refid="_counter_8hpp">Counter.hpp</innerfile>
+    <innerfile refid="_c_r_c_8hpp">CRC.hpp</innerfile>
+    <innerfile refid="_dependency_8hpp">Dependency.hpp</innerfile>
+    <innerfile refid="_devices_8hpp">Devices.hpp</innerfile>
+    <innerfile refid="_formattable_8hpp">Formattable.hpp</innerfile>
+    <innerfile refid="_logic_nodes_8hpp">LogicNodes.hpp</innerfile>
+    <innerfile refid="_parse_from_stream_8hpp">ParseFromStream.hpp</innerfile>
+    <innerfile refid="_ping_pong_exchanger_8hpp">PingPongExchanger.hpp</innerfile>
+    <innerfile refid="_runtimes_8hpp">Runtimes.hpp</innerfile>
+    <innerfile refid="_sine_wave_8hpp">SineWave.hpp</innerfile>
+    <innerfile refid="_span_utils_8hpp">SpanUtils.hpp</innerfile>
+    <innerfile refid="_transmission_flow_planner_8hpp">TransmissionFlowPlanner.hpp</innerfile>
+    <innerfile refid="_typed_message_8hpp">TypedMessage.hpp</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/Sango/source/LangYa/Sources/CodeHelper/Headers/LangYa/CodeHelper/"/>
+  </compounddef>
+</doxygen>

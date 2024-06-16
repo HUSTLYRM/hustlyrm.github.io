@@ -1,0 +1,90 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.11.0" xml:lang="zh">
+  <compounddef id="_c_r_c_8hpp" kind="file" language="C++">
+    <compoundname>CRC.hpp</compoundname>
+    <includes local="no">cstdint</includes>
+    <includes local="no">span</includes>
+    <includedby refid="_code_helper_8hpp" local="yes">C:/Users/Sango/source/LangYa/Sources/CodeHelper/Headers/LangYa/CodeHelper.hpp</includedby>
+    <includedby refid="_c_r_c_8cpp" local="no">C:/Users/Sango/source/LangYa/Sources/CodeHelper/Sources/CRC.cpp</includedby>
+    <includedby refid="_ping_pong_exchanger_8cpp" local="no">C:/Users/Sango/source/LangYa/Sources/CodeHelper/Sources/PingPongExchanger.cpp</includedby>
+    <incdepgraph>
+      <node id="1">
+        <label>C:/Users/Sango/source/LangYa/Sources/CodeHelper/Headers/LangYa/CodeHelper/CRC.hpp</label>
+        <link refid="_c_r_c_8hpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>cstdint</label>
+      </node>
+      <node id="3">
+        <label>span</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="2">
+        <label>C:/Users/Sango/source/LangYa/Sources/CodeHelper/Headers/LangYa/CodeHelper.hpp</label>
+        <link refid="_code_helper_8hpp_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>C:/Users/Sango/source/LangYa/Sources/CodeHelper/Headers/LangYa/CodeHelper/CRC.hpp</label>
+        <link refid="_c_r_c_8hpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>C:/Users/Sango/source/LangYa/Sources/CodeHelper/Sources/CRC.cpp</label>
+        <link refid="_c_r_c_8cpp_source"/>
+      </node>
+      <node id="3">
+        <label>C:/Users/Sango/source/LangYa/Sources/CodeHelper/Sources/CodeHelper.cpp</label>
+        <link refid="_code_helper_8cpp_source"/>
+      </node>
+      <node id="6">
+        <label>C:/Users/Sango/source/LangYa/Sources/CodeHelper/Sources/PingPongExchanger.cpp</label>
+        <link refid="_ping_pong_exchanger_8cpp_source"/>
+      </node>
+      <node id="4">
+        <label>C:/Users/Sango/source/LangYa/Sources/CodeHelper/Testers/AutoAimManager.cpp</label>
+        <link refid="_auto_aim_manager_8cpp_source"/>
+      </node>
+    </invincdepgraph>
+    <innernamespace refid="namespace_code_helper">CodeHelper</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#pragma<sp/>once</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;cstdint&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;span&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">LangYa::<sp/>inline<sp/>CodeHelper</highlight></codeline>
+<codeline lineno="7"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"><sp/><sp/><sp/><sp/>std::uint8_t<sp/>CRC8Encode(std::span&lt;const<sp/>std::uint8_t&gt;<sp/>withoutCRC)<sp/></highlight><highlight class="keyword">noexcept</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/>std::uint16_t<sp/>CRC16Encode(std::span&lt;const<sp/>std::uint8_t&gt;<sp/>withoutCRC)<sp/></highlight><highlight class="keyword">noexcept</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>CRC8Check(std::span&lt;const<sp/>std::uint8_t&gt;<sp/>withoutCRC,<sp/>std::uint8_t<sp/>crc8)<sp/></highlight><highlight class="keyword">noexcept</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>CRC8Check(std::span&lt;const<sp/>std::uint8_t&gt;<sp/>withCRC)<sp/></highlight><highlight class="keyword">noexcept</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>CRC16Check(std::span&lt;const<sp/>std::uint8_t&gt;&amp;<sp/>withoutCRC,<sp/>std::uint16_t<sp/>crc16)<sp/></highlight><highlight class="keyword">noexcept</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>CRC16Check(std::span&lt;const<sp/>std::uint8_t&gt;&amp;<sp/>withCRC)<sp/></highlight><highlight class="keyword">noexcept</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="25"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="C:/Users/Sango/source/LangYa/Sources/CodeHelper/Headers/LangYa/CodeHelper/CRC.hpp"/>
+  </compounddef>
+</doxygen>

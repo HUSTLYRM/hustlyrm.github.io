@@ -1,0 +1,224 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.11.0" xml:lang="zh">
+  <compounddef id="class_code_helper_1_1_ping_pong_exchanger" kind="class" language="C++" prot="public" final="yes">
+    <compoundname>CodeHelper::PingPongExchanger</compoundname>
+    <includes refid="_ping_pong_exchanger_8hpp" local="no">PingPongExchanger.hpp</includes>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_code_helper_1_1_ping_pong_exchanger_1a253f56b2cc45058b621784ca3e56b390" prot="private" static="no" mutable="no">
+        <type>std::uint8_t</type>
+        <definition>std::uint8_t CodeHelper::PingPongExchanger::HeadByte</definition>
+        <argsstring></argsstring>
+        <name>HeadByte</name>
+        <qualifiedname>CodeHelper::PingPongExchanger::HeadByte</qualifiedname>
+        <initializer>{}</initializer>
+        <briefdescription>
+<para>包的头字节 </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Sango/source/LangYa/Sources/CodeHelper/Headers/LangYa/CodeHelper/PingPongExchanger.hpp" line="16" column="14" bodyfile="C:/Users/Sango/source/LangYa/Sources/CodeHelper/Headers/LangYa/CodeHelper/PingPongExchanger.hpp" bodystart="16" bodyend="16"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_code_helper_1_1_ping_pong_exchanger_1af419102c3d5047e2e46fe182725402e4" prot="private" static="no" mutable="no">
+        <type>std::span&lt; std::uint8_t &gt;</type>
+        <definition>std::span&lt;std::uint8_t&gt; CodeHelper::PingPongExchanger::Ping</definition>
+        <argsstring></argsstring>
+        <name>Ping</name>
+        <qualifiedname>CodeHelper::PingPongExchanger::Ping</qualifiedname>
+        <initializer>{}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Sango/source/LangYa/Sources/CodeHelper/Headers/LangYa/CodeHelper/PingPongExchanger.hpp" line="17" column="11" bodyfile="C:/Users/Sango/source/LangYa/Sources/CodeHelper/Headers/LangYa/CodeHelper/PingPongExchanger.hpp" bodystart="17" bodyend="17"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_code_helper_1_1_ping_pong_exchanger_1a6fbd4f960c0338cdcc3b9ae90dfc92cf" prot="private" static="no" mutable="no">
+        <type>std::span&lt; std::uint8_t &gt;</type>
+        <definition>std::span&lt;std::uint8_t&gt; CodeHelper::PingPongExchanger::Pong</definition>
+        <argsstring></argsstring>
+        <name>Pong</name>
+        <qualifiedname>CodeHelper::PingPongExchanger::Pong</qualifiedname>
+        <initializer>{}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Sango/source/LangYa/Sources/CodeHelper/Headers/LangYa/CodeHelper/PingPongExchanger.hpp" line="18" column="11" bodyfile="C:/Users/Sango/source/LangYa/Sources/CodeHelper/Headers/LangYa/CodeHelper/PingPongExchanger.hpp" bodystart="18" bodyend="18"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_code_helper_1_1_ping_pong_exchanger_1a432206b1232a833d8a81c3feb664af7e" prot="private" static="no" mutable="no">
+        <type>std::span&lt; std::uint8_t &gt;</type>
+        <definition>std::span&lt;std::uint8_t&gt; CodeHelper::PingPongExchanger::FullSpan</definition>
+        <argsstring></argsstring>
+        <name>FullSpan</name>
+        <qualifiedname>CodeHelper::PingPongExchanger::FullSpan</qualifiedname>
+        <initializer>{}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Sango/source/LangYa/Sources/CodeHelper/Headers/LangYa/CodeHelper/PingPongExchanger.hpp" line="19" column="11" bodyfile="C:/Users/Sango/source/LangYa/Sources/CodeHelper/Headers/LangYa/CodeHelper/PingPongExchanger.hpp" bodystart="19" bodyend="19"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_code_helper_1_1_ping_pong_exchanger_1ad2096fbdc3ca09c3bca18c4d7db39b58" prot="public" static="no" nodiscard="yes" const="yes" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool CodeHelper::PingPongExchanger::Verify</definition>
+        <argsstring>(std::span&lt; const std::uint8_t &gt; messageSpan, bool crcVerify=false) const noexcept</argsstring>
+        <name>Verify</name>
+        <qualifiedname>CodeHelper::PingPongExchanger::Verify</qualifiedname>
+        <param>
+          <type>std::span&lt; const std::uint8_t &gt;</type>
+          <declname>messageSpan</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>crcVerify</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+<para>验证数据包 </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Sango/source/LangYa/Sources/CodeHelper/Headers/LangYa/CodeHelper/PingPongExchanger.hpp" line="23" column="7" bodyfile="C:/Users/Sango/source/LangYa/Sources/CodeHelper/Sources/PingPongExchanger.cpp" bodystart="8" bodyend="16"/>
+      </memberdef>
+      <memberdef kind="function" id="class_code_helper_1_1_ping_pong_exchanger_1a00d424a656e19191329a92267ee70fdf" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>CodeHelper::PingPongExchanger::PingPongExchanger</definition>
+        <argsstring>(std::uint8_t headByte, std::span&lt; std::uint8_t &gt; fullSpan)</argsstring>
+        <name>PingPongExchanger</name>
+        <qualifiedname>CodeHelper::PingPongExchanger::PingPongExchanger</qualifiedname>
+        <param>
+          <type>std::uint8_t</type>
+          <declname>headByte</declname>
+        </param>
+        <param>
+          <type>std::span&lt; std::uint8_t &gt;</type>
+          <declname>fullSpan</declname>
+        </param>
+        <briefdescription>
+<para>给定头字节和完整的内存区间，构造 <ref refid="class_code_helper_1_1_ping_pong_exchanger" kindref="compound">PingPongExchanger</ref> </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>headByte</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>头字节，用于检查是否是完整的数据包，不可以是 0 ，否则抛出 std::runtime_error </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>fullSpan</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>size 至少大于 2，否则会抛出 std::runtime_error </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername>std::runtime_error</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>当给定的参数不符合要求时抛出 </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Sango/source/LangYa/Sources/CodeHelper/Headers/LangYa/CodeHelper/PingPongExchanger.hpp" line="29" column="1" bodyfile="C:/Users/Sango/source/LangYa/Sources/CodeHelper/Sources/PingPongExchanger.cpp" bodystart="18" bodyend="29"/>
+      </memberdef>
+      <memberdef kind="function" id="class_code_helper_1_1_ping_pong_exchanger_1a61bcd25d824db91d2caf70b1a673d2b2" prot="public" static="no" nodiscard="yes" const="yes" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
+        <type>std::span&lt; std::uint8_t &gt;</type>
+        <definition>std::span&lt; std::uint8_t &gt; CodeHelper::PingPongExchanger::GetReaderSpan</definition>
+        <argsstring>() const noexcept</argsstring>
+        <name>GetReaderSpan</name>
+        <qualifiedname>CodeHelper::PingPongExchanger::GetReaderSpan</qualifiedname>
+        <briefdescription>
+<para>流程.1 获取读取缓冲区，此缓冲区用于从外部读取数据，等待读取完毕后检查是否可以输出 </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Sango/source/LangYa/Sources/CodeHelper/Headers/LangYa/CodeHelper/PingPongExchanger.hpp" line="32" column="12" bodyfile="C:/Users/Sango/source/LangYa/Sources/CodeHelper/Sources/PingPongExchanger.cpp" bodystart="31" bodyend="34"/>
+      </memberdef>
+      <memberdef kind="function" id="class_code_helper_1_1_ping_pong_exchanger_1a690ecd23f53ad6ed049020462463038f" prot="public" static="no" nodiscard="yes" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool CodeHelper::PingPongExchanger::Examine</definition>
+        <argsstring>(std::span&lt; std::uint8_t &gt; destination, bool crcVerify=false) noexcept</argsstring>
+        <name>Examine</name>
+        <qualifiedname>CodeHelper::PingPongExchanger::Examine</qualifiedname>
+        <param>
+          <type>std::span&lt; std::uint8_t &gt;</type>
+          <declname>destination</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>crcVerify</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+<para>流程.2 假设已经写入所有数据到读取缓冲区(即 Pong 缓冲区)，现在执行交换流程，并检查是否可以输出 </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>destination</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>用于输出数据的位置，大小必须大于或等于 <ref refid="class_code_helper_1_1_ping_pong_exchanger_1a61bcd25d824db91d2caf70b1a673d2b2" kindref="member">GetReaderSpan()</ref>.size() </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>crcVerify</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>是否需要验证 CRC 校验码 (默认数据最后一位是 CRC8 校验码) </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Sango/source/LangYa/Sources/CodeHelper/Headers/LangYa/CodeHelper/PingPongExchanger.hpp" line="37" column="7" bodyfile="C:/Users/Sango/source/LangYa/Sources/CodeHelper/Sources/PingPongExchanger.cpp" bodystart="36" bodyend="70"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>基于 PingPong 思想的运行时双缓冲内存区处理器 提供了处理缓冲并检查的方法，通过 Exchange 可以检查本次是否有完整的数据包， 如果没有则存储本次数据包等待下次数据包到来。 </para>
+    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="note"><para>目前承担了检验数据包的职责，待移除。 </para>
+</simplesect>
+<simplesect kind="attention"><para>本类不保证线程安全，只要求内存区间的读写权限，且不负责销毁内存。 </para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <location file="C:/Users/Sango/source/LangYa/Sources/CodeHelper/Headers/LangYa/CodeHelper/PingPongExchanger.hpp" line="13" column="1" bodyfile="C:/Users/Sango/source/LangYa/Sources/CodeHelper/Headers/LangYa/CodeHelper/PingPongExchanger.hpp" bodystart="14" bodyend="38"/>
+    <listofallmembers>
+      <member refid="class_code_helper_1_1_ping_pong_exchanger_1a690ecd23f53ad6ed049020462463038f" prot="public" virt="non-virtual"><scope>CodeHelper::PingPongExchanger</scope><name>Examine</name></member>
+      <member refid="class_code_helper_1_1_ping_pong_exchanger_1a432206b1232a833d8a81c3feb664af7e" prot="private" virt="non-virtual"><scope>CodeHelper::PingPongExchanger</scope><name>FullSpan</name></member>
+      <member refid="class_code_helper_1_1_ping_pong_exchanger_1a61bcd25d824db91d2caf70b1a673d2b2" prot="public" virt="non-virtual"><scope>CodeHelper::PingPongExchanger</scope><name>GetReaderSpan</name></member>
+      <member refid="class_code_helper_1_1_ping_pong_exchanger_1a253f56b2cc45058b621784ca3e56b390" prot="private" virt="non-virtual"><scope>CodeHelper::PingPongExchanger</scope><name>HeadByte</name></member>
+      <member refid="class_code_helper_1_1_ping_pong_exchanger_1af419102c3d5047e2e46fe182725402e4" prot="private" virt="non-virtual"><scope>CodeHelper::PingPongExchanger</scope><name>Ping</name></member>
+      <member refid="class_code_helper_1_1_ping_pong_exchanger_1a00d424a656e19191329a92267ee70fdf" prot="public" virt="non-virtual"><scope>CodeHelper::PingPongExchanger</scope><name>PingPongExchanger</name></member>
+      <member refid="class_code_helper_1_1_ping_pong_exchanger_1a6fbd4f960c0338cdcc3b9ae90dfc92cf" prot="private" virt="non-virtual"><scope>CodeHelper::PingPongExchanger</scope><name>Pong</name></member>
+      <member refid="class_code_helper_1_1_ping_pong_exchanger_1ad2096fbdc3ca09c3bca18c4d7db39b58" prot="public" virt="non-virtual"><scope>CodeHelper::PingPongExchanger</scope><name>Verify</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

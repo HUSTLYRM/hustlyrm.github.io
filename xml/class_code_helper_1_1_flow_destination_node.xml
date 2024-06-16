@@ -1,0 +1,60 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.11.0" xml:lang="zh">
+  <compounddef id="class_code_helper_1_1_flow_destination_node" kind="class" language="C++" prot="public" abstract="yes">
+    <compoundname>CodeHelper::FlowDestinationNode</compoundname>
+    <templateparamlist>
+      <param>
+        <type>typename TItem</type>
+      </param>
+    </templateparamlist>
+    <sectiondef kind="public-type">
+      <memberdef kind="typedef" id="class_code_helper_1_1_flow_destination_node_1afd87fb2f7b2660a61e293270e92aebff" prot="public" static="no">
+        <type>TItem</type>
+        <definition>using CodeHelper::FlowDestinationNode&lt; TItem &gt;::ItemType =  TItem</definition>
+        <argsstring></argsstring>
+        <name>ItemType</name>
+        <qualifiedname>CodeHelper::FlowDestinationNode::ItemType</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Sango/source/LangYa/Sources/CodeHelper/Headers/LangYa/CodeHelper/TransmissionFlowPlanner.hpp" line="22" column="1" bodyfile="C:/Users/Sango/source/LangYa/Sources/CodeHelper/Headers/LangYa/CodeHelper/TransmissionFlowPlanner.hpp" bodystart="22" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_code_helper_1_1_flow_destination_node_1a971e4d9144e65f3bc7f1b0a2ab8422cd" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void CodeHelper::FlowDestinationNode&lt; TItem &gt;::PlanItem</definition>
+        <argsstring>(const TItem &amp;item, tf::FlowBuilder &amp;taskflow)=0</argsstring>
+        <name>PlanItem</name>
+        <qualifiedname>CodeHelper::FlowDestinationNode::PlanItem</qualifiedname>
+        <param>
+          <type>const TItem &amp;</type>
+          <declname>item</declname>
+        </param>
+        <param>
+          <type>tf::FlowBuilder &amp;</type>
+          <declname>taskflow</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Sango/source/LangYa/Sources/CodeHelper/Headers/LangYa/CodeHelper/TransmissionFlowPlanner.hpp" line="24" column="14"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/Sango/source/LangYa/Sources/CodeHelper/Headers/LangYa/CodeHelper/TransmissionFlowPlanner.hpp" line="19" column="1" bodyfile="C:/Users/Sango/source/LangYa/Sources/CodeHelper/Headers/LangYa/CodeHelper/TransmissionFlowPlanner.hpp" bodystart="20" bodyend="25"/>
+    <listofallmembers>
+      <member refid="class_code_helper_1_1_flow_destination_node_1afd87fb2f7b2660a61e293270e92aebff" prot="public" virt="non-virtual"><scope>CodeHelper::FlowDestinationNode</scope><name>ItemType</name></member>
+      <member refid="class_code_helper_1_1_flow_destination_node_1a971e4d9144e65f3bc7f1b0a2ab8422cd" prot="public" virt="pure-virtual"><scope>CodeHelper::FlowDestinationNode</scope><name>PlanItem</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

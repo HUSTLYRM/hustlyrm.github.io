@@ -1,0 +1,21 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.11.0" xml:lang="zh">
+  <compounddef id="concept_code_helper_1_1_is_reader" kind="concept">
+    <compoundname>CodeHelper::IsReader</compoundname>
+    <templateparamlist>
+      <param>
+        <type>typename TObject</type>
+      </param>
+    </templateparamlist>
+    <initializer>template&lt;typename TObject&gt;
+concept <ref refid="concept_code_helper_1_1_is_reader" kindref="compound">CodeHelper::IsReader</ref> =  requires(TObject&amp; object, std::span&lt;std::uint8_t&gt; buffer)
+	{
+		{ object.ReadBytes(buffer) } -&gt; std::convertible_to&lt;std::size_t&gt;;
+	}    </initializer>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/Sango/source/LangYa/Sources/CodeHelper/Headers/LangYa/CodeHelper/Devices.hpp" line="22" column="1"/>
+  </compounddef>
+</doxygen>

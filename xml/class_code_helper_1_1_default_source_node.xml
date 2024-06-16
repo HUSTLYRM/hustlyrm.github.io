@@ -1,0 +1,106 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.11.0" xml:lang="zh">
+  <compounddef id="class_code_helper_1_1_default_source_node" kind="class" language="C++" prot="public" final="yes">
+    <compoundname>CodeHelper::DefaultSourceNode</compoundname>
+    <basecompoundref refid="class_code_helper_1_1_source_node" prot="public" virt="non-virtual">CodeHelper::SourceNode&lt; TItem &gt;</basecompoundref>
+    <includes refid="_logic_nodes_8hpp" local="no">LogicNodes.hpp</includes>
+    <templateparamlist>
+      <param>
+        <type>std::default_initializable</type>
+        <declname>TItem</declname>
+        <defname>TItem</defname>
+      </param>
+    </templateparamlist>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="class_code_helper_1_1_default_source_node_1a6a258487d175216287b79b7f6d15e677" prot="public" static="no" mutable="no">
+        <type>TItem</type>
+        <definition>TItem CodeHelper::DefaultSourceNode&lt; TItem &gt;::Item</definition>
+        <argsstring></argsstring>
+        <name>Item</name>
+        <qualifiedname>CodeHelper::DefaultSourceNode::Item</qualifiedname>
+        <initializer>{}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Sango/source/LangYa/Sources/CodeHelper/Headers/LangYa/CodeHelper/LogicNodes.hpp" line="43" column="7" bodyfile="C:/Users/Sango/source/LangYa/Sources/CodeHelper/Headers/LangYa/CodeHelper/LogicNodes.hpp" bodystart="43" bodyend="43"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_code_helper_1_1_default_source_node_1a708572e837b5c9861a0900f642e44419" prot="public" static="no" nodiscard="yes" const="no" explicit="no" inline="yes" noexcept="yes" virt="virtual">
+        <type>bool</type>
+        <definition>bool CodeHelper::DefaultSourceNode&lt; TItem &gt;::GetItem</definition>
+        <argsstring>(TItem &amp;item) noexcept override</argsstring>
+        <name>GetItem</name>
+        <qualifiedname>CodeHelper::DefaultSourceNode::GetItem</qualifiedname>
+        <reimplements refid="class_code_helper_1_1_source_node_1ab7bf471b91c01f8b00606d695d9e6746">GetItem</reimplements>
+        <param>
+          <type>TItem &amp;</type>
+          <declname>item</declname>
+        </param>
+        <briefdescription>
+<para>获取物品，通过参数返回物品，通过函数结果返回是否获取成功 </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Sango/source/LangYa/Sources/CodeHelper/Headers/LangYa/CodeHelper/LogicNodes.hpp" line="45" column="7" bodyfile="C:/Users/Sango/source/LangYa/Sources/CodeHelper/Headers/LangYa/CodeHelper/LogicNodes.hpp" bodystart="45" bodyend="49"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>默认物品源节点，只提供设置的物品 </para>
+    </briefdescription>
+    <detaileddescription>
+<para><parameterlist kind="templateparam"><parameteritem>
+<parameternamelist>
+<parametername>TItem</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><linebreak/>
+ </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>CodeHelper::DefaultSourceNode&lt; TItem &gt;</label>
+        <link refid="class_code_helper_1_1_default_source_node"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>CodeHelper::SourceNode&lt; TItem &gt;</label>
+        <link refid="class_code_helper_1_1_source_node"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>CodeHelper::DefaultSourceNode&lt; TItem &gt;</label>
+        <link refid="class_code_helper_1_1_default_source_node"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>Item</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>CodeHelper::SourceNode&lt; TItem &gt;</label>
+        <link refid="class_code_helper_1_1_source_node"/>
+      </node>
+      <node id="3">
+        <label>TItem</label>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/Sango/source/LangYa/Sources/CodeHelper/Headers/LangYa/CodeHelper/LogicNodes.hpp" line="40" column="1" bodyfile="C:/Users/Sango/source/LangYa/Sources/CodeHelper/Headers/LangYa/CodeHelper/LogicNodes.hpp" bodystart="41" bodyend="52"/>
+    <listofallmembers>
+      <member refid="class_code_helper_1_1_default_source_node_1a708572e837b5c9861a0900f642e44419" prot="public" virt="virtual"><scope>CodeHelper::DefaultSourceNode</scope><name>GetItem</name></member>
+      <member refid="class_code_helper_1_1_default_source_node_1a6a258487d175216287b79b7f6d15e677" prot="public" virt="non-virtual"><scope>CodeHelper::DefaultSourceNode</scope><name>Item</name></member>
+      <member refid="class_code_helper_1_1_source_node_1a05fcd780a3ebbf0cd020496228ceb3f3" prot="public" virt="non-virtual"><scope>CodeHelper::DefaultSourceNode</scope><name>ItemType</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>
