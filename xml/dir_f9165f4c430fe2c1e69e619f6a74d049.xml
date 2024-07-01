@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="dir_f9165f4c430fe2c1e69e619f6a74d049" kind="dir">
+    <compoundname>/home/sango/.vs/LangYa/32fc2ebc-99b1-4edc-8556-3cdf8201edfe/src/Sources/CodeHelper/Headers/LangYa/CodeHelper</compoundname>
+    <innerfile refid="AsyncItemPool_8hpp">AsyncItemPool.hpp</innerfile>
+    <innerfile refid="Constrained_8hpp">Constrained.hpp</innerfile>
+    <innerfile refid="ParseFromStream_8hpp">ParseFromStream.hpp</innerfile>
+    <innerfile refid="Runtimes_8hpp">Runtimes.hpp</innerfile>
+    <innerfile refid="SineWave_8hpp">SineWave.hpp</innerfile>
+    <innerfile refid="SpanUtils_8hpp">SpanUtils.hpp</innerfile>
+    <innerfile refid="TaskArchitects_8hpp">TaskArchitects.hpp</innerfile>
+    <innerfile refid="TypedMessage_8hpp">TypedMessage.hpp</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/sango/.vs/LangYa/32fc2ebc-99b1-4edc-8556-3cdf8201edfe/src/Sources/CodeHelper/Headers/LangYa/CodeHelper/"/>
+  </compounddef>
+</doxygen>

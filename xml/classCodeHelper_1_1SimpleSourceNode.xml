@@ -1,0 +1,121 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="classCodeHelper_1_1SimpleSourceNode" kind="class" language="C++" prot="public" final="yes">
+    <compoundname>CodeHelper::SimpleSourceNode</compoundname>
+    <basecompoundref refid="structCodeHelper_1_1SourceNode" prot="public" virt="non-virtual">CodeHelper::SourceNode&lt; TItem &gt;</basecompoundref>
+    <includes refid="Constrained_8hpp" local="no">Constrained.hpp</includes>
+    <templateparamlist>
+      <param>
+        <type>std::default_initializable</type>
+        <declname>TItem</declname>
+        <defname>TItem</defname>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classCodeHelper_1_1SimpleSourceNode_1adbc3473954becda4ccf1170cad8e6a3c" prot="public" static="no" mutable="no">
+        <type>TItem</type>
+        <definition>TItem CodeHelper::SimpleSourceNode&lt; TItem &gt;::Item</definition>
+        <argsstring></argsstring>
+        <name>Item</name>
+        <initializer>{}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sango/.vs/LangYa/32fc2ebc-99b1-4edc-8556-3cdf8201edfe/src/Sources/CodeHelper/Headers/LangYa/CodeHelper/Constrained.hpp" line="102" column="7" bodyfile="/home/sango/.vs/LangYa/32fc2ebc-99b1-4edc-8556-3cdf8201edfe/src/Sources/CodeHelper/Headers/LangYa/CodeHelper/Constrained.hpp" bodystart="102" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classCodeHelper_1_1SimpleSourceNode_1a41093a48d93a9f52dcf016e5979d9a0d" prot="public" static="no" const="no" explicit="no" inline="yes" noexcept="yes" virt="virtual">
+        <type>bool</type>
+        <definition>bool CodeHelper::SimpleSourceNode&lt; TItem &gt;::GetItem</definition>
+        <argsstring>(TItem &amp;item) noexcept override</argsstring>
+        <name>GetItem</name>
+        <reimplements refid="structCodeHelper_1_1SourceNode_1a228289c937cbecb69663ce62b2f2bcea">GetItem</reimplements>
+        <param>
+          <type>TItem &amp;</type>
+          <declname>item</declname>
+        </param>
+        <briefdescription>
+<para>从源中获取物品 </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>item</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>通过修改此参数将源中的物品呈递到外部 </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>是否成功获取 </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sango/.vs/LangYa/32fc2ebc-99b1-4edc-8556-3cdf8201edfe/src/Sources/CodeHelper/Headers/LangYa/CodeHelper/Constrained.hpp" line="104" column="7" bodyfile="/home/sango/.vs/LangYa/32fc2ebc-99b1-4edc-8556-3cdf8201edfe/src/Sources/CodeHelper/Headers/LangYa/CodeHelper/Constrained.hpp" bodystart="104" bodyend="107"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classCodeHelper_1_1SimpleSourceNode_1a9f9010f60872561696d963db118493b2" prot="public" static="yes" const="no" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type>std::shared_ptr&lt; <ref refid="classCodeHelper_1_1SimpleSourceNode" kindref="compound">SimpleSourceNode</ref> &gt;</type>
+        <definition>static std::shared_ptr&lt;SimpleSourceNode&gt; CodeHelper::SimpleSourceNode&lt; TItem &gt;::MakeShared</definition>
+        <argsstring>() noexcept</argsstring>
+        <name>MakeShared</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sango/.vs/LangYa/32fc2ebc-99b1-4edc-8556-3cdf8201edfe/src/Sources/CodeHelper/Headers/LangYa/CodeHelper/Constrained.hpp" line="109" column="24" bodyfile="/home/sango/.vs/LangYa/32fc2ebc-99b1-4edc-8556-3cdf8201edfe/src/Sources/CodeHelper/Headers/LangYa/CodeHelper/Constrained.hpp" bodystart="109" bodyend="109"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>简单的物品源节点，只提供设置的物品 </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>CodeHelper::SourceNode&lt; TItem &gt;</label>
+        <link refid="structCodeHelper_1_1SourceNode"/>
+      </node>
+      <node id="1">
+        <label>CodeHelper::SimpleSourceNode&lt; TItem &gt;</label>
+        <link refid="classCodeHelper_1_1SimpleSourceNode"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>CodeHelper::SourceNode&lt; TItem &gt;</label>
+        <link refid="structCodeHelper_1_1SourceNode"/>
+      </node>
+      <node id="1">
+        <label>CodeHelper::SimpleSourceNode&lt; TItem &gt;</label>
+        <link refid="classCodeHelper_1_1SimpleSourceNode"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>Item</edgelabel>
+        </childnode>
+      </node>
+      <node id="3">
+        <label>TItem</label>
+      </node>
+    </collaborationgraph>
+    <location file="/home/sango/.vs/LangYa/32fc2ebc-99b1-4edc-8556-3cdf8201edfe/src/Sources/CodeHelper/Headers/LangYa/CodeHelper/Constrained.hpp" line="100" column="42" bodyfile="/home/sango/.vs/LangYa/32fc2ebc-99b1-4edc-8556-3cdf8201edfe/src/Sources/CodeHelper/Headers/LangYa/CodeHelper/Constrained.hpp" bodystart="100" bodyend="110"/>
+    <listofallmembers>
+      <member refid="classCodeHelper_1_1SimpleSourceNode_1a41093a48d93a9f52dcf016e5979d9a0d" prot="public" virt="virtual"><scope>CodeHelper::SimpleSourceNode</scope><name>GetItem</name></member>
+      <member refid="classCodeHelper_1_1SimpleSourceNode_1adbc3473954becda4ccf1170cad8e6a3c" prot="public" virt="non-virtual"><scope>CodeHelper::SimpleSourceNode</scope><name>Item</name></member>
+      <member refid="structCodeHelper_1_1SourceNode_1a05fcd780a3ebbf0cd020496228ceb3f3" prot="public" virt="non-virtual"><scope>CodeHelper::SimpleSourceNode</scope><name>ItemType</name></member>
+      <member refid="classCodeHelper_1_1SimpleSourceNode_1a9f9010f60872561696d963db118493b2" prot="public" virt="non-virtual"><scope>CodeHelper::SimpleSourceNode</scope><name>MakeShared</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

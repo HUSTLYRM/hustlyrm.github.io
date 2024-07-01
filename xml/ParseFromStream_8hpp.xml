@@ -1,0 +1,88 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="ParseFromStream_8hpp" kind="file" language="C++">
+    <compoundname>ParseFromStream.hpp</compoundname>
+    <includes local="no">istream</includes>
+    <includes local="no">string_view</includes>
+    <includedby refid="CodeHelper_8hpp" local="yes">/home/sango/.vs/LangYa/32fc2ebc-99b1-4edc-8556-3cdf8201edfe/src/Sources/CodeHelper/Headers/LangYa/CodeHelper.hpp</includedby>
+    <includedby refid="ParseFromStream_8cpp" local="no">/home/sango/.vs/LangYa/32fc2ebc-99b1-4edc-8556-3cdf8201edfe/src/Sources/CodeHelper/Sources/ParseFromStream.cpp</includedby>
+    <incdepgraph>
+      <node id="1">
+        <label>/home/sango/.vs/LangYa/32fc2ebc-99b1-4edc-8556-3cdf8201edfe/src/Sources/CodeHelper/Headers/LangYa/CodeHelper/ParseFromStream.hpp</label>
+        <link refid="ParseFromStream_8hpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>string_view</label>
+      </node>
+      <node id="2">
+        <label>istream</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="1">
+        <label>/home/sango/.vs/LangYa/32fc2ebc-99b1-4edc-8556-3cdf8201edfe/src/Sources/CodeHelper/Headers/LangYa/CodeHelper/ParseFromStream.hpp</label>
+        <link refid="ParseFromStream_8hpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>/home/sango/.vs/LangYa/32fc2ebc-99b1-4edc-8556-3cdf8201edfe/src/Sources/CodeHelper/Testers/AutoRunManager.cpp</label>
+        <link refid="AutoRunManager_8cpp_source"/>
+      </node>
+      <node id="3">
+        <label>/home/sango/.vs/LangYa/32fc2ebc-99b1-4edc-8556-3cdf8201edfe/src/Sources/CodeHelper/Sources/CodeHelper.cpp</label>
+        <link refid="CodeHelper_8cpp_source"/>
+      </node>
+      <node id="6">
+        <label>/home/sango/.vs/LangYa/32fc2ebc-99b1-4edc-8556-3cdf8201edfe/src/Sources/CodeHelper/Sources/ParseFromStream.cpp</label>
+        <link refid="ParseFromStream_8cpp_source"/>
+      </node>
+      <node id="4">
+        <label>/home/sango/.vs/LangYa/32fc2ebc-99b1-4edc-8556-3cdf8201edfe/src/Sources/CodeHelper/Testers/AutoAimManager.cpp</label>
+        <link refid="AutoAimManager_8cpp_source"/>
+      </node>
+      <node id="2">
+        <label>/home/sango/.vs/LangYa/32fc2ebc-99b1-4edc-8556-3cdf8201edfe/src/Sources/CodeHelper/Headers/LangYa/CodeHelper.hpp</label>
+        <link refid="CodeHelper_8hpp_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="structCodeHelper_1_1ParseFromStream" prot="public">CodeHelper::ParseFromStream</innerclass>
+    <innernamespace refid="namespaceCodeHelper">CodeHelper</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#pragma<sp/>once</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="comment">//<sp/>ReSharper<sp/>disable<sp/>once<sp/>CppUnusedIncludeDirective</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;istream&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;string_view&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">LangYa::<sp/>inline<sp/>CodeHelper<sp/></highlight></codeline>
+<codeline lineno="8"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="9" refid="structCodeHelper_1_1ParseFromStream" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structCodeHelper_1_1ParseFromStream" kindref="compound">ParseFromStream</ref></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>[[nodiscard]]<sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>Parse(std::istream&amp;<sp/>stream)<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>[[nodiscard]]<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>Parse(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string_view&amp;<sp/>str);</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">friend</highlight><highlight class="normal"><sp/>std::istream&amp;<sp/>operator&gt;&gt;(std::istream&amp;<sp/>stream,<sp/><ref refid="structCodeHelper_1_1ParseFromStream" kindref="compound">ParseFromStream</ref>&amp;<sp/>obj);</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="17"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="/home/sango/.vs/LangYa/32fc2ebc-99b1-4edc-8556-3cdf8201edfe/src/Sources/CodeHelper/Headers/LangYa/CodeHelper/ParseFromStream.hpp"/>
+  </compounddef>
+</doxygen>

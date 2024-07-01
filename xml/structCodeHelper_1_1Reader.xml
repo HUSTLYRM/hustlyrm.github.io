@@ -1,0 +1,39 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="structCodeHelper_1_1Reader" kind="struct" language="C++" prot="public" abstract="yes">
+    <compoundname>CodeHelper::Reader</compoundname>
+    <includes refid="Constrained_8hpp" local="no">Constrained.hpp</includes>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="structCodeHelper_1_1Reader_1abb133eceebf11a80263b841513999707" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>std::size_t</type>
+        <definition>virtual std::size_t CodeHelper::Reader::ReadBytes</definition>
+        <argsstring>(std::span&lt; std::uint8_t &gt; buffer)=0</argsstring>
+        <name>ReadBytes</name>
+        <param>
+          <type>std::span&lt; std::uint8_t &gt;</type>
+          <declname>buffer</declname>
+        </param>
+        <briefdescription>
+<para>读取字节，直到无剩余内容或者提供的缓冲区已满 </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>实际读取的字节数，如果小于缓冲区长度，则可以认为遇到了一些错误，如 EOF 或者读取器不再可用 </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sango/.vs/LangYa/32fc2ebc-99b1-4edc-8556-3cdf8201edfe/src/Sources/CodeHelper/Headers/LangYa/CodeHelper/Constrained.hpp" line="274" column="22"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>字节读取器 </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/sango/.vs/LangYa/32fc2ebc-99b1-4edc-8556-3cdf8201edfe/src/Sources/CodeHelper/Headers/LangYa/CodeHelper/Constrained.hpp" line="271" column="13" bodyfile="/home/sango/.vs/LangYa/32fc2ebc-99b1-4edc-8556-3cdf8201edfe/src/Sources/CodeHelper/Headers/LangYa/CodeHelper/Constrained.hpp" bodystart="271" bodyend="275"/>
+    <listofallmembers>
+      <member refid="structCodeHelper_1_1Reader_1abb133eceebf11a80263b841513999707" prot="public" virt="pure-virtual"><scope>CodeHelper::Reader</scope><name>ReadBytes</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

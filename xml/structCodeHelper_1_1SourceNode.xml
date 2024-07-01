@@ -1,0 +1,100 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="structCodeHelper_1_1SourceNode" kind="struct" language="C++" prot="public" abstract="yes">
+    <compoundname>CodeHelper::SourceNode</compoundname>
+    <derivedcompoundref refid="classCodeHelper_1_1AsyncItemPool" prot="public" virt="non-virtual">CodeHelper::AsyncItemPool&lt; TItem &gt;</derivedcompoundref>
+    <derivedcompoundref refid="classCodeHelper_1_1EmptySourceNode" prot="public" virt="non-virtual">CodeHelper::EmptySourceNode&lt; TItem &gt;</derivedcompoundref>
+    <derivedcompoundref refid="classCodeHelper_1_1SimpleSourceNode" prot="public" virt="non-virtual">CodeHelper::SimpleSourceNode&lt; TItem &gt;</derivedcompoundref>
+    <includes refid="Constrained_8hpp" local="no">Constrained.hpp</includes>
+    <templateparamlist>
+      <param>
+        <type>typename TItem</type>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="public-type">
+      <memberdef kind="typedef" id="structCodeHelper_1_1SourceNode_1a05fcd780a3ebbf0cd020496228ceb3f3" prot="public" static="no">
+        <type>TItem</type>
+        <definition>using CodeHelper::SourceNode&lt; TItem &gt;::ItemType =  TItem</definition>
+        <argsstring></argsstring>
+        <name>ItemType</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sango/.vs/LangYa/32fc2ebc-99b1-4edc-8556-3cdf8201edfe/src/Sources/CodeHelper/Headers/LangYa/CodeHelper/Constrained.hpp" line="84" column="1" bodyfile="/home/sango/.vs/LangYa/32fc2ebc-99b1-4edc-8556-3cdf8201edfe/src/Sources/CodeHelper/Headers/LangYa/CodeHelper/Constrained.hpp" bodystart="84" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="structCodeHelper_1_1SourceNode_1a228289c937cbecb69663ce62b2f2bcea" prot="public" static="no" const="no" explicit="no" inline="no" noexcept="yes" virt="pure-virtual">
+        <type>bool</type>
+        <definition>virtual bool CodeHelper::SourceNode&lt; TItem &gt;::GetItem</definition>
+        <argsstring>(TItem &amp;item) noexcept=0</argsstring>
+        <name>GetItem</name>
+        <reimplementedby refid="structCodeHelper_1_1SineWave_1a55f9235bc0d61e046dbde106f44956c8">GetItem</reimplementedby>
+        <reimplementedby refid="classCodeHelper_1_1AsyncItemPool_1afef8dc052243877e27aef3d21adf7eae">GetItem</reimplementedby>
+        <reimplementedby refid="classCodeHelper_1_1SimpleSourceNode_1a41093a48d93a9f52dcf016e5979d9a0d">GetItem</reimplementedby>
+        <reimplementedby refid="classCodeHelper_1_1EmptySourceNode_1a5fe60ba4943578856f65abf6fbfe8af7">GetItem</reimplementedby>
+        <param>
+          <type>TItem &amp;</type>
+          <declname>item</declname>
+        </param>
+        <briefdescription>
+<para>从源中获取物品 </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>item</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>通过修改此参数将源中的物品呈递到外部 </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>是否成功获取 </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sango/.vs/LangYa/32fc2ebc-99b1-4edc-8556-3cdf8201edfe/src/Sources/CodeHelper/Headers/LangYa/CodeHelper/Constrained.hpp" line="89" column="15"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>物品源节点，表明此对象可以提供物品 </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>CodeHelper::SourceNode&lt; TItem &gt;</label>
+        <link refid="structCodeHelper_1_1SourceNode"/>
+      </node>
+      <node id="2">
+        <label>CodeHelper::AsyncItemPool&lt; TItem &gt;</label>
+        <link refid="classCodeHelper_1_1AsyncItemPool"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>CodeHelper::SimpleSourceNode&lt; TItem &gt;</label>
+        <link refid="classCodeHelper_1_1SimpleSourceNode"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>CodeHelper::EmptySourceNode&lt; TItem &gt;</label>
+        <link refid="classCodeHelper_1_1EmptySourceNode"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <location file="/home/sango/.vs/LangYa/32fc2ebc-99b1-4edc-8556-3cdf8201edfe/src/Sources/CodeHelper/Headers/LangYa/CodeHelper/Constrained.hpp" line="83" column="17" bodyfile="/home/sango/.vs/LangYa/32fc2ebc-99b1-4edc-8556-3cdf8201edfe/src/Sources/CodeHelper/Headers/LangYa/CodeHelper/Constrained.hpp" bodystart="83" bodyend="90"/>
+    <listofallmembers>
+      <member refid="structCodeHelper_1_1SourceNode_1a228289c937cbecb69663ce62b2f2bcea" prot="public" virt="pure-virtual"><scope>CodeHelper::SourceNode</scope><name>GetItem</name></member>
+      <member refid="structCodeHelper_1_1SourceNode_1a05fcd780a3ebbf0cd020496228ceb3f3" prot="public" virt="non-virtual"><scope>CodeHelper::SourceNode</scope><name>ItemType</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

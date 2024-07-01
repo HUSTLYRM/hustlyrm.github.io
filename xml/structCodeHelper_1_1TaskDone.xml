@@ -1,0 +1,108 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="structCodeHelper_1_1TaskDone" kind="struct" language="C++" prot="public" final="yes">
+    <compoundname>CodeHelper::TaskDone</compoundname>
+    <basecompoundref refid="structCodeHelper_1_1TaskStatus" prot="public" virt="non-virtual">CodeHelper::TaskStatus</basecompoundref>
+    <includes refid="Constrained_8hpp" local="no">Constrained.hpp</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structCodeHelper_1_1TaskDone_1a1e34823e2f79e200a0f6bfee3577f65e" prot="public" static="no" mutable="no">
+        <type>std::atomic_bool</type>
+        <definition>std::atomic_bool CodeHelper::TaskDone::Done</definition>
+        <argsstring></argsstring>
+        <name>Done</name>
+        <initializer>{false}</initializer>
+        <briefdescription>
+<para>在任务没有执行时，此值默认为 <computeroutput>false</computeroutput> ，当任务执行完毕或异常结束时，此值为 <computeroutput>true</computeroutput> </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sango/.vs/LangYa/32fc2ebc-99b1-4edc-8556-3cdf8201edfe/src/Sources/CodeHelper/Headers/LangYa/CodeHelper/Constrained.hpp" line="342" column="18" bodyfile="/home/sango/.vs/LangYa/32fc2ebc-99b1-4edc-8556-3cdf8201edfe/src/Sources/CodeHelper/Headers/LangYa/CodeHelper/Constrained.hpp" bodystart="342" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="structCodeHelper_1_1TaskDone_1ada026de00bd7cb48ff6e8bc3dc757adb" prot="public" static="no" const="yes" explicit="no" inline="no" noexcept="yes" virt="virtual">
+        <type>bool</type>
+        <definition>bool CodeHelper::TaskDone::IsDone</definition>
+        <argsstring>() const noexcept override</argsstring>
+        <name>IsDone</name>
+        <reimplements refid="structCodeHelper_1_1TaskStatus_1a92c165c3c03e2cd4bd4b3a507e715daa">IsDone</reimplements>
+        <briefdescription>
+<para>实现 <computeroutput><ref refid="structCodeHelper_1_1TaskStatus_1a92c165c3c03e2cd4bd4b3a507e715daa" kindref="member">TaskStatus::IsDone</ref></computeroutput> </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sango/.vs/LangYa/32fc2ebc-99b1-4edc-8556-3cdf8201edfe/src/Sources/CodeHelper/Headers/LangYa/CodeHelper/Constrained.hpp" line="345" column="7" bodyfile="/home/sango/.vs/LangYa/32fc2ebc-99b1-4edc-8556-3cdf8201edfe/src/Sources/CodeHelper/Sources/Constrained.cpp" bodystart="10" bodyend="13"/>
+      </memberdef>
+      <memberdef kind="function" id="structCodeHelper_1_1TaskDone_1a13e2d6a2f91fbc8b4912ae8c968d03d2" prot="public" static="no" const="no" explicit="no" inline="no" noexcept="yes" virt="virtual">
+        <type>void</type>
+        <definition>void CodeHelper::TaskDone::Interrupt</definition>
+        <argsstring>() noexcept override</argsstring>
+        <name>Interrupt</name>
+        <reimplements refid="structCodeHelper_1_1TaskStatus_1aad528921b9f3892722e7a4e7ff14d596">Interrupt</reimplements>
+        <briefdescription>
+<para>实现 <computeroutput><ref refid="structCodeHelper_1_1TaskStatus_1aad528921b9f3892722e7a4e7ff14d596" kindref="member">TaskStatus::Interrupt</ref></computeroutput> </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sango/.vs/LangYa/32fc2ebc-99b1-4edc-8556-3cdf8201edfe/src/Sources/CodeHelper/Headers/LangYa/CodeHelper/Constrained.hpp" line="348" column="6" bodyfile="/home/sango/.vs/LangYa/32fc2ebc-99b1-4edc-8556-3cdf8201edfe/src/Sources/CodeHelper/Sources/Constrained.cpp" bodystart="15" bodyend="18"/>
+      </memberdef>
+      <memberdef kind="function" id="structCodeHelper_1_1TaskDone_1a4d2bd4b0e0787863e24bd1c9ff6449db" prot="public" static="no" const="no" explicit="no" inline="no" noexcept="yes" virt="virtual">
+        <type>void</type>
+        <definition>void CodeHelper::TaskDone::Reset</definition>
+        <argsstring>() noexcept override</argsstring>
+        <name>Reset</name>
+        <reimplements refid="structCodeHelper_1_1TaskStatus_1a4857bac936f8de146e357e2e15eda85d">Reset</reimplements>
+        <briefdescription>
+<para>实现 <computeroutput><ref refid="structCodeHelper_1_1TaskStatus_1a4857bac936f8de146e357e2e15eda85d" kindref="member">TaskStatus::Reset</ref></computeroutput> </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sango/.vs/LangYa/32fc2ebc-99b1-4edc-8556-3cdf8201edfe/src/Sources/CodeHelper/Headers/LangYa/CodeHelper/Constrained.hpp" line="351" column="6" bodyfile="/home/sango/.vs/LangYa/32fc2ebc-99b1-4edc-8556-3cdf8201edfe/src/Sources/CodeHelper/Sources/Constrained.cpp" bodystart="20" bodyend="23"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>最简单的任务状态实现，仅维持一个 <computeroutput>std::atomic_bool</computeroutput> ，用于多线程中存储任务状态 </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>CodeHelper::TaskDone</label>
+        <link refid="structCodeHelper_1_1TaskDone"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>CodeHelper::TaskStatus</label>
+        <link refid="structCodeHelper_1_1TaskStatus"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>CodeHelper::TaskDone</label>
+        <link refid="structCodeHelper_1_1TaskDone"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>CodeHelper::TaskStatus</label>
+        <link refid="structCodeHelper_1_1TaskStatus"/>
+      </node>
+    </collaborationgraph>
+    <location file="/home/sango/.vs/LangYa/32fc2ebc-99b1-4edc-8556-3cdf8201edfe/src/Sources/CodeHelper/Headers/LangYa/CodeHelper/Constrained.hpp" line="340" column="26" bodyfile="/home/sango/.vs/LangYa/32fc2ebc-99b1-4edc-8556-3cdf8201edfe/src/Sources/CodeHelper/Headers/LangYa/CodeHelper/Constrained.hpp" bodystart="340" bodyend="352"/>
+    <listofallmembers>
+      <member refid="structCodeHelper_1_1TaskDone_1a1e34823e2f79e200a0f6bfee3577f65e" prot="public" virt="non-virtual"><scope>CodeHelper::TaskDone</scope><name>Done</name></member>
+      <member refid="structCodeHelper_1_1TaskDone_1a13e2d6a2f91fbc8b4912ae8c968d03d2" prot="public" virt="virtual"><scope>CodeHelper::TaskDone</scope><name>Interrupt</name></member>
+      <member refid="structCodeHelper_1_1TaskDone_1ada026de00bd7cb48ff6e8bc3dc757adb" prot="public" virt="virtual"><scope>CodeHelper::TaskDone</scope><name>IsDone</name></member>
+      <member refid="structCodeHelper_1_1TaskDone_1a4d2bd4b0e0787863e24bd1c9ff6449db" prot="public" virt="virtual"><scope>CodeHelper::TaskDone</scope><name>Reset</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

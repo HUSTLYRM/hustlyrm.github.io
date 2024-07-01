@@ -1,0 +1,69 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="classNetwork_1_1BufferToWrite" kind="class" language="C++" prot="public" final="yes">
+    <compoundname>Network::BufferToWrite</compoundname>
+    <includes refid="TaskArchitects_8hpp" local="no">TaskArchitects.hpp</includes>
+    <templateparamlist>
+      <param>
+        <type>std::default_initializable</type>
+        <declname>TMessage</declname>
+        <defname>TMessage</defname>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classNetwork_1_1BufferToWrite_1a793eccd3952618bc316bb3e2f6094c50" prot="private" static="no" mutable="no">
+        <type>TMessage</type>
+        <definition>TMessage Network::BufferToWrite&lt; TMessage &gt;::Buffer</definition>
+        <argsstring></argsstring>
+        <name>Buffer</name>
+        <initializer>{}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sango/.vs/LangYa/32fc2ebc-99b1-4edc-8556-3cdf8201edfe/src/Sources/CodeHelper/Headers/LangYa/CodeHelper/TaskArchitects.hpp" line="37" column="10" bodyfile="/home/sango/.vs/LangYa/32fc2ebc-99b1-4edc-8556-3cdf8201edfe/src/Sources/CodeHelper/Headers/LangYa/CodeHelper/TaskArchitects.hpp" bodystart="37" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classNetwork_1_1BufferToWrite_1adf91189ebd92051e5d2ace27c98b365f" prot="public" static="no" const="no" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type>TMessage &amp;</type>
+        <definition>TMessage&amp; Network::BufferToWrite&lt; TMessage &gt;::GetMessageObject</definition>
+        <argsstring>() noexcept</argsstring>
+        <name>GetMessageObject</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sango/.vs/LangYa/32fc2ebc-99b1-4edc-8556-3cdf8201edfe/src/Sources/CodeHelper/Headers/LangYa/CodeHelper/TaskArchitects.hpp" line="40" column="11" bodyfile="/home/sango/.vs/LangYa/32fc2ebc-99b1-4edc-8556-3cdf8201edfe/src/Sources/CodeHelper/Headers/LangYa/CodeHelper/TaskArchitects.hpp" bodystart="40" bodyend="40"/>
+      </memberdef>
+      <memberdef kind="function" id="classNetwork_1_1BufferToWrite_1af1c233cd79787e8e85a7759a8fa6b5cf" prot="public" static="no" const="no" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type>bspan_t</type>
+        <definition>bspan_t Network::BufferToWrite&lt; TMessage &gt;::GetWriterSpan</definition>
+        <argsstring>() noexcept</argsstring>
+        <name>GetWriterSpan</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sango/.vs/LangYa/32fc2ebc-99b1-4edc-8556-3cdf8201edfe/src/Sources/CodeHelper/Headers/LangYa/CodeHelper/TaskArchitects.hpp" line="42" column="10" bodyfile="/home/sango/.vs/LangYa/32fc2ebc-99b1-4edc-8556-3cdf8201edfe/src/Sources/CodeHelper/Headers/LangYa/CodeHelper/TaskArchitects.hpp" bodystart="42" bodyend="44"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>打包常用的写入器使用的缓冲区结构 </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/sango/.vs/LangYa/32fc2ebc-99b1-4edc-8556-3cdf8201edfe/src/Sources/CodeHelper/Headers/LangYa/CodeHelper/TaskArchitects.hpp" line="36" column="20" bodyfile="/home/sango/.vs/LangYa/32fc2ebc-99b1-4edc-8556-3cdf8201edfe/src/Sources/CodeHelper/Headers/LangYa/CodeHelper/TaskArchitects.hpp" bodystart="36" bodyend="45"/>
+    <listofallmembers>
+      <member refid="classNetwork_1_1BufferToWrite_1a793eccd3952618bc316bb3e2f6094c50" prot="private" virt="non-virtual"><scope>Network::BufferToWrite</scope><name>Buffer</name></member>
+      <member refid="classNetwork_1_1BufferToWrite_1adf91189ebd92051e5d2ace27c98b365f" prot="public" virt="non-virtual"><scope>Network::BufferToWrite</scope><name>GetMessageObject</name></member>
+      <member refid="classNetwork_1_1BufferToWrite_1af1c233cd79787e8e85a7759a8fa6b5cf" prot="public" virt="non-virtual"><scope>Network::BufferToWrite</scope><name>GetWriterSpan</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

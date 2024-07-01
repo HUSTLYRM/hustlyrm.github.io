@@ -1,0 +1,162 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="structCodeHelper_1_1NamedModule" kind="struct" language="C++" prot="public" abstract="yes">
+    <compoundname>CodeHelper::NamedModule</compoundname>
+    <derivedcompoundref refid="classCodeHelper_1_1CommunicationPlanner" prot="public" virt="non-virtual">CodeHelper::CommunicationPlanner&lt; TAcceptor, TMessageToRead, TMessageToSend, TDevice &gt;</derivedcompoundref>
+    <derivedcompoundref refid="classCodeHelper_1_1DeliveryArchitect" prot="public" virt="non-virtual">CodeHelper::DeliveryArchitect&lt; TItem, TSource, TDestination &gt;</derivedcompoundref>
+    <derivedcompoundref refid="classCodeHelper_1_1DeviceIOTrigger" prot="public" virt="non-virtual">CodeHelper::DeviceIOTrigger&lt; TMessageToRead, TMessageToSend, TDevice &gt;</derivedcompoundref>
+    <derivedcompoundref refid="classCodeHelper_1_1IOArchitect" prot="public" virt="non-virtual">CodeHelper::IOArchitect&lt; TMessageToRead, TMessageToSend, TDevice &gt;</derivedcompoundref>
+    <derivedcompoundref refid="classCodeHelper_1_1ReaderArchitect" prot="public" virt="non-virtual">CodeHelper::ReaderArchitect&lt; TMessage, TReader &gt;</derivedcompoundref>
+    <derivedcompoundref refid="classCodeHelper_1_1WriterArchitect" prot="public" virt="non-virtual">CodeHelper::WriterArchitect&lt; TMessage, TWriter &gt;</derivedcompoundref>
+    <derivedcompoundref refid="classCodeHelper_1_1DeliveryArchitect" prot="public" virt="non-virtual">CodeHelper::DeliveryArchitect&lt; typename TAcceptor::ItemType, TAcceptor, CodeHelper::DeviceIOTrigger &gt;</derivedcompoundref>
+    <derivedcompoundref refid="classCodeHelper_1_1ReaderArchitect" prot="public" virt="non-virtual">CodeHelper::ReaderArchitect&lt; TMessageToRead, TDevice &gt;</derivedcompoundref>
+    <derivedcompoundref refid="classCodeHelper_1_1WriterArchitect" prot="public" virt="non-virtual">CodeHelper::WriterArchitect&lt; TMessageToSend, TDevice &gt;</derivedcompoundref>
+    <includes refid="Constrained_8hpp" local="no">Constrained.hpp</includes>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="structCodeHelper_1_1NamedModule_1a9ba0c53a7e2b42df416cf8e1c3367452" prot="public" static="no" const="yes" explicit="no" inline="no" noexcept="yes" virt="pure-virtual">
+        <type>std::ostream &amp;</type>
+        <definition>virtual std::ostream&amp; CodeHelper::NamedModule::GetName</definition>
+        <argsstring>(std::ostream &amp;stream) const noexcept=0</argsstring>
+        <name>GetName</name>
+        <reimplementedby refid="classCodeHelper_1_1DeliveryArchitect_1ad19773283e7cff0568d1a0edd9190ca6">GetName</reimplementedby>
+        <reimplementedby refid="classCodeHelper_1_1DeliveryArchitect_1ad19773283e7cff0568d1a0edd9190ca6">GetName</reimplementedby>
+        <reimplementedby refid="classCodeHelper_1_1ReaderArchitect_1a200a19eb1310254002a20e5b943b33aa">GetName</reimplementedby>
+        <reimplementedby refid="classCodeHelper_1_1ReaderArchitect_1a200a19eb1310254002a20e5b943b33aa">GetName</reimplementedby>
+        <reimplementedby refid="classCodeHelper_1_1WriterArchitect_1a906029395729aead5b63b98170a9b33a">GetName</reimplementedby>
+        <reimplementedby refid="classCodeHelper_1_1WriterArchitect_1a906029395729aead5b63b98170a9b33a">GetName</reimplementedby>
+        <reimplementedby refid="classCodeHelper_1_1IOArchitect_1a7917a29b1844e29ed88b0be0e819afd2">GetName</reimplementedby>
+        <reimplementedby refid="classCodeHelper_1_1DeviceIOTrigger_1a334db0c55b3e37cabd5fc6ec6094b2a4">GetName</reimplementedby>
+        <reimplementedby refid="classCodeHelper_1_1CommunicationPlanner_1a16e8e758583500569ff41e2a3114ed5c">GetName</reimplementedby>
+        <param>
+          <type>std::ostream &amp;</type>
+          <declname>stream</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sango/.vs/LangYa/32fc2ebc-99b1-4edc-8556-3cdf8201edfe/src/Sources/CodeHelper/Headers/LangYa/CodeHelper/Constrained.hpp" line="70" column="22"/>
+      </memberdef>
+      <memberdef kind="function" id="structCodeHelper_1_1NamedModule_1a55a66075cfd0e14a33cf018c1ba57af0" prot="public" static="no" const="yes" explicit="no" inline="no" noexcept="yes" virt="pure-virtual">
+        <type>std::ostream &amp;</type>
+        <definition>virtual std::ostream&amp; CodeHelper::NamedModule::GetBrief</definition>
+        <argsstring>(std::ostream &amp;stream) const noexcept=0</argsstring>
+        <name>GetBrief</name>
+        <reimplementedby refid="classCodeHelper_1_1DeliveryArchitect_1a34a013a7681e197d763eb2f50d18e336">GetBrief</reimplementedby>
+        <reimplementedby refid="classCodeHelper_1_1DeliveryArchitect_1a34a013a7681e197d763eb2f50d18e336">GetBrief</reimplementedby>
+        <reimplementedby refid="classCodeHelper_1_1ReaderArchitect_1ad89cb3fe336c3b3abca25908e47253e5">GetBrief</reimplementedby>
+        <reimplementedby refid="classCodeHelper_1_1ReaderArchitect_1ad89cb3fe336c3b3abca25908e47253e5">GetBrief</reimplementedby>
+        <reimplementedby refid="classCodeHelper_1_1WriterArchitect_1a839712e714f758e54f97fc77c61aa2c2">GetBrief</reimplementedby>
+        <reimplementedby refid="classCodeHelper_1_1WriterArchitect_1a839712e714f758e54f97fc77c61aa2c2">GetBrief</reimplementedby>
+        <reimplementedby refid="classCodeHelper_1_1IOArchitect_1a6529c630ff2cf6fe700275ac43964c84">GetBrief</reimplementedby>
+        <reimplementedby refid="classCodeHelper_1_1DeviceIOTrigger_1a04682acc90e55bed9feb7c7620b9dc57">GetBrief</reimplementedby>
+        <reimplementedby refid="classCodeHelper_1_1CommunicationPlanner_1a06a811585f10dbc046202525bff459c2">GetBrief</reimplementedby>
+        <param>
+          <type>std::ostream &amp;</type>
+          <declname>stream</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sango/.vs/LangYa/32fc2ebc-99b1-4edc-8556-3cdf8201edfe/src/Sources/CodeHelper/Headers/LangYa/CodeHelper/Constrained.hpp" line="71" column="22"/>
+      </memberdef>
+      <memberdef kind="function" id="structCodeHelper_1_1NamedModule_1a2a13a677c984ab006949b6911e7c361a" prot="public" static="no" const="yes" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
+        <type>std::ostream &amp;</type>
+        <definition>std::ostream &amp; CodeHelper::NamedModule::Format</definition>
+        <argsstring>(std::ostream &amp;stream) const noexcept</argsstring>
+        <name>Format</name>
+        <param>
+          <type>std::ostream &amp;</type>
+          <declname>stream</declname>
+        </param>
+        <briefdescription>
+<para>格式化输出为 Name(Brief) </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sango/.vs/LangYa/32fc2ebc-99b1-4edc-8556-3cdf8201edfe/src/Sources/CodeHelper/Headers/LangYa/CodeHelper/Constrained.hpp" line="74" column="14" bodyfile="/home/sango/.vs/LangYa/32fc2ebc-99b1-4edc-8556-3cdf8201edfe/src/Sources/CodeHelper/Sources/Constrained.cpp" bodystart="5" bodyend="8"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>代表一种模块，提供 Name 和 Brief 输出到流中， 在日志中会以 Name(Brief)&gt; message 的格式输出消息。 </para>
+    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="note"><para>满足 <computeroutput>IsFormattable</computeroutput> 约束 </para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="8">
+        <label>CodeHelper::DeliveryArchitect&lt; typename TAcceptor::ItemType, TAcceptor, CodeHelper::DeviceIOTrigger &gt;</label>
+        <link refid="classCodeHelper_1_1DeliveryArchitect"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>CodeHelper::CommunicationPlanner&lt; TAcceptor, TMessageToRead, TMessageToSend, TDevice &gt;</label>
+        <link refid="classCodeHelper_1_1CommunicationPlanner"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>CodeHelper::IOArchitect&lt; TMessageToRead, TMessageToSend, TDevice &gt;</label>
+        <link refid="classCodeHelper_1_1IOArchitect"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>CodeHelper::ReaderArchitect&lt; TMessage, TReader &gt;</label>
+        <link refid="classCodeHelper_1_1ReaderArchitect"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>CodeHelper::NamedModule</label>
+        <link refid="structCodeHelper_1_1NamedModule"/>
+      </node>
+      <node id="9">
+        <label>CodeHelper::ReaderArchitect&lt; TMessageToRead, TDevice &gt;</label>
+        <link refid="classCodeHelper_1_1ReaderArchitect"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>CodeHelper::DeliveryArchitect&lt; TItem, TSource, TDestination &gt;</label>
+        <link refid="classCodeHelper_1_1DeliveryArchitect"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>CodeHelper::DeviceIOTrigger&lt; TMessageToRead, TMessageToSend, TDevice &gt;</label>
+        <link refid="classCodeHelper_1_1DeviceIOTrigger"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>CodeHelper::WriterArchitect&lt; TMessage, TWriter &gt;</label>
+        <link refid="classCodeHelper_1_1WriterArchitect"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="10">
+        <label>CodeHelper::WriterArchitect&lt; TMessageToSend, TDevice &gt;</label>
+        <link refid="classCodeHelper_1_1WriterArchitect"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <location file="/home/sango/.vs/LangYa/32fc2ebc-99b1-4edc-8556-3cdf8201edfe/src/Sources/CodeHelper/Headers/LangYa/CodeHelper/Constrained.hpp" line="69" column="18" bodyfile="/home/sango/.vs/LangYa/32fc2ebc-99b1-4edc-8556-3cdf8201edfe/src/Sources/CodeHelper/Headers/LangYa/CodeHelper/Constrained.hpp" bodystart="69" bodyend="75"/>
+    <listofallmembers>
+      <member refid="structCodeHelper_1_1NamedModule_1a2a13a677c984ab006949b6911e7c361a" prot="public" virt="non-virtual"><scope>CodeHelper::NamedModule</scope><name>Format</name></member>
+      <member refid="structCodeHelper_1_1NamedModule_1a55a66075cfd0e14a33cf018c1ba57af0" prot="public" virt="pure-virtual"><scope>CodeHelper::NamedModule</scope><name>GetBrief</name></member>
+      <member refid="structCodeHelper_1_1NamedModule_1a9ba0c53a7e2b42df416cf8e1c3367452" prot="public" virt="pure-virtual"><scope>CodeHelper::NamedModule</scope><name>GetName</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

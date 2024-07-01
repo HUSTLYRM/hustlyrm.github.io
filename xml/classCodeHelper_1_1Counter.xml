@@ -1,0 +1,163 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="classCodeHelper_1_1Counter" kind="class" language="C++" prot="public" final="yes">
+    <compoundname>CodeHelper::Counter</compoundname>
+    <includes refid="Runtimes_8hpp" local="no">Runtimes.hpp</includes>
+      <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="classCodeHelper_1_1Counter_1a14f22ee20ab0f114ae8fb4172107c9f3" prot="public" static="yes" constexpr="yes" mutable="no">
+        <type>constexpr auto</type>
+        <definition>constexpr auto CodeHelper::Counter::DefaultMaxCount</definition>
+        <argsstring></argsstring>
+        <name>DefaultMaxCount</name>
+        <initializer>= 5</initializer>
+        <briefdescription>
+<para>默认的计数最大值 </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sango/.vs/LangYa/32fc2ebc-99b1-4edc-8556-3cdf8201edfe/src/Sources/CodeHelper/Headers/LangYa/CodeHelper/Runtimes.hpp" line="77" column="23" bodyfile="/home/sango/.vs/LangYa/32fc2ebc-99b1-4edc-8556-3cdf8201edfe/src/Sources/CodeHelper/Headers/LangYa/CodeHelper/Runtimes.hpp" bodystart="77" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classCodeHelper_1_1Counter_1a0ff44a90a2ee671be3163fb693f9cc79" prot="private" static="no" mutable="no">
+        <type>std::uint32_t</type>
+        <definition>std::uint32_t CodeHelper::Counter::Current</definition>
+        <argsstring></argsstring>
+        <name>Current</name>
+        <initializer>{0}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sango/.vs/LangYa/32fc2ebc-99b1-4edc-8556-3cdf8201edfe/src/Sources/CodeHelper/Headers/LangYa/CodeHelper/Runtimes.hpp" line="80" column="15" bodyfile="/home/sango/.vs/LangYa/32fc2ebc-99b1-4edc-8556-3cdf8201edfe/src/Sources/CodeHelper/Headers/LangYa/CodeHelper/Runtimes.hpp" bodystart="80" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classCodeHelper_1_1Counter_1aae73b5a09d72e21a6924113c2f1f983f" prot="private" static="no" mutable="no">
+        <type>std::uint32_t</type>
+        <definition>std::uint32_t CodeHelper::Counter::MaxCount</definition>
+        <argsstring></argsstring>
+        <name>MaxCount</name>
+        <initializer>{<ref refid="classCodeHelper_1_1Counter_1a14f22ee20ab0f114ae8fb4172107c9f3" kindref="member">DefaultMaxCount</ref>}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sango/.vs/LangYa/32fc2ebc-99b1-4edc-8556-3cdf8201edfe/src/Sources/CodeHelper/Headers/LangYa/CodeHelper/Runtimes.hpp" line="81" column="15" bodyfile="/home/sango/.vs/LangYa/32fc2ebc-99b1-4edc-8556-3cdf8201edfe/src/Sources/CodeHelper/Headers/LangYa/CodeHelper/Runtimes.hpp" bodystart="81" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classCodeHelper_1_1Counter_1a2c58ad26c25bbed4a569bf9f9ecc834d" prot="public" static="no" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
+        <type></type>
+        <definition>CodeHelper::Counter::Counter</definition>
+        <argsstring>() noexcept</argsstring>
+        <name>Counter</name>
+        <briefdescription>
+<para>构造计数器，设置最大值为 <computeroutput><ref refid="classCodeHelper_1_1Counter_1a14f22ee20ab0f114ae8fb4172107c9f3" kindref="member">Counter::DefaultMaxCount</ref></computeroutput> </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sango/.vs/LangYa/32fc2ebc-99b1-4edc-8556-3cdf8201edfe/src/Sources/CodeHelper/Headers/LangYa/CodeHelper/Runtimes.hpp" line="86" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classCodeHelper_1_1Counter_1ae839c77b69da208a78383d608f2ad848" prot="public" static="no" const="no" explicit="yes" inline="no" noexcept="yes" virt="non-virtual">
+        <type></type>
+        <definition>CodeHelper::Counter::Counter</definition>
+        <argsstring>(std::uint32_t max) noexcept</argsstring>
+        <name>Counter</name>
+        <param>
+          <type>std::uint32_t</type>
+          <declname>max</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sango/.vs/LangYa/32fc2ebc-99b1-4edc-8556-3cdf8201edfe/src/Sources/CodeHelper/Headers/LangYa/CodeHelper/Runtimes.hpp" line="88" column="10" bodyfile="/home/sango/.vs/LangYa/32fc2ebc-99b1-4edc-8556-3cdf8201edfe/src/Sources/CodeHelper/Sources/Runtimes.cpp" bodystart="247" bodyend="249"/>
+      </memberdef>
+      <memberdef kind="function" id="classCodeHelper_1_1Counter_1a726b2e833832b2bec0d9cf3593e088ba" prot="public" static="no" const="yes" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
+        <type>std::uint32_t</type>
+        <definition>std::uint32_t CodeHelper::Counter::GetCurrent</definition>
+        <argsstring>() const noexcept</argsstring>
+        <name>GetCurrent</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sango/.vs/LangYa/32fc2ebc-99b1-4edc-8556-3cdf8201edfe/src/Sources/CodeHelper/Headers/LangYa/CodeHelper/Runtimes.hpp" line="90" column="16" bodyfile="/home/sango/.vs/LangYa/32fc2ebc-99b1-4edc-8556-3cdf8201edfe/src/Sources/CodeHelper/Sources/Runtimes.cpp" bodystart="251" bodyend="254"/>
+      </memberdef>
+      <memberdef kind="function" id="classCodeHelper_1_1Counter_1a268146394dc0363ff33d5ec9192e2873" prot="public" static="no" const="yes" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool CodeHelper::Counter::Reached</definition>
+        <argsstring>() const noexcept</argsstring>
+        <name>Reached</name>
+        <briefdescription>
+<para>检查是否到达了最大值 ( <computeroutput>Counter::Current</computeroutput> &gt;= <computeroutput>Counter::MaxCount</computeroutput> ) </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sango/.vs/LangYa/32fc2ebc-99b1-4edc-8556-3cdf8201edfe/src/Sources/CodeHelper/Headers/LangYa/CodeHelper/Runtimes.hpp" line="93" column="7" bodyfile="/home/sango/.vs/LangYa/32fc2ebc-99b1-4edc-8556-3cdf8201edfe/src/Sources/CodeHelper/Sources/Runtimes.cpp" bodystart="256" bodyend="259"/>
+      </memberdef>
+      <memberdef kind="function" id="classCodeHelper_1_1Counter_1a144a0f6ecf9d0df377a6a01bf48e3318" prot="public" static="no" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool CodeHelper::Counter::Count</definition>
+        <argsstring>() noexcept</argsstring>
+        <name>Count</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sango/.vs/LangYa/32fc2ebc-99b1-4edc-8556-3cdf8201edfe/src/Sources/CodeHelper/Headers/LangYa/CodeHelper/Runtimes.hpp" line="95" column="7" bodyfile="/home/sango/.vs/LangYa/32fc2ebc-99b1-4edc-8556-3cdf8201edfe/src/Sources/CodeHelper/Sources/Runtimes.cpp" bodystart="261" bodyend="270"/>
+      </memberdef>
+      <memberdef kind="function" id="classCodeHelper_1_1Counter_1a43b49ed8a90a8dbf3f01978e97b0aef4" prot="public" static="no" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void CodeHelper::Counter::Reset</definition>
+        <argsstring>() noexcept</argsstring>
+        <name>Reset</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sango/.vs/LangYa/32fc2ebc-99b1-4edc-8556-3cdf8201edfe/src/Sources/CodeHelper/Headers/LangYa/CodeHelper/Runtimes.hpp" line="97" column="6" bodyfile="/home/sango/.vs/LangYa/32fc2ebc-99b1-4edc-8556-3cdf8201edfe/src/Sources/CodeHelper/Sources/Runtimes.cpp" bodystart="272" bodyend="275"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>计数器，指定最大值，计数到最大值后返回 <computeroutput>true</computeroutput> 否则每次计数时返回 <computeroutput>false</computeroutput> </para>
+    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="warning"><para>在多线程环境下使用计数需自行加锁，且需要注意可能的数据溢出问题 </para>
+</simplesect>
+<simplesect kind="note"><para>不再考虑有关线程安全的问题，也不推荐在多线程环境下使用 因为大多数使用场景不会计数的值太大，所以更换内部数据类型为 std::uint32_t <linebreak/>
+ </para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <location file="/home/sango/.vs/LangYa/32fc2ebc-99b1-4edc-8556-3cdf8201edfe/src/Sources/CodeHelper/Headers/LangYa/CodeHelper/Runtimes.hpp" line="74" column="1" bodyfile="/home/sango/.vs/LangYa/32fc2ebc-99b1-4edc-8556-3cdf8201edfe/src/Sources/CodeHelper/Headers/LangYa/CodeHelper/Runtimes.hpp" bodystart="73" bodyend="98"/>
+    <listofallmembers>
+      <member refid="classCodeHelper_1_1Counter_1a144a0f6ecf9d0df377a6a01bf48e3318" prot="public" virt="non-virtual"><scope>CodeHelper::Counter</scope><name>Count</name></member>
+      <member refid="classCodeHelper_1_1Counter_1a2c58ad26c25bbed4a569bf9f9ecc834d" prot="public" virt="non-virtual"><scope>CodeHelper::Counter</scope><name>Counter</name></member>
+      <member refid="classCodeHelper_1_1Counter_1ae839c77b69da208a78383d608f2ad848" prot="public" virt="non-virtual"><scope>CodeHelper::Counter</scope><name>Counter</name></member>
+      <member refid="classCodeHelper_1_1Counter_1a0ff44a90a2ee671be3163fb693f9cc79" prot="private" virt="non-virtual"><scope>CodeHelper::Counter</scope><name>Current</name></member>
+      <member refid="classCodeHelper_1_1Counter_1a14f22ee20ab0f114ae8fb4172107c9f3" prot="public" virt="non-virtual"><scope>CodeHelper::Counter</scope><name>DefaultMaxCount</name></member>
+      <member refid="classCodeHelper_1_1Counter_1a726b2e833832b2bec0d9cf3593e088ba" prot="public" virt="non-virtual"><scope>CodeHelper::Counter</scope><name>GetCurrent</name></member>
+      <member refid="classCodeHelper_1_1Counter_1aae73b5a09d72e21a6924113c2f1f983f" prot="private" virt="non-virtual"><scope>CodeHelper::Counter</scope><name>MaxCount</name></member>
+      <member refid="classCodeHelper_1_1Counter_1a268146394dc0363ff33d5ec9192e2873" prot="public" virt="non-virtual"><scope>CodeHelper::Counter</scope><name>Reached</name></member>
+      <member refid="classCodeHelper_1_1Counter_1a43b49ed8a90a8dbf3f01978e97b0aef4" prot="public" virt="non-virtual"><scope>CodeHelper::Counter</scope><name>Reset</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

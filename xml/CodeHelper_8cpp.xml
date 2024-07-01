@@ -1,0 +1,189 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="CodeHelper_8cpp" kind="file" language="C++">
+    <compoundname>CodeHelper.cpp</compoundname>
+    <includes refid="CodeHelper_8hpp" local="no">LangYa/CodeHelper.hpp</includes>
+    <incdepgraph>
+      <node id="23">
+        <label>boost/algorithm/string.hpp</label>
+      </node>
+      <node id="16">
+        <label>functional</label>
+      </node>
+      <node id="12">
+        <label>CodeHelper/ParseFromStream.hpp</label>
+        <link refid="ParseFromStream_8hpp_source"/>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>cstdint</label>
+      </node>
+      <node id="3">
+        <label>CodeHelper/AsyncItemPool.hpp</label>
+        <link refid="AsyncItemPool_8hpp_source"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="17">
+        <label>string</label>
+      </node>
+      <node id="15">
+        <label>CodeHelper/Runtimes.hpp</label>
+        <link refid="Runtimes_8hpp_source"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="10">
+        <label>spdlog/spdlog.h</label>
+      </node>
+      <node id="20">
+        <label>CodeHelper/SineWave.hpp</label>
+        <link refid="SineWave_8hpp_source"/>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="14">
+        <label>string_view</label>
+      </node>
+      <node id="11">
+        <label>taskflow/taskflow.hpp</label>
+      </node>
+      <node id="1">
+        <label>/home/sango/.vs/LangYa/32fc2ebc-99b1-4edc-8556-3cdf8201edfe/src/Sources/CodeHelper/Sources/CodeHelper.cpp</label>
+        <link refid="CodeHelper_8cpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="18">
+        <label>boost/filesystem.hpp</label>
+      </node>
+      <node id="24">
+        <label>CodeHelper/TaskArchitects.hpp</label>
+        <link refid="TaskArchitects_8hpp_source"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+      </node>
+      <node id="27">
+        <label>array</label>
+      </node>
+      <node id="2">
+        <label>LangYa/CodeHelper.hpp</label>
+        <link refid="CodeHelper_8hpp_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>sstream</label>
+      </node>
+      <node id="19">
+        <label>boost/property_tree/ptree.hpp</label>
+      </node>
+      <node id="28">
+        <label>cstddef</label>
+      </node>
+      <node id="22">
+        <label>CodeHelper/SpanUtils.hpp</label>
+        <link refid="SpanUtils_8hpp_source"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+      </node>
+      <node id="25">
+        <label>CodeHelper/TypedMessage.hpp</label>
+        <link refid="TypedMessage_8hpp_source"/>
+        <childnode refid="26" relation="include">
+        </childnode>
+        <childnode refid="27" relation="include">
+        </childnode>
+        <childnode refid="28" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="21">
+        <label>chrono</label>
+      </node>
+      <node id="5">
+        <label>concepts</label>
+      </node>
+      <node id="8">
+        <label>span</label>
+      </node>
+      <node id="26">
+        <label>algorithm</label>
+      </node>
+      <node id="4">
+        <label>Constrained.hpp</label>
+        <link refid="Constrained_8hpp_source"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>memory</label>
+      </node>
+      <node id="13">
+        <label>istream</label>
+      </node>
+    </incdepgraph>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#include<sp/>&lt;LangYa/CodeHelper.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="/home/sango/.vs/LangYa/32fc2ebc-99b1-4edc-8556-3cdf8201edfe/src/Sources/CodeHelper/Sources/CodeHelper.cpp"/>
+  </compounddef>
+</doxygen>

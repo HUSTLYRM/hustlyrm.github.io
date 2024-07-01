@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="dir_8b74d436bfcb54aaa256bb23bc57bf00" kind="dir">
+    <compoundname>/home/sango/.vs/LangYa/32fc2ebc-99b1-4edc-8556-3cdf8201edfe/src/Sources/CodeHelper/Sources</compoundname>
+    <innerfile refid="CodeHelper_8cpp">CodeHelper.cpp</innerfile>
+    <innerfile refid="Constrained_8cpp">Constrained.cpp</innerfile>
+    <innerfile refid="ParseFromStream_8cpp">ParseFromStream.cpp</innerfile>
+    <innerfile refid="Runtimes_8cpp">Runtimes.cpp</innerfile>
+    <innerfile refid="SineWave_8cpp">SineWave.cpp</innerfile>
+    <innerfile refid="SpanUtils_8cpp">SpanUtils.cpp</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/sango/.vs/LangYa/32fc2ebc-99b1-4edc-8556-3cdf8201edfe/src/Sources/CodeHelper/Sources/"/>
+  </compounddef>
+</doxygen>

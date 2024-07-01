@@ -1,0 +1,39 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="structCodeHelper_1_1FormattableObject" kind="struct" language="C++" prot="public" abstract="yes">
+    <compoundname>CodeHelper::FormattableObject</compoundname>
+    <includes refid="Constrained_8hpp" local="no">Constrained.hpp</includes>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="structCodeHelper_1_1FormattableObject_1a8c0871b68a1d412f9f494f821d83e180" prot="public" static="no" const="yes" explicit="no" inline="no" noexcept="yes" virt="pure-virtual">
+        <type>std::ostream &amp;</type>
+        <definition>virtual std::ostream&amp; CodeHelper::FormattableObject::Format</definition>
+        <argsstring>(std::ostream &amp;stream) const noexcept=0</argsstring>
+        <name>Format</name>
+        <param>
+          <type>std::ostream &amp;</type>
+          <declname>stream</declname>
+        </param>
+        <briefdescription>
+<para>格式化对象到流 </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sango/.vs/LangYa/32fc2ebc-99b1-4edc-8556-3cdf8201edfe/src/Sources/CodeHelper/Headers/LangYa/CodeHelper/Constrained.hpp" line="18" column="22"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>代表可以格式化的对象，提供 Format 函数，将对象格式化输出到流 </para>
+    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="note"><para>提供此结构体的目的是便于编译器补全，如果你的结构体对内存布局有要求，不要继承此结构体 使用 <computeroutput>IsFormattable</computeroutput> 概念会更好 </para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <location file="/home/sango/.vs/LangYa/32fc2ebc-99b1-4edc-8556-3cdf8201edfe/src/Sources/CodeHelper/Headers/LangYa/CodeHelper/Constrained.hpp" line="16" column="24" bodyfile="/home/sango/.vs/LangYa/32fc2ebc-99b1-4edc-8556-3cdf8201edfe/src/Sources/CodeHelper/Headers/LangYa/CodeHelper/Constrained.hpp" bodystart="16" bodyend="19"/>
+    <listofallmembers>
+      <member refid="structCodeHelper_1_1FormattableObject_1a8c0871b68a1d412f9f494f821d83e180" prot="public" virt="pure-virtual"><scope>CodeHelper::FormattableObject</scope><name>Format</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

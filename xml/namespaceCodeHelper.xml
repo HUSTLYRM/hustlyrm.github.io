@@ -1,0 +1,1470 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="namespaceCodeHelper" kind="namespace" language="C++">
+    <compoundname>CodeHelper</compoundname>
+    <innerclass refid="classCodeHelper_1_1AsyncItemPool" prot="public">CodeHelper::AsyncItemPool</innerclass>
+    <innerclass refid="classCodeHelper_1_1CommunicationPlanner" prot="public">CodeHelper::CommunicationPlanner</innerclass>
+    <innerclass refid="classCodeHelper_1_1Counter" prot="public">CodeHelper::Counter</innerclass>
+    <innerclass refid="classCodeHelper_1_1DeliveryArchitect" prot="public">CodeHelper::DeliveryArchitect</innerclass>
+    <innerclass refid="classCodeHelper_1_1Dependency" prot="public">CodeHelper::Dependency</innerclass>
+    <innerclass refid="classCodeHelper_1_1Dependency_3_01TObject_01_4" prot="public">CodeHelper::Dependency&lt; TObject &gt;</innerclass>
+    <innerclass refid="structCodeHelper_1_1DestinationNode" prot="public">CodeHelper::DestinationNode</innerclass>
+    <innerclass refid="classCodeHelper_1_1DeviceIOTrigger" prot="public">CodeHelper::DeviceIOTrigger</innerclass>
+    <innerclass refid="structCodeHelper_1_1EmptyDestinationNode" prot="public">CodeHelper::EmptyDestinationNode</innerclass>
+    <innerclass refid="classCodeHelper_1_1EmptySourceNode" prot="public">CodeHelper::EmptySourceNode</innerclass>
+    <innerclass refid="structCodeHelper_1_1FormattableObject" prot="public">CodeHelper::FormattableObject</innerclass>
+    <innerclass refid="classCodeHelper_1_1IOArchitect" prot="public">CodeHelper::IOArchitect</innerclass>
+    <innerclass refid="structCodeHelper_1_1NamedModule" prot="public">CodeHelper::NamedModule</innerclass>
+    <innerclass refid="structCodeHelper_1_1ParseFromStream" prot="public">CodeHelper::ParseFromStream</innerclass>
+    <innerclass refid="classCodeHelper_1_1PingPongExchanger" prot="public">CodeHelper::PingPongExchanger</innerclass>
+    <innerclass refid="structCodeHelper_1_1ProcessorNode" prot="public">CodeHelper::ProcessorNode</innerclass>
+    <innerclass refid="structCodeHelper_1_1Reader" prot="public">CodeHelper::Reader</innerclass>
+    <innerclass refid="classCodeHelper_1_1ReaderArchitect" prot="public">CodeHelper::ReaderArchitect</innerclass>
+    <innerclass refid="classCodeHelper_1_1SimpleSourceNode" prot="public">CodeHelper::SimpleSourceNode</innerclass>
+    <innerclass refid="structCodeHelper_1_1SineWave" prot="public">CodeHelper::SineWave</innerclass>
+    <innerclass refid="structCodeHelper_1_1SourceNode" prot="public">CodeHelper::SourceNode</innerclass>
+    <innerclass refid="structCodeHelper_1_1TaskArchitect" prot="public">CodeHelper::TaskArchitect</innerclass>
+    <innerclass refid="structCodeHelper_1_1TaskDone" prot="public">CodeHelper::TaskDone</innerclass>
+    <innerclass refid="structCodeHelper_1_1TaskStatus" prot="public">CodeHelper::TaskStatus</innerclass>
+    <innerclass refid="structCodeHelper_1_1TypedMessage" prot="public">CodeHelper::TypedMessage</innerclass>
+    <innerclass refid="structCodeHelper_1_1Writer" prot="public">CodeHelper::Writer</innerclass>
+    <innerclass refid="classCodeHelper_1_1WriterArchitect" prot="public">CodeHelper::WriterArchitect</innerclass>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="Constrained_8hpp_1a4259a618ea0d8af57b0b7da6e18d1049" prot="public" static="no">
+        <type>std::vector&lt; std::thread &gt;</type>
+        <definition>using CodeHelper::ThreadGroup = typedef std::vector&lt;std::thread&gt;</definition>
+        <argsstring></argsstring>
+        <name>ThreadGroup</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sango/.vs/LangYa/32fc2ebc-99b1-4edc-8556-3cdf8201edfe/src/Sources/CodeHelper/Headers/LangYa/CodeHelper/Constrained.hpp" line="388" column="1" bodyfile="/home/sango/.vs/LangYa/32fc2ebc-99b1-4edc-8556-3cdf8201edfe/src/Sources/CodeHelper/Headers/LangYa/CodeHelper/Constrained.hpp" bodystart="388" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="Runtimes_8hpp_1a4b474b84b11bd232f9dbd2bb155f9a8d" prot="public" static="no">
+        <type>std::function&lt; void(<ref refid="classCodeHelper_1_1Counter" kindref="compound">Counter</ref> &amp;)&gt;</type>
+        <definition>using CodeHelper::counted_func_t = typedef std::function&lt;void(Counter&amp;)&gt;</definition>
+        <argsstring></argsstring>
+        <name>counted_func_t</name>
+        <briefdescription>
+<para>参数是外部计数器的函数 </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sango/.vs/LangYa/32fc2ebc-99b1-4edc-8556-3cdf8201edfe/src/Sources/CodeHelper/Headers/LangYa/CodeHelper/Runtimes.hpp" line="106" column="1" bodyfile="/home/sango/.vs/LangYa/32fc2ebc-99b1-4edc-8556-3cdf8201edfe/src/Sources/CodeHelper/Headers/LangYa/CodeHelper/Runtimes.hpp" bodystart="106" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="Constrained_8hpp_1a6fc2c250347fea103f27decd44e1c96d" prot="public" static="no" mutable="no">
+        <templateparamlist>
+          <param>
+            <type>typename TObject</type>
+          </param>
+        </templateparamlist>
+        <type>concept</type>
+        <definition>concept CodeHelper::IsFormattable</definition>
+        <argsstring></argsstring>
+        <name>IsFormattable</name>
+        <initializer>= requires(const TObject&amp; obj, std::ostream&amp; stream) {
+		{ obj.Format(stream) } -&gt; std::convertible_to&lt;std::ostream&amp;&gt;;
+	}</initializer>
+        <briefdescription>
+<para><computeroutput><ref refid="structCodeHelper_1_1FormattableObject" kindref="compound">FormattableObject</ref></computeroutput> 的概念 </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sango/.vs/LangYa/32fc2ebc-99b1-4edc-8556-3cdf8201edfe/src/Sources/CodeHelper/Headers/LangYa/CodeHelper/Constrained.hpp" line="23" column="9" bodyfile="/home/sango/.vs/LangYa/32fc2ebc-99b1-4edc-8556-3cdf8201edfe/src/Sources/CodeHelper/Headers/LangYa/CodeHelper/Constrained.hpp" bodystart="23" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="Constrained_8hpp_1a07f182552bd6a0637fda06cfb53dce01" prot="public" static="no" mutable="no">
+        <templateparamlist>
+          <param>
+            <type>typename TNode</type>
+          </param>
+          <param>
+            <type>typename TItem</type>
+            <defval>typename TNode::ItemType</defval>
+          </param>
+        </templateparamlist>
+        <type>concept</type>
+        <definition>concept CodeHelper::IsSourceNode</definition>
+        <argsstring></argsstring>
+        <name>IsSourceNode</name>
+        <initializer>= requires(TNode&amp; node, TItem&amp; item) {
+		{ node.GetItem(item) } -&gt; std::convertible_to&lt;bool&gt;;
+	}</initializer>
+        <briefdescription>
+<para><computeroutput><ref refid="structCodeHelper_1_1SourceNode" kindref="compound">SourceNode</ref></computeroutput> 的概念 </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sango/.vs/LangYa/32fc2ebc-99b1-4edc-8556-3cdf8201edfe/src/Sources/CodeHelper/Headers/LangYa/CodeHelper/Constrained.hpp" line="94" column="9" bodyfile="/home/sango/.vs/LangYa/32fc2ebc-99b1-4edc-8556-3cdf8201edfe/src/Sources/CodeHelper/Headers/LangYa/CodeHelper/Constrained.hpp" bodystart="94" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="Constrained_8hpp_1a9333c2e767fa10349aa47a75ed2948a8" prot="public" static="no" mutable="no">
+        <templateparamlist>
+          <param>
+            <type>typename TSource</type>
+          </param>
+        </templateparamlist>
+        <type>concept</type>
+        <definition>concept CodeHelper::IsFormattableSource</definition>
+        <argsstring></argsstring>
+        <name>IsFormattableSource</name>
+        <initializer>= IsSourceNode&lt;TSource&gt; &amp;&amp; IsFormattable&lt;TSource&gt;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sango/.vs/LangYa/32fc2ebc-99b1-4edc-8556-3cdf8201edfe/src/Sources/CodeHelper/Headers/LangYa/CodeHelper/Constrained.hpp" line="122" column="9" bodyfile="/home/sango/.vs/LangYa/32fc2ebc-99b1-4edc-8556-3cdf8201edfe/src/Sources/CodeHelper/Headers/LangYa/CodeHelper/Constrained.hpp" bodystart="122" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="Constrained_8hpp_1ad8f70ac7c5686976d92ada8aee32e6de" prot="public" static="no" mutable="no">
+        <templateparamlist>
+          <param>
+            <type>typename TNode</type>
+          </param>
+          <param>
+            <type>typename TItem</type>
+            <defval>typename TNode::ItemType</defval>
+          </param>
+        </templateparamlist>
+        <type>concept</type>
+        <definition>concept CodeHelper::IsDestinationNode</definition>
+        <argsstring></argsstring>
+        <name>IsDestinationNode</name>
+        <initializer>= requires(TNode destination, const TItem&amp; item) {
+		{ destination.SetItem(item) };
+	}</initializer>
+        <briefdescription>
+<para><computeroutput><ref refid="structCodeHelper_1_1DestinationNode" kindref="compound">DestinationNode</ref></computeroutput> 的概念 </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sango/.vs/LangYa/32fc2ebc-99b1-4edc-8556-3cdf8201edfe/src/Sources/CodeHelper/Headers/LangYa/CodeHelper/Constrained.hpp" line="152" column="9" bodyfile="/home/sango/.vs/LangYa/32fc2ebc-99b1-4edc-8556-3cdf8201edfe/src/Sources/CodeHelper/Headers/LangYa/CodeHelper/Constrained.hpp" bodystart="152" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="Constrained_8hpp_1aedf4c406a76ec41b169c2903f0703d3e" prot="public" static="no" mutable="no">
+        <templateparamlist>
+          <param>
+            <type>typename TDestination</type>
+          </param>
+        </templateparamlist>
+        <type>concept</type>
+        <definition>concept CodeHelper::IsFormattableDestination</definition>
+        <argsstring></argsstring>
+        <name>IsFormattableDestination</name>
+        <initializer>= IsDestinationNode&lt;TDestination&gt; &amp;&amp; IsFormattable&lt;TDestination&gt;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sango/.vs/LangYa/32fc2ebc-99b1-4edc-8556-3cdf8201edfe/src/Sources/CodeHelper/Headers/LangYa/CodeHelper/Constrained.hpp" line="167" column="9" bodyfile="/home/sango/.vs/LangYa/32fc2ebc-99b1-4edc-8556-3cdf8201edfe/src/Sources/CodeHelper/Headers/LangYa/CodeHelper/Constrained.hpp" bodystart="167" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="Constrained_8hpp_1af764e564da937ab5ed46a0c34e88ed66" prot="public" static="no" mutable="no">
+        <templateparamlist>
+          <param>
+            <type>typename TObject</type>
+          </param>
+        </templateparamlist>
+        <type>concept</type>
+        <definition>concept CodeHelper::IsReader</definition>
+        <argsstring></argsstring>
+        <name>IsReader</name>
+        <initializer>= requires(TObject&amp; object, std::span&lt;std::uint8_t&gt; buffer) {
+		{ object.ReadBytes(buffer) } -&gt; std::convertible_to&lt;std::size_t&gt;;
+	}</initializer>
+        <briefdescription>
+<para><computeroutput><ref refid="structCodeHelper_1_1Reader" kindref="compound">Reader</ref></computeroutput> 的概念 </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sango/.vs/LangYa/32fc2ebc-99b1-4edc-8556-3cdf8201edfe/src/Sources/CodeHelper/Headers/LangYa/CodeHelper/Constrained.hpp" line="279" column="9" bodyfile="/home/sango/.vs/LangYa/32fc2ebc-99b1-4edc-8556-3cdf8201edfe/src/Sources/CodeHelper/Headers/LangYa/CodeHelper/Constrained.hpp" bodystart="279" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="Constrained_8hpp_1a1ab4f0b756b6c2e868112c3c2b74e302" prot="public" static="no" mutable="no">
+        <templateparamlist>
+          <param>
+            <type>typename TObject</type>
+          </param>
+        </templateparamlist>
+        <type>concept</type>
+        <definition>concept CodeHelper::IsFormattableReader</definition>
+        <argsstring></argsstring>
+        <name>IsFormattableReader</name>
+        <initializer>= IsFormattable&lt;TObject&gt; &amp;&amp; IsReader&lt;TObject&gt;</initializer>
+        <briefdescription>
+<para>要求对象同时满足 <computeroutput>IsFormattable</computeroutput> 和 <computeroutput>IsReader</computeroutput> </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sango/.vs/LangYa/32fc2ebc-99b1-4edc-8556-3cdf8201edfe/src/Sources/CodeHelper/Headers/LangYa/CodeHelper/Constrained.hpp" line="285" column="9" bodyfile="/home/sango/.vs/LangYa/32fc2ebc-99b1-4edc-8556-3cdf8201edfe/src/Sources/CodeHelper/Headers/LangYa/CodeHelper/Constrained.hpp" bodystart="285" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="Constrained_8hpp_1a188b7a380219ad330c2784e573ea3ed7" prot="public" static="no" mutable="no">
+        <templateparamlist>
+          <param>
+            <type>typename TObject</type>
+          </param>
+        </templateparamlist>
+        <type>concept</type>
+        <definition>concept CodeHelper::IsWriter</definition>
+        <argsstring></argsstring>
+        <name>IsWriter</name>
+        <initializer>= requires(TObject&amp; object, std::span&lt;const std::uint8_t&gt; buffer) {
+		{ object.WriteBytes(buffer) } -&gt; std::convertible_to&lt;std::size_t&gt;;
+	}</initializer>
+        <briefdescription>
+<para><computeroutput><ref refid="structCodeHelper_1_1Writer" kindref="compound">Writer</ref></computeroutput> 的概念 </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sango/.vs/LangYa/32fc2ebc-99b1-4edc-8556-3cdf8201edfe/src/Sources/CodeHelper/Headers/LangYa/CodeHelper/Constrained.hpp" line="296" column="9" bodyfile="/home/sango/.vs/LangYa/32fc2ebc-99b1-4edc-8556-3cdf8201edfe/src/Sources/CodeHelper/Headers/LangYa/CodeHelper/Constrained.hpp" bodystart="296" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="Constrained_8hpp_1a1465399239213bca16372abb4d2dcb0b" prot="public" static="no" mutable="no">
+        <templateparamlist>
+          <param>
+            <type>typename TDevice</type>
+          </param>
+        </templateparamlist>
+        <type>concept</type>
+        <definition>concept CodeHelper::IsFormattableWriter</definition>
+        <argsstring></argsstring>
+        <name>IsFormattableWriter</name>
+        <initializer>= IsFormattable&lt;TDevice&gt; &amp;&amp; IsWriter&lt;TDevice&gt;</initializer>
+        <briefdescription>
+<para>要求对象同时满足 <computeroutput>IsFormattable</computeroutput> 和 <computeroutput>IsWriter</computeroutput> </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sango/.vs/LangYa/32fc2ebc-99b1-4edc-8556-3cdf8201edfe/src/Sources/CodeHelper/Headers/LangYa/CodeHelper/Constrained.hpp" line="302" column="9" bodyfile="/home/sango/.vs/LangYa/32fc2ebc-99b1-4edc-8556-3cdf8201edfe/src/Sources/CodeHelper/Headers/LangYa/CodeHelper/Constrained.hpp" bodystart="302" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="Constrained_8hpp_1a1860b9315b2faa15722d6b6650fe614f" prot="public" static="no" mutable="no">
+        <templateparamlist>
+          <param>
+            <type>typename TDevice</type>
+          </param>
+        </templateparamlist>
+        <type>concept</type>
+        <definition>concept CodeHelper::IsIODevice</definition>
+        <argsstring></argsstring>
+        <name>IsIODevice</name>
+        <initializer>= IsReader&lt;TDevice&gt; &amp;&amp; IsWriter&lt;TDevice&gt;</initializer>
+        <briefdescription>
+<para>要求对象同时满足 <computeroutput>IsReader</computeroutput> 和 <computeroutput>IsWriter</computeroutput> </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sango/.vs/LangYa/32fc2ebc-99b1-4edc-8556-3cdf8201edfe/src/Sources/CodeHelper/Headers/LangYa/CodeHelper/Constrained.hpp" line="306" column="9" bodyfile="/home/sango/.vs/LangYa/32fc2ebc-99b1-4edc-8556-3cdf8201edfe/src/Sources/CodeHelper/Headers/LangYa/CodeHelper/Constrained.hpp" bodystart="306" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="Constrained_8hpp_1af1718d065bde27e87fddba36af407aa8" prot="public" static="no" mutable="no">
+        <templateparamlist>
+          <param>
+            <type>typename TDevice</type>
+          </param>
+        </templateparamlist>
+        <type>concept</type>
+        <definition>concept CodeHelper::IsFormattableIODevice</definition>
+        <argsstring></argsstring>
+        <name>IsFormattableIODevice</name>
+        <initializer>= IsFormattable&lt;TDevice&gt; &amp;&amp; IsIODevice&lt;TDevice&gt;</initializer>
+        <briefdescription>
+<para>输入输出设备，要求同时满足读取器和写入器，还有可格式化 </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sango/.vs/LangYa/32fc2ebc-99b1-4edc-8556-3cdf8201edfe/src/Sources/CodeHelper/Headers/LangYa/CodeHelper/Constrained.hpp" line="310" column="9" bodyfile="/home/sango/.vs/LangYa/32fc2ebc-99b1-4edc-8556-3cdf8201edfe/src/Sources/CodeHelper/Headers/LangYa/CodeHelper/Constrained.hpp" bodystart="310" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="Constrained_8hpp_1af7f26b5fb8cf9bc53135752b1355faa1" prot="public" static="no" mutable="no">
+        <templateparamlist>
+          <param>
+            <type>typename TAcceptor</type>
+          </param>
+          <param>
+            <type>typename TDevice</type>
+            <defval>typename TAcceptor::ItemType</defval>
+          </param>
+        </templateparamlist>
+        <type>concept</type>
+        <definition>concept CodeHelper::IsFormattableAcceptor</definition>
+        <argsstring></argsstring>
+        <name>IsFormattableAcceptor</name>
+        <initializer>= IsFormattableSource&lt;TAcceptor&gt; &amp;&amp; IsFormattableIODevice&lt;TDevice&gt;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sango/.vs/LangYa/32fc2ebc-99b1-4edc-8556-3cdf8201edfe/src/Sources/CodeHelper/Headers/LangYa/CodeHelper/Constrained.hpp" line="313" column="9" bodyfile="/home/sango/.vs/LangYa/32fc2ebc-99b1-4edc-8556-3cdf8201edfe/src/Sources/CodeHelper/Headers/LangYa/CodeHelper/Constrained.hpp" bodystart="313" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="Constrained_8hpp_1a0f48db053c41b709d1eca1bf818b84fd" prot="public" static="no" mutable="no">
+        <templateparamlist>
+          <param>
+            <type>typename TObject</type>
+          </param>
+        </templateparamlist>
+        <type>concept</type>
+        <definition>concept CodeHelper::IsTaskStatus</definition>
+        <argsstring></argsstring>
+        <name>IsTaskStatus</name>
+        <initializer>= requires(const TObject&amp; readonlyObject, TObject&amp; mutableObject) {
+		{ readonlyObject.IsDone() } -&gt; std::convertible_to&lt;bool&gt;;
+		{ mutableObject.Interrupt() };
+		{ mutableObject.Reset() };
+	}</initializer>
+        <briefdescription>
+<para>满足 <computeroutput><ref refid="structCodeHelper_1_1TaskStatus" kindref="compound">TaskStatus</ref></computeroutput> 定义的概念的类型 </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sango/.vs/LangYa/32fc2ebc-99b1-4edc-8556-3cdf8201edfe/src/Sources/CodeHelper/Headers/LangYa/CodeHelper/Constrained.hpp" line="333" column="9" bodyfile="/home/sango/.vs/LangYa/32fc2ebc-99b1-4edc-8556-3cdf8201edfe/src/Sources/CodeHelper/Headers/LangYa/CodeHelper/Constrained.hpp" bodystart="333" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="Constrained_8hpp_1a5f7f7cc76ae18db578d32260e711ae7a" prot="public" static="no" mutable="no">
+        <templateparamlist>
+          <param>
+            <type>typename TObject</type>
+          </param>
+        </templateparamlist>
+        <type>concept</type>
+        <definition>concept CodeHelper::IsTaskArchitect</definition>
+        <argsstring></argsstring>
+        <name>IsTaskArchitect</name>
+        <initializer>= requires(TObject&amp; obj) {
+		{ obj.Check() } -&gt; std::convertible_to&lt;bool&gt;;
+		{ obj.Execute() };
+	} &amp;&amp; IsTaskStatus&lt;TObject&gt;</initializer>
+        <briefdescription>
+<para>满足 <computeroutput><ref refid="structCodeHelper_1_1TaskArchitect" kindref="compound">TaskArchitect</ref></computeroutput> 定义的概念的类型 </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sango/.vs/LangYa/32fc2ebc-99b1-4edc-8556-3cdf8201edfe/src/Sources/CodeHelper/Headers/LangYa/CodeHelper/Constrained.hpp" line="373" column="9" bodyfile="/home/sango/.vs/LangYa/32fc2ebc-99b1-4edc-8556-3cdf8201edfe/src/Sources/CodeHelper/Headers/LangYa/CodeHelper/Constrained.hpp" bodystart="373" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="Constrained_8hpp_1a675da862c8f36814801016aabc6d98d9" prot="public" static="no" mutable="no">
+        <templateparamlist>
+          <param>
+            <type>typename TArchitect</type>
+          </param>
+        </templateparamlist>
+        <type>concept</type>
+        <definition>concept CodeHelper::IsFormattableArchitect</definition>
+        <argsstring></argsstring>
+        <name>IsFormattableArchitect</name>
+        <initializer>= IsFormattable&lt;TArchitect&gt; &amp;&amp; IsTaskArchitect&lt;TArchitect&gt;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sango/.vs/LangYa/32fc2ebc-99b1-4edc-8556-3cdf8201edfe/src/Sources/CodeHelper/Headers/LangYa/CodeHelper/Constrained.hpp" line="386" column="9" bodyfile="/home/sango/.vs/LangYa/32fc2ebc-99b1-4edc-8556-3cdf8201edfe/src/Sources/CodeHelper/Headers/LangYa/CodeHelper/Constrained.hpp" bodystart="386" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="Runtimes_8cpp_1a36b0ad74f963f85cf67893a9d0d6bc90" prot="public" static="no" constexpr="yes" mutable="no">
+        <type>constexpr std::uint16_t</type>
+        <definition>constexpr std::uint16_t CodeHelper::CRC16Start</definition>
+        <argsstring></argsstring>
+        <name>CRC16Start</name>
+        <initializer>= 0xffff</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sango/.vs/LangYa/32fc2ebc-99b1-4edc-8556-3cdf8201edfe/src/Sources/CodeHelper/Sources/Runtimes.cpp" line="405" column="25" bodyfile="/home/sango/.vs/LangYa/32fc2ebc-99b1-4edc-8556-3cdf8201edfe/src/Sources/CodeHelper/Sources/Runtimes.cpp" bodystart="405" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="Runtimes_8cpp_1af946fc0de21931c10912430f49c9426b" prot="public" static="no" constexpr="yes" mutable="no">
+        <type>constexpr std::uint16_t</type>
+        <definition>constexpr std::uint16_t CodeHelper::CRC16Table[0x100]</definition>
+        <argsstring>[0x100]</argsstring>
+        <name>CRC16Table</name>
+        <initializer>= {
+
+	}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sango/.vs/LangYa/32fc2ebc-99b1-4edc-8556-3cdf8201edfe/src/Sources/CodeHelper/Sources/Runtimes.cpp" line="406" column="25" bodyfile="/home/sango/.vs/LangYa/32fc2ebc-99b1-4edc-8556-3cdf8201edfe/src/Sources/CodeHelper/Sources/Runtimes.cpp" bodystart="406" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="Runtimes_8cpp_1aa9e78d1972ac13ae5355cbef1f291842" prot="public" static="no" constexpr="yes" mutable="no">
+        <type>constexpr std::uint8_t</type>
+        <definition>constexpr std::uint8_t CodeHelper::CRC8Start</definition>
+        <argsstring></argsstring>
+        <name>CRC8Start</name>
+        <initializer>= 0xff</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sango/.vs/LangYa/32fc2ebc-99b1-4edc-8556-3cdf8201edfe/src/Sources/CodeHelper/Sources/Runtimes.cpp" line="409" column="24" bodyfile="/home/sango/.vs/LangYa/32fc2ebc-99b1-4edc-8556-3cdf8201edfe/src/Sources/CodeHelper/Sources/Runtimes.cpp" bodystart="409" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="Runtimes_8cpp_1a5bfc9bbcc3e265e666d25bceee9225e3" prot="public" static="no" constexpr="yes" mutable="no">
+        <type>constexpr std::uint8_t</type>
+        <definition>constexpr std::uint8_t CodeHelper::CRC8Table[0x100]</definition>
+        <argsstring>[0x100]</argsstring>
+        <name>CRC8Table</name>
+        <initializer>= {
+
+	}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sango/.vs/LangYa/32fc2ebc-99b1-4edc-8556-3cdf8201edfe/src/Sources/CodeHelper/Sources/Runtimes.cpp" line="410" column="24" bodyfile="/home/sango/.vs/LangYa/32fc2ebc-99b1-4edc-8556-3cdf8201edfe/src/Sources/CodeHelper/Sources/Runtimes.cpp" bodystart="410" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="Constrained_8hpp_1a970bed4441fec015e9b5f3cc737729cd" prot="public" static="no" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
+        <type>std::ostream &amp;</type>
+        <definition>std::ostream&amp; CodeHelper::Format</definition>
+        <argsstring>(std::ostream &amp;stream, const IsFormattable auto &amp;obj) noexcept</argsstring>
+        <name>Format</name>
+        <param>
+          <type>std::ostream &amp;</type>
+          <declname>stream</declname>
+        </param>
+        <param>
+          <type>const IsFormattable auto &amp;</type>
+          <declname>obj</declname>
+        </param>
+        <briefdescription>
+<para>调用对象的 <computeroutput>Format</computeroutput> 方法格式化对象到流 </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sango/.vs/LangYa/32fc2ebc-99b1-4edc-8556-3cdf8201edfe/src/Sources/CodeHelper/Headers/LangYa/CodeHelper/Constrained.hpp" line="28" column="14" bodyfile="/home/sango/.vs/LangYa/32fc2ebc-99b1-4edc-8556-3cdf8201edfe/src/Sources/CodeHelper/Headers/LangYa/CodeHelper/Constrained.hpp" bodystart="28" bodyend="28"/>
+      </memberdef>
+      <memberdef kind="function" id="Constrained_8hpp_1a8c8d8ba1496907623b81f3c21d21d16c" prot="public" static="no" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
+        <type>std::ostream &amp;</type>
+        <definition>std::ostream&amp; CodeHelper::operator&lt;&lt;</definition>
+        <argsstring>(std::ostream &amp;stream, const IsFormattable auto &amp;obj) noexcept</argsstring>
+        <name>operator&lt;&lt;</name>
+        <param>
+          <type>std::ostream &amp;</type>
+          <declname>stream</declname>
+        </param>
+        <param>
+          <type>const IsFormattable auto &amp;</type>
+          <declname>obj</declname>
+        </param>
+        <briefdescription>
+<para>简化 <computeroutput>Format</computeroutput> 的调用 </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sango/.vs/LangYa/32fc2ebc-99b1-4edc-8556-3cdf8201edfe/src/Sources/CodeHelper/Headers/LangYa/CodeHelper/Constrained.hpp" line="31" column="1" bodyfile="/home/sango/.vs/LangYa/32fc2ebc-99b1-4edc-8556-3cdf8201edfe/src/Sources/CodeHelper/Headers/LangYa/CodeHelper/Constrained.hpp" bodystart="31" bodyend="33"/>
+      </memberdef>
+      <memberdef kind="function" id="Constrained_8hpp_1a17ebb108cb0184d7f3ce7090a873230b" prot="public" static="no" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>IsFormattable</type>
+            <declname>TObject</declname>
+            <defname>TObject</defname>
+          </param>
+        </templateparamlist>
+        <type>std::ostream &amp;</type>
+        <definition>std::ostream&amp; CodeHelper::Format</definition>
+        <argsstring>(std::ostream &amp;stream, const std::span&lt; const TObject &gt; objects) noexcept</argsstring>
+        <name>Format</name>
+        <param>
+          <type>std::ostream &amp;</type>
+          <declname>stream</declname>
+        </param>
+        <param>
+          <type>const std::span&lt; const TObject &gt;</type>
+          <declname>objects</declname>
+        </param>
+        <briefdescription>
+<para>调用 <computeroutput>std::span</computeroutput> 内部元素的 <computeroutput><ref refid="structCodeHelper_1_1FormattableObject_1a8c0871b68a1d412f9f494f821d83e180" kindref="member">FormattableObject::Format</ref></computeroutput> 方法格式化对象到流 如果 <computeroutput>objects</computeroutput> 为空，则输出 &quot;[]&quot; 如果只有一个元素，则输出 &quot;[element]&quot; 其他输出 &quot;[element1, element2, ...]&quot; </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sango/.vs/LangYa/32fc2ebc-99b1-4edc-8556-3cdf8201edfe/src/Sources/CodeHelper/Headers/LangYa/CodeHelper/Constrained.hpp" line="41" column="14" bodyfile="/home/sango/.vs/LangYa/32fc2ebc-99b1-4edc-8556-3cdf8201edfe/src/Sources/CodeHelper/Headers/LangYa/CodeHelper/Constrained.hpp" bodystart="41" bodyend="49"/>
+      </memberdef>
+      <memberdef kind="function" id="Constrained_8hpp_1a3f37dcf9373454ee1528bd1d221e9505" prot="public" static="no" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>IsFormattable</type>
+            <declname>TObject</declname>
+            <defname>TObject</defname>
+          </param>
+        </templateparamlist>
+        <type>std::ostream &amp;</type>
+        <definition>std::ostream&amp; CodeHelper::operator&lt;&lt;</definition>
+        <argsstring>(std::ostream &amp;stream, const std::span&lt; const TObject &gt; objects) noexcept</argsstring>
+        <name>operator&lt;&lt;</name>
+        <param>
+          <type>std::ostream &amp;</type>
+          <declname>stream</declname>
+        </param>
+        <param>
+          <type>const std::span&lt; const TObject &gt;</type>
+          <declname>objects</declname>
+        </param>
+        <briefdescription>
+<para>简化 <computeroutput>Format</computeroutput> 的调用 </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sango/.vs/LangYa/32fc2ebc-99b1-4edc-8556-3cdf8201edfe/src/Sources/CodeHelper/Headers/LangYa/CodeHelper/Constrained.hpp" line="53" column="1" bodyfile="/home/sango/.vs/LangYa/32fc2ebc-99b1-4edc-8556-3cdf8201edfe/src/Sources/CodeHelper/Headers/LangYa/CodeHelper/Constrained.hpp" bodystart="53" bodyend="55"/>
+      </memberdef>
+      <memberdef kind="function" id="Constrained_8hpp_1ab1fc091d0b832f317df1b7c8fd51ab24" prot="public" static="no" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string CodeHelper::ToString</definition>
+        <argsstring>(const IsFormattable auto &amp;object) noexcept</argsstring>
+        <name>ToString</name>
+        <param>
+          <type>const IsFormattable auto &amp;</type>
+          <declname>object</declname>
+        </param>
+        <briefdescription>
+<para>利用 std::ostringstream 格式化对象为字符串 </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sango/.vs/LangYa/32fc2ebc-99b1-4edc-8556-3cdf8201edfe/src/Sources/CodeHelper/Headers/LangYa/CodeHelper/Constrained.hpp" line="58" column="14" bodyfile="/home/sango/.vs/LangYa/32fc2ebc-99b1-4edc-8556-3cdf8201edfe/src/Sources/CodeHelper/Headers/LangYa/CodeHelper/Constrained.hpp" bodystart="58" bodyend="62"/>
+      </memberdef>
+      <memberdef kind="function" id="Constrained_8hpp_1aa590f74c667385c9033090dcc575e20a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>IsTaskStatus</type>
+            <declname>TStatus</declname>
+            <defname>TStatus</defname>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void CodeHelper::CheckDoneStatus</definition>
+        <argsstring>(const std::string &amp;taskName, TStatus &amp;status)</argsstring>
+        <name>CheckDoneStatus</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>taskName</declname>
+        </param>
+        <param>
+          <type>TStatus &amp;</type>
+          <declname>status</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sango/.vs/LangYa/32fc2ebc-99b1-4edc-8556-3cdf8201edfe/src/Sources/CodeHelper/Headers/LangYa/CodeHelper/Constrained.hpp" line="379" column="6" bodyfile="/home/sango/.vs/LangYa/32fc2ebc-99b1-4edc-8556-3cdf8201edfe/src/Sources/CodeHelper/Headers/LangYa/CodeHelper/Constrained.hpp" bodystart="379" bodyend="383"/>
+      </memberdef>
+      <memberdef kind="function" id="Constrained_8hpp_1a281e706d4865f3b21c3dfcbc539ebf64" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>ThreadGroup &amp;</type>
+        <definition>ThreadGroup &amp; CodeHelper::TaskArchitects::operator&lt;&lt;</definition>
+        <argsstring>(ThreadGroup &amp;group, const std::function&lt; void()&gt; &amp;function)</argsstring>
+        <name>operator&lt;&lt;</name>
+        <param>
+          <type>ThreadGroup &amp;</type>
+          <declname>group</declname>
+        </param>
+        <param>
+          <type>const std::function&lt; void()&gt; &amp;</type>
+          <declname>function</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sango/.vs/LangYa/32fc2ebc-99b1-4edc-8556-3cdf8201edfe/src/Sources/CodeHelper/Headers/LangYa/CodeHelper/Constrained.hpp" line="390" column="1" bodyfile="/home/sango/.vs/LangYa/32fc2ebc-99b1-4edc-8556-3cdf8201edfe/src/Sources/CodeHelper/Sources/Constrained.cpp" bodystart="25" bodyend="28" declfile="/home/sango/.vs/LangYa/32fc2ebc-99b1-4edc-8556-3cdf8201edfe/src/Sources/CodeHelper/Headers/LangYa/CodeHelper/Constrained.hpp" declline="390" declcolumn="1"/>
+      </memberdef>
+      <memberdef kind="function" id="Constrained_8hpp_1a66d106d62748b57c5593e27f01cb9d6d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>ThreadGroup &amp;</type>
+        <definition>ThreadGroup&amp; CodeHelper::operator&lt;&lt;</definition>
+        <argsstring>(ThreadGroup &amp;group, IsTaskArchitect auto &amp;architect)</argsstring>
+        <name>operator&lt;&lt;</name>
+        <param>
+          <type>ThreadGroup &amp;</type>
+          <declname>group</declname>
+        </param>
+        <param>
+          <type>IsTaskArchitect auto &amp;</type>
+          <declname>architect</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sango/.vs/LangYa/32fc2ebc-99b1-4edc-8556-3cdf8201edfe/src/Sources/CodeHelper/Headers/LangYa/CodeHelper/Constrained.hpp" line="392" column="1" bodyfile="/home/sango/.vs/LangYa/32fc2ebc-99b1-4edc-8556-3cdf8201edfe/src/Sources/CodeHelper/Headers/LangYa/CodeHelper/Constrained.hpp" bodystart="392" bodyend="395"/>
+      </memberdef>
+      <memberdef kind="function" id="Constrained_8hpp_1a8df20194155f721bc6ede6b83d451a8d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void CodeHelper::TaskArchitects::Join</definition>
+        <argsstring>(ThreadGroup &amp;group)</argsstring>
+        <name>Join</name>
+        <param>
+          <type>ThreadGroup &amp;</type>
+          <declname>group</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sango/.vs/LangYa/32fc2ebc-99b1-4edc-8556-3cdf8201edfe/src/Sources/CodeHelper/Headers/LangYa/CodeHelper/Constrained.hpp" line="397" column="6" bodyfile="/home/sango/.vs/LangYa/32fc2ebc-99b1-4edc-8556-3cdf8201edfe/src/Sources/CodeHelper/Sources/Constrained.cpp" bodystart="31" bodyend="33" declfile="/home/sango/.vs/LangYa/32fc2ebc-99b1-4edc-8556-3cdf8201edfe/src/Sources/CodeHelper/Headers/LangYa/CodeHelper/Constrained.hpp" declline="397" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="Constrained_8hpp_1a3b4b5356ccd1ea5ade4c3dc7a735bc37" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>tf::FlowBuilder &amp;</type>
+        <definition>tf::FlowBuilder&amp; CodeHelper::operator&lt;&lt;</definition>
+        <argsstring>(tf::FlowBuilder &amp;taskflow, IsFormattableArchitect auto &amp;architect)</argsstring>
+        <name>operator&lt;&lt;</name>
+        <param>
+          <type>tf::FlowBuilder &amp;</type>
+          <declname>taskflow</declname>
+        </param>
+        <param>
+          <type>IsFormattableArchitect auto &amp;</type>
+          <declname>architect</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sango/.vs/LangYa/32fc2ebc-99b1-4edc-8556-3cdf8201edfe/src/Sources/CodeHelper/Headers/LangYa/CodeHelper/Constrained.hpp" line="407" column="1" bodyfile="/home/sango/.vs/LangYa/32fc2ebc-99b1-4edc-8556-3cdf8201edfe/src/Sources/CodeHelper/Headers/LangYa/CodeHelper/Constrained.hpp" bodystart="407" bodyend="410"/>
+      </memberdef>
+      <memberdef kind="function" id="Runtimes_8hpp_1af7a4e9ef5dde50a686017111906e403b" prot="public" static="no" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
+        <type>std::uint8_t</type>
+        <definition>std::uint8_t CodeHelper::CRC8Encode</definition>
+        <argsstring>(std::span&lt; const std::uint8_t &gt; withoutCRC) noexcept</argsstring>
+        <name>CRC8Encode</name>
+        <param>
+          <type>std::span&lt; const std::uint8_t &gt;</type>
+          <declname>withoutCRC</declname>
+        </param>
+        <briefdescription>
+<para>获取整个视图的 CRC8 编码 </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>withoutCRC</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>没有 CRC 编码的视图 </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>计算得到的 CRC8 编码 </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sango/.vs/LangYa/32fc2ebc-99b1-4edc-8556-3cdf8201edfe/src/Sources/CodeHelper/Sources/Runtimes.cpp" line="414" column="14" bodyfile="/home/sango/.vs/LangYa/32fc2ebc-99b1-4edc-8556-3cdf8201edfe/src/Sources/CodeHelper/Sources/Runtimes.cpp" bodystart="414" bodyend="420" declfile="/home/sango/.vs/LangYa/32fc2ebc-99b1-4edc-8556-3cdf8201edfe/src/Sources/CodeHelper/Headers/LangYa/CodeHelper/Runtimes.hpp" declline="16" declcolumn="14"/>
+      </memberdef>
+      <memberdef kind="function" id="Runtimes_8hpp_1a10554efda49a009602ba64b25401b70d" prot="public" static="no" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
+        <type>std::uint16_t</type>
+        <definition>std::uint16_t CodeHelper::CRC16Encode</definition>
+        <argsstring>(std::span&lt; const std::uint8_t &gt; withoutCRC) noexcept</argsstring>
+        <name>CRC16Encode</name>
+        <param>
+          <type>std::span&lt; const std::uint8_t &gt;</type>
+          <declname>withoutCRC</declname>
+        </param>
+        <briefdescription>
+<para>获取整个视图的 CRC16 编码 </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>withoutCRC</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>没有 CRC 编码的视图 </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>计算得到的 CRC16 编码 </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sango/.vs/LangYa/32fc2ebc-99b1-4edc-8556-3cdf8201edfe/src/Sources/CodeHelper/Sources/Runtimes.cpp" line="422" column="15" bodyfile="/home/sango/.vs/LangYa/32fc2ebc-99b1-4edc-8556-3cdf8201edfe/src/Sources/CodeHelper/Sources/Runtimes.cpp" bodystart="422" bodyend="428" declfile="/home/sango/.vs/LangYa/32fc2ebc-99b1-4edc-8556-3cdf8201edfe/src/Sources/CodeHelper/Headers/LangYa/CodeHelper/Runtimes.hpp" declline="21" declcolumn="15"/>
+      </memberdef>
+      <memberdef kind="function" id="Runtimes_8hpp_1a327c0e08ffa8f3dbb515d293531e31c8" prot="public" static="no" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool CodeHelper::CRC8Check</definition>
+        <argsstring>(std::span&lt; const std::uint8_t &gt; withoutCRC, std::uint8_t crc8) noexcept</argsstring>
+        <name>CRC8Check</name>
+        <param>
+          <type>std::span&lt; const std::uint8_t &gt;</type>
+          <declname>withoutCRC</declname>
+        </param>
+        <param>
+          <type>std::uint8_t</type>
+          <declname>crc8</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sango/.vs/LangYa/32fc2ebc-99b1-4edc-8556-3cdf8201edfe/src/Sources/CodeHelper/Sources/Runtimes.cpp" line="430" column="6" bodyfile="/home/sango/.vs/LangYa/32fc2ebc-99b1-4edc-8556-3cdf8201edfe/src/Sources/CodeHelper/Sources/Runtimes.cpp" bodystart="430" bodyend="433" declfile="/home/sango/.vs/LangYa/32fc2ebc-99b1-4edc-8556-3cdf8201edfe/src/Sources/CodeHelper/Headers/LangYa/CodeHelper/Runtimes.hpp" declline="23" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="Runtimes_8hpp_1ae92bfecc7f4e9e02e6db96a3b36b4d96" prot="public" static="no" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool CodeHelper::CRC8Check</definition>
+        <argsstring>(std::span&lt; const std::uint8_t &gt; withCRC) noexcept</argsstring>
+        <name>CRC8Check</name>
+        <param>
+          <type>std::span&lt; const std::uint8_t &gt;</type>
+          <declname>withCRC</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sango/.vs/LangYa/32fc2ebc-99b1-4edc-8556-3cdf8201edfe/src/Sources/CodeHelper/Sources/Runtimes.cpp" line="435" column="6" bodyfile="/home/sango/.vs/LangYa/32fc2ebc-99b1-4edc-8556-3cdf8201edfe/src/Sources/CodeHelper/Sources/Runtimes.cpp" bodystart="435" bodyend="442" declfile="/home/sango/.vs/LangYa/32fc2ebc-99b1-4edc-8556-3cdf8201edfe/src/Sources/CodeHelper/Headers/LangYa/CodeHelper/Runtimes.hpp" declline="25" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="Runtimes_8hpp_1afcbd3b6d491aead92b3350433d6c1a14" prot="public" static="no" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool CodeHelper::CRC16Check</definition>
+        <argsstring>(std::span&lt; const std::uint8_t &gt; &amp;withoutCRC, std::uint16_t crc16) noexcept</argsstring>
+        <name>CRC16Check</name>
+        <param>
+          <type>std::span&lt; const std::uint8_t &gt; &amp;</type>
+          <declname>withoutCRC</declname>
+        </param>
+        <param>
+          <type>std::uint16_t</type>
+          <declname>crc16</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sango/.vs/LangYa/32fc2ebc-99b1-4edc-8556-3cdf8201edfe/src/Sources/CodeHelper/Headers/LangYa/CodeHelper/Runtimes.hpp" line="27" column="6" declfile="/home/sango/.vs/LangYa/32fc2ebc-99b1-4edc-8556-3cdf8201edfe/src/Sources/CodeHelper/Headers/LangYa/CodeHelper/Runtimes.hpp" declline="27" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="Runtimes_8hpp_1a7212186342a4fca9d7fa43baab9cde72" prot="public" static="no" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool CodeHelper::CRC16Check</definition>
+        <argsstring>(std::span&lt; const std::uint8_t &gt; &amp;withCRC) noexcept</argsstring>
+        <name>CRC16Check</name>
+        <param>
+          <type>std::span&lt; const std::uint8_t &gt; &amp;</type>
+          <declname>withCRC</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sango/.vs/LangYa/32fc2ebc-99b1-4edc-8556-3cdf8201edfe/src/Sources/CodeHelper/Headers/LangYa/CodeHelper/Runtimes.hpp" line="29" column="6" declfile="/home/sango/.vs/LangYa/32fc2ebc-99b1-4edc-8556-3cdf8201edfe/src/Sources/CodeHelper/Headers/LangYa/CodeHelper/Runtimes.hpp" declline="29" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="Runtimes_8hpp_1a9f00be395e4324c3f795e8b3abb8cb90" prot="public" static="no" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void CodeHelper::DefaultCheckErrorCounter</definition>
+        <argsstring>(const std::string &amp;requester, const Counter &amp;counter) noexcept</argsstring>
+        <name>DefaultCheckErrorCounter</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>requester</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classCodeHelper_1_1Counter" kindref="compound">Counter</ref> &amp;</type>
+          <declname>counter</declname>
+        </param>
+        <briefdescription>
+<para>默认检查错误计数器，当计数器达到最大值时输出错误信息 </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>requester</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>请求者的名称 </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>counter</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>计数器，注意检查时不会使计数器的值发生任何变化 </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sango/.vs/LangYa/32fc2ebc-99b1-4edc-8556-3cdf8201edfe/src/Sources/CodeHelper/Sources/Runtimes.cpp" line="277" column="6" bodyfile="/home/sango/.vs/LangYa/32fc2ebc-99b1-4edc-8556-3cdf8201edfe/src/Sources/CodeHelper/Sources/Runtimes.cpp" bodystart="277" bodyend="280" declfile="/home/sango/.vs/LangYa/32fc2ebc-99b1-4edc-8556-3cdf8201edfe/src/Sources/CodeHelper/Headers/LangYa/CodeHelper/Runtimes.hpp" declline="103" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="Runtimes_8hpp_1ac9eb41b12fda8b1f9dcc1e9b410d40d1" prot="public" static="no" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void CodeHelper::DefaultLoop</definition>
+        <argsstring>(const std::string &amp;name, std::uint32_t errors, const counted_func_t &amp;loop) noexcept</argsstring>
+        <name>DefaultLoop</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type>std::uint32_t</type>
+          <declname>errors</declname>
+        </param>
+        <param>
+          <type>const counted_func_t &amp;</type>
+          <declname>loop</declname>
+        </param>
+        <briefdescription>
+<para>默认循环，带有一个异常计数器，当连续异常次数达到最大值时退出循环 </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>循环调用者的名称，用于输出日志 </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>errors</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>最大连续异常次数 </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>loop</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>循环的逻辑 </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sango/.vs/LangYa/32fc2ebc-99b1-4edc-8556-3cdf8201edfe/src/Sources/CodeHelper/Sources/Runtimes.cpp" line="282" column="6" bodyfile="/home/sango/.vs/LangYa/32fc2ebc-99b1-4edc-8556-3cdf8201edfe/src/Sources/CodeHelper/Sources/Runtimes.cpp" bodystart="282" bodyend="289" declfile="/home/sango/.vs/LangYa/32fc2ebc-99b1-4edc-8556-3cdf8201edfe/src/Sources/CodeHelper/Headers/LangYa/CodeHelper/Runtimes.hpp" declline="112" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="Runtimes_8hpp_1ac1fda0d1782d7d70113d95a89e34006f" prot="public" static="no" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool CodeHelper::InitializeDefaultLogger</definition>
+        <argsstring>(std::string_view filename, spdlog::level::level_enum level=spdlog::level::level_enum::trace) noexcept</argsstring>
+        <name>InitializeDefaultLogger</name>
+        <param>
+          <type>std::string_view</type>
+          <declname>filename</declname>
+        </param>
+        <param>
+          <type>spdlog::level::level_enum</type>
+          <declname>level</declname>
+          <defval>spdlog::level::level_enum::trace</defval>
+        </param>
+        <briefdescription>
+<para>初始化默认日志记录器 该日志记录器会同时输出到文件和控制台，并在文件达到指定大小时自动滚动 </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>filename</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>日志文件名 </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>level</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>日志记录器的最低日志等级，低于此等级的日志将不会被记录 </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sango/.vs/LangYa/32fc2ebc-99b1-4edc-8556-3cdf8201edfe/src/Sources/CodeHelper/Sources/Runtimes.cpp" line="291" column="6" bodyfile="/home/sango/.vs/LangYa/32fc2ebc-99b1-4edc-8556-3cdf8201edfe/src/Sources/CodeHelper/Sources/Runtimes.cpp" bodystart="291" bodyend="322" declfile="/home/sango/.vs/LangYa/32fc2ebc-99b1-4edc-8556-3cdf8201edfe/src/Sources/CodeHelper/Headers/LangYa/CodeHelper/Runtimes.hpp" declline="118" declcolumn="7"/>
+      </memberdef>
+      <memberdef kind="function" id="Runtimes_8hpp_1a444e5f3553b354cf087e5cfa57cd7e47" prot="public" static="no" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool CodeHelper::InitializeGlobalLogger</definition>
+        <argsstring>(std::string_view appName) noexcept</argsstring>
+        <name>InitializeGlobalLogger</name>
+        <param>
+          <type>std::string_view</type>
+          <declname>appName</declname>
+        </param>
+        <briefdescription>
+<para>初始化全局日志记录器 该日志记录器会同时输出到文件和控制台，并在文件达到指定大小时自动滚动 </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>appName</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>输出的文件将会保存在 logs/appName_年-月-日_时-分-秒-[.d] </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>是否初始化成功，错误消息将会输出到 std::err </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sango/.vs/LangYa/32fc2ebc-99b1-4edc-8556-3cdf8201edfe/src/Sources/CodeHelper/Sources/Runtimes.cpp" line="324" column="6" bodyfile="/home/sango/.vs/LangYa/32fc2ebc-99b1-4edc-8556-3cdf8201edfe/src/Sources/CodeHelper/Sources/Runtimes.cpp" bodystart="324" bodyend="342" declfile="/home/sango/.vs/LangYa/32fc2ebc-99b1-4edc-8556-3cdf8201edfe/src/Sources/CodeHelper/Headers/LangYa/CodeHelper/Runtimes.hpp" declline="126" declcolumn="7"/>
+      </memberdef>
+      <memberdef kind="function" id="Runtimes_8hpp_1aa5de6fd9826a795693d143d3fa0d2524" prot="public" static="no" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool CodeHelper::DefaultLoad</definition>
+        <argsstring>(boost::property_tree::ptree &amp;tree, const boost::filesystem::path &amp;path) noexcept</argsstring>
+        <name>DefaultLoad</name>
+        <param>
+          <type>boost::property_tree::ptree &amp;</type>
+          <declname>tree</declname>
+        </param>
+        <param>
+          <type>const boost::filesystem::path &amp;</type>
+          <declname>path</declname>
+        </param>
+        <briefdescription>
+<para>默认加载配置文件的逻辑 </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>tree</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>储存配置文件的变量的树 </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>path</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>配置文件的路径（支持绝对和相对），根据后缀名称区别加载的文件类型 </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>是否加载成功，错误消息会输出到 spdlog::error </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sango/.vs/LangYa/32fc2ebc-99b1-4edc-8556-3cdf8201edfe/src/Sources/CodeHelper/Headers/LangYa/CodeHelper/Runtimes.hpp" line="132" column="7" declfile="/home/sango/.vs/LangYa/32fc2ebc-99b1-4edc-8556-3cdf8201edfe/src/Sources/CodeHelper/Headers/LangYa/CodeHelper/Runtimes.hpp" declline="132" declcolumn="7"/>
+      </memberdef>
+      <memberdef kind="function" id="Runtimes_8hpp_1aa6249340790c4386d7a7e177ac1d1e8b" prot="public" static="no" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool CodeHelper::DefaultSave</definition>
+        <argsstring>(const boost::property_tree::ptree &amp;tree, const boost::filesystem::path &amp;path) noexcept</argsstring>
+        <name>DefaultSave</name>
+        <param>
+          <type>const boost::property_tree::ptree &amp;</type>
+          <declname>tree</declname>
+        </param>
+        <param>
+          <type>const boost::filesystem::path &amp;</type>
+          <declname>path</declname>
+        </param>
+        <briefdescription>
+<para>默认保存配置文件的逻辑 </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>tree</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>储存配置文件的变量的树 </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>path</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>配置文件的路径（支持绝对和相对），根据后缀名称区别保存的文件类型 </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sango/.vs/LangYa/32fc2ebc-99b1-4edc-8556-3cdf8201edfe/src/Sources/CodeHelper/Headers/LangYa/CodeHelper/Runtimes.hpp" line="139" column="7" declfile="/home/sango/.vs/LangYa/32fc2ebc-99b1-4edc-8556-3cdf8201edfe/src/Sources/CodeHelper/Headers/LangYa/CodeHelper/Runtimes.hpp" declline="139" declcolumn="7"/>
+      </memberdef>
+      <memberdef kind="function" id="Runtimes_8hpp_1a3fbf4992e438af28fdce5e74c3489e59" prot="public" static="no" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename TValue</type>
+          </param>
+        </templateparamlist>
+        <type>bool</type>
+        <definition>bool CodeHelper::DefaultConfigure</definition>
+        <argsstring>(const boost::property_tree::ptree &amp;tree, const std::string_view key, TValue &amp;value) noexcept</argsstring>
+        <name>DefaultConfigure</name>
+        <param>
+          <type>const boost::property_tree::ptree &amp;</type>
+          <declname>tree</declname>
+        </param>
+        <param>
+          <type>const std::string_view</type>
+          <declname>key</declname>
+        </param>
+        <param>
+          <type>TValue &amp;</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+<para>利用默认的配置逻辑将数据读取到变量中 </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>tree</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>储存所有变量的树 </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>key</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>需要读取的变量的键 </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>value</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>要配置的变量的引用 </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>是否成功配置（键存在且类型匹配） </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sango/.vs/LangYa/32fc2ebc-99b1-4edc-8556-3cdf8201edfe/src/Sources/CodeHelper/Headers/LangYa/CodeHelper/Runtimes.hpp" line="149" column="7" bodyfile="/home/sango/.vs/LangYa/32fc2ebc-99b1-4edc-8556-3cdf8201edfe/src/Sources/CodeHelper/Headers/LangYa/CodeHelper/Runtimes.hpp" bodystart="149" bodyend="163"/>
+      </memberdef>
+      <memberdef kind="function" id="Runtimes_8hpp_1a9de31240c6750be13be85539c18c9d77" prot="public" static="no" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename TValue</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void CodeHelper::DefaultConfigure</definition>
+        <argsstring>(const boost::property_tree::ptree &amp;tree, const std::string_view key, TValue &amp;value, const TValue &amp;defaultValue) noexcept</argsstring>
+        <name>DefaultConfigure</name>
+        <param>
+          <type>const boost::property_tree::ptree &amp;</type>
+          <declname>tree</declname>
+        </param>
+        <param>
+          <type>const std::string_view</type>
+          <declname>key</declname>
+        </param>
+        <param>
+          <type>TValue &amp;</type>
+          <declname>value</declname>
+        </param>
+        <param>
+          <type>const TValue &amp;</type>
+          <declname>defaultValue</declname>
+        </param>
+        <briefdescription>
+<para>利用默认的配置逻辑将数据读取到变量中 </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>tree</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>储存所有变量的树 </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>key</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>需要读取的变量的键 </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>value</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>要配置的变量的引用 </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>defaultValue</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>当配置失败时，使用的默认值 </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>是否成功配置（键存在且类型匹配） </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sango/.vs/LangYa/32fc2ebc-99b1-4edc-8556-3cdf8201edfe/src/Sources/CodeHelper/Headers/LangYa/CodeHelper/Runtimes.hpp" line="172" column="6" bodyfile="/home/sango/.vs/LangYa/32fc2ebc-99b1-4edc-8556-3cdf8201edfe/src/Sources/CodeHelper/Headers/LangYa/CodeHelper/Runtimes.hpp" bodystart="172" bodyend="181"/>
+      </memberdef>
+      <memberdef kind="function" id="Runtimes_8hpp_1acd63eb9cb2e810e2a20f9a450105f9ea" prot="public" static="no" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename TValue</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void CodeHelper::LogUpdatedValue</definition>
+        <argsstring>(TValue &amp;lastValue, const TValue &amp;newValue) noexcept</argsstring>
+        <name>LogUpdatedValue</name>
+        <param>
+          <type>TValue &amp;</type>
+          <declname>lastValue</declname>
+        </param>
+        <param>
+          <type>const TValue &amp;</type>
+          <declname>newValue</declname>
+        </param>
+        <briefdescription>
+<para>检查新旧 value 是否相等，如果不相等则记录日志并更新 value </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sango/.vs/LangYa/32fc2ebc-99b1-4edc-8556-3cdf8201edfe/src/Sources/CodeHelper/Headers/LangYa/CodeHelper/Runtimes.hpp" line="185" column="6" bodyfile="/home/sango/.vs/LangYa/32fc2ebc-99b1-4edc-8556-3cdf8201edfe/src/Sources/CodeHelper/Headers/LangYa/CodeHelper/Runtimes.hpp" bodystart="185" bodyend="190"/>
+      </memberdef>
+      <memberdef kind="function" id="SpanUtils_8hpp_1a9a3b0cd3871d2a23b2b5101f2d2a2b23" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::ostream &amp;</type>
+        <definition>std::ostream &amp; CodeHelper::FormatToHex</definition>
+        <argsstring>(std::ostream &amp;stream, std::span&lt; const std::uint8_t &gt; span)</argsstring>
+        <name>FormatToHex</name>
+        <param>
+          <type>std::ostream &amp;</type>
+          <declname>stream</declname>
+        </param>
+        <param>
+          <type>std::span&lt; const std::uint8_t &gt;</type>
+          <declname>span</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sango/.vs/LangYa/32fc2ebc-99b1-4edc-8556-3cdf8201edfe/src/Sources/CodeHelper/Sources/SpanUtils.cpp" line="6" column="14" bodyfile="/home/sango/.vs/LangYa/32fc2ebc-99b1-4edc-8556-3cdf8201edfe/src/Sources/CodeHelper/Sources/SpanUtils.cpp" bodystart="6" bodyend="11" declfile="/home/sango/.vs/LangYa/32fc2ebc-99b1-4edc-8556-3cdf8201edfe/src/Sources/CodeHelper/Headers/LangYa/CodeHelper/SpanUtils.hpp" declline="10" declcolumn="14"/>
+      </memberdef>
+      <memberdef kind="function" id="SpanUtils_8hpp_1aecd325e571afc0a53b2ea9c9c2bf8170" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string CodeHelper::FormatToHex</definition>
+        <argsstring>(std::span&lt; const std::uint8_t &gt; span)</argsstring>
+        <name>FormatToHex</name>
+        <param>
+          <type>std::span&lt; const std::uint8_t &gt;</type>
+          <declname>span</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sango/.vs/LangYa/32fc2ebc-99b1-4edc-8556-3cdf8201edfe/src/Sources/CodeHelper/Sources/SpanUtils.cpp" line="13" column="13" bodyfile="/home/sango/.vs/LangYa/32fc2ebc-99b1-4edc-8556-3cdf8201edfe/src/Sources/CodeHelper/Sources/SpanUtils.cpp" bodystart="13" bodyend="18" declfile="/home/sango/.vs/LangYa/32fc2ebc-99b1-4edc-8556-3cdf8201edfe/src/Sources/CodeHelper/Headers/LangYa/CodeHelper/SpanUtils.hpp" declline="12" declcolumn="14"/>
+      </memberdef>
+      <memberdef kind="function" id="SpanUtils_8hpp_1a671a3107df27f67ed0fb5627928a9c93" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>std::ostream &amp;</type>
+        <definition>std::ostream&amp; CodeHelper::FormatCombine</definition>
+        <argsstring>(std::ostream &amp;stream, const std::span&lt; const T &gt; objects, const std::string_view separator)</argsstring>
+        <name>FormatCombine</name>
+        <param>
+          <type>std::ostream &amp;</type>
+          <declname>stream</declname>
+        </param>
+        <param>
+          <type>const std::span&lt; const T &gt;</type>
+          <declname>objects</declname>
+        </param>
+        <param>
+          <type>const std::string_view</type>
+          <declname>separator</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sango/.vs/LangYa/32fc2ebc-99b1-4edc-8556-3cdf8201edfe/src/Sources/CodeHelper/Headers/LangYa/CodeHelper/SpanUtils.hpp" line="15" column="14" bodyfile="/home/sango/.vs/LangYa/32fc2ebc-99b1-4edc-8556-3cdf8201edfe/src/Sources/CodeHelper/Headers/LangYa/CodeHelper/SpanUtils.hpp" bodystart="15" bodyend="22"/>
+      </memberdef>
+      <memberdef kind="function" id="SpanUtils_8hpp_1abf9290864999db80f2245bed1980b199" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>std::string</type>
+        <definition>std::string CodeHelper::FormatCombine</definition>
+        <argsstring>(const std::span&lt; const T &gt; objects, const std::string_view separator=&quot;!&quot;)</argsstring>
+        <name>FormatCombine</name>
+        <param>
+          <type>const std::span&lt; const T &gt;</type>
+          <declname>objects</declname>
+        </param>
+        <param>
+          <type>const std::string_view</type>
+          <declname>separator</declname>
+          <defval>&quot;!&quot;</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sango/.vs/LangYa/32fc2ebc-99b1-4edc-8556-3cdf8201edfe/src/Sources/CodeHelper/Headers/LangYa/CodeHelper/SpanUtils.hpp" line="25" column="13" bodyfile="/home/sango/.vs/LangYa/32fc2ebc-99b1-4edc-8556-3cdf8201edfe/src/Sources/CodeHelper/Headers/LangYa/CodeHelper/SpanUtils.hpp" bodystart="25" bodyend="30"/>
+      </memberdef>
+      <memberdef kind="function" id="SpanUtils_8hpp_1a17eb9bbfa82bbfe0e072f715737218c5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void CodeHelper::FormatSplit</definition>
+        <argsstring>(const std::string &amp;items, std::string_view separators, std::vector&lt; std::string &gt; &amp;result)</argsstring>
+        <name>FormatSplit</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>items</declname>
+        </param>
+        <param>
+          <type>std::string_view</type>
+          <declname>separators</declname>
+        </param>
+        <param>
+          <type>std::vector&lt; std::string &gt; &amp;</type>
+          <declname>result</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sango/.vs/LangYa/32fc2ebc-99b1-4edc-8556-3cdf8201edfe/src/Sources/CodeHelper/Sources/SpanUtils.cpp" line="20" column="6" bodyfile="/home/sango/.vs/LangYa/32fc2ebc-99b1-4edc-8556-3cdf8201edfe/src/Sources/CodeHelper/Sources/SpanUtils.cpp" bodystart="20" bodyend="23" declfile="/home/sango/.vs/LangYa/32fc2ebc-99b1-4edc-8556-3cdf8201edfe/src/Sources/CodeHelper/Headers/LangYa/CodeHelper/SpanUtils.hpp" declline="32" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="SpanUtils_8hpp_1ac16a1558c6b7af2a28b81c18edfe54f6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>std::span&lt; std::uint8_t &gt;</type>
+        <definition>std::span&lt;std::uint8_t&gt; CodeHelper::ToSpan</definition>
+        <argsstring>(T *object, const std::size_t count=1)</argsstring>
+        <name>ToSpan</name>
+        <param>
+          <type>T *</type>
+          <declname>object</declname>
+        </param>
+        <param>
+          <type>const std::size_t</type>
+          <declname>count</declname>
+          <defval>1</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sango/.vs/LangYa/32fc2ebc-99b1-4edc-8556-3cdf8201edfe/src/Sources/CodeHelper/Headers/LangYa/CodeHelper/SpanUtils.hpp" line="35" column="12" bodyfile="/home/sango/.vs/LangYa/32fc2ebc-99b1-4edc-8556-3cdf8201edfe/src/Sources/CodeHelper/Headers/LangYa/CodeHelper/SpanUtils.hpp" bodystart="35" bodyend="41"/>
+      </memberdef>
+      <memberdef kind="function" id="ParseFromStream_8cpp_1a54c657eac8def8145f62ea5cbc3f7b9c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::istream &amp;</type>
+        <definition>std::istream&amp; CodeHelper::operator&gt;&gt;</definition>
+        <argsstring>(std::istream &amp;stream, ParseFromStream &amp;obj)</argsstring>
+        <name>operator&gt;&gt;</name>
+        <param>
+          <type>std::istream &amp;</type>
+          <declname>stream</declname>
+        </param>
+        <param>
+          <type><ref refid="structCodeHelper_1_1ParseFromStream" kindref="compound">ParseFromStream</ref> &amp;</type>
+          <declname>obj</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sango/.vs/LangYa/32fc2ebc-99b1-4edc-8556-3cdf8201edfe/src/Sources/CodeHelper/Sources/ParseFromStream.cpp" line="14" column="14" bodyfile="/home/sango/.vs/LangYa/32fc2ebc-99b1-4edc-8556-3cdf8201edfe/src/Sources/CodeHelper/Sources/ParseFromStream.cpp" bodystart="14" bodyend="18"/>
+      </memberdef>
+      <memberdef kind="function" id="Runtimes_8cpp_1ab62146a215bcb62882097755eff9c726" prot="public" static="no" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool CodeHelper::DefaultLoad</definition>
+        <argsstring>(ptree_t &amp;tree, const path_t &amp;path) noexcept</argsstring>
+        <name>DefaultLoad</name>
+        <param>
+          <type>ptree_t &amp;</type>
+          <declname>tree</declname>
+        </param>
+        <param>
+          <type>const path_t &amp;</type>
+          <declname>path</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sango/.vs/LangYa/32fc2ebc-99b1-4edc-8556-3cdf8201edfe/src/Sources/CodeHelper/Sources/Runtimes.cpp" line="344" column="6" bodyfile="/home/sango/.vs/LangYa/32fc2ebc-99b1-4edc-8556-3cdf8201edfe/src/Sources/CodeHelper/Sources/Runtimes.cpp" bodystart="344" bodyend="371"/>
+      </memberdef>
+      <memberdef kind="function" id="Runtimes_8cpp_1aa972c0cf852981dca033a275a41d7481" prot="public" static="no" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool CodeHelper::DefaultSave</definition>
+        <argsstring>(const ptree_t &amp;tree, const path_t &amp;path) noexcept</argsstring>
+        <name>DefaultSave</name>
+        <param>
+          <type>const ptree_t &amp;</type>
+          <declname>tree</declname>
+        </param>
+        <param>
+          <type>const path_t &amp;</type>
+          <declname>path</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sango/.vs/LangYa/32fc2ebc-99b1-4edc-8556-3cdf8201edfe/src/Sources/CodeHelper/Sources/Runtimes.cpp" line="373" column="6" bodyfile="/home/sango/.vs/LangYa/32fc2ebc-99b1-4edc-8556-3cdf8201edfe/src/Sources/CodeHelper/Sources/Runtimes.cpp" bodystart="373" bodyend="400"/>
+      </memberdef>
+      <memberdef kind="function" id="Runtimes_8cpp_1adf106f31d5cedc4cdfc4bdf67cfcb6af" prot="public" static="no" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool CodeHelper::CRC16Check</definition>
+        <argsstring>(const std::span&lt; const std::uint8_t &gt; &amp;withoutCRC, const std::uint16_t crc16) noexcept</argsstring>
+        <name>CRC16Check</name>
+        <param>
+          <type>const std::span&lt; const std::uint8_t &gt; &amp;</type>
+          <declname>withoutCRC</declname>
+        </param>
+        <param>
+          <type>const std::uint16_t</type>
+          <declname>crc16</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sango/.vs/LangYa/32fc2ebc-99b1-4edc-8556-3cdf8201edfe/src/Sources/CodeHelper/Sources/Runtimes.cpp" line="444" column="6" bodyfile="/home/sango/.vs/LangYa/32fc2ebc-99b1-4edc-8556-3cdf8201edfe/src/Sources/CodeHelper/Sources/Runtimes.cpp" bodystart="444" bodyend="447"/>
+      </memberdef>
+      <memberdef kind="function" id="Runtimes_8cpp_1a4121a04b8cb224adad377adab6939333" prot="public" static="no" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool CodeHelper::CRC16Check</definition>
+        <argsstring>(const std::span&lt; const std::uint8_t &gt; &amp;withCRC) noexcept</argsstring>
+        <name>CRC16Check</name>
+        <param>
+          <type>const std::span&lt; const std::uint8_t &gt; &amp;</type>
+          <declname>withCRC</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sango/.vs/LangYa/32fc2ebc-99b1-4edc-8556-3cdf8201edfe/src/Sources/CodeHelper/Sources/Runtimes.cpp" line="449" column="6" bodyfile="/home/sango/.vs/LangYa/32fc2ebc-99b1-4edc-8556-3cdf8201edfe/src/Sources/CodeHelper/Sources/Runtimes.cpp" bodystart="449" bodyend="456"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/sango/.vs/LangYa/32fc2ebc-99b1-4edc-8556-3cdf8201edfe/src/Sources/CodeHelper/Headers/LangYa/CodeHelper/AsyncItemPool.hpp" line="6" column="1"/>
+  </compounddef>
+</doxygen>

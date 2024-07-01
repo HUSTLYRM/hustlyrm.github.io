@@ -1,0 +1,210 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="classCodeHelper_1_1AsyncItemPool" kind="class" language="C++" prot="public" final="yes">
+    <compoundname>CodeHelper::AsyncItemPool</compoundname>
+    <basecompoundref refid="structCodeHelper_1_1DestinationNode" prot="public" virt="non-virtual">CodeHelper::DestinationNode&lt; TItem &gt;</basecompoundref>
+    <basecompoundref refid="structCodeHelper_1_1SourceNode" prot="public" virt="non-virtual">CodeHelper::SourceNode&lt; TItem &gt;</basecompoundref>
+    <includes refid="AsyncItemPool_8hpp" local="no">AsyncItemPool.hpp</includes>
+    <innerclass refid="structCodeHelper_1_1AsyncItemPool_1_1ItemInfo" prot="private">CodeHelper::AsyncItemPool::ItemInfo</innerclass>
+    <templateparamlist>
+      <param>
+        <type>std::default_initializable</type>
+        <declname>TItem</declname>
+        <defname>TItem</defname>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="private-type">
+      <memberdef kind="enum" id="classCodeHelper_1_1AsyncItemPool_1a145245137ba21a33997a2d0e8b1e74b2" prot="private" static="no" strong="yes">
+        <type>std::uint8_t</type>
+        <name>ViewStatus</name>
+        <enumvalue id="classCodeHelper_1_1AsyncItemPool_1a145245137ba21a33997a2d0e8b1e74b2ace2c8aed9c2fa0cfbed56cbda4d8bf07" prot="private">
+          <name>Empty</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classCodeHelper_1_1AsyncItemPool_1a145245137ba21a33997a2d0e8b1e74b2abbd47109890259c0127154db1af26c75" prot="private">
+          <name>Full</name>
+          <initializer>= 1</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classCodeHelper_1_1AsyncItemPool_1a145245137ba21a33997a2d0e8b1e74b2ad8a942ef2b04672adfafef0ad817a407" prot="private">
+          <name>Busy</name>
+          <initializer>= 2</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>用于标记数据池中的数据状态，分别为空（可写入），满（可写入、可读取），忙（不可写入、不可读取） </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sango/.vs/LangYa/32fc2ebc-99b1-4edc-8556-3cdf8201edfe/src/Sources/CodeHelper/Headers/LangYa/CodeHelper/AsyncItemPool.hpp" line="26" column="1" bodyfile="/home/sango/.vs/LangYa/32fc2ebc-99b1-4edc-8556-3cdf8201edfe/src/Sources/CodeHelper/Headers/LangYa/CodeHelper/AsyncItemPool.hpp" bodystart="25" bodyend="28"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classCodeHelper_1_1AsyncItemPool_1a669328b090240383ca369b00132b22c9" prot="private" static="no" mutable="no">
+        <type>std::atomic&lt; std::uint8_t &gt;</type>
+        <definition>std::atomic&lt;std::uint8_t&gt; CodeHelper::AsyncItemPool&lt; TItem &gt;::WriterIndex</definition>
+        <argsstring></argsstring>
+        <name>WriterIndex</name>
+        <initializer>{0}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sango/.vs/LangYa/32fc2ebc-99b1-4edc-8556-3cdf8201edfe/src/Sources/CodeHelper/Headers/LangYa/CodeHelper/AsyncItemPool.hpp" line="36" column="13" bodyfile="/home/sango/.vs/LangYa/32fc2ebc-99b1-4edc-8556-3cdf8201edfe/src/Sources/CodeHelper/Headers/LangYa/CodeHelper/AsyncItemPool.hpp" bodystart="36" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classCodeHelper_1_1AsyncItemPool_1a6dcac4ae45077472763cff08d961812c" prot="private" static="no" mutable="no">
+        <type>std::array&lt; ItemInfo, 3 &gt;</type>
+        <definition>std::array&lt;ItemInfo, 3&gt; CodeHelper::AsyncItemPool&lt; TItem &gt;::ItemInfoList</definition>
+        <argsstring></argsstring>
+        <name>ItemInfoList</name>
+        <initializer>{}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sango/.vs/LangYa/32fc2ebc-99b1-4edc-8556-3cdf8201edfe/src/Sources/CodeHelper/Headers/LangYa/CodeHelper/AsyncItemPool.hpp" line="37" column="12" bodyfile="/home/sango/.vs/LangYa/32fc2ebc-99b1-4edc-8556-3cdf8201edfe/src/Sources/CodeHelper/Headers/LangYa/CodeHelper/AsyncItemPool.hpp" bodystart="37" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classCodeHelper_1_1AsyncItemPool_1a6b122241ec365eb268f2f07d56ebfab0" prot="public" static="no" const="no" explicit="no" inline="yes" noexcept="yes" virt="virtual">
+        <type>void</type>
+        <definition>void CodeHelper::AsyncItemPool&lt; TItem &gt;::SetItem</definition>
+        <argsstring>(const TItem &amp;item) noexcept override</argsstring>
+        <name>SetItem</name>
+        <reimplements refid="structCodeHelper_1_1DestinationNode_1a02f32d562b195c8764274391879c61ee">SetItem</reimplements>
+        <param>
+          <type>const TItem &amp;</type>
+          <declname>item</declname>
+        </param>
+        <briefdescription>
+<para>向数据池中写入数据，正常情况下不阻塞当前线程，必定成功 </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="warning"><para>当有两个或以上的 writer 时，大概率会阻塞当前线程，直到有空位 </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sango/.vs/LangYa/32fc2ebc-99b1-4edc-8556-3cdf8201edfe/src/Sources/CodeHelper/Headers/LangYa/CodeHelper/AsyncItemPool.hpp" line="42" column="6" bodyfile="/home/sango/.vs/LangYa/32fc2ebc-99b1-4edc-8556-3cdf8201edfe/src/Sources/CodeHelper/Headers/LangYa/CodeHelper/AsyncItemPool.hpp" bodystart="42" bodyend="56"/>
+      </memberdef>
+      <memberdef kind="function" id="classCodeHelper_1_1AsyncItemPool_1afef8dc052243877e27aef3d21adf7eae" prot="public" static="no" const="no" explicit="no" inline="yes" noexcept="yes" virt="virtual">
+        <type>bool</type>
+        <definition>bool CodeHelper::AsyncItemPool&lt; TItem &gt;::GetItem</definition>
+        <argsstring>(TItem &amp;item) noexcept override</argsstring>
+        <name>GetItem</name>
+        <reimplements refid="structCodeHelper_1_1SourceNode_1a228289c937cbecb69663ce62b2f2bcea">GetItem</reimplements>
+        <param>
+          <type>TItem &amp;</type>
+          <declname>item</declname>
+        </param>
+        <briefdescription>
+<para>从数据池中获取数据，几乎不阻塞当前线程，可能会失败 </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>当获取数据失败时，也就是没有任何已经准备好的数据时，返回 <computeroutput>false</computeroutput> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sango/.vs/LangYa/32fc2ebc-99b1-4edc-8556-3cdf8201edfe/src/Sources/CodeHelper/Headers/LangYa/CodeHelper/AsyncItemPool.hpp" line="60" column="7" bodyfile="/home/sango/.vs/LangYa/32fc2ebc-99b1-4edc-8556-3cdf8201edfe/src/Sources/CodeHelper/Headers/LangYa/CodeHelper/AsyncItemPool.hpp" bodystart="60" bodyend="73"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classCodeHelper_1_1AsyncItemPool_1aa3eb8b8a1a16c25f6c1cada7f3d8d15f" prot="public" static="yes" const="no" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type>std::shared_ptr&lt; <ref refid="classCodeHelper_1_1AsyncItemPool" kindref="compound">AsyncItemPool</ref> &gt;</type>
+        <definition>static std::shared_ptr&lt;AsyncItemPool&gt; CodeHelper::AsyncItemPool&lt; TItem &gt;::MakeShared</definition>
+        <argsstring>() noexcept</argsstring>
+        <name>MakeShared</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sango/.vs/LangYa/32fc2ebc-99b1-4edc-8556-3cdf8201edfe/src/Sources/CodeHelper/Headers/LangYa/CodeHelper/AsyncItemPool.hpp" line="75" column="24" bodyfile="/home/sango/.vs/LangYa/32fc2ebc-99b1-4edc-8556-3cdf8201edfe/src/Sources/CodeHelper/Headers/LangYa/CodeHelper/AsyncItemPool.hpp" bodystart="75" bodyend="78"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>用于异步存储和取值的数据池，用于不重复读取到较新的写入数据。 工作方式如下： </para>
+    </briefdescription>
+    <detaileddescription>
+<para><verbatim>      *---Pool--*
+</verbatim> writer -&gt;-+ SetItem | | GetItem +-&gt;- reader <emphasis>------<mdash/></emphasis></para>
+<para>此数据池在同一时间只支持一个写入器(writer)和一个读取器(reader)。 writer 写入器，调用此类型对象的 <computeroutput><ref refid="classCodeHelper_1_1AsyncItemPool_1a6b122241ec365eb268f2f07d56ebfab0" kindref="member">AsyncItemPool::SetItem</ref></computeroutput> 函数写入数据，一定成功； reader 读取器，调用此类型对象的 <computeroutput><ref refid="classCodeHelper_1_1AsyncItemPool_1afef8dc052243877e27aef3d21adf7eae" kindref="member">AsyncItemPool::GetItem</ref></computeroutput> 函数获取数据，可能失败； 当且仅当 writer 写入速度大于 reader 读取速度时，GetItem 操作才能每次都成功。 <parameterlist kind="templateparam"><parameteritem>
+<parameternamelist>
+<parametername>TItem</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>数据池中存储的物品的类型 </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="3">
+        <label>CodeHelper::SourceNode&lt; TItem &gt;</label>
+        <link refid="structCodeHelper_1_1SourceNode"/>
+      </node>
+      <node id="1">
+        <label>CodeHelper::AsyncItemPool&lt; TItem &gt;</label>
+        <link refid="classCodeHelper_1_1AsyncItemPool"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>CodeHelper::DestinationNode&lt; TItem &gt;</label>
+        <link refid="structCodeHelper_1_1DestinationNode"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="3">
+        <label>CodeHelper::SourceNode&lt; TItem &gt;</label>
+        <link refid="structCodeHelper_1_1SourceNode"/>
+      </node>
+      <node id="1">
+        <label>CodeHelper::AsyncItemPool&lt; TItem &gt;</label>
+        <link refid="classCodeHelper_1_1AsyncItemPool"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>CodeHelper::DestinationNode&lt; TItem &gt;</label>
+        <link refid="structCodeHelper_1_1DestinationNode"/>
+      </node>
+    </collaborationgraph>
+    <location file="/home/sango/.vs/LangYa/32fc2ebc-99b1-4edc-8556-3cdf8201edfe/src/Sources/CodeHelper/Headers/LangYa/CodeHelper/AsyncItemPool.hpp" line="23" column="1" bodyfile="/home/sango/.vs/LangYa/32fc2ebc-99b1-4edc-8556-3cdf8201edfe/src/Sources/CodeHelper/Headers/LangYa/CodeHelper/AsyncItemPool.hpp" bodystart="22" bodyend="79"/>
+    <listofallmembers>
+      <member refid="classCodeHelper_1_1AsyncItemPool_1afef8dc052243877e27aef3d21adf7eae" prot="public" virt="virtual"><scope>CodeHelper::AsyncItemPool</scope><name>GetItem</name></member>
+      <member refid="classCodeHelper_1_1AsyncItemPool_1a6dcac4ae45077472763cff08d961812c" prot="private" virt="non-virtual"><scope>CodeHelper::AsyncItemPool</scope><name>ItemInfoList</name></member>
+      <member refid="structCodeHelper_1_1DestinationNode_1af0a498469e34d11b72dd26e25357086b" prot="public" virt="non-virtual" ambiguityscope="CodeHelper::"><scope>CodeHelper::AsyncItemPool</scope><name>ItemType</name></member>
+      <member refid="structCodeHelper_1_1SourceNode_1a05fcd780a3ebbf0cd020496228ceb3f3" prot="public" virt="non-virtual" ambiguityscope="CodeHelper::SourceNode::"><scope>CodeHelper::AsyncItemPool</scope><name>ItemType</name></member>
+      <member refid="classCodeHelper_1_1AsyncItemPool_1aa3eb8b8a1a16c25f6c1cada7f3d8d15f" prot="public" virt="non-virtual"><scope>CodeHelper::AsyncItemPool</scope><name>MakeShared</name></member>
+      <member refid="classCodeHelper_1_1AsyncItemPool_1a6b122241ec365eb268f2f07d56ebfab0" prot="public" virt="virtual"><scope>CodeHelper::AsyncItemPool</scope><name>SetItem</name></member>
+      <member refid="classCodeHelper_1_1AsyncItemPool_1a145245137ba21a33997a2d0e8b1e74b2" prot="private" virt="non-virtual"><scope>CodeHelper::AsyncItemPool</scope><name>ViewStatus</name></member>
+      <member refid="classCodeHelper_1_1AsyncItemPool_1a669328b090240383ca369b00132b22c9" prot="private" virt="non-virtual"><scope>CodeHelper::AsyncItemPool</scope><name>WriterIndex</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

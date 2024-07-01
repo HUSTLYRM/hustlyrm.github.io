@@ -1,0 +1,118 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="classNetwork_1_1BufferToRead" kind="class" language="C++" prot="public" final="yes">
+    <compoundname>Network::BufferToRead</compoundname>
+    <includes refid="TaskArchitects_8hpp" local="no">TaskArchitects.hpp</includes>
+    <templateparamlist>
+      <param>
+        <type>std::default_initializable</type>
+        <declname>TMessage</declname>
+        <defname>TMessage</defname>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classNetwork_1_1BufferToRead_1a2e430d80435c282d8970d2f4883d8b6c" prot="private" static="no" mutable="no">
+        <type>std::array&lt; TMessage, 3 &gt;</type>
+        <definition>std::array&lt;TMessage, 3&gt; Network::BufferToRead&lt; TMessage &gt;::Buffer</definition>
+        <argsstring></argsstring>
+        <name>Buffer</name>
+        <initializer>{}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sango/.vs/LangYa/32fc2ebc-99b1-4edc-8556-3cdf8201edfe/src/Sources/CodeHelper/Headers/LangYa/CodeHelper/TaskArchitects.hpp" line="12" column="12" bodyfile="/home/sango/.vs/LangYa/32fc2ebc-99b1-4edc-8556-3cdf8201edfe/src/Sources/CodeHelper/Headers/LangYa/CodeHelper/TaskArchitects.hpp" bodystart="12" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classNetwork_1_1BufferToRead_1a3d0f5de997af1301e83561a5685c08fc" prot="private" static="no" const="no" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type>bspan_t</type>
+        <definition>bspan_t Network::BufferToRead&lt; TMessage &gt;::GetPingPongSpan</definition>
+        <argsstring>() noexcept</argsstring>
+        <name>GetPingPongSpan</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sango/.vs/LangYa/32fc2ebc-99b1-4edc-8556-3cdf8201edfe/src/Sources/CodeHelper/Headers/LangYa/CodeHelper/TaskArchitects.hpp" line="14" column="10" bodyfile="/home/sango/.vs/LangYa/32fc2ebc-99b1-4edc-8556-3cdf8201edfe/src/Sources/CodeHelper/Headers/LangYa/CodeHelper/TaskArchitects.hpp" bodystart="14" bodyend="16"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classNetwork_1_1BufferToRead_1af2da7c3bbea72075df29147d1313b91a" prot="public" static="no" const="no" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type>TMessage &amp;</type>
+        <definition>TMessage&amp; Network::BufferToRead&lt; TMessage &gt;::GetMessageObject</definition>
+        <argsstring>() noexcept</argsstring>
+        <name>GetMessageObject</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sango/.vs/LangYa/32fc2ebc-99b1-4edc-8556-3cdf8201edfe/src/Sources/CodeHelper/Headers/LangYa/CodeHelper/TaskArchitects.hpp" line="19" column="11" bodyfile="/home/sango/.vs/LangYa/32fc2ebc-99b1-4edc-8556-3cdf8201edfe/src/Sources/CodeHelper/Headers/LangYa/CodeHelper/TaskArchitects.hpp" bodystart="19" bodyend="19"/>
+      </memberdef>
+      <memberdef kind="function" id="classNetwork_1_1BufferToRead_1adb32b7af78af5ceb5c994d5f9b18c062" prot="public" static="no" const="no" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type>bspan_t</type>
+        <definition>bspan_t Network::BufferToRead&lt; TMessage &gt;::GetMessageSpan</definition>
+        <argsstring>() noexcept</argsstring>
+        <name>GetMessageSpan</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sango/.vs/LangYa/32fc2ebc-99b1-4edc-8556-3cdf8201edfe/src/Sources/CodeHelper/Headers/LangYa/CodeHelper/TaskArchitects.hpp" line="21" column="10" bodyfile="/home/sango/.vs/LangYa/32fc2ebc-99b1-4edc-8556-3cdf8201edfe/src/Sources/CodeHelper/Headers/LangYa/CodeHelper/TaskArchitects.hpp" bodystart="21" bodyend="23"/>
+      </memberdef>
+      <memberdef kind="function" id="classNetwork_1_1BufferToRead_1a208a204865e1b88cd65e376160e443e8" prot="public" static="no" const="no" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type>bspan_t</type>
+        <definition>bspan_t Network::BufferToRead&lt; TMessage &gt;::GetReaderSpan</definition>
+        <argsstring>() noexcept</argsstring>
+        <name>GetReaderSpan</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sango/.vs/LangYa/32fc2ebc-99b1-4edc-8556-3cdf8201edfe/src/Sources/CodeHelper/Headers/LangYa/CodeHelper/TaskArchitects.hpp" line="25" column="10" bodyfile="/home/sango/.vs/LangYa/32fc2ebc-99b1-4edc-8556-3cdf8201edfe/src/Sources/CodeHelper/Headers/LangYa/CodeHelper/TaskArchitects.hpp" bodystart="25" bodyend="27"/>
+      </memberdef>
+      <memberdef kind="function" id="classNetwork_1_1BufferToRead_1ab4c7e38d6ad4a282581f88f1def1efbd" prot="public" static="no" const="no" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type>PingPongExchanger</type>
+        <definition>PingPongExchanger Network::BufferToRead&lt; TMessage &gt;::GetExchanger</definition>
+        <argsstring>(const std::uint8_t headByte=&apos;!&apos;) noexcept</argsstring>
+        <name>GetExchanger</name>
+        <param>
+          <type>const std::uint8_t</type>
+          <declname>headByte</declname>
+          <defval>&apos;!&apos;</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sango/.vs/LangYa/32fc2ebc-99b1-4edc-8556-3cdf8201edfe/src/Sources/CodeHelper/Headers/LangYa/CodeHelper/TaskArchitects.hpp" line="29" column="20" bodyfile="/home/sango/.vs/LangYa/32fc2ebc-99b1-4edc-8556-3cdf8201edfe/src/Sources/CodeHelper/Headers/LangYa/CodeHelper/TaskArchitects.hpp" bodystart="29" bodyend="31"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>打包常用的读取器使用的缓冲区结构 </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/sango/.vs/LangYa/32fc2ebc-99b1-4edc-8556-3cdf8201edfe/src/Sources/CodeHelper/Headers/LangYa/CodeHelper/TaskArchitects.hpp" line="11" column="19" bodyfile="/home/sango/.vs/LangYa/32fc2ebc-99b1-4edc-8556-3cdf8201edfe/src/Sources/CodeHelper/Headers/LangYa/CodeHelper/TaskArchitects.hpp" bodystart="11" bodyend="32"/>
+    <listofallmembers>
+      <member refid="classNetwork_1_1BufferToRead_1a2e430d80435c282d8970d2f4883d8b6c" prot="private" virt="non-virtual"><scope>Network::BufferToRead</scope><name>Buffer</name></member>
+      <member refid="classNetwork_1_1BufferToRead_1ab4c7e38d6ad4a282581f88f1def1efbd" prot="public" virt="non-virtual"><scope>Network::BufferToRead</scope><name>GetExchanger</name></member>
+      <member refid="classNetwork_1_1BufferToRead_1af2da7c3bbea72075df29147d1313b91a" prot="public" virt="non-virtual"><scope>Network::BufferToRead</scope><name>GetMessageObject</name></member>
+      <member refid="classNetwork_1_1BufferToRead_1adb32b7af78af5ceb5c994d5f9b18c062" prot="public" virt="non-virtual"><scope>Network::BufferToRead</scope><name>GetMessageSpan</name></member>
+      <member refid="classNetwork_1_1BufferToRead_1a3d0f5de997af1301e83561a5685c08fc" prot="private" virt="non-virtual"><scope>Network::BufferToRead</scope><name>GetPingPongSpan</name></member>
+      <member refid="classNetwork_1_1BufferToRead_1a208a204865e1b88cd65e376160e443e8" prot="public" virt="non-virtual"><scope>Network::BufferToRead</scope><name>GetReaderSpan</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

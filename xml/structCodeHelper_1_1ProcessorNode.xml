@@ -1,0 +1,77 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="structCodeHelper_1_1ProcessorNode" kind="struct" language="C++" prot="public" abstract="yes">
+    <compoundname>CodeHelper::ProcessorNode</compoundname>
+    <includes refid="Constrained_8hpp" local="no">Constrained.hpp</includes>
+    <templateparamlist>
+      <param>
+        <type>typename TArgumentItem</type>
+      </param>
+      <param>
+        <type>typename TResultItem</type>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="public-type">
+      <memberdef kind="typedef" id="structCodeHelper_1_1ProcessorNode_1abfa58ffbb5753659bbdbbe15d99f2d32" prot="public" static="no">
+        <type>TArgumentItem</type>
+        <definition>using CodeHelper::ProcessorNode&lt; TArgumentItem, TResultItem &gt;::ArgumentItemType =  TArgumentItem</definition>
+        <argsstring></argsstring>
+        <name>ArgumentItemType</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sango/.vs/LangYa/32fc2ebc-99b1-4edc-8556-3cdf8201edfe/src/Sources/CodeHelper/Headers/LangYa/CodeHelper/Constrained.hpp" line="129" column="1" bodyfile="/home/sango/.vs/LangYa/32fc2ebc-99b1-4edc-8556-3cdf8201edfe/src/Sources/CodeHelper/Headers/LangYa/CodeHelper/Constrained.hpp" bodystart="129" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="structCodeHelper_1_1ProcessorNode_1a4d5fd1d2231b90bf66b62576cb7501b0" prot="public" static="no">
+        <type>TResultItem</type>
+        <definition>using CodeHelper::ProcessorNode&lt; TArgumentItem, TResultItem &gt;::ResultItemType =  TResultItem</definition>
+        <argsstring></argsstring>
+        <name>ResultItemType</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sango/.vs/LangYa/32fc2ebc-99b1-4edc-8556-3cdf8201edfe/src/Sources/CodeHelper/Headers/LangYa/CodeHelper/Constrained.hpp" line="130" column="1" bodyfile="/home/sango/.vs/LangYa/32fc2ebc-99b1-4edc-8556-3cdf8201edfe/src/Sources/CodeHelper/Headers/LangYa/CodeHelper/Constrained.hpp" bodystart="130" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="structCodeHelper_1_1ProcessorNode_1a14f2e7009980c116d35e3afab49ef78b" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>bool</type>
+        <definition>virtual bool CodeHelper::ProcessorNode&lt; TArgumentItem, TResultItem &gt;::Process</definition>
+        <argsstring>(const TArgumentItem &amp;argument, TResultItem &amp;result)=0</argsstring>
+        <name>Process</name>
+        <param>
+          <type>const TArgumentItem &amp;</type>
+          <declname>argument</declname>
+        </param>
+        <param>
+          <type>TResultItem &amp;</type>
+          <declname>result</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sango/.vs/LangYa/32fc2ebc-99b1-4edc-8556-3cdf8201edfe/src/Sources/CodeHelper/Headers/LangYa/CodeHelper/Constrained.hpp" line="131" column="14"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>处理器节点，处理物品并返回结果 </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/sango/.vs/LangYa/32fc2ebc-99b1-4edc-8556-3cdf8201edfe/src/Sources/CodeHelper/Headers/LangYa/CodeHelper/Constrained.hpp" line="128" column="20" bodyfile="/home/sango/.vs/LangYa/32fc2ebc-99b1-4edc-8556-3cdf8201edfe/src/Sources/CodeHelper/Headers/LangYa/CodeHelper/Constrained.hpp" bodystart="128" bodyend="134"/>
+    <listofallmembers>
+      <member refid="structCodeHelper_1_1ProcessorNode_1abfa58ffbb5753659bbdbbe15d99f2d32" prot="public" virt="non-virtual"><scope>CodeHelper::ProcessorNode</scope><name>ArgumentItemType</name></member>
+      <member refid="structCodeHelper_1_1ProcessorNode_1a14f2e7009980c116d35e3afab49ef78b" prot="public" virt="pure-virtual"><scope>CodeHelper::ProcessorNode</scope><name>Process</name></member>
+      <member refid="structCodeHelper_1_1ProcessorNode_1a4d5fd1d2231b90bf66b62576cb7501b0" prot="public" virt="non-virtual"><scope>CodeHelper::ProcessorNode</scope><name>ResultItemType</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

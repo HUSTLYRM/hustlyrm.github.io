@@ -1,0 +1,318 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="classCodeHelper_1_1DeliveryArchitect" kind="class" language="C++" prot="public" final="yes">
+    <compoundname>CodeHelper::DeliveryArchitect</compoundname>
+    <basecompoundref refid="structCodeHelper_1_1NamedModule" prot="public" virt="non-virtual">CodeHelper::NamedModule</basecompoundref>
+    <basecompoundref refid="structCodeHelper_1_1TaskArchitect" prot="public" virt="non-virtual">CodeHelper::TaskArchitect</basecompoundref>
+    <includes refid="TaskArchitects_8hpp" local="no">TaskArchitects.hpp</includes>
+    <innerclass refid="structCodeHelper_1_1DeliveryArchitect_1_1Configurations" prot="private">CodeHelper::DeliveryArchitect::Configurations</innerclass>
+    <templateparamlist>
+      <param>
+        <type>std::default_initializable</type>
+        <declname>TItem</declname>
+        <defname>TItem</defname>
+      </param>
+      <param>
+        <type>IsFormattableSource</type>
+        <declname>TSource</declname>
+        <defname>TSource</defname>
+      </param>
+      <param>
+        <type>IsDestinationNode</type>
+        <declname>TDestination</declname>
+        <defname>TDestination</defname>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classCodeHelper_1_1DeliveryArchitect_1a5f4c18a99c891a638714e696dd95312e" prot="private" static="no" mutable="no">
+        <type><ref refid="classCodeHelper_1_1Dependency" kindref="compound">Dependency</ref>&lt; TSource &gt;</type>
+        <definition>Dependency&lt;TSource&gt; CodeHelper::DeliveryArchitect&lt; TItem, TSource, TDestination &gt;::Source</definition>
+        <argsstring></argsstring>
+        <name>Source</name>
+        <initializer>{}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sango/.vs/LangYa/32fc2ebc-99b1-4edc-8556-3cdf8201edfe/src/Sources/CodeHelper/Headers/LangYa/CodeHelper/TaskArchitects.hpp" line="52" column="12" bodyfile="/home/sango/.vs/LangYa/32fc2ebc-99b1-4edc-8556-3cdf8201edfe/src/Sources/CodeHelper/Headers/LangYa/CodeHelper/TaskArchitects.hpp" bodystart="52" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classCodeHelper_1_1DeliveryArchitect_1a0edd5ddbf906cb6e7f1137f53315f4eb" prot="private" static="no" mutable="no">
+        <type><ref refid="classCodeHelper_1_1Dependency" kindref="compound">Dependency</ref>&lt; TDestination &gt;</type>
+        <definition>Dependency&lt;TDestination&gt; CodeHelper::DeliveryArchitect&lt; TItem, TSource, TDestination &gt;::Destination</definition>
+        <argsstring></argsstring>
+        <name>Destination</name>
+        <initializer>{}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sango/.vs/LangYa/32fc2ebc-99b1-4edc-8556-3cdf8201edfe/src/Sources/CodeHelper/Headers/LangYa/CodeHelper/TaskArchitects.hpp" line="53" column="12" bodyfile="/home/sango/.vs/LangYa/32fc2ebc-99b1-4edc-8556-3cdf8201edfe/src/Sources/CodeHelper/Headers/LangYa/CodeHelper/TaskArchitects.hpp" bodystart="53" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classCodeHelper_1_1DeliveryArchitect_1ad6c1edc31dc795a1c5297733a2eeb526" prot="private" static="no" mutable="no">
+        <type>std::chrono::milliseconds</type>
+        <definition>std::chrono::milliseconds CodeHelper::DeliveryArchitect&lt; TItem, TSource, TDestination &gt;::MinInterval</definition>
+        <argsstring></argsstring>
+        <name>MinInterval</name>
+        <initializer>{1000}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sango/.vs/LangYa/32fc2ebc-99b1-4edc-8556-3cdf8201edfe/src/Sources/CodeHelper/Headers/LangYa/CodeHelper/TaskArchitects.hpp" line="54" column="27" bodyfile="/home/sango/.vs/LangYa/32fc2ebc-99b1-4edc-8556-3cdf8201edfe/src/Sources/CodeHelper/Headers/LangYa/CodeHelper/TaskArchitects.hpp" bodystart="54" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classCodeHelper_1_1DeliveryArchitect_1a5a4e0cd16dd288e1f6d333df1b6e5c87" prot="private" static="no" mutable="no">
+        <type>std::uint32_t</type>
+        <definition>std::uint32_t CodeHelper::DeliveryArchitect&lt; TItem, TSource, TDestination &gt;::MaxContinuousError</definition>
+        <argsstring></argsstring>
+        <name>MaxContinuousError</name>
+        <initializer>{5}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sango/.vs/LangYa/32fc2ebc-99b1-4edc-8556-3cdf8201edfe/src/Sources/CodeHelper/Headers/LangYa/CodeHelper/TaskArchitects.hpp" line="55" column="15" bodyfile="/home/sango/.vs/LangYa/32fc2ebc-99b1-4edc-8556-3cdf8201edfe/src/Sources/CodeHelper/Headers/LangYa/CodeHelper/TaskArchitects.hpp" bodystart="55" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classCodeHelper_1_1DeliveryArchitect_1ad5a19788339866e549ee90da6683a795" prot="private" static="no" mutable="no">
+        <type><ref refid="structCodeHelper_1_1TaskDone" kindref="compound">TaskDone</ref></type>
+        <definition>TaskDone CodeHelper::DeliveryArchitect&lt; TItem, TSource, TDestination &gt;::DoneStatus</definition>
+        <argsstring></argsstring>
+        <name>DoneStatus</name>
+        <initializer>{}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sango/.vs/LangYa/32fc2ebc-99b1-4edc-8556-3cdf8201edfe/src/Sources/CodeHelper/Headers/LangYa/CodeHelper/TaskArchitects.hpp" line="64" column="10" bodyfile="/home/sango/.vs/LangYa/32fc2ebc-99b1-4edc-8556-3cdf8201edfe/src/Sources/CodeHelper/Headers/LangYa/CodeHelper/TaskArchitects.hpp" bodystart="64" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="classCodeHelper_1_1DeliveryArchitect_1a837b072d42ee94564efa5327f1647249" prot="public" static="yes" constexpr="yes" mutable="no">
+        <type>constexpr char</type>
+        <definition>constexpr char CodeHelper::DeliveryArchitect&lt; TItem, TSource, TDestination &gt;::Name[]</definition>
+        <argsstring>[]</argsstring>
+        <name>Name</name>
+        <initializer>= &quot;传递规划器&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sango/.vs/LangYa/32fc2ebc-99b1-4edc-8556-3cdf8201edfe/src/Sources/CodeHelper/Headers/LangYa/CodeHelper/TaskArchitects.hpp" line="67" column="23" bodyfile="/home/sango/.vs/LangYa/32fc2ebc-99b1-4edc-8556-3cdf8201edfe/src/Sources/CodeHelper/Headers/LangYa/CodeHelper/TaskArchitects.hpp" bodystart="67" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classCodeHelper_1_1DeliveryArchitect_1ada375b2512940bfde0e233ba3ff1e8e8" prot="public" static="no" const="no" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type>Configurations</type>
+        <definition>Configurations CodeHelper::DeliveryArchitect&lt; TItem, TSource, TDestination &gt;::Configure</definition>
+        <argsstring>() noexcept</argsstring>
+        <name>Configure</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sango/.vs/LangYa/32fc2ebc-99b1-4edc-8556-3cdf8201edfe/src/Sources/CodeHelper/Headers/LangYa/CodeHelper/TaskArchitects.hpp" line="69" column="17" bodyfile="/home/sango/.vs/LangYa/32fc2ebc-99b1-4edc-8556-3cdf8201edfe/src/Sources/CodeHelper/Headers/LangYa/CodeHelper/TaskArchitects.hpp" bodystart="69" bodyend="71"/>
+      </memberdef>
+      <memberdef kind="function" id="classCodeHelper_1_1DeliveryArchitect_1a94bddabbee93add32e55ac345fd4c0b8" prot="public" static="no" const="no" explicit="no" inline="yes" noexcept="yes" virt="virtual">
+        <type>bool</type>
+        <definition>bool CodeHelper::DeliveryArchitect&lt; TItem, TSource, TDestination &gt;::Check</definition>
+        <argsstring>() noexcept override</argsstring>
+        <name>Check</name>
+        <reimplements refid="structCodeHelper_1_1TaskArchitect_1a2ee6e3feac4f482fa5f4fce7b95710a1">Check</reimplements>
+        <briefdescription>
+<para>用于检查任务的依赖状态，判断是否满足依赖，可以执行 </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>如果任务可以执行，返回 <computeroutput>true</computeroutput> ，否则返回 <computeroutput>false</computeroutput> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sango/.vs/LangYa/32fc2ebc-99b1-4edc-8556-3cdf8201edfe/src/Sources/CodeHelper/Headers/LangYa/CodeHelper/TaskArchitects.hpp" line="73" column="7" bodyfile="/home/sango/.vs/LangYa/32fc2ebc-99b1-4edc-8556-3cdf8201edfe/src/Sources/CodeHelper/Headers/LangYa/CodeHelper/TaskArchitects.hpp" bodystart="73" bodyend="76"/>
+      </memberdef>
+      <memberdef kind="function" id="classCodeHelper_1_1DeliveryArchitect_1a4613acb80263789a46bf6fea3dba2adb" prot="public" static="no" const="no" explicit="no" inline="yes" noexcept="yes" virt="virtual">
+        <type>void</type>
+        <definition>void CodeHelper::DeliveryArchitect&lt; TItem, TSource, TDestination &gt;::Execute</definition>
+        <argsstring>() noexcept override</argsstring>
+        <name>Execute</name>
+        <reimplements refid="structCodeHelper_1_1TaskArchitect_1af8c8243d45d8fa9dc941648f11ce7e10">Execute</reimplements>
+        <briefdescription>
+<para>执行任务 </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sango/.vs/LangYa/32fc2ebc-99b1-4edc-8556-3cdf8201edfe/src/Sources/CodeHelper/Headers/LangYa/CodeHelper/TaskArchitects.hpp" line="78" column="6" bodyfile="/home/sango/.vs/LangYa/32fc2ebc-99b1-4edc-8556-3cdf8201edfe/src/Sources/CodeHelper/Headers/LangYa/CodeHelper/TaskArchitects.hpp" bodystart="78" bodyend="97"/>
+      </memberdef>
+      <memberdef kind="function" id="classCodeHelper_1_1DeliveryArchitect_1ad19773283e7cff0568d1a0edd9190ca6" prot="public" static="no" const="yes" explicit="no" inline="yes" noexcept="yes" virt="virtual">
+        <type>std::ostream &amp;</type>
+        <definition>std::ostream&amp; CodeHelper::DeliveryArchitect&lt; TItem, TSource, TDestination &gt;::GetName</definition>
+        <argsstring>(std::ostream &amp;stream) const noexcept override</argsstring>
+        <name>GetName</name>
+        <reimplements refid="structCodeHelper_1_1NamedModule_1a9ba0c53a7e2b42df416cf8e1c3367452">GetName</reimplements>
+        <param>
+          <type>std::ostream &amp;</type>
+          <declname>stream</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sango/.vs/LangYa/32fc2ebc-99b1-4edc-8556-3cdf8201edfe/src/Sources/CodeHelper/Headers/LangYa/CodeHelper/TaskArchitects.hpp" line="99" column="14" bodyfile="/home/sango/.vs/LangYa/32fc2ebc-99b1-4edc-8556-3cdf8201edfe/src/Sources/CodeHelper/Headers/LangYa/CodeHelper/TaskArchitects.hpp" bodystart="99" bodyend="99"/>
+      </memberdef>
+      <memberdef kind="function" id="classCodeHelper_1_1DeliveryArchitect_1a34a013a7681e197d763eb2f50d18e336" prot="public" static="no" const="yes" explicit="no" inline="yes" noexcept="yes" virt="virtual">
+        <type>std::ostream &amp;</type>
+        <definition>std::ostream&amp; CodeHelper::DeliveryArchitect&lt; TItem, TSource, TDestination &gt;::GetBrief</definition>
+        <argsstring>(std::ostream &amp;stream) const noexcept override</argsstring>
+        <name>GetBrief</name>
+        <reimplements refid="structCodeHelper_1_1NamedModule_1a55a66075cfd0e14a33cf018c1ba57af0">GetBrief</reimplements>
+        <param>
+          <type>std::ostream &amp;</type>
+          <declname>stream</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sango/.vs/LangYa/32fc2ebc-99b1-4edc-8556-3cdf8201edfe/src/Sources/CodeHelper/Headers/LangYa/CodeHelper/TaskArchitects.hpp" line="100" column="14" bodyfile="/home/sango/.vs/LangYa/32fc2ebc-99b1-4edc-8556-3cdf8201edfe/src/Sources/CodeHelper/Headers/LangYa/CodeHelper/TaskArchitects.hpp" bodystart="100" bodyend="100"/>
+      </memberdef>
+      <memberdef kind="function" id="classCodeHelper_1_1DeliveryArchitect_1aba671ba15141d9f9864304f804c9f241" prot="public" static="no" const="yes" explicit="no" inline="yes" noexcept="yes" virt="virtual">
+        <type>bool</type>
+        <definition>bool CodeHelper::DeliveryArchitect&lt; TItem, TSource, TDestination &gt;::IsDone</definition>
+        <argsstring>() const noexcept override</argsstring>
+        <name>IsDone</name>
+        <reimplements refid="structCodeHelper_1_1TaskStatus_1a92c165c3c03e2cd4bd4b3a507e715daa">IsDone</reimplements>
+        <briefdescription>
+<para>用于判断任务是否已经执行完毕，要求判断的过程不对任务产生任何影响 </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>只要任务执行完毕，即使是异常退出，都会返回 <computeroutput>true</computeroutput> ，其他情况会是 <computeroutput>false</computeroutput> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sango/.vs/LangYa/32fc2ebc-99b1-4edc-8556-3cdf8201edfe/src/Sources/CodeHelper/Headers/LangYa/CodeHelper/TaskArchitects.hpp" line="101" column="7" bodyfile="/home/sango/.vs/LangYa/32fc2ebc-99b1-4edc-8556-3cdf8201edfe/src/Sources/CodeHelper/Headers/LangYa/CodeHelper/TaskArchitects.hpp" bodystart="101" bodyend="101"/>
+      </memberdef>
+      <memberdef kind="function" id="classCodeHelper_1_1DeliveryArchitect_1abe8fa3f77d399e1bbeb88f7fbfd431c5" prot="public" static="no" const="no" explicit="no" inline="yes" noexcept="yes" virt="virtual">
+        <type>void</type>
+        <definition>void CodeHelper::DeliveryArchitect&lt; TItem, TSource, TDestination &gt;::Interrupt</definition>
+        <argsstring>() noexcept override</argsstring>
+        <name>Interrupt</name>
+        <reimplements refid="structCodeHelper_1_1TaskStatus_1aad528921b9f3892722e7a4e7ff14d596">Interrupt</reimplements>
+        <briefdescription>
+<para>要求中断任务，执行后可通过 <computeroutput>IsDone</computeroutput> 函数判断任务是否已经中断 任务一般通过在循环中检查此函数控制的一个标志量来提前中断任务，所以此函数不能保证立即中断任务 </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sango/.vs/LangYa/32fc2ebc-99b1-4edc-8556-3cdf8201edfe/src/Sources/CodeHelper/Headers/LangYa/CodeHelper/TaskArchitects.hpp" line="102" column="6" bodyfile="/home/sango/.vs/LangYa/32fc2ebc-99b1-4edc-8556-3cdf8201edfe/src/Sources/CodeHelper/Headers/LangYa/CodeHelper/TaskArchitects.hpp" bodystart="102" bodyend="102"/>
+      </memberdef>
+      <memberdef kind="function" id="classCodeHelper_1_1DeliveryArchitect_1af18fec4ae2e635b6effef72ba79fbf84" prot="public" static="no" const="no" explicit="no" inline="yes" noexcept="yes" virt="virtual">
+        <type>void</type>
+        <definition>void CodeHelper::DeliveryArchitect&lt; TItem, TSource, TDestination &gt;::Reset</definition>
+        <argsstring>() noexcept override</argsstring>
+        <name>Reset</name>
+        <reimplements refid="structCodeHelper_1_1TaskStatus_1a4857bac936f8de146e357e2e15eda85d">Reset</reimplements>
+        <briefdescription>
+<para>要求重置任务状态，执行后可用过 <computeroutput>IsDone</computeroutput> 函数判断任务是否重置 </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sango/.vs/LangYa/32fc2ebc-99b1-4edc-8556-3cdf8201edfe/src/Sources/CodeHelper/Headers/LangYa/CodeHelper/TaskArchitects.hpp" line="103" column="6" bodyfile="/home/sango/.vs/LangYa/32fc2ebc-99b1-4edc-8556-3cdf8201edfe/src/Sources/CodeHelper/Headers/LangYa/CodeHelper/TaskArchitects.hpp" bodystart="103" bodyend="103"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>规划如下任务：从源获取物品存放到目的地。 </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="3">
+        <label>CodeHelper::TaskArchitect</label>
+        <link refid="structCodeHelper_1_1TaskArchitect"/>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>CodeHelper::NamedModule</label>
+        <link refid="structCodeHelper_1_1NamedModule"/>
+      </node>
+      <node id="1">
+        <label>CodeHelper::DeliveryArchitect&lt; TItem, TSource, TDestination &gt;</label>
+        <link refid="classCodeHelper_1_1DeliveryArchitect"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>CodeHelper::TaskStatus</label>
+        <link refid="structCodeHelper_1_1TaskStatus"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="3">
+        <label>CodeHelper::TaskArchitect</label>
+        <link refid="structCodeHelper_1_1TaskArchitect"/>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>CodeHelper::NamedModule</label>
+        <link refid="structCodeHelper_1_1NamedModule"/>
+      </node>
+      <node id="1">
+        <label>CodeHelper::DeliveryArchitect&lt; TItem, TSource, TDestination &gt;</label>
+        <link refid="classCodeHelper_1_1DeliveryArchitect"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>CodeHelper::TaskStatus</label>
+        <link refid="structCodeHelper_1_1TaskStatus"/>
+      </node>
+    </collaborationgraph>
+    <location file="/home/sango/.vs/LangYa/32fc2ebc-99b1-4edc-8556-3cdf8201edfe/src/Sources/CodeHelper/Headers/LangYa/CodeHelper/TaskArchitects.hpp" line="51" column="65" bodyfile="/home/sango/.vs/LangYa/32fc2ebc-99b1-4edc-8556-3cdf8201edfe/src/Sources/CodeHelper/Headers/LangYa/CodeHelper/TaskArchitects.hpp" bodystart="51" bodyend="104"/>
+    <listofallmembers>
+      <member refid="classCodeHelper_1_1DeliveryArchitect_1a94bddabbee93add32e55ac345fd4c0b8" prot="public" virt="virtual"><scope>CodeHelper::DeliveryArchitect</scope><name>Check</name></member>
+      <member refid="classCodeHelper_1_1DeliveryArchitect_1ada375b2512940bfde0e233ba3ff1e8e8" prot="public" virt="non-virtual"><scope>CodeHelper::DeliveryArchitect</scope><name>Configure</name></member>
+      <member refid="classCodeHelper_1_1DeliveryArchitect_1a0edd5ddbf906cb6e7f1137f53315f4eb" prot="private" virt="non-virtual"><scope>CodeHelper::DeliveryArchitect</scope><name>Destination</name></member>
+      <member refid="classCodeHelper_1_1DeliveryArchitect_1ad5a19788339866e549ee90da6683a795" prot="private" virt="non-virtual"><scope>CodeHelper::DeliveryArchitect</scope><name>DoneStatus</name></member>
+      <member refid="classCodeHelper_1_1DeliveryArchitect_1a4613acb80263789a46bf6fea3dba2adb" prot="public" virt="virtual"><scope>CodeHelper::DeliveryArchitect</scope><name>Execute</name></member>
+      <member refid="structCodeHelper_1_1NamedModule_1a2a13a677c984ab006949b6911e7c361a" prot="public" virt="non-virtual"><scope>CodeHelper::DeliveryArchitect</scope><name>Format</name></member>
+      <member refid="classCodeHelper_1_1DeliveryArchitect_1a34a013a7681e197d763eb2f50d18e336" prot="public" virt="virtual"><scope>CodeHelper::DeliveryArchitect</scope><name>GetBrief</name></member>
+      <member refid="classCodeHelper_1_1DeliveryArchitect_1ad19773283e7cff0568d1a0edd9190ca6" prot="public" virt="virtual"><scope>CodeHelper::DeliveryArchitect</scope><name>GetName</name></member>
+      <member refid="classCodeHelper_1_1DeliveryArchitect_1abe8fa3f77d399e1bbeb88f7fbfd431c5" prot="public" virt="virtual"><scope>CodeHelper::DeliveryArchitect</scope><name>Interrupt</name></member>
+      <member refid="classCodeHelper_1_1DeliveryArchitect_1aba671ba15141d9f9864304f804c9f241" prot="public" virt="virtual"><scope>CodeHelper::DeliveryArchitect</scope><name>IsDone</name></member>
+      <member refid="classCodeHelper_1_1DeliveryArchitect_1a5a4e0cd16dd288e1f6d333df1b6e5c87" prot="private" virt="non-virtual"><scope>CodeHelper::DeliveryArchitect</scope><name>MaxContinuousError</name></member>
+      <member refid="classCodeHelper_1_1DeliveryArchitect_1ad6c1edc31dc795a1c5297733a2eeb526" prot="private" virt="non-virtual"><scope>CodeHelper::DeliveryArchitect</scope><name>MinInterval</name></member>
+      <member refid="classCodeHelper_1_1DeliveryArchitect_1a837b072d42ee94564efa5327f1647249" prot="public" virt="non-virtual"><scope>CodeHelper::DeliveryArchitect</scope><name>Name</name></member>
+      <member refid="classCodeHelper_1_1DeliveryArchitect_1af18fec4ae2e635b6effef72ba79fbf84" prot="public" virt="virtual"><scope>CodeHelper::DeliveryArchitect</scope><name>Reset</name></member>
+      <member refid="classCodeHelper_1_1DeliveryArchitect_1a5f4c18a99c891a638714e696dd95312e" prot="private" virt="non-virtual"><scope>CodeHelper::DeliveryArchitect</scope><name>Source</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

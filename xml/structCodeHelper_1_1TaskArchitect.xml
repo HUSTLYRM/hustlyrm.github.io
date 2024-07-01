@@ -1,0 +1,153 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="structCodeHelper_1_1TaskArchitect" kind="struct" language="C++" prot="public" abstract="yes">
+    <compoundname>CodeHelper::TaskArchitect</compoundname>
+    <basecompoundref refid="structCodeHelper_1_1TaskStatus" prot="public" virt="virtual">CodeHelper::TaskStatus</basecompoundref>
+    <derivedcompoundref refid="classCodeHelper_1_1CommunicationPlanner" prot="public" virt="non-virtual">CodeHelper::CommunicationPlanner&lt; TAcceptor, TMessageToRead, TMessageToSend, TDevice &gt;</derivedcompoundref>
+    <derivedcompoundref refid="classCodeHelper_1_1DeliveryArchitect" prot="public" virt="non-virtual">CodeHelper::DeliveryArchitect&lt; TItem, TSource, TDestination &gt;</derivedcompoundref>
+    <derivedcompoundref refid="classCodeHelper_1_1IOArchitect" prot="public" virt="non-virtual">CodeHelper::IOArchitect&lt; TMessageToRead, TMessageToSend, TDevice &gt;</derivedcompoundref>
+    <derivedcompoundref refid="classCodeHelper_1_1ReaderArchitect" prot="public" virt="non-virtual">CodeHelper::ReaderArchitect&lt; TMessage, TReader &gt;</derivedcompoundref>
+    <derivedcompoundref refid="classCodeHelper_1_1WriterArchitect" prot="public" virt="non-virtual">CodeHelper::WriterArchitect&lt; TMessage, TWriter &gt;</derivedcompoundref>
+    <derivedcompoundref refid="classCodeHelper_1_1DeliveryArchitect" prot="public" virt="non-virtual">CodeHelper::DeliveryArchitect&lt; typename TAcceptor::ItemType, TAcceptor, CodeHelper::DeviceIOTrigger &gt;</derivedcompoundref>
+    <derivedcompoundref refid="classCodeHelper_1_1ReaderArchitect" prot="public" virt="non-virtual">CodeHelper::ReaderArchitect&lt; TMessageToRead, TDevice &gt;</derivedcompoundref>
+    <derivedcompoundref refid="classCodeHelper_1_1WriterArchitect" prot="public" virt="non-virtual">CodeHelper::WriterArchitect&lt; TMessageToSend, TDevice &gt;</derivedcompoundref>
+    <includes refid="Constrained_8hpp" local="no">Constrained.hpp</includes>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="structCodeHelper_1_1TaskArchitect_1a2ee6e3feac4f482fa5f4fce7b95710a1" prot="public" static="no" const="no" explicit="no" inline="no" noexcept="yes" virt="pure-virtual">
+        <type>bool</type>
+        <definition>virtual bool CodeHelper::TaskArchitect::Check</definition>
+        <argsstring>() noexcept=0</argsstring>
+        <name>Check</name>
+        <reimplementedby refid="classCodeHelper_1_1DeliveryArchitect_1a94bddabbee93add32e55ac345fd4c0b8">Check</reimplementedby>
+        <reimplementedby refid="classCodeHelper_1_1DeliveryArchitect_1a94bddabbee93add32e55ac345fd4c0b8">Check</reimplementedby>
+        <reimplementedby refid="classCodeHelper_1_1ReaderArchitect_1a32e51a39020c4e978c651e2e2c611a5e">Check</reimplementedby>
+        <reimplementedby refid="classCodeHelper_1_1ReaderArchitect_1a32e51a39020c4e978c651e2e2c611a5e">Check</reimplementedby>
+        <reimplementedby refid="classCodeHelper_1_1WriterArchitect_1a5e0be3d1f464f3f97766c22b28235467">Check</reimplementedby>
+        <reimplementedby refid="classCodeHelper_1_1WriterArchitect_1a5e0be3d1f464f3f97766c22b28235467">Check</reimplementedby>
+        <reimplementedby refid="classCodeHelper_1_1IOArchitect_1aecfc2f12ddc0618da0b91c9b4a61e22a">Check</reimplementedby>
+        <reimplementedby refid="classCodeHelper_1_1CommunicationPlanner_1a0ec0124446f36f543162f27c22baaa14">Check</reimplementedby>
+        <briefdescription>
+<para>用于检查任务的依赖状态，判断是否满足依赖，可以执行 </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>如果任务可以执行，返回 <computeroutput>true</computeroutput> ，否则返回 <computeroutput>false</computeroutput> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sango/.vs/LangYa/32fc2ebc-99b1-4edc-8556-3cdf8201edfe/src/Sources/CodeHelper/Headers/LangYa/CodeHelper/Constrained.hpp" line="365" column="15"/>
+      </memberdef>
+      <memberdef kind="function" id="structCodeHelper_1_1TaskArchitect_1af8c8243d45d8fa9dc941648f11ce7e10" prot="public" static="no" const="no" explicit="no" inline="no" noexcept="yes" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void CodeHelper::TaskArchitect::Execute</definition>
+        <argsstring>() noexcept=0</argsstring>
+        <name>Execute</name>
+        <reimplementedby refid="classCodeHelper_1_1DeliveryArchitect_1a4613acb80263789a46bf6fea3dba2adb">Execute</reimplementedby>
+        <reimplementedby refid="classCodeHelper_1_1DeliveryArchitect_1a4613acb80263789a46bf6fea3dba2adb">Execute</reimplementedby>
+        <reimplementedby refid="classCodeHelper_1_1ReaderArchitect_1a05b4493b9915342227151cf2a92f8456">Execute</reimplementedby>
+        <reimplementedby refid="classCodeHelper_1_1ReaderArchitect_1a05b4493b9915342227151cf2a92f8456">Execute</reimplementedby>
+        <reimplementedby refid="classCodeHelper_1_1WriterArchitect_1ac20a3699c202c00643aa9c6060ddbc69">Execute</reimplementedby>
+        <reimplementedby refid="classCodeHelper_1_1WriterArchitect_1ac20a3699c202c00643aa9c6060ddbc69">Execute</reimplementedby>
+        <reimplementedby refid="classCodeHelper_1_1IOArchitect_1a90230da93d5d90687ccb3aa207af2971">Execute</reimplementedby>
+        <reimplementedby refid="classCodeHelper_1_1CommunicationPlanner_1a491140efde948e78a33fae17e0b289fd">Execute</reimplementedby>
+        <briefdescription>
+<para>执行任务 </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sango/.vs/LangYa/32fc2ebc-99b1-4edc-8556-3cdf8201edfe/src/Sources/CodeHelper/Headers/LangYa/CodeHelper/Constrained.hpp" line="368" column="14"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>针对特别任务的架构师，负责判断任务的可执行状态，规划任务到工作流，观测任务状态 </para>
+    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="note"><para>为什么有 concept 了，还要有这个基类呢？因为代码补全不认 concept，继承基类之后就可以生成函数声明了 </para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="8">
+        <label>CodeHelper::DeliveryArchitect&lt; typename TAcceptor::ItemType, TAcceptor, CodeHelper::DeviceIOTrigger &gt;</label>
+        <link refid="classCodeHelper_1_1DeliveryArchitect"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>CodeHelper::CommunicationPlanner&lt; TAcceptor, TMessageToRead, TMessageToSend, TDevice &gt;</label>
+        <link refid="classCodeHelper_1_1CommunicationPlanner"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>CodeHelper::TaskArchitect</label>
+        <link refid="structCodeHelper_1_1TaskArchitect"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>CodeHelper::IOArchitect&lt; TMessageToRead, TMessageToSend, TDevice &gt;</label>
+        <link refid="classCodeHelper_1_1IOArchitect"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>CodeHelper::ReaderArchitect&lt; TMessage, TReader &gt;</label>
+        <link refid="classCodeHelper_1_1ReaderArchitect"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>CodeHelper::ReaderArchitect&lt; TMessageToRead, TDevice &gt;</label>
+        <link refid="classCodeHelper_1_1ReaderArchitect"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>CodeHelper::DeliveryArchitect&lt; TItem, TSource, TDestination &gt;</label>
+        <link refid="classCodeHelper_1_1DeliveryArchitect"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>CodeHelper::WriterArchitect&lt; TMessage, TWriter &gt;</label>
+        <link refid="classCodeHelper_1_1WriterArchitect"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="10">
+        <label>CodeHelper::WriterArchitect&lt; TMessageToSend, TDevice &gt;</label>
+        <link refid="classCodeHelper_1_1WriterArchitect"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>CodeHelper::TaskStatus</label>
+        <link refid="structCodeHelper_1_1TaskStatus"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>CodeHelper::TaskArchitect</label>
+        <link refid="structCodeHelper_1_1TaskArchitect"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>CodeHelper::TaskStatus</label>
+        <link refid="structCodeHelper_1_1TaskStatus"/>
+      </node>
+    </collaborationgraph>
+    <location file="/home/sango/.vs/LangYa/32fc2ebc-99b1-4edc-8556-3cdf8201edfe/src/Sources/CodeHelper/Headers/LangYa/CodeHelper/Constrained.hpp" line="362" column="39" bodyfile="/home/sango/.vs/LangYa/32fc2ebc-99b1-4edc-8556-3cdf8201edfe/src/Sources/CodeHelper/Headers/LangYa/CodeHelper/Constrained.hpp" bodystart="362" bodyend="369"/>
+    <listofallmembers>
+      <member refid="structCodeHelper_1_1TaskArchitect_1a2ee6e3feac4f482fa5f4fce7b95710a1" prot="public" virt="pure-virtual"><scope>CodeHelper::TaskArchitect</scope><name>Check</name></member>
+      <member refid="structCodeHelper_1_1TaskArchitect_1af8c8243d45d8fa9dc941648f11ce7e10" prot="public" virt="pure-virtual"><scope>CodeHelper::TaskArchitect</scope><name>Execute</name></member>
+      <member refid="structCodeHelper_1_1TaskStatus_1aad528921b9f3892722e7a4e7ff14d596" prot="public" virt="pure-virtual"><scope>CodeHelper::TaskArchitect</scope><name>Interrupt</name></member>
+      <member refid="structCodeHelper_1_1TaskStatus_1a92c165c3c03e2cd4bd4b3a507e715daa" prot="public" virt="pure-virtual"><scope>CodeHelper::TaskArchitect</scope><name>IsDone</name></member>
+      <member refid="structCodeHelper_1_1TaskStatus_1a4857bac936f8de146e357e2e15eda85d" prot="public" virt="pure-virtual"><scope>CodeHelper::TaskArchitect</scope><name>Reset</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

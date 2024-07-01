@@ -1,0 +1,106 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="structTargetFile" kind="struct" language="C++" prot="public">
+    <compoundname>TargetFile</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structTargetFile_1a55d39c33a4f00a2788a3221c072770c3" prot="public" static="no" mutable="no">
+        <type>path_t</type>
+        <definition>path_t TargetFile::Path</definition>
+        <argsstring></argsstring>
+        <name>Path</name>
+        <initializer>{}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sango/.vs/LangYa/32fc2ebc-99b1-4edc-8556-3cdf8201edfe/src/Sources/CodeHelper/Testers/AutoAimManager.cpp" line="14" column="8" bodyfile="/home/sango/.vs/LangYa/32fc2ebc-99b1-4edc-8556-3cdf8201edfe/src/Sources/CodeHelper/Testers/AutoAimManager.cpp" bodystart="14" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structTargetFile_1ab042f0f40cae08a61030b7085e62b9ec" prot="public" static="no" mutable="no">
+        <type>std::vector&lt; std::string &gt;</type>
+        <definition>std::vector&lt;std::string&gt; TargetFile::Tags</definition>
+        <argsstring></argsstring>
+        <name>Tags</name>
+        <initializer>{}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sango/.vs/LangYa/32fc2ebc-99b1-4edc-8556-3cdf8201edfe/src/Sources/CodeHelper/Testers/AutoAimManager.cpp" line="15" column="13" bodyfile="/home/sango/.vs/LangYa/32fc2ebc-99b1-4edc-8556-3cdf8201edfe/src/Sources/CodeHelper/Testers/AutoAimManager.cpp" bodystart="15" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="structTargetFile_1acf47bbe6f5daca7dfeac8fcf5a8ee558" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::ostream &amp;</type>
+        <definition>std::ostream&amp; TargetFile::Format</definition>
+        <argsstring>(std::ostream &amp;stream) const</argsstring>
+        <name>Format</name>
+        <param>
+          <type>std::ostream &amp;</type>
+          <declname>stream</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sango/.vs/LangYa/32fc2ebc-99b1-4edc-8556-3cdf8201edfe/src/Sources/CodeHelper/Testers/AutoAimManager.cpp" line="17" column="14" bodyfile="/home/sango/.vs/LangYa/32fc2ebc-99b1-4edc-8556-3cdf8201edfe/src/Sources/CodeHelper/Testers/AutoAimManager.cpp" bodystart="17" bodyend="24"/>
+      </memberdef>
+      <memberdef kind="function" id="structTargetFile_1af3582231c18edfd4f370635be43beeb1" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool TargetFile::CopyTo</definition>
+        <argsstring>(const path_t &amp;destination) const</argsstring>
+        <name>CopyTo</name>
+        <param>
+          <type>const path_t &amp;</type>
+          <declname>destination</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sango/.vs/LangYa/32fc2ebc-99b1-4edc-8556-3cdf8201edfe/src/Sources/CodeHelper/Testers/AutoAimManager.cpp" line="26" column="7" bodyfile="/home/sango/.vs/LangYa/32fc2ebc-99b1-4edc-8556-3cdf8201edfe/src/Sources/CodeHelper/Testers/AutoAimManager.cpp" bodystart="26" bodyend="34"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="4">
+        <label>std::basic_string&lt; char &gt;</label>
+      </node>
+      <node id="2">
+        <label>std::vector&lt; std::string &gt;</label>
+        <childnode refid="3" relation="usage">
+          <edgelabel>elements</edgelabel>
+        </childnode>
+      </node>
+      <node id="1">
+        <label>TargetFile</label>
+        <link refid="structTargetFile"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>Tags</edgelabel>
+        </childnode>
+      </node>
+      <node id="3">
+        <label>std::string</label>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/sango/.vs/LangYa/32fc2ebc-99b1-4edc-8556-3cdf8201edfe/src/Sources/CodeHelper/Testers/AutoAimManager.cpp" line="13" column="1" bodyfile="/home/sango/.vs/LangYa/32fc2ebc-99b1-4edc-8556-3cdf8201edfe/src/Sources/CodeHelper/Testers/AutoAimManager.cpp" bodystart="12" bodyend="35"/>
+    <listofallmembers>
+      <member refid="structTargetFile_1af3582231c18edfd4f370635be43beeb1" prot="public" virt="non-virtual"><scope>TargetFile</scope><name>CopyTo</name></member>
+      <member refid="structTargetFile_1acf47bbe6f5daca7dfeac8fcf5a8ee558" prot="public" virt="non-virtual"><scope>TargetFile</scope><name>Format</name></member>
+      <member refid="structTargetFile_1a55d39c33a4f00a2788a3221c072770c3" prot="public" virt="non-virtual"><scope>TargetFile</scope><name>Path</name></member>
+      <member refid="structTargetFile_1ab042f0f40cae08a61030b7085e62b9ec" prot="public" virt="non-virtual"><scope>TargetFile</scope><name>Tags</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

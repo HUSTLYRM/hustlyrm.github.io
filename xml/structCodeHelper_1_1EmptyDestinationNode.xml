@@ -1,0 +1,94 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="structCodeHelper_1_1EmptyDestinationNode" kind="struct" language="C++" prot="public" final="yes">
+    <compoundname>CodeHelper::EmptyDestinationNode</compoundname>
+    <basecompoundref refid="structCodeHelper_1_1DestinationNode" prot="public" virt="non-virtual">CodeHelper::DestinationNode&lt; TItem &gt;</basecompoundref>
+    <includes refid="Constrained_8hpp" local="no">Constrained.hpp</includes>
+    <templateparamlist>
+      <param>
+        <type>typename TItem</type>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="structCodeHelper_1_1EmptyDestinationNode_1a6e47653e80fd72b381303553f8090bd0" prot="public" static="no" const="no" explicit="no" inline="yes" noexcept="yes" virt="virtual">
+        <type>void</type>
+        <definition>void CodeHelper::EmptyDestinationNode&lt; TItem &gt;::SetItem</definition>
+        <argsstring>(const TItem &amp;item) noexcept override</argsstring>
+        <name>SetItem</name>
+        <reimplements refid="structCodeHelper_1_1DestinationNode_1a02f32d562b195c8764274391879c61ee">SetItem</reimplements>
+        <param>
+          <type>const TItem &amp;</type>
+          <declname>item</declname>
+        </param>
+        <briefdescription>
+<para>设置物品，目的地将会接收物品并开始处理 </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>item</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>使用常量引用传递的物品 </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sango/.vs/LangYa/32fc2ebc-99b1-4edc-8556-3cdf8201edfe/src/Sources/CodeHelper/Headers/LangYa/CodeHelper/Constrained.hpp" line="159" column="6" bodyfile="/home/sango/.vs/LangYa/32fc2ebc-99b1-4edc-8556-3cdf8201edfe/src/Sources/CodeHelper/Headers/LangYa/CodeHelper/Constrained.hpp" bodystart="159" bodyend="159"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="structCodeHelper_1_1EmptyDestinationNode_1ae9d85b6379a07332574d0ff1f839fbdd" prot="public" static="yes" const="no" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type>std::shared_ptr&lt; <ref refid="structCodeHelper_1_1EmptyDestinationNode" kindref="compound">EmptyDestinationNode</ref> &gt;</type>
+        <definition>static std::shared_ptr&lt;EmptyDestinationNode&gt; CodeHelper::EmptyDestinationNode&lt; TItem &gt;::MakeShared</definition>
+        <argsstring>() noexcept</argsstring>
+        <name>MakeShared</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sango/.vs/LangYa/32fc2ebc-99b1-4edc-8556-3cdf8201edfe/src/Sources/CodeHelper/Headers/LangYa/CodeHelper/Constrained.hpp" line="161" column="24" bodyfile="/home/sango/.vs/LangYa/32fc2ebc-99b1-4edc-8556-3cdf8201edfe/src/Sources/CodeHelper/Headers/LangYa/CodeHelper/Constrained.hpp" bodystart="161" bodyend="163"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>空目的地节点，不对接收的物品做任何操作 </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>CodeHelper::DestinationNode&lt; TItem &gt;</label>
+        <link refid="structCodeHelper_1_1DestinationNode"/>
+      </node>
+      <node id="1">
+        <label>CodeHelper::EmptyDestinationNode&lt; TItem &gt;</label>
+        <link refid="structCodeHelper_1_1EmptyDestinationNode"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>CodeHelper::DestinationNode&lt; TItem &gt;</label>
+        <link refid="structCodeHelper_1_1DestinationNode"/>
+      </node>
+      <node id="1">
+        <label>CodeHelper::EmptyDestinationNode&lt; TItem &gt;</label>
+        <link refid="structCodeHelper_1_1EmptyDestinationNode"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/sango/.vs/LangYa/32fc2ebc-99b1-4edc-8556-3cdf8201edfe/src/Sources/CodeHelper/Headers/LangYa/CodeHelper/Constrained.hpp" line="158" column="44" bodyfile="/home/sango/.vs/LangYa/32fc2ebc-99b1-4edc-8556-3cdf8201edfe/src/Sources/CodeHelper/Headers/LangYa/CodeHelper/Constrained.hpp" bodystart="158" bodyend="164"/>
+    <listofallmembers>
+      <member refid="structCodeHelper_1_1DestinationNode_1af0a498469e34d11b72dd26e25357086b" prot="public" virt="non-virtual"><scope>CodeHelper::EmptyDestinationNode</scope><name>ItemType</name></member>
+      <member refid="structCodeHelper_1_1EmptyDestinationNode_1ae9d85b6379a07332574d0ff1f839fbdd" prot="public" virt="non-virtual"><scope>CodeHelper::EmptyDestinationNode</scope><name>MakeShared</name></member>
+      <member refid="structCodeHelper_1_1EmptyDestinationNode_1a6e47653e80fd72b381303553f8090bd0" prot="public" virt="virtual"><scope>CodeHelper::EmptyDestinationNode</scope><name>SetItem</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

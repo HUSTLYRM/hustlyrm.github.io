@@ -1,0 +1,157 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="structCodeHelper_1_1TaskStatus" kind="struct" language="C++" prot="public" abstract="yes">
+    <compoundname>CodeHelper::TaskStatus</compoundname>
+    <derivedcompoundref refid="structCodeHelper_1_1TaskArchitect" prot="public" virt="virtual">CodeHelper::TaskArchitect</derivedcompoundref>
+    <derivedcompoundref refid="structCodeHelper_1_1TaskDone" prot="public" virt="non-virtual">CodeHelper::TaskDone</derivedcompoundref>
+    <includes refid="Constrained_8hpp" local="no">Constrained.hpp</includes>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="structCodeHelper_1_1TaskStatus_1a92c165c3c03e2cd4bd4b3a507e715daa" prot="public" static="no" const="yes" explicit="no" inline="no" noexcept="yes" virt="pure-virtual">
+        <type>bool</type>
+        <definition>virtual bool CodeHelper::TaskStatus::IsDone</definition>
+        <argsstring>() const noexcept=0</argsstring>
+        <name>IsDone</name>
+        <reimplementedby refid="classCodeHelper_1_1DeliveryArchitect_1aba671ba15141d9f9864304f804c9f241">IsDone</reimplementedby>
+        <reimplementedby refid="classCodeHelper_1_1ReaderArchitect_1a6d8fce6c23a3347d7fb7db9480a4c63d">IsDone</reimplementedby>
+        <reimplementedby refid="classCodeHelper_1_1WriterArchitect_1ab3542892ba71a505f7ce0cd693444a1e">IsDone</reimplementedby>
+        <reimplementedby refid="structCodeHelper_1_1TaskDone_1ada026de00bd7cb48ff6e8bc3dc757adb">IsDone</reimplementedby>
+        <reimplementedby refid="classCodeHelper_1_1IOArchitect_1aa47c4b390db61f85e4e27eaccec11af1">IsDone</reimplementedby>
+        <reimplementedby refid="classCodeHelper_1_1CommunicationPlanner_1a374024c95cd3f7bb12e7648fa1d36738">IsDone</reimplementedby>
+        <briefdescription>
+<para>用于判断任务是否已经执行完毕，要求判断的过程不对任务产生任何影响 </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>只要任务执行完毕，即使是异常退出，都会返回 <computeroutput>true</computeroutput> ，其他情况会是 <computeroutput>false</computeroutput> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sango/.vs/LangYa/32fc2ebc-99b1-4edc-8556-3cdf8201edfe/src/Sources/CodeHelper/Headers/LangYa/CodeHelper/Constrained.hpp" line="321" column="15"/>
+      </memberdef>
+      <memberdef kind="function" id="structCodeHelper_1_1TaskStatus_1aad528921b9f3892722e7a4e7ff14d596" prot="public" static="no" const="no" explicit="no" inline="no" noexcept="yes" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void CodeHelper::TaskStatus::Interrupt</definition>
+        <argsstring>() noexcept=0</argsstring>
+        <name>Interrupt</name>
+        <reimplementedby refid="classCodeHelper_1_1DeliveryArchitect_1abe8fa3f77d399e1bbeb88f7fbfd431c5">Interrupt</reimplementedby>
+        <reimplementedby refid="classCodeHelper_1_1DeliveryArchitect_1abe8fa3f77d399e1bbeb88f7fbfd431c5">Interrupt</reimplementedby>
+        <reimplementedby refid="classCodeHelper_1_1ReaderArchitect_1a620f6a30b780c0941e132cb85be2db73">Interrupt</reimplementedby>
+        <reimplementedby refid="classCodeHelper_1_1ReaderArchitect_1a620f6a30b780c0941e132cb85be2db73">Interrupt</reimplementedby>
+        <reimplementedby refid="classCodeHelper_1_1WriterArchitect_1a55c4017ba97d3e1c7368df18770c8ab3">Interrupt</reimplementedby>
+        <reimplementedby refid="classCodeHelper_1_1WriterArchitect_1a55c4017ba97d3e1c7368df18770c8ab3">Interrupt</reimplementedby>
+        <reimplementedby refid="structCodeHelper_1_1TaskDone_1a13e2d6a2f91fbc8b4912ae8c968d03d2">Interrupt</reimplementedby>
+        <reimplementedby refid="classCodeHelper_1_1IOArchitect_1ab8630f62af98cde3b656eda8abdef5d0">Interrupt</reimplementedby>
+        <reimplementedby refid="classCodeHelper_1_1CommunicationPlanner_1a4dafc985322a6390cc7e737e696e8106">Interrupt</reimplementedby>
+        <briefdescription>
+<para>要求中断任务，执行后可通过 <computeroutput>IsDone</computeroutput> 函数判断任务是否已经中断 任务一般通过在循环中检查此函数控制的一个标志量来提前中断任务，所以此函数不能保证立即中断任务 </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sango/.vs/LangYa/32fc2ebc-99b1-4edc-8556-3cdf8201edfe/src/Sources/CodeHelper/Headers/LangYa/CodeHelper/Constrained.hpp" line="325" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="structCodeHelper_1_1TaskStatus_1a4857bac936f8de146e357e2e15eda85d" prot="public" static="no" const="no" explicit="no" inline="no" noexcept="yes" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void CodeHelper::TaskStatus::Reset</definition>
+        <argsstring>() noexcept=0</argsstring>
+        <name>Reset</name>
+        <reimplementedby refid="classCodeHelper_1_1DeliveryArchitect_1af18fec4ae2e635b6effef72ba79fbf84">Reset</reimplementedby>
+        <reimplementedby refid="classCodeHelper_1_1DeliveryArchitect_1af18fec4ae2e635b6effef72ba79fbf84">Reset</reimplementedby>
+        <reimplementedby refid="classCodeHelper_1_1ReaderArchitect_1a86a7e73090797c781bef5ce32d6086c4">Reset</reimplementedby>
+        <reimplementedby refid="classCodeHelper_1_1ReaderArchitect_1a86a7e73090797c781bef5ce32d6086c4">Reset</reimplementedby>
+        <reimplementedby refid="classCodeHelper_1_1WriterArchitect_1a350107682cd079a58844c4641e99d0b4">Reset</reimplementedby>
+        <reimplementedby refid="classCodeHelper_1_1WriterArchitect_1a350107682cd079a58844c4641e99d0b4">Reset</reimplementedby>
+        <reimplementedby refid="structCodeHelper_1_1TaskDone_1a4d2bd4b0e0787863e24bd1c9ff6449db">Reset</reimplementedby>
+        <reimplementedby refid="classCodeHelper_1_1IOArchitect_1a2303733d4fbf154f2d7328276ffb5939">Reset</reimplementedby>
+        <reimplementedby refid="classCodeHelper_1_1CommunicationPlanner_1a58b16bad92f2b2ed96d5aaac6008db66">Reset</reimplementedby>
+        <briefdescription>
+<para>要求重置任务状态，执行后可用过 <computeroutput>IsDone</computeroutput> 函数判断任务是否重置 </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sango/.vs/LangYa/32fc2ebc-99b1-4edc-8556-3cdf8201edfe/src/Sources/CodeHelper/Headers/LangYa/CodeHelper/Constrained.hpp" line="328" column="14"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>任务状态，要求内部有一个判断任务是否完成的方法和一个中断任务的方法 </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="8">
+        <label>CodeHelper::DeliveryArchitect&lt; typename TAcceptor::ItemType, TAcceptor, CodeHelper::DeviceIOTrigger &gt;</label>
+        <link refid="classCodeHelper_1_1DeliveryArchitect"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>CodeHelper::CommunicationPlanner&lt; TAcceptor, TMessageToRead, TMessageToSend, TDevice &gt;</label>
+        <link refid="classCodeHelper_1_1CommunicationPlanner"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>CodeHelper::TaskArchitect</label>
+        <link refid="structCodeHelper_1_1TaskArchitect"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>CodeHelper::IOArchitect&lt; TMessageToRead, TMessageToSend, TDevice &gt;</label>
+        <link refid="classCodeHelper_1_1IOArchitect"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>CodeHelper::ReaderArchitect&lt; TMessage, TReader &gt;</label>
+        <link refid="classCodeHelper_1_1ReaderArchitect"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>CodeHelper::ReaderArchitect&lt; TMessageToRead, TDevice &gt;</label>
+        <link refid="classCodeHelper_1_1ReaderArchitect"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>CodeHelper::DeliveryArchitect&lt; TItem, TSource, TDestination &gt;</label>
+        <link refid="classCodeHelper_1_1DeliveryArchitect"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>CodeHelper::WriterArchitect&lt; TMessage, TWriter &gt;</label>
+        <link refid="classCodeHelper_1_1WriterArchitect"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="11">
+        <label>CodeHelper::TaskDone</label>
+        <link refid="structCodeHelper_1_1TaskDone"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="10">
+        <label>CodeHelper::WriterArchitect&lt; TMessageToSend, TDevice &gt;</label>
+        <link refid="classCodeHelper_1_1WriterArchitect"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>CodeHelper::TaskStatus</label>
+        <link refid="structCodeHelper_1_1TaskStatus"/>
+      </node>
+    </inheritancegraph>
+    <location file="/home/sango/.vs/LangYa/32fc2ebc-99b1-4edc-8556-3cdf8201edfe/src/Sources/CodeHelper/Headers/LangYa/CodeHelper/Constrained.hpp" line="318" column="17" bodyfile="/home/sango/.vs/LangYa/32fc2ebc-99b1-4edc-8556-3cdf8201edfe/src/Sources/CodeHelper/Headers/LangYa/CodeHelper/Constrained.hpp" bodystart="318" bodyend="329"/>
+    <listofallmembers>
+      <member refid="structCodeHelper_1_1TaskStatus_1aad528921b9f3892722e7a4e7ff14d596" prot="public" virt="pure-virtual"><scope>CodeHelper::TaskStatus</scope><name>Interrupt</name></member>
+      <member refid="structCodeHelper_1_1TaskStatus_1a92c165c3c03e2cd4bd4b3a507e715daa" prot="public" virt="pure-virtual"><scope>CodeHelper::TaskStatus</scope><name>IsDone</name></member>
+      <member refid="structCodeHelper_1_1TaskStatus_1a4857bac936f8de146e357e2e15eda85d" prot="public" virt="pure-virtual"><scope>CodeHelper::TaskStatus</scope><name>Reset</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

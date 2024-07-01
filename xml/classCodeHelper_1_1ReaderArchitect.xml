@@ -1,0 +1,346 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="classCodeHelper_1_1ReaderArchitect" kind="class" language="C++" prot="public" final="yes">
+    <compoundname>CodeHelper::ReaderArchitect</compoundname>
+    <basecompoundref refid="structCodeHelper_1_1NamedModule" prot="public" virt="non-virtual">CodeHelper::NamedModule</basecompoundref>
+    <basecompoundref refid="structCodeHelper_1_1TaskArchitect" prot="public" virt="non-virtual">CodeHelper::TaskArchitect</basecompoundref>
+    <includes refid="TaskArchitects_8hpp" local="no">TaskArchitects.hpp</includes>
+    <innerclass refid="structCodeHelper_1_1ReaderArchitect_1_1Configurations" prot="private">CodeHelper::ReaderArchitect::Configurations</innerclass>
+    <templateparamlist>
+      <param>
+        <type>std::default_initializable</type>
+        <declname>TMessage</declname>
+        <defname>TMessage</defname>
+      </param>
+      <param>
+        <type>IsFormattableReader</type>
+        <declname>TReader</declname>
+        <defname>TReader</defname>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classCodeHelper_1_1ReaderArchitect_1a39ecc0e025b05ff862f56fe9609f01f5" prot="private" static="no" mutable="no">
+        <type><ref refid="classCodeHelper_1_1Dependency" kindref="compound">Dependency</ref>&lt; TReader &gt;</type>
+        <definition>Dependency&lt;TReader&gt; CodeHelper::ReaderArchitect&lt; TMessage, TReader &gt;::Reader</definition>
+        <argsstring></argsstring>
+        <name>Reader</name>
+        <initializer>{}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sango/.vs/LangYa/32fc2ebc-99b1-4edc-8556-3cdf8201edfe/src/Sources/CodeHelper/Headers/LangYa/CodeHelper/TaskArchitects.hpp" line="112" column="12" bodyfile="/home/sango/.vs/LangYa/32fc2ebc-99b1-4edc-8556-3cdf8201edfe/src/Sources/CodeHelper/Headers/LangYa/CodeHelper/TaskArchitects.hpp" bodystart="112" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classCodeHelper_1_1ReaderArchitect_1a7113857a3358ed57926a16f7d0319de2" prot="private" static="no" mutable="no">
+        <type><ref refid="classCodeHelper_1_1Dependency" kindref="compound">Dependency</ref>&lt; <ref refid="structCodeHelper_1_1DestinationNode" kindref="compound">DestinationNode</ref>&lt; TMessage &gt; &gt;</type>
+        <definition>Dependency&lt;DestinationNode&lt;TMessage&gt; &gt; CodeHelper::ReaderArchitect&lt; TMessage, TReader &gt;::Destination</definition>
+        <argsstring></argsstring>
+        <name>Destination</name>
+        <initializer>{}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sango/.vs/LangYa/32fc2ebc-99b1-4edc-8556-3cdf8201edfe/src/Sources/CodeHelper/Headers/LangYa/CodeHelper/TaskArchitects.hpp" line="113" column="12" bodyfile="/home/sango/.vs/LangYa/32fc2ebc-99b1-4edc-8556-3cdf8201edfe/src/Sources/CodeHelper/Headers/LangYa/CodeHelper/TaskArchitects.hpp" bodystart="113" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classCodeHelper_1_1ReaderArchitect_1abe9c6f37172db1ad4c22b271ba2f9993" prot="private" static="no" mutable="no">
+        <type>std::uint8_t</type>
+        <definition>std::uint8_t CodeHelper::ReaderArchitect&lt; TMessage, TReader &gt;::HeadByte</definition>
+        <argsstring></argsstring>
+        <name>HeadByte</name>
+        <initializer>{&apos;!&apos;}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sango/.vs/LangYa/32fc2ebc-99b1-4edc-8556-3cdf8201edfe/src/Sources/CodeHelper/Headers/LangYa/CodeHelper/TaskArchitects.hpp" line="114" column="14" bodyfile="/home/sango/.vs/LangYa/32fc2ebc-99b1-4edc-8556-3cdf8201edfe/src/Sources/CodeHelper/Headers/LangYa/CodeHelper/TaskArchitects.hpp" bodystart="114" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classCodeHelper_1_1ReaderArchitect_1aad1c0afd02b233ed52c0c6aa74f9c3c6" prot="private" static="no" mutable="no">
+        <type>std::chrono::milliseconds</type>
+        <definition>std::chrono::milliseconds CodeHelper::ReaderArchitect&lt; TMessage, TReader &gt;::MinInterval</definition>
+        <argsstring></argsstring>
+        <name>MinInterval</name>
+        <initializer>{10}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sango/.vs/LangYa/32fc2ebc-99b1-4edc-8556-3cdf8201edfe/src/Sources/CodeHelper/Headers/LangYa/CodeHelper/TaskArchitects.hpp" line="115" column="27" bodyfile="/home/sango/.vs/LangYa/32fc2ebc-99b1-4edc-8556-3cdf8201edfe/src/Sources/CodeHelper/Headers/LangYa/CodeHelper/TaskArchitects.hpp" bodystart="115" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classCodeHelper_1_1ReaderArchitect_1ac712d0755e892547957fe62227ce6ad5" prot="private" static="no" mutable="no">
+        <type>std::uint32_t</type>
+        <definition>std::uint32_t CodeHelper::ReaderArchitect&lt; TMessage, TReader &gt;::MaxContinuousFailure</definition>
+        <argsstring></argsstring>
+        <name>MaxContinuousFailure</name>
+        <initializer>{5}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sango/.vs/LangYa/32fc2ebc-99b1-4edc-8556-3cdf8201edfe/src/Sources/CodeHelper/Headers/LangYa/CodeHelper/TaskArchitects.hpp" line="116" column="15" bodyfile="/home/sango/.vs/LangYa/32fc2ebc-99b1-4edc-8556-3cdf8201edfe/src/Sources/CodeHelper/Headers/LangYa/CodeHelper/TaskArchitects.hpp" bodystart="116" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classCodeHelper_1_1ReaderArchitect_1a532653db988bda3ece27194245ed43fc" prot="private" static="no" mutable="no">
+        <type><ref refid="structCodeHelper_1_1TaskDone" kindref="compound">TaskDone</ref></type>
+        <definition>TaskDone CodeHelper::ReaderArchitect&lt; TMessage, TReader &gt;::DoneStatus</definition>
+        <argsstring></argsstring>
+        <name>DoneStatus</name>
+        <initializer>{}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sango/.vs/LangYa/32fc2ebc-99b1-4edc-8556-3cdf8201edfe/src/Sources/CodeHelper/Headers/LangYa/CodeHelper/TaskArchitects.hpp" line="135" column="10" bodyfile="/home/sango/.vs/LangYa/32fc2ebc-99b1-4edc-8556-3cdf8201edfe/src/Sources/CodeHelper/Headers/LangYa/CodeHelper/TaskArchitects.hpp" bodystart="135" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="classCodeHelper_1_1ReaderArchitect_1ab945d6f91f2b8d1e5c854a2f79f8e0dd" prot="public" static="yes" constexpr="yes" mutable="no">
+        <type>constexpr char</type>
+        <definition>constexpr char CodeHelper::ReaderArchitect&lt; TMessage, TReader &gt;::Name[]</definition>
+        <argsstring>[]</argsstring>
+        <name>Name</name>
+        <initializer>= &quot;读取规划器&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sango/.vs/LangYa/32fc2ebc-99b1-4edc-8556-3cdf8201edfe/src/Sources/CodeHelper/Headers/LangYa/CodeHelper/TaskArchitects.hpp" line="138" column="23" bodyfile="/home/sango/.vs/LangYa/32fc2ebc-99b1-4edc-8556-3cdf8201edfe/src/Sources/CodeHelper/Headers/LangYa/CodeHelper/TaskArchitects.hpp" bodystart="138" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classCodeHelper_1_1ReaderArchitect_1a7afff6036510e611a8661cc0398a2fac" prot="public" static="no" const="no" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type>Configurations</type>
+        <definition>Configurations CodeHelper::ReaderArchitect&lt; TMessage, TReader &gt;::Configure</definition>
+        <argsstring>() noexcept</argsstring>
+        <name>Configure</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sango/.vs/LangYa/32fc2ebc-99b1-4edc-8556-3cdf8201edfe/src/Sources/CodeHelper/Headers/LangYa/CodeHelper/TaskArchitects.hpp" line="140" column="17" bodyfile="/home/sango/.vs/LangYa/32fc2ebc-99b1-4edc-8556-3cdf8201edfe/src/Sources/CodeHelper/Headers/LangYa/CodeHelper/TaskArchitects.hpp" bodystart="140" bodyend="142"/>
+      </memberdef>
+      <memberdef kind="function" id="classCodeHelper_1_1ReaderArchitect_1a32e51a39020c4e978c651e2e2c611a5e" prot="public" static="no" const="no" explicit="no" inline="yes" noexcept="yes" virt="virtual">
+        <type>bool</type>
+        <definition>bool CodeHelper::ReaderArchitect&lt; TMessage, TReader &gt;::Check</definition>
+        <argsstring>() noexcept override</argsstring>
+        <name>Check</name>
+        <reimplements refid="structCodeHelper_1_1TaskArchitect_1a2ee6e3feac4f482fa5f4fce7b95710a1">Check</reimplements>
+        <briefdescription>
+<para>用于检查任务的依赖状态，判断是否满足依赖，可以执行 </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>如果任务可以执行，返回 <computeroutput>true</computeroutput> ，否则返回 <computeroutput>false</computeroutput> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sango/.vs/LangYa/32fc2ebc-99b1-4edc-8556-3cdf8201edfe/src/Sources/CodeHelper/Headers/LangYa/CodeHelper/TaskArchitects.hpp" line="144" column="7" bodyfile="/home/sango/.vs/LangYa/32fc2ebc-99b1-4edc-8556-3cdf8201edfe/src/Sources/CodeHelper/Headers/LangYa/CodeHelper/TaskArchitects.hpp" bodystart="144" bodyend="148"/>
+      </memberdef>
+      <memberdef kind="function" id="classCodeHelper_1_1ReaderArchitect_1a05b4493b9915342227151cf2a92f8456" prot="public" static="no" const="no" explicit="no" inline="yes" noexcept="yes" virt="virtual">
+        <type>void</type>
+        <definition>void CodeHelper::ReaderArchitect&lt; TMessage, TReader &gt;::Execute</definition>
+        <argsstring>() noexcept override</argsstring>
+        <name>Execute</name>
+        <reimplements refid="structCodeHelper_1_1TaskArchitect_1af8c8243d45d8fa9dc941648f11ce7e10">Execute</reimplements>
+        <briefdescription>
+<para>执行任务 </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sango/.vs/LangYa/32fc2ebc-99b1-4edc-8556-3cdf8201edfe/src/Sources/CodeHelper/Headers/LangYa/CodeHelper/TaskArchitects.hpp" line="150" column="6" bodyfile="/home/sango/.vs/LangYa/32fc2ebc-99b1-4edc-8556-3cdf8201edfe/src/Sources/CodeHelper/Headers/LangYa/CodeHelper/TaskArchitects.hpp" bodystart="150" bodyend="183"/>
+      </memberdef>
+      <memberdef kind="function" id="classCodeHelper_1_1ReaderArchitect_1a200a19eb1310254002a20e5b943b33aa" prot="public" static="no" const="yes" explicit="no" inline="yes" noexcept="yes" virt="virtual">
+        <type>std::ostream &amp;</type>
+        <definition>std::ostream&amp; CodeHelper::ReaderArchitect&lt; TMessage, TReader &gt;::GetName</definition>
+        <argsstring>(std::ostream &amp;stream) const noexcept override</argsstring>
+        <name>GetName</name>
+        <reimplements refid="structCodeHelper_1_1NamedModule_1a9ba0c53a7e2b42df416cf8e1c3367452">GetName</reimplements>
+        <param>
+          <type>std::ostream &amp;</type>
+          <declname>stream</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sango/.vs/LangYa/32fc2ebc-99b1-4edc-8556-3cdf8201edfe/src/Sources/CodeHelper/Headers/LangYa/CodeHelper/TaskArchitects.hpp" line="185" column="14" bodyfile="/home/sango/.vs/LangYa/32fc2ebc-99b1-4edc-8556-3cdf8201edfe/src/Sources/CodeHelper/Headers/LangYa/CodeHelper/TaskArchitects.hpp" bodystart="185" bodyend="185"/>
+      </memberdef>
+      <memberdef kind="function" id="classCodeHelper_1_1ReaderArchitect_1ad89cb3fe336c3b3abca25908e47253e5" prot="public" static="no" const="yes" explicit="no" inline="yes" noexcept="yes" virt="virtual">
+        <type>std::ostream &amp;</type>
+        <definition>std::ostream&amp; CodeHelper::ReaderArchitect&lt; TMessage, TReader &gt;::GetBrief</definition>
+        <argsstring>(std::ostream &amp;stream) const noexcept override</argsstring>
+        <name>GetBrief</name>
+        <reimplements refid="structCodeHelper_1_1NamedModule_1a55a66075cfd0e14a33cf018c1ba57af0">GetBrief</reimplements>
+        <param>
+          <type>std::ostream &amp;</type>
+          <declname>stream</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sango/.vs/LangYa/32fc2ebc-99b1-4edc-8556-3cdf8201edfe/src/Sources/CodeHelper/Headers/LangYa/CodeHelper/TaskArchitects.hpp" line="186" column="14" bodyfile="/home/sango/.vs/LangYa/32fc2ebc-99b1-4edc-8556-3cdf8201edfe/src/Sources/CodeHelper/Headers/LangYa/CodeHelper/TaskArchitects.hpp" bodystart="186" bodyend="186"/>
+      </memberdef>
+      <memberdef kind="function" id="classCodeHelper_1_1ReaderArchitect_1a6d8fce6c23a3347d7fb7db9480a4c63d" prot="public" static="no" const="yes" explicit="no" inline="yes" noexcept="yes" virt="virtual">
+        <type>bool</type>
+        <definition>bool CodeHelper::ReaderArchitect&lt; TMessage, TReader &gt;::IsDone</definition>
+        <argsstring>() const noexcept override</argsstring>
+        <name>IsDone</name>
+        <reimplements refid="structCodeHelper_1_1TaskStatus_1a92c165c3c03e2cd4bd4b3a507e715daa">IsDone</reimplements>
+        <briefdescription>
+<para>用于判断任务是否已经执行完毕，要求判断的过程不对任务产生任何影响 </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>只要任务执行完毕，即使是异常退出，都会返回 <computeroutput>true</computeroutput> ，其他情况会是 <computeroutput>false</computeroutput> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sango/.vs/LangYa/32fc2ebc-99b1-4edc-8556-3cdf8201edfe/src/Sources/CodeHelper/Headers/LangYa/CodeHelper/TaskArchitects.hpp" line="187" column="7" bodyfile="/home/sango/.vs/LangYa/32fc2ebc-99b1-4edc-8556-3cdf8201edfe/src/Sources/CodeHelper/Headers/LangYa/CodeHelper/TaskArchitects.hpp" bodystart="187" bodyend="187"/>
+      </memberdef>
+      <memberdef kind="function" id="classCodeHelper_1_1ReaderArchitect_1a620f6a30b780c0941e132cb85be2db73" prot="public" static="no" const="no" explicit="no" inline="yes" noexcept="yes" virt="virtual">
+        <type>void</type>
+        <definition>void CodeHelper::ReaderArchitect&lt; TMessage, TReader &gt;::Interrupt</definition>
+        <argsstring>() noexcept override</argsstring>
+        <name>Interrupt</name>
+        <reimplements refid="structCodeHelper_1_1TaskStatus_1aad528921b9f3892722e7a4e7ff14d596">Interrupt</reimplements>
+        <briefdescription>
+<para>要求中断任务，执行后可通过 <computeroutput>IsDone</computeroutput> 函数判断任务是否已经中断 任务一般通过在循环中检查此函数控制的一个标志量来提前中断任务，所以此函数不能保证立即中断任务 </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sango/.vs/LangYa/32fc2ebc-99b1-4edc-8556-3cdf8201edfe/src/Sources/CodeHelper/Headers/LangYa/CodeHelper/TaskArchitects.hpp" line="188" column="6" bodyfile="/home/sango/.vs/LangYa/32fc2ebc-99b1-4edc-8556-3cdf8201edfe/src/Sources/CodeHelper/Headers/LangYa/CodeHelper/TaskArchitects.hpp" bodystart="188" bodyend="188"/>
+      </memberdef>
+      <memberdef kind="function" id="classCodeHelper_1_1ReaderArchitect_1a86a7e73090797c781bef5ce32d6086c4" prot="public" static="no" const="no" explicit="no" inline="yes" noexcept="yes" virt="virtual">
+        <type>void</type>
+        <definition>void CodeHelper::ReaderArchitect&lt; TMessage, TReader &gt;::Reset</definition>
+        <argsstring>() noexcept override</argsstring>
+        <name>Reset</name>
+        <reimplements refid="structCodeHelper_1_1TaskStatus_1a4857bac936f8de146e357e2e15eda85d">Reset</reimplements>
+        <briefdescription>
+<para>要求重置任务状态，执行后可用过 <computeroutput>IsDone</computeroutput> 函数判断任务是否重置 </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sango/.vs/LangYa/32fc2ebc-99b1-4edc-8556-3cdf8201edfe/src/Sources/CodeHelper/Headers/LangYa/CodeHelper/TaskArchitects.hpp" line="189" column="6" bodyfile="/home/sango/.vs/LangYa/32fc2ebc-99b1-4edc-8556-3cdf8201edfe/src/Sources/CodeHelper/Headers/LangYa/CodeHelper/TaskArchitects.hpp" bodystart="189" bodyend="189"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>代表同步读取工作流： <ref refid="structCodeHelper_1_1Reader" kindref="compound">Reader</ref> 提供字节流，内部服务处理字节流转化为 Message，最后将 Message 传递给 Destination </para>
+    </briefdescription>
+    <detaileddescription>
+<para><parameterlist kind="templateparam"><parameteritem>
+<parameternamelist>
+<parametername>TMessage</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>要读取的消息类型，除了需要默认初始化外，还需要拥有头和尾用于数据验证 TODO 需要完善约束 </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>TReader</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>读取器的类型，需要提供一些信息便于日志记录 </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="3">
+        <label>CodeHelper::TaskArchitect</label>
+        <link refid="structCodeHelper_1_1TaskArchitect"/>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>CodeHelper::ReaderArchitect&lt; TMessage, TReader &gt;</label>
+        <link refid="classCodeHelper_1_1ReaderArchitect"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>CodeHelper::NamedModule</label>
+        <link refid="structCodeHelper_1_1NamedModule"/>
+      </node>
+      <node id="4">
+        <label>CodeHelper::TaskStatus</label>
+        <link refid="structCodeHelper_1_1TaskStatus"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="3">
+        <label>CodeHelper::TaskArchitect</label>
+        <link refid="structCodeHelper_1_1TaskArchitect"/>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>CodeHelper::ReaderArchitect&lt; TMessage, TReader &gt;</label>
+        <link refid="classCodeHelper_1_1ReaderArchitect"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>CodeHelper::NamedModule</label>
+        <link refid="structCodeHelper_1_1NamedModule"/>
+      </node>
+      <node id="4">
+        <label>CodeHelper::TaskStatus</label>
+        <link refid="structCodeHelper_1_1TaskStatus"/>
+      </node>
+    </collaborationgraph>
+    <location file="/home/sango/.vs/LangYa/32fc2ebc-99b1-4edc-8556-3cdf8201edfe/src/Sources/CodeHelper/Headers/LangYa/CodeHelper/TaskArchitects.hpp" line="111" column="63" bodyfile="/home/sango/.vs/LangYa/32fc2ebc-99b1-4edc-8556-3cdf8201edfe/src/Sources/CodeHelper/Headers/LangYa/CodeHelper/TaskArchitects.hpp" bodystart="111" bodyend="190"/>
+    <listofallmembers>
+      <member refid="classCodeHelper_1_1ReaderArchitect_1a32e51a39020c4e978c651e2e2c611a5e" prot="public" virt="virtual"><scope>CodeHelper::ReaderArchitect</scope><name>Check</name></member>
+      <member refid="classCodeHelper_1_1ReaderArchitect_1a7afff6036510e611a8661cc0398a2fac" prot="public" virt="non-virtual"><scope>CodeHelper::ReaderArchitect</scope><name>Configure</name></member>
+      <member refid="classCodeHelper_1_1ReaderArchitect_1a7113857a3358ed57926a16f7d0319de2" prot="private" virt="non-virtual"><scope>CodeHelper::ReaderArchitect</scope><name>Destination</name></member>
+      <member refid="classCodeHelper_1_1ReaderArchitect_1a532653db988bda3ece27194245ed43fc" prot="private" virt="non-virtual"><scope>CodeHelper::ReaderArchitect</scope><name>DoneStatus</name></member>
+      <member refid="classCodeHelper_1_1ReaderArchitect_1a05b4493b9915342227151cf2a92f8456" prot="public" virt="virtual"><scope>CodeHelper::ReaderArchitect</scope><name>Execute</name></member>
+      <member refid="structCodeHelper_1_1NamedModule_1a2a13a677c984ab006949b6911e7c361a" prot="public" virt="non-virtual"><scope>CodeHelper::ReaderArchitect</scope><name>Format</name></member>
+      <member refid="classCodeHelper_1_1ReaderArchitect_1ad89cb3fe336c3b3abca25908e47253e5" prot="public" virt="virtual"><scope>CodeHelper::ReaderArchitect</scope><name>GetBrief</name></member>
+      <member refid="classCodeHelper_1_1ReaderArchitect_1a200a19eb1310254002a20e5b943b33aa" prot="public" virt="virtual"><scope>CodeHelper::ReaderArchitect</scope><name>GetName</name></member>
+      <member refid="classCodeHelper_1_1ReaderArchitect_1abe9c6f37172db1ad4c22b271ba2f9993" prot="private" virt="non-virtual"><scope>CodeHelper::ReaderArchitect</scope><name>HeadByte</name></member>
+      <member refid="classCodeHelper_1_1ReaderArchitect_1a620f6a30b780c0941e132cb85be2db73" prot="public" virt="virtual"><scope>CodeHelper::ReaderArchitect</scope><name>Interrupt</name></member>
+      <member refid="classCodeHelper_1_1ReaderArchitect_1a6d8fce6c23a3347d7fb7db9480a4c63d" prot="public" virt="virtual"><scope>CodeHelper::ReaderArchitect</scope><name>IsDone</name></member>
+      <member refid="classCodeHelper_1_1ReaderArchitect_1ac712d0755e892547957fe62227ce6ad5" prot="private" virt="non-virtual"><scope>CodeHelper::ReaderArchitect</scope><name>MaxContinuousFailure</name></member>
+      <member refid="classCodeHelper_1_1ReaderArchitect_1aad1c0afd02b233ed52c0c6aa74f9c3c6" prot="private" virt="non-virtual"><scope>CodeHelper::ReaderArchitect</scope><name>MinInterval</name></member>
+      <member refid="classCodeHelper_1_1ReaderArchitect_1ab945d6f91f2b8d1e5c854a2f79f8e0dd" prot="public" virt="non-virtual"><scope>CodeHelper::ReaderArchitect</scope><name>Name</name></member>
+      <member refid="classCodeHelper_1_1ReaderArchitect_1a39ecc0e025b05ff862f56fe9609f01f5" prot="private" virt="non-virtual"><scope>CodeHelper::ReaderArchitect</scope><name>Reader</name></member>
+      <member refid="classCodeHelper_1_1ReaderArchitect_1a86a7e73090797c781bef5ce32d6086c4" prot="public" virt="virtual"><scope>CodeHelper::ReaderArchitect</scope><name>Reset</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

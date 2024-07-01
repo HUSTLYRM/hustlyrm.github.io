@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 
 
-<html lang="zh-CN" data-content_root="./" >
+<html lang="zh-CN" data-content_root="" >
 
   <head>
     <meta charset="utf-8" />
@@ -13,30 +13,30 @@
   
   <script data-cfasync="false">
     document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
-    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "light";
   </script>
   
   <!-- Loaded before other Sphinx assets -->
-  <link href="_static/styles/theme.css?digest=3ee479438cf8b5e0d341" rel="stylesheet" />
-<link href="_static/styles/bootstrap.css?digest=3ee479438cf8b5e0d341" rel="stylesheet" />
-<link href="_static/styles/pydata-sphinx-theme.css?digest=3ee479438cf8b5e0d341" rel="stylesheet" />
+  <link href="_static/styles/theme.css?digest=5b4479735964841361fd" rel="stylesheet" />
+<link href="_static/styles/bootstrap.css?digest=5b4479735964841361fd" rel="stylesheet" />
+<link href="_static/styles/pydata-sphinx-theme.css?digest=5b4479735964841361fd" rel="stylesheet" />
 
   
-  <link href="_static/vendor/fontawesome/6.5.2/css/all.min.css?digest=3ee479438cf8b5e0d341" rel="stylesheet" />
-  <link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.2/webfonts/fa-solid-900.woff2" />
-<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.2/webfonts/fa-brands-400.woff2" />
-<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.2/webfonts/fa-regular-400.woff2" />
+  <link href="_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=5b4479735964841361fd" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2" />
 
     <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=a746c00c" />
   
   <!-- Pre-loaded scripts that we'll load fully later -->
-  <link rel="preload" as="script" href="_static/scripts/bootstrap.js?digest=3ee479438cf8b5e0d341" />
-<link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=3ee479438cf8b5e0d341" />
-  <script src="_static/vendor/fontawesome/6.5.2/js/all.min.js?digest=3ee479438cf8b5e0d341"></script>
+  <link rel="preload" as="script" href="_static/scripts/bootstrap.js?digest=5b4479735964841361fd" />
+<link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=5b4479735964841361fd" />
+  <script src="_static/vendor/fontawesome/6.1.2/js/all.min.js?digest=5b4479735964841361fd"></script>
 
-    <script src="_static/documentation_options.js?v=9c6fba8d"></script>
-    <script src="_static/doctools.js?v=9a2dae69"></script>
-    <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js?v=0907e4e6"></script>
+    <script src="_static/doctools.js?v=888ff710"></script>
+    <script src="_static/sphinx_highlight.js?v=4825356b"></script>
     <script src="_static/translations.js?v=beaddf03"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'genindex';</script>
     <link rel="index" title="索引" href="#" />
@@ -50,23 +50,28 @@
 
   
   
-  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
   
   <div id="pst-scroll-pixel-helper"></div>
+
   
   <button type="button" class="btn rounded-pill" id="pst-back-to-top">
-    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
+    <i class="fa-solid fa-arrow-up"></i>
+    Back to top
+  </button>
 
   
   <input type="checkbox"
           class="sidebar-toggle"
-          id="pst-primary-sidebar-checkbox"/>
-  <label class="overlay overlay-primary" for="pst-primary-sidebar-checkbox"></label>
+          name="__primary"
+          id="__primary"/>
+  <label class="overlay overlay-primary" for="__primary"></label>
   
   <input type="checkbox"
           class="sidebar-toggle"
-          id="pst-secondary-sidebar-checkbox"/>
-  <label class="overlay overlay-secondary" for="pst-secondary-sidebar-checkbox"></label>
+          name="__secondary"
+          id="__secondary"/>
+  <label class="overlay overlay-secondary" for="__secondary"></label>
   
   <div class="search-button__wrapper">
     <div class="search-button__overlay"></div>
@@ -88,17 +93,12 @@
   <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
 </form></div>
   </div>
-
-  <div class="pst-async-banner-revealer d-none">
-  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
-</div>
-
   
-    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+    <nav class="bd-header navbar navbar-expand-lg bd-navbar">
 <div class="bd-header__inner bd-page-width">
-  <button class="sidebar-toggle primary-toggle" aria-label="Site navigation">
+  <label class="sidebar-toggle primary-toggle" for="__primary">
     <span class="fa-solid fa-bars"></span>
-  </button>
+  </label>
   
   
   <div class="col-lg-3 navbar-header-items__start">
@@ -126,6 +126,12 @@
       
         <div class="navbar-item">
 <nav class="navbar-nav">
+  <p class="sidebar-header-items__title"
+     role="heading"
+     aria-level="1"
+     aria-label="Site Navigation">
+    Site Navigation
+  </p>
   <ul class="bd-navbar-elements navbar-nav">
     
   </ul>
@@ -185,15 +191,10 @@ document.write(`
   
 </div>
 
-    </header>
+    </nav>
   
-
   <div class="bd-container">
     <div class="bd-container__inner bd-page-width">
-      
-      
-      
-        
       
       <div class="bd-sidebar-primary bd-sidebar hide-on-wide">
         
@@ -204,15 +205,18 @@ document.write(`
     
       <div class="sidebar-header-items__center">
         
-          
-          
-            <div class="navbar-item">
+          <div class="navbar-item">
 <nav class="navbar-nav">
+  <p class="sidebar-header-items__title"
+     role="heading"
+     aria-level="1"
+     aria-label="Site Navigation">
+    Site Navigation
+  </p>
   <ul class="bd-navbar-elements navbar-nav">
     
   </ul>
 </nav></div>
-          
         
       </div>
     
@@ -245,25 +249,27 @@ document.write(`
 
       </div>
       
-      <main id="main-content" class="bd-main" role="main">
+      <main id="main-content" class="bd-main">
         
         
           <div class="bd-content">
             <div class="bd-article-container">
               
-              <div class="bd-header-article d-print-none"></div>
+              <div class="bd-header-article"></div>
               
               
               
                 
 <div id="searchbox"></div>
-                <article class="bd-article">
+                <article class="bd-article" role="main">
                   
 
 <h1 id="index">索引</h1>
 
 <div class="genindex-jumpbox">
  <a href="#C"><strong>C</strong></a>
+ | <a href="#N"><strong>N</strong></a>
+ | <a href="#T"><strong>T</strong></a>
  
 </div>
 <h2 id="C">C</h2>
@@ -271,41 +277,261 @@ document.write(`
   <td style="width: 33%; vertical-align: top;"><ul>
       <li><a href="index.html#_CPPv4N10CodeHelper13AsyncItemPool7GetItemER5TItem">CodeHelper::AsyncItemPool::GetItem（C++ function）</a>
 </li>
+      <li><a href="index.html#_CPPv4N10CodeHelper13AsyncItemPool8ItemInfoE">CodeHelper::AsyncItemPool::ItemInfo（C++ struct）</a>
+</li>
       <li><a href="index.html#_CPPv4N10CodeHelper13AsyncItemPool7SetItemERK5TItem">CodeHelper::AsyncItemPool::SetItem（C++ function）</a>
 </li>
       <li><a href="index.html#_CPPv4I_NSt21default_initializableEEN10CodeHelper13AsyncItemPoolE">CodeHelper::AsyncItemPool（C++ class）</a>
 </li>
-      <li><a href="index.html#_CPPv4I_NSt21default_initializableEEN10CodeHelper12BufferToReadE">CodeHelper::BufferToRead（C++ class）</a>
+      <li><a href="index.html#_CPPv4N10CodeHelper20CommunicationPlanner5CheckEv">CodeHelper::CommunicationPlanner::Check（C++ function）</a>
 </li>
-      <li><a href="index.html#_CPPv4I_NSt21default_initializableEEN10CodeHelper13BufferToWriteE">CodeHelper::BufferToWrite（C++ class）</a>
+      <li><a href="index.html#_CPPv4N10CodeHelper20CommunicationPlanner14ConfigurationsE">CodeHelper::CommunicationPlanner::Configurations（C++ struct）</a>
+</li>
+      <li><a href="index.html#_CPPv4N10CodeHelper20CommunicationPlanner7ExecuteEv">CodeHelper::CommunicationPlanner::Execute（C++ function）</a>
+</li>
+      <li><a href="index.html#_CPPv4N10CodeHelper20CommunicationPlanner9InterruptEv">CodeHelper::CommunicationPlanner::Interrupt（C++ function）</a>
+</li>
+      <li><a href="index.html#_CPPv4NK10CodeHelper20CommunicationPlanner6IsDoneEv">CodeHelper::CommunicationPlanner::IsDone（C++ function）</a>
+</li>
+      <li><a href="index.html#_CPPv4N10CodeHelper20CommunicationPlanner5ResetEv">CodeHelper::CommunicationPlanner::Reset（C++ function）</a>
+</li>
+      <li><a href="index.html#_CPPv4I_21IsFormattableAcceptor_NSt21default_initializableE_NSt21default_initializableE_21IsFormattableIODeviceEN10CodeHelper20CommunicationPlannerE">CodeHelper::CommunicationPlanner（C++ class）</a>
 </li>
       <li><a href="index.html#_CPPv4N10CodeHelper7Counter7CounterEv">CodeHelper::Counter::Counter（C++ function）</a>
+</li>
+      <li><a href="index.html#_CPPv4N10CodeHelper7Counter15DefaultMaxCountE">CodeHelper::Counter::DefaultMaxCount（C++ member）</a>
 </li>
       <li><a href="index.html#_CPPv4NK10CodeHelper7Counter7ReachedEv">CodeHelper::Counter::Reached（C++ function）</a>
 </li>
       <li><a href="index.html#_CPPv4N10CodeHelper7CounterE">CodeHelper::Counter（C++ class）</a>
 </li>
-      <li><a href="index.html#_CPPv4N10CodeHelper17DefaultSourceNode7GetItemER5TItem">CodeHelper::DefaultSourceNode::GetItem（C++ function）</a>
+      <li><a href="index.html#_CPPv4N10CodeHelper17DeliveryArchitect5CheckEv">CodeHelper::DeliveryArchitect::Check（C++ function）</a>
 </li>
-  </ul></td>
-  <td style="width: 33%; vertical-align: top;"><ul>
-      <li><a href="index.html#_CPPv4I_NSt21default_initializableEEN10CodeHelper17DefaultSourceNodeE">CodeHelper::DefaultSourceNode（C++ class）</a>
+      <li><a href="index.html#_CPPv4N10CodeHelper17DeliveryArchitect14ConfigurationsE">CodeHelper::DeliveryArchitect::Configurations（C++ struct）</a>
 </li>
-      <li><a href="index.html#_CPPv4N10CodeHelper15DestinationNode8ItemTypeE">CodeHelper::DestinationNode::ItemType（C++ type）</a>
+      <li><a href="index.html#_CPPv4N10CodeHelper17DeliveryArchitect7ExecuteEv">CodeHelper::DeliveryArchitect::Execute（C++ function）</a>
+</li>
+      <li><a href="index.html#_CPPv4N10CodeHelper17DeliveryArchitect9InterruptEv">CodeHelper::DeliveryArchitect::Interrupt（C++ function）</a>
+</li>
+      <li><a href="index.html#_CPPv4NK10CodeHelper17DeliveryArchitect6IsDoneEv">CodeHelper::DeliveryArchitect::IsDone（C++ function）</a>
+</li>
+      <li><a href="index.html#_CPPv4N10CodeHelper17DeliveryArchitect5ResetEv">CodeHelper::DeliveryArchitect::Reset（C++ function）</a>
+</li>
+      <li><a href="index.html#_CPPv4I_NSt21default_initializableE_19IsFormattableSource_17IsDestinationNodeEN10CodeHelper17DeliveryArchitectE">CodeHelper::DeliveryArchitect（C++ class）</a>
+</li>
+      <li><a href="index.html#_CPPv4NK10CodeHelper10Dependency5CheckEKNSt11string_viewEKNSt11string_viewE">CodeHelper::Dependency::Check（C++ function）</a>
+</li>
+      <li><a href="index.html#_CPPv4NK10CodeHelper10Dependency5EmptyEv">CodeHelper::Dependency::Empty（C++ function）</a>
+</li>
+      <li><a href="index.html#_CPPv4NK10CodeHelper10Dependency9GetObjectEv">CodeHelper::Dependency::GetObject（C++ function）</a>
+</li>
+      <li><a href="index.html#_CPPv4NK10CodeHelper10Dependency12LogGetObjectEKNSt11string_viewEKNSt11string_viewE">CodeHelper::Dependency::LogGetObject（C++ function）</a>
+</li>
+      <li><a href="index.html#_CPPv4N10CodeHelper10Dependency10ObjectTypeE">CodeHelper::Dependency::ObjectType（C++ type）</a>
+</li>
+      <li><a href="index.html#_CPPv4N10CodeHelper10DependencyaSERKNSt10shared_ptrI7TObjectEE">CodeHelper::Dependency::operator=（C++ function）</a>
+</li>
+      <li><a href="index.html#_CPPv4I0EN10CodeHelper10DependencyE">CodeHelper::Dependency（C++ class）</a>
 </li>
       <li><a href="index.html#_CPPv4N10CodeHelper15DestinationNode7SetItemERK5TItem">CodeHelper::DestinationNode::SetItem（C++ function）</a>
 </li>
-      <li><a href="index.html#_CPPv4I0EN10CodeHelper15DestinationNodeE">CodeHelper::DestinationNode（C++ class）</a>
+      <li><a href="index.html#_CPPv4I0EN10CodeHelper15DestinationNodeE">CodeHelper::DestinationNode（C++ struct）</a>
+</li>
+      <li><a href="index.html#_CPPv4N10CodeHelper15DeviceIOTrigger14ConfigurationsE">CodeHelper::DeviceIOTrigger::Configurations（C++ struct）</a>
+</li>
+      <li><a href="index.html#_CPPv4N10CodeHelper15DeviceIOTrigger7SetItemERK7TDevice">CodeHelper::DeviceIOTrigger::SetItem（C++ function）</a>
+</li>
+      <li><a href="index.html#_CPPv4I_NSt21default_initializableE_NSt21default_initializableE_21IsFormattableIODeviceEN10CodeHelper15DeviceIOTriggerE">CodeHelper::DeviceIOTrigger（C++ class）</a>
 </li>
       <li><a href="index.html#_CPPv4N10CodeHelper20EmptyDestinationNode7SetItemERK5TItem">CodeHelper::EmptyDestinationNode::SetItem（C++ function）</a>
 </li>
-      <li><a href="index.html#_CPPv4I0EN10CodeHelper20EmptyDestinationNodeE">CodeHelper::EmptyDestinationNode（C++ class）</a>
+      <li><a href="index.html#_CPPv4I0EN10CodeHelper20EmptyDestinationNodeE">CodeHelper::EmptyDestinationNode（C++ struct）</a>
 </li>
       <li><a href="index.html#_CPPv4N10CodeHelper15EmptySourceNode7GetItemER5TItem">CodeHelper::EmptySourceNode::GetItem（C++ function）</a>
 </li>
       <li><a href="index.html#_CPPv4I0EN10CodeHelper15EmptySourceNodeE">CodeHelper::EmptySourceNode（C++ class）</a>
 </li>
-      <li><a href="index.html#_CPPv4I0EN10CodeHelper19FlowDestinationNodeE">CodeHelper::FlowDestinationNode（C++ class）</a>
+      <li><a href="index.html#_CPPv4NK10CodeHelper17FormattableObject6FormatERNSt7ostreamE">CodeHelper::FormattableObject::Format（C++ function）</a>
+</li>
+      <li><a href="index.html#_CPPv4N10CodeHelper17FormattableObjectE">CodeHelper::FormattableObject（C++ struct）</a>
+</li>
+      <li><a href="index.html#_CPPv4N10CodeHelper11IOArchitect5CheckEv">CodeHelper::IOArchitect::Check（C++ function）</a>
+</li>
+      <li><a href="index.html#_CPPv4N10CodeHelper11IOArchitect14Configurations6DeviceE">CodeHelper::IOArchitect::Configurations::Device（C++ member）</a>
+</li>
+      <li><a href="index.html#_CPPv4N10CodeHelper11IOArchitect14Configurations19ObserverMinIntervalE">CodeHelper::IOArchitect::Configurations::ObserverMinInterval（C++ member）</a>
+</li>
+      <li><a href="index.html#_CPPv4N10CodeHelper11IOArchitect14Configurations17ReaderDestinationE">CodeHelper::IOArchitect::Configurations::ReaderDestination（C++ member）</a>
+</li>
+      <li><a href="index.html#_CPPv4N10CodeHelper11IOArchitect14Configurations14ReaderHeadByteE">CodeHelper::IOArchitect::Configurations::ReaderHeadByte（C++ member）</a>
+</li>
+      <li><a href="index.html#_CPPv4N10CodeHelper11IOArchitect14Configurations26ReaderMaxContinuousFailureE">CodeHelper::IOArchitect::Configurations::ReaderMaxContinuousFailure（C++ member）</a>
+</li>
+      <li><a href="index.html#_CPPv4N10CodeHelper11IOArchitect14Configurations17ReaderMinIntervalE">CodeHelper::IOArchitect::Configurations::ReaderMinInterval（C++ member）</a>
+</li>
+      <li><a href="index.html#_CPPv4N10CodeHelper11IOArchitect14Configurations26WriterMaxContinuousFailureE">CodeHelper::IOArchitect::Configurations::WriterMaxContinuousFailure（C++ member）</a>
+</li>
+      <li><a href="index.html#_CPPv4N10CodeHelper11IOArchitect14Configurations17WriterMinIntervalE">CodeHelper::IOArchitect::Configurations::WriterMinInterval（C++ member）</a>
+</li>
+      <li><a href="index.html#_CPPv4N10CodeHelper11IOArchitect14Configurations12WriterSourceE">CodeHelper::IOArchitect::Configurations::WriterSource（C++ member）</a>
+</li>
+      <li><a href="index.html#_CPPv4N10CodeHelper11IOArchitect14ConfigurationsE">CodeHelper::IOArchitect::Configurations（C++ struct）</a>
+</li>
+      <li><a href="index.html#_CPPv4N10CodeHelper11IOArchitect7ExecuteEv">CodeHelper::IOArchitect::Execute（C++ function）</a>
+</li>
+      <li><a href="index.html#_CPPv4N10CodeHelper11IOArchitect9InterruptEv">CodeHelper::IOArchitect::Interrupt（C++ function）</a>
+</li>
+      <li><a href="index.html#_CPPv4NK10CodeHelper11IOArchitect6IsDoneEv">CodeHelper::IOArchitect::IsDone（C++ function）</a>
+</li>
+      <li><a href="index.html#_CPPv4N10CodeHelper11IOArchitect5ResetEv">CodeHelper::IOArchitect::Reset（C++ function）</a>
+</li>
+      <li><a href="index.html#_CPPv4I_NSt21default_initializableE_NSt21default_initializableE_21IsFormattableIODeviceEN10CodeHelper11IOArchitectE">CodeHelper::IOArchitect（C++ class）</a>
+</li>
+      <li><a href="index.html#_CPPv4NK10CodeHelper11NamedModule6FormatERNSt7ostreamE">CodeHelper::NamedModule::Format（C++ function）</a>
+</li>
+      <li><a href="index.html#_CPPv4N10CodeHelper11NamedModuleE">CodeHelper::NamedModule（C++ struct）</a>
+</li>
+      <li><a href="index.html#_CPPv4N10CodeHelper15ParseFromStreamE">CodeHelper::ParseFromStream（C++ struct）</a>
+</li>
+  </ul></td>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="index.html#_CPPv4N10CodeHelper17PingPongExchanger7ExamineENSt4spanINSt7uint8_tEEEb">CodeHelper::PingPongExchanger::Examine（C++ function）</a>
+</li>
+      <li><a href="index.html#_CPPv4NK10CodeHelper17PingPongExchanger13GetReaderSpanEv">CodeHelper::PingPongExchanger::GetReaderSpan（C++ function）</a>
+</li>
+      <li><a href="index.html#_CPPv4N10CodeHelper17PingPongExchanger17PingPongExchangerENSt7uint8_tENSt4spanINSt7uint8_tEEE">CodeHelper::PingPongExchanger::PingPongExchanger（C++ function）</a>
+</li>
+      <li><a href="index.html#_CPPv4NK10CodeHelper17PingPongExchanger6VerifyENSt4spanIKNSt7uint8_tEEEb">CodeHelper::PingPongExchanger::Verify（C++ function）</a>
+</li>
+      <li><a href="index.html#_CPPv4N10CodeHelper17PingPongExchangerE">CodeHelper::PingPongExchanger（C++ class）</a>
+</li>
+      <li><a href="index.html#_CPPv4I00EN10CodeHelper13ProcessorNodeE">CodeHelper::ProcessorNode（C++ struct）</a>
+</li>
+      <li><a href="index.html#_CPPv4N10CodeHelper6Reader9ReadBytesENSt4spanINSt7uint8_tEEE">CodeHelper::Reader::ReadBytes（C++ function）</a>
+</li>
+      <li><a href="index.html#_CPPv4N10CodeHelper15ReaderArchitect5CheckEv">CodeHelper::ReaderArchitect::Check（C++ function）</a>
+</li>
+      <li><a href="index.html#_CPPv4N10CodeHelper15ReaderArchitect14Configurations11DestinationE">CodeHelper::ReaderArchitect::Configurations::Destination（C++ member）</a>
+</li>
+      <li><a href="index.html#_CPPv4N10CodeHelper15ReaderArchitect14Configurations8HeadByteE">CodeHelper::ReaderArchitect::Configurations::HeadByte（C++ member）</a>
+</li>
+      <li><a href="index.html#_CPPv4N10CodeHelper15ReaderArchitect14Configurations20MaxContinuousFailureE">CodeHelper::ReaderArchitect::Configurations::MaxContinuousFailure（C++ member）</a>
+</li>
+      <li><a href="index.html#_CPPv4N10CodeHelper15ReaderArchitect14Configurations11MinIntervalE">CodeHelper::ReaderArchitect::Configurations::MinInterval（C++ member）</a>
+</li>
+      <li><a href="index.html#_CPPv4N10CodeHelper15ReaderArchitect14Configurations6ReaderE">CodeHelper::ReaderArchitect::Configurations::Reader（C++ member）</a>
+</li>
+      <li><a href="index.html#_CPPv4N10CodeHelper15ReaderArchitect14ConfigurationsE">CodeHelper::ReaderArchitect::Configurations（C++ struct）</a>
+</li>
+      <li><a href="index.html#_CPPv4N10CodeHelper15ReaderArchitect7ExecuteEv">CodeHelper::ReaderArchitect::Execute（C++ function）</a>
+</li>
+      <li><a href="index.html#_CPPv4N10CodeHelper15ReaderArchitect9InterruptEv">CodeHelper::ReaderArchitect::Interrupt（C++ function）</a>
+</li>
+      <li><a href="index.html#_CPPv4NK10CodeHelper15ReaderArchitect6IsDoneEv">CodeHelper::ReaderArchitect::IsDone（C++ function）</a>
+</li>
+      <li><a href="index.html#_CPPv4N10CodeHelper15ReaderArchitect5ResetEv">CodeHelper::ReaderArchitect::Reset（C++ function）</a>
+</li>
+      <li><a href="index.html#_CPPv4I_NSt21default_initializableE_19IsFormattableReaderEN10CodeHelper15ReaderArchitectE">CodeHelper::ReaderArchitect（C++ class）</a>
+</li>
+      <li><a href="index.html#_CPPv4N10CodeHelper6ReaderE">CodeHelper::Reader（C++ struct）</a>
+</li>
+      <li><a href="index.html#_CPPv4N10CodeHelper16SimpleSourceNode7GetItemER5TItem">CodeHelper::SimpleSourceNode::GetItem（C++ function）</a>
+</li>
+      <li><a href="index.html#_CPPv4I_NSt21default_initializableEEN10CodeHelper16SimpleSourceNodeE">CodeHelper::SimpleSourceNode（C++ class）</a>
+</li>
+      <li><a href="index.html#_CPPv4N10CodeHelper8SineWave7GetItemERf">CodeHelper::SineWave::GetItem（C++ function）</a>
+</li>
+      <li><a href="index.html#_CPPv4N10CodeHelper8SineWaveE">CodeHelper::SineWave（C++ struct）</a>
+</li>
+      <li><a href="index.html#_CPPv4N10CodeHelper10SourceNode7GetItemER5TItem">CodeHelper::SourceNode::GetItem（C++ function）</a>
+</li>
+      <li><a href="index.html#_CPPv4I0EN10CodeHelper10SourceNodeE">CodeHelper::SourceNode（C++ struct）</a>
+</li>
+      <li><a href="index.html#_CPPv4N10CodeHelper13TaskArchitect5CheckEv">CodeHelper::TaskArchitect::Check（C++ function）</a>
+</li>
+      <li><a href="index.html#_CPPv4N10CodeHelper13TaskArchitect7ExecuteEv">CodeHelper::TaskArchitect::Execute（C++ function）</a>
+</li>
+      <li><a href="index.html#_CPPv4N10CodeHelper13TaskArchitectE">CodeHelper::TaskArchitect（C++ struct）</a>
+</li>
+      <li><a href="index.html#_CPPv4N10CodeHelper8TaskDone4DoneE">CodeHelper::TaskDone::Done（C++ member）</a>
+</li>
+      <li><a href="index.html#_CPPv4N10CodeHelper8TaskDone9InterruptEv">CodeHelper::TaskDone::Interrupt（C++ function）</a>
+</li>
+      <li><a href="index.html#_CPPv4NK10CodeHelper8TaskDone6IsDoneEv">CodeHelper::TaskDone::IsDone（C++ function）</a>
+</li>
+      <li><a href="index.html#_CPPv4N10CodeHelper8TaskDone5ResetEv">CodeHelper::TaskDone::Reset（C++ function）</a>
+</li>
+      <li><a href="index.html#_CPPv4N10CodeHelper8TaskDoneE">CodeHelper::TaskDone（C++ struct）</a>
+</li>
+      <li><a href="index.html#_CPPv4N10CodeHelper10TaskStatus9InterruptEv">CodeHelper::TaskStatus::Interrupt（C++ function）</a>
+</li>
+      <li><a href="index.html#_CPPv4NK10CodeHelper10TaskStatus6IsDoneEv">CodeHelper::TaskStatus::IsDone（C++ function）</a>
+</li>
+      <li><a href="index.html#_CPPv4N10CodeHelper10TaskStatus5ResetEv">CodeHelper::TaskStatus::Reset（C++ function）</a>
+</li>
+      <li><a href="index.html#_CPPv4N10CodeHelper10TaskStatusE">CodeHelper::TaskStatus（C++ struct）</a>
+</li>
+      <li><a href="index.html#_CPPv4I0ENK10CodeHelper12TypedMessage10CopyDataToEvP1T">CodeHelper::TypedMessage::CopyDataTo（C++ function）</a>
+</li>
+      <li><a href="index.html#_CPPv4N10CodeHelper12TypedMessage4DataE">CodeHelper::TypedMessage::Data（C++ member）</a>
+</li>
+      <li><a href="index.html#_CPPv4I0EN10CodeHelper12TypedMessage9GetDataAsER1Tv">CodeHelper::TypedMessage::GetDataAs（C++ function）</a>, <a href="index.html#_CPPv4I0ENK10CodeHelper12TypedMessage9GetDataAsERK1Tv">[1]</a>
+</li>
+      <li><a href="index.html#_CPPv4N10CodeHelper12TypedMessage4HeadE">CodeHelper::TypedMessage::Head（C++ member）</a>
+</li>
+      <li><a href="index.html#_CPPv4N10CodeHelper12TypedMessage4TailE">CodeHelper::TypedMessage::Tail（C++ member）</a>
+</li>
+      <li><a href="index.html#_CPPv4N10CodeHelper12TypedMessage6ToSpanEv">CodeHelper::TypedMessage::ToSpan（C++ function）</a>, <a href="index.html#_CPPv4NK10CodeHelper12TypedMessage6ToSpanEv">[1]</a>
+</li>
+      <li><a href="index.html#_CPPv4N10CodeHelper12TypedMessage4TypeE">CodeHelper::TypedMessage::Type（C++ member）</a>
+</li>
+      <li><a href="index.html#_CPPv4I_NSt6size_tEEN10CodeHelper12TypedMessageE">CodeHelper::TypedMessage（C++ struct）</a>
+</li>
+      <li><a href="index.html#_CPPv4N10CodeHelper6Writer10WriteBytesENSt4spanIKNSt7uint8_tEEE">CodeHelper::Writer::WriteBytes（C++ function）</a>
+</li>
+      <li><a href="index.html#_CPPv4N10CodeHelper15WriterArchitect5CheckEv">CodeHelper::WriterArchitect::Check（C++ function）</a>
+</li>
+      <li><a href="index.html#_CPPv4N10CodeHelper15WriterArchitect14Configurations20MaxContinuousFailureE">CodeHelper::WriterArchitect::Configurations::MaxContinuousFailure（C++ member）</a>
+</li>
+      <li><a href="index.html#_CPPv4N10CodeHelper15WriterArchitect14Configurations11MinIntervalE">CodeHelper::WriterArchitect::Configurations::MinInterval（C++ member）</a>
+</li>
+      <li><a href="index.html#_CPPv4N10CodeHelper15WriterArchitect14Configurations6SourceE">CodeHelper::WriterArchitect::Configurations::Source（C++ member）</a>
+</li>
+      <li><a href="index.html#_CPPv4N10CodeHelper15WriterArchitect14Configurations6WriterE">CodeHelper::WriterArchitect::Configurations::Writer（C++ member）</a>
+</li>
+      <li><a href="index.html#_CPPv4N10CodeHelper15WriterArchitect14ConfigurationsE">CodeHelper::WriterArchitect::Configurations（C++ struct）</a>
+</li>
+      <li><a href="index.html#_CPPv4N10CodeHelper15WriterArchitect7ExecuteEv">CodeHelper::WriterArchitect::Execute（C++ function）</a>
+</li>
+      <li><a href="index.html#_CPPv4N10CodeHelper15WriterArchitect9InterruptEv">CodeHelper::WriterArchitect::Interrupt（C++ function）</a>
+</li>
+      <li><a href="index.html#_CPPv4NK10CodeHelper15WriterArchitect6IsDoneEv">CodeHelper::WriterArchitect::IsDone（C++ function）</a>
+</li>
+      <li><a href="index.html#_CPPv4N10CodeHelper15WriterArchitect5ResetEv">CodeHelper::WriterArchitect::Reset（C++ function）</a>
+</li>
+      <li><a href="index.html#_CPPv4I_NSt21default_initializableE_19IsFormattableWriterEN10CodeHelper15WriterArchitectE">CodeHelper::WriterArchitect（C++ class）</a>
+</li>
+      <li><a href="index.html#_CPPv4N10CodeHelper6WriterE">CodeHelper::Writer（C++ struct）</a>
+</li>
+  </ul></td>
+</tr></table>
+
+<h2 id="N">N</h2>
+<table style="width: 100%" class="indextable genindextable"><tr>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="index.html#_CPPv4I_NSt21default_initializableEEN7Network12BufferToReadE">Network::BufferToRead（C++ class）</a>
+</li>
+  </ul></td>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="index.html#_CPPv4I_NSt21default_initializableEEN7Network13BufferToWriteE">Network::BufferToWrite（C++ class）</a>
+</li>
+  </ul></td>
+</tr></table>
+
+<h2 id="T">T</h2>
+<table style="width: 100%" class="indextable genindextable"><tr>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="index.html#_CPPv410TargetFile">TargetFile（C++ struct）</a>
 </li>
   </ul></td>
 </tr></table>
@@ -318,7 +544,7 @@ document.write(`
               
               
               
-                <footer class="prev-next-footer d-print-none">
+                <footer class="prev-next-footer">
                   
 <div class="prev-next-area">
 </div>
@@ -339,8 +565,8 @@ document.write(`
   </div>
   
   <!-- Scripts loaded after <body> so the DOM is not blocked -->
-  <script src="_static/scripts/bootstrap.js?digest=3ee479438cf8b5e0d341"></script>
-<script src="_static/scripts/pydata-sphinx-theme.js?digest=3ee479438cf8b5e0d341"></script>
+  <script src="_static/scripts/bootstrap.js?digest=5b4479735964841361fd"></script>
+<script src="_static/scripts/pydata-sphinx-theme.js?digest=5b4479735964841361fd"></script>
 
   <footer class="bd-footer">
 <div class="bd-footer__inner bd-page-width">
@@ -360,7 +586,7 @@ document.write(`
         <div class="footer-item">
 
   <p class="sphinx-version">
-    由 <a href="https://www.sphinx-doc.org/">Sphinx</a> 7.3.7创建。
+    由 <a href="https://www.sphinx-doc.org/">Sphinx</a> 7.1.2创建。
     <br/>
   </p>
 </div>
@@ -373,7 +599,7 @@ document.write(`
       
         <div class="footer-item">
 <p class="theme-version">
-  Built with the <a href="https://pydata-sphinx-theme.readthedocs.io/en/stable/index.html">PyData Sphinx Theme</a> 0.15.3.
+  Built with the <a href="https://pydata-sphinx-theme.readthedocs.io/en/stable/index.html">PyData Sphinx Theme</a> 0.14.4.
 </p></div>
       
     </div>
